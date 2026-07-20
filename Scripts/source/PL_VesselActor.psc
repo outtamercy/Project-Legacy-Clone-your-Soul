@@ -27,17 +27,21 @@ bool Function ApplyPlayerPreset(int slot) Native
 bool Function ApplyPlayerGear(int slot) Native
 
 Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echoName)
+    Debug.Trace("PL/BindVessel 1: entered, race=" + vesselRace + " sex=" + vesselSex)
     mySlotName = slotName
     myVesselRace = vesselRace
     myVesselSex = vesselSex
     
     ; Align native underlying gender cache fields via explicit assignments
     SetActorBaseSex(self, myVesselSex)
-    ApplyPlayerPreset(SlotIndex)
+    Debug.Trace("PL/BindVessel 2: SetActorBaseSex done")
+    bool presetOk = ApplyPlayerPreset(SlotIndex)
+    Debug.Trace("PL/BindVessel 3: ApplyPlayerPreset returned " + presetOk)
     self.QueueNiNodeUpdate()
     
     if myVesselRace && self.GetRace() != myVesselRace
         self.SetRace(myVesselRace)
+        Debug.Trace("PL/BindVessel 4: SetRace done")
     endif
     
     myEchoName = echoName
@@ -53,6 +57,7 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
     
     if mySlotName != ""
         StageSlotForLoad(SlotIndex, mySlotName)
+        Debug.Trace("PL/BindVessel 5: staged, calling LoadCharacter")
         
         Bool bOk = CharGen.LoadCharacter(self, myVesselRace, mySlotName)
         Int iSafety = 5
@@ -61,6 +66,7 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
             Wait(0.5)
             bOk = CharGen.LoadCharacter(self, myVesselRace, mySlotName)
         endWhile
+        Debug.Trace("PL/BindVessel 6: LoadCharacter ok=" + bOk)
         
         UnstageSlotAfterLoad(SlotIndex, mySlotName)
         if !bOk
@@ -74,6 +80,7 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
     EndIf
     
     self.UpdateWeight(0.0)
+    Debug.Trace("PL/BindVessel 7: UpdateWeight done, exiting")
 EndFunction
 
 Function SummonVessel(Actor targetActor, ObjectReference pedestal)

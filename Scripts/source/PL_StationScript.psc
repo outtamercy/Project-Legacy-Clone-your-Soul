@@ -107,11 +107,13 @@ bool Function DoBind()
     String slotName = "PL_Slot" + SlotIndex
     CharGen.SaveCharacter(slotName)
     Utility.Wait(1.5)
+    Debug.Trace("PL/Bind 1: SaveCharacter fired")
     
     String safeName = GetSafeCharacterName()
     String diskName = safeName
     
     int result = ExportPlayerPreset(SlotIndex, slotName)
+    Debug.Trace("PL/Bind 2: ExportPlayerPreset result=" + result)
     if result != 0
         return false
     endif
@@ -150,13 +152,11 @@ bool Function DoBind()
     if PL_BlindingLightInwardParticles
         PL_BlindingLightInwardParticles.Stop(PlayerRef)
     endif
-    if PL_FXGreybeardAbsorbEffect
-        PL_FXGreybeardAbsorbEffect.Stop(PlayerRef)
-    endif
     if PL_ValorFX
         PL_ValorFX.Stop(PlayerRef)
     endif
     
+    Debug.Trace("PL/Bind 3: FX done, fading")
     if PL_FadeToWhite
         PL_FadeToWhite.Apply()
     endif
@@ -171,6 +171,7 @@ bool Function DoBind()
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     Actor vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, false) as Actor
     SpawnedVessel = vessel
+    Debug.Trace("PL/Bind 4: spawned, vessel=" + vessel)
     if !vessel
         if PL_FadeToWhiteHoldImod
             PL_FadeToWhiteHoldImod.Remove()
@@ -182,16 +183,28 @@ bool Function DoBind()
         return false
     endif
     
+    ; PlaceAtMe returns before the engine finishes building the actor —
+    ; don't touch him till his 3D exists (capped so we can't hang)
+    int safety3D = 50
+    while !vessel.Is3DLoaded() && safety3D > 0
+        safety3D -= 1
+        Utility.Wait(0.1)
+    endWhile
+    Debug.Trace("PL/Bind 5: 3D loaded after " + (50 - safety3D) + " ticks")
+    
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
     
     ; Fire structural vessel parameters first, then pass down copy sequences
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
     (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex(), safeName)
+    Debug.Trace("PL/Bind 6: BindVessel done")
     (vessel as PL_VesselActor).CopyGearFrom(PlayerRef)
+    Debug.Trace("PL/Bind 7: CopyGearFrom done")
     
     Utility.Wait(2.5)
     vessel.RegenerateHead()
+    Debug.Trace("PL/Bind 8: RegenerateHead done")
     Utility.Wait(0.3)
     
     vessel.EnableAI(false)
@@ -219,6 +232,7 @@ bool Function DoBind()
     
     Game.EnablePlayerControls()
     UpdateVisualState()
+    Debug.Trace("PL/Bind 9: complete")
     
     return true
 EndFunction

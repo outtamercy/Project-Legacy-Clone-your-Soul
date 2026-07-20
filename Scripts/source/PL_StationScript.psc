@@ -71,6 +71,7 @@ Function TryRestoreSlot()
     String diskName = GetSlotDiskName(SlotIndex)
     Race slotRace = GetSlotRaceForm(SlotIndex) as Race
     int slotSex = GetSlotVesselSex(SlotIndex)
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " sex=" + slotSex + " race=" + slotRace)
 
     Actor vessel = SpawnedVessel
     if !vessel
@@ -88,7 +89,14 @@ Function TryRestoreSlot()
     vessel.EnableAI(false)
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
     (vessel as PL_VesselActor).BindVessel(diskName, slotRace, slotSex, diskName)
+    ; restore path never cleared the CK default outfit — bind path does it
+    ; inside CopyGearFrom, we gotta do it ourselves here
+    PL_VesselActor.ClearDefaultOutfit(vessel)
+    vessel.RemoveAllItems(None, true, true)
     (vessel as PL_VesselActor).ApplyPlayerGear(SlotIndex)
+    ; UpdateWeight no-ops when weight's unchanged — force the 3D rebuild or
+    ; she keeps the male spawn body under the female face
+    vessel.QueueNiNodeUpdate()
     vessel.EnableAI(false)
     UpdateVisualState()
 EndFunction
@@ -268,24 +276,10 @@ Event OnActivate(ObjectReference akActionRef)
             endif
         endif
     else
-        int actionBtn = PL_MsgBound.Show()
+        ; bound — "What now?" IS the menu. 0 = summon, anything else = walk away
+        int actionBtn = PL_MsgSummon.Show()
         if actionBtn == 0
-            ; summon gets the confirm dialog — 0 = "right behind ya", 1 = nah
-            int summonConfirm = PL_MsgSummon.Show()
-            if summonConfirm == 0
-                DoSummon()
-            endif
-        elseIf actionBtn == 1
-            Actor vessel = SpawnedVessel
-            if vessel
-                (vessel as PL_VesselActor).DismissVessel()
-            endif
-        elseIf actionBtn == 2
-            int confirm = PL_MsgCleanseConfirm.Show()
-            if confirm == 0
-                DoCleanse()
-            endif
+            DoSummon()
         endif
-        ; actionBtn == 3 (or anything unmapped) = cancel, just falls through
     endif
 EndEvent

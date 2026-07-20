@@ -34,6 +34,7 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
     ; Align native underlying gender cache fields via explicit assignments
     SetActorBaseSex(self, myVesselSex)
     ApplyPlayerPreset(SlotIndex)
+    self.QueueNiNodeUpdate()
     
     if myVesselRace && self.GetRace() != myVesselRace
         self.SetRace(myVesselRace)

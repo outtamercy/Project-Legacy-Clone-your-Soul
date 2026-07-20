@@ -169,9 +169,11 @@ bool Function DoBind()
     endif
     
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
-    Actor vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, false) as Actor
+    ; abInitiallyDisabled — he's a ghost record till BindVessel wakes him,
+    ; race surgery happens off-stage with no 3D for anyone to race against
+    Actor vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
     SpawnedVessel = vessel
-    Debug.Trace("PL/Bind 4: spawned, vessel=" + vessel)
+    Debug.Trace("PL/Bind 4: spawned (disabled), vessel=" + vessel)
     if !vessel
         if PL_FadeToWhiteHoldImod
             PL_FadeToWhiteHoldImod.Remove()
@@ -183,18 +185,9 @@ bool Function DoBind()
         return false
     endif
     
-    ; PlaceAtMe returns before the engine finishes building the actor —
-    ; don't touch him till his 3D exists (capped so we can't hang)
-    int safety3D = 50
-    while !vessel.Is3DLoaded() && safety3D > 0
-        safety3D -= 1
-        Utility.Wait(0.1)
-    endWhile
-    Debug.Trace("PL/Bind 5: 3D loaded after " + (50 - safety3D) + " ticks")
-    
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
-    
+
     ; Fire structural vessel parameters first, then pass down copy sequences
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
     (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex(), safeName)
@@ -203,8 +196,8 @@ bool Function DoBind()
     Debug.Trace("PL/Bind 7: CopyGearFrom done")
     
     Utility.Wait(2.5)
-    ; same disease LoadCharacter had — the equip storm dirtied his 3D again,
-    ; regen on a half-rebuilt head is a coin flip with death. body first.
+    ; same liar as BindVessel — fixed beat first, gate second
+    Utility.Wait(1.0)
     int safetyHead = 50
     while !vessel.Is3DLoaded() && safetyHead > 0
         safetyHead -= 1

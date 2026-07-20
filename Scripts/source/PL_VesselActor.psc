@@ -32,26 +32,18 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
     myVesselRace = vesselRace
     myVesselSex = vesselSex
     
-    ; race swap FIRST. SetRace only queues the 3D rebuild — everything below
-    ; (LoadCharacter especially) needs the new body DONE, not scheduled
+    ; drop him off-stage (no-op on a fresh disabled spawn, kills 3D on restore)
+    self.Disable()
+    
+    ; all base surgery happens while he's a ghost record — no 3D, no rebuild,
+    ; no coin flips with death
     if myVesselRace && self.GetRace() != myVesselRace
         self.SetRace(myVesselRace)
-        Debug.Trace("PL/BindVessel 2: SetRace done")
+        Debug.Trace("PL/BindVessel 2: SetRace done (ghost-side)")
     endif
-    self.QueueNiNodeUpdate()
-    
-    ; sit here till the engine finishes the rebuild (capped so we can't hang)
-    int safety3D = 50
-    while !self.Is3DLoaded() && safety3D > 0
-        safety3D -= 1
-        Wait(0.1)
-    endWhile
-    Debug.Trace("PL/BindVessel 3: 3D rebuilt after " + (50 - safety3D) + " ticks")
-    
-    ; sex AFTER the race swap — SetRace loves stomping base flags back to default
     SetActorBaseSex(self, myVesselSex)
     bool presetOk = ApplyPlayerPreset(SlotIndex)
-    Debug.Trace("PL/BindVessel 4: ApplyPlayerPreset returned " + presetOk)
+    Debug.Trace("PL/BindVessel 3: ApplyPlayerPreset returned " + presetOk)
     
     myEchoName = echoName
     self.GetActorBase().SetName(myEchoName)
@@ -63,6 +55,18 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
         myVesselVoice = Game.GetForm(0x00013543) as VoiceType
     endif
     self.GetActorBase().SetVoiceType(myVesselVoice)
+    
+    ; wake him — 3D gets built exactly once, with the right body
+    self.Enable()
+    self.QueueNiNodeUpdate()
+    
+    ; the gate finally means something: there IS no 3D till the enable lands
+    int safety3D = 100
+    while !self.Is3DLoaded() && safety3D > 0
+        safety3D -= 1
+        Wait(0.1)
+    endWhile
+    Debug.Trace("PL/BindVessel 4: 3D built after " + (100 - safety3D) + " ticks")
     
     if mySlotName != ""
         StageSlotForLoad(SlotIndex, mySlotName)

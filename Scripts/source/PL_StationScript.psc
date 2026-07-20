@@ -38,6 +38,9 @@ Function BreakPlayerAnimation(Actor akPlayer) Global Native
 Function ClearPlayerAnimation(Actor akPlayer) Global Native
 String Function GetSafeCharacterName() Global Native
 bool Function ClearSlot(int slot, string slotName) Global Native
+String Function GetSlotDiskName(int slot) Global Native
+Form Function GetSlotRaceForm(int slot) Global Native
+int Function GetSlotVesselSex(int slot) Global Native
 
 Function UpdateVisualState()
     ObjectReference physicalPedestal = self.GetLinkedRef(PL_GlowLink)
@@ -56,31 +59,35 @@ Function TryRestoreSlot()
     if !IsSlotBound(SlotIndex)
         return
     endif
-    
-    if SpawnedVessel
-        return
-    endif
 
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     if !spawnMarker
         return
     endif
 
-    Actor vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, false) as Actor
-    SpawnedVessel = vessel
+    ; identity comes from the registry, NOT the current player — restoring
+    ; under a different character must still bring back the original clone
+    String diskName = GetSlotDiskName(SlotIndex)
+    Race slotRace = GetSlotRaceForm(SlotIndex) as Race
+    int slotSex = GetSlotVesselSex(SlotIndex)
+
+    Actor vessel = SpawnedVessel
+    if !vessel
+        vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, false) as Actor
+        SpawnedVessel = vessel
+    endif
     if !vessel
         return
     endif
 
+    ; runtime actorbase edits (race/sex/name/face) evaporate on load, so the
+    ; ref survived but the clone didn't — re-run the whole bind on it
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
-    
-    String safeName = GetSafeCharacterName()
-    String diskName = "PL_Slot" + SlotIndex + "_" + safeName
-
     vessel.EnableAI(false)
-    (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex())
-    
+    (vessel as PL_VesselActor).SlotIndex = SlotIndex
+    (vessel as PL_VesselActor).BindVessel(diskName, slotRace, slotSex, diskName)
+    (vessel as PL_VesselActor).ApplyPlayerGear(SlotIndex)
     vessel.EnableAI(false)
     UpdateVisualState()
 EndFunction
@@ -93,7 +100,7 @@ bool Function DoBind()
     Utility.Wait(2.0)
     
     String safeName = GetSafeCharacterName()
-    String diskName = "PL_Slot" + SlotIndex + "_" + safeName
+    String diskName = safeName
     
     int result = ExportPlayerPreset(SlotIndex, slotName)
     if result != 0
@@ -170,7 +177,8 @@ bool Function DoBind()
     vessel.SetRestrained(true)
     
     ; Fire structural vessel parameters first, then pass down copy sequences
-    (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex())
+    (vessel as PL_VesselActor).SlotIndex = SlotIndex
+    (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex(), safeName)
     (vessel as PL_VesselActor).CopyGearFrom(PlayerRef)
     
     Utility.Wait(5.0)
@@ -223,8 +231,7 @@ Function DoCleanse()
         SpawnedVessel = None
     endif
     
-    String safeName = GetSafeCharacterName()
-    String diskName = "PL_Slot" + SlotIndex + "_" + safeName
+    String diskName = GetSlotDiskName(SlotIndex)
     ClearSlot(SlotIndex, diskName)
     UpdateVisualState()
 EndFunction

@@ -25,7 +25,7 @@ bool Function SetActorBaseSex(Actor target, int sex) Global Native
 bool Function ApplyPlayerPreset(int slot) Native
 bool Function ApplyPlayerGear(int slot) Native
 
-Function BindVessel(String slotName, Race vesselRace, int vesselSex)
+Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echoName)
     mySlotName = slotName
     myVesselRace = vesselRace
     myVesselSex = vesselSex
@@ -34,11 +34,11 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex)
     SetActorBaseSex(self, myVesselSex)
     ApplyPlayerPreset(SlotIndex)
     
-    if self.GetRace() != myVesselRace
+    if myVesselRace && self.GetRace() != myVesselRace
         self.SetRace(myVesselRace)
     endif
     
-    myEchoName = Game.GetPlayer().GetActorBase().GetName()
+    myEchoName = echoName
     self.GetActorBase().SetName(myEchoName)
     self.SetDisplayName(myEchoName)
     

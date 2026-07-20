@@ -1,3 +1,4 @@
+//Papyrus.h
 #pragma once
 #include <SKSE/SKSE.h>
 

@@ -133,7 +133,7 @@ namespace ProjectLegacy::Papyrus {
             return false;
         }
 
-        std::string diskName = PL::GetSlotDiskName(slot);
+        std::string diskName = PL::GetSlotCharName(slot);
         RE::TESForm* raceForm = PL::GetSlotRaceForm(slot);
         int sex = PL::GetSlotSex(slot);
 
@@ -157,7 +157,11 @@ namespace ProjectLegacy::Papyrus {
         }
 
         if (vessel->GetRace() != race) {
-            vessel->SetRace(race);
+            // fork's RE::Actor has no SetRace — poke the base's race form
+            // directly. script side still does the live Actor.SetRace call
+            if (npc) {
+                npc->race = race;
+            }
         }
 
         return true;
@@ -169,7 +173,35 @@ namespace ProjectLegacy::Papyrus {
             spdlog::error("PL: ApplyPlayerGear — null vessel self pointer");
             return false;
         }
-        // Slot persistence logic uses JContainersNG database layer natively
+        if (!PL::IsSlotBound(slot)) return false;
+
+        auto jsonPath = GetLegacyDir() / (PL::GetSlotCharName(slot) + ".json");
+        if (!fs::exists(jsonPath)) {
+            spdlog::warn("PL: ApplyPlayerGear — no gear payload for slot {}", slot);
+            return false;
+        }
+        json data;
+        try { std::ifstream f(jsonPath.wstring()); f >> data; }
+        catch (...) { return false; }
+
+        auto* equipMgr = RE::ActorEquipManager::GetSingleton();
+        int equipped = 0, added = 0, skipped = 0;
+        if (data.contains("inventory")) {
+            for (auto& jItem : data["inventory"]) {
+                auto* form = DecodeModFormID(jItem.value("form_id", ""));
+                auto* bound = form ? form->As<RE::TESBoundObject>() : nullptr;
+                if (!bound) { skipped++; continue; }  // mod gone between saves — shrug, log, move on
+                int32_t count = jItem.value("count", 1);
+                vessel->AddObjectToContainer(bound, nullptr, count, nullptr);
+                added++;
+                // old snapshots have no "worn" flag — they restore as inventory-only
+                if (equipMgr && jItem.value("worn", false)) {
+                    equipMgr->EquipObject(vessel, bound, nullptr, static_cast<std::uint32_t>(count), nullptr, true, true, false, false);
+                    equipped++;
+                }
+            }
+        }
+        spdlog::info("PL: ApplyPlayerGear — slot {}: {} added, {} equipped, {} skipped (dead forms)", slot, added, equipped, skipped);
         return true;
     }
 
@@ -266,7 +298,7 @@ namespace ProjectLegacy::Papyrus {
         if (player && player->GetActorBase() && player->GetActorBase()->GetName()) {
             safeName = SanitizeFileName(player->GetActorBase()->GetName());
         }
-        std::string diskName = "PL_Slot" + std::to_string(slot) + "_" + safeName;
+        std::string diskName = safeName;  // ff-style: files keyed by char name, not slot number
 
         auto dstJslot = legacyDir / (diskName + ".jslot");
         auto dstDds = legacyDir / (diskName + ".dds");
@@ -287,8 +319,7 @@ namespace ProjectLegacy::Papyrus {
         const char* playerName = playerBase ? playerBase->GetName() : "";
 
         // Keep local filesystem tracking up to date alongside the database
-        PL::SetSlotBound(slot, diskName, isFemale ? 1 : 0, trueRace);
-        PL::ExportSlotRegistry();
+        PL::SetSlotBound(slot, diskName, isFemale ? 1 : 0, trueRace, GetModFormID(trueRace));
 
         json data;
         data["slot"] = slot;
@@ -337,10 +368,11 @@ namespace ProjectLegacy::Papyrus {
             jItem["form_id"] = GetModFormID(item);
             jItem["name"] = item->GetName() ? item->GetName() : "";
             jItem["count"] = countData.first;
+            jItem["worn"] = countData.second && countData.second->IsWorn();
             data["inventory"].push_back(jItem);
         }
 
-        auto slotPath = GetSlotFile(slot);
+        auto slotPath = GetLegacyDir() / (diskName + ".json");
         std::ofstream f(slotPath.wstring(), std::ios::out | std::ios::trunc);
         if (!f.is_open()) return 6;
 
@@ -352,18 +384,18 @@ namespace ProjectLegacy::Papyrus {
         return failed ? 7 : 0;
     }
 
-    bool ClearSlot(RE::StaticFunctionTag*, int32_t slot, RE::BSFixedString slotName) {
+    bool ClearSlot(RE::StaticFunctionTag*, int32_t slot, RE::BSFixedString) {
         auto legacyDir = GetLegacyDir();
-        auto slotFile = GetSlotFile(slot);
-        std::string name = slotName.c_str();
-
+        // name comes from the registry — whoever the player is right now
+        // has zero say in which files die
+        std::string name = PL::GetSlotCharName(slot);
         std::error_code ec;
-        fs::remove(slotFile, ec);
-        fs::remove(legacyDir / (name + ".jslot"), ec);
-        fs::remove(legacyDir / (name + ".dds"), ec);
-
+        if (!name.empty()) {
+            fs::remove(legacyDir / (name + ".json"), ec);
+            fs::remove(legacyDir / (name + ".jslot"), ec);
+            fs::remove(legacyDir / (name + ".dds"), ec);
+        }
         PL::ClearSlot(slot);
-        PL::ExportSlotRegistry();
         return true;
     }
 
@@ -426,37 +458,22 @@ namespace ProjectLegacy::Papyrus {
     }
 
     RE::BSFixedString GetSlotDiskName(RE::StaticFunctionTag*, int32_t slot) {
-        auto slotPath = GetSlotFile(slot);
-        if (!fs::exists(slotPath)) return "";
-        std::ifstream f(slotPath.wstring());
-        json data; try { f >> data; }
-        catch (...) { return ""; }
-        if (!data.contains("slot_name")) return "";
-        return RE::BSFixedString(data["slot_name"].get<std::string>().c_str());
+        return RE::BSFixedString(PL::GetSlotCharName(slot).c_str());
     }
 
     RE::TESForm* GetSlotRaceForm(RE::StaticFunctionTag*, int32_t slot) {
-        auto slotPath = GetSlotFile(slot);
-        if (!fs::exists(slotPath)) return nullptr;
-        std::ifstream f(slotPath.wstring());
-        json data; try { f >> data; }
-        catch (...) { return nullptr; }
-        if (!data.contains("race_form_id")) return nullptr;
-        return DecodeModFormID(data["race_form_id"].get<std::string>());
+        if (auto* form = PL::GetSlotRaceForm(slot)) return form;
+        // jcng nulled it (mod gone since bind) — try the string before giving up
+        auto str = PL::GetSlotRaceString(slot);
+        return str.empty() ? nullptr : DecodeModFormID(str);
     }
 
     int32_t GetSlotVesselSex(RE::StaticFunctionTag*, int32_t slot) {
-        auto slotPath = GetSlotFile(slot);
-        if (!fs::exists(slotPath)) return 0;
-        std::ifstream f(slotPath.wstring());
-        json data; try { f >> data; }
-        catch (...) { return 0; }
-        if (!data.contains("gender")) return 0;
-        return data["gender"].get<std::string>() == "female" ? 1 : 0;
+        return PL::GetSlotSex(slot);
     }
 
     bool IsSlotBound(RE::StaticFunctionTag*, int32_t slot) {
-        return fs::exists(GetSlotFile(slot));
+        return PL::IsSlotBound(slot);
     }
 
     // --- Latency Tracker Namespace ---
@@ -564,3 +581,4 @@ namespace ProjectLegacy::Papyrus {
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;
     }
+}  // namespace ProjectLegacy::Papyrus

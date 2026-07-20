@@ -4,6 +4,7 @@ Import Utility
 
 int Property SlotIndex Auto
 VisualEffect Property PL_ValorFX Auto
+EffectShader Property PL_BlindingLightGold Auto
 VisualEffect Property PL_WarpTargetFX Auto
 Faction Property PotentialFollowerFaction Auto
 
@@ -75,10 +76,14 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
 EndFunction
 
 Function SummonVessel(Actor targetActor, ObjectReference pedestal)
+    Debug.Trace("PL/Vessel: SummonVessel entered, SlotIndex = " + SlotIndex + ", echo = " + myEchoName)
     SetActorBaseSex(self, myVesselSex)
-    ApplyPlayerPreset(SlotIndex)
+    Debug.Trace("PL/Vessel: SetActorBaseSex done, applying preset")
+    bool presetOk = ApplyPlayerPreset(SlotIndex)
+    Debug.Trace("PL/Vessel: ApplyPlayerPreset returned " + presetOk)
     
     if self.IsDisabled()
+        Debug.Trace("PL/Vessel: was disabled, enabling")
         self.Enable()
     EndIf
     
@@ -90,19 +95,26 @@ Function SummonVessel(Actor targetActor, ObjectReference pedestal)
     if PotentialFollowerFaction
         self.AddToFaction(PotentialFollowerFaction)
         self.SetRelationshipRank(targetActor, 3)
+        Debug.Trace("PL/Vessel: follower faction added")
+    else
+        Debug.Trace("PL/Vessel: WARNING — PotentialFollowerFaction is None")
     endif
     
     self.EnableAI(true)
     self.EvaluatePackage()
+    Debug.Trace("PL/Vessel: AI enabled, package evaluated")
     
-    if PL_ValorFX
-        PL_ValorFX.Play(self, 5.0)
+    ; FF lesson: VisualEffect swirl art never expires on actors — use
+    ; EffectShader versions, finite plays actually end on their own
+    if PL_BlindingLightGold
+        PL_BlindingLightGold.Play(self, 5.0)
     endif
     if PL_WarpTargetFX
         PL_WarpTargetFX.Play(self, 8.0)
     endif
     
     self.SetDisplayName(myEchoName)
+    Debug.Trace("PL/Vessel: SummonVessel complete")
 EndFunction
 
 Function DismissVessel()

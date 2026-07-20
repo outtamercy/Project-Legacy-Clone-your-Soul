@@ -13,6 +13,7 @@ Message Property PL_MsgBindConfirm Auto
 Message Property PL_MsgBindSuccess Auto
 Message Property PL_MsgBindFail Auto
 Message Property PL_MsgBound Auto
+Message Property PL_MsgSummon Auto
 Message Property PL_MsgCleanseConfirm Auto
 
 Keyword Property PL_VesselLink Auto
@@ -97,7 +98,7 @@ bool Function DoBind()
     
     String slotName = "PL_Slot" + SlotIndex
     CharGen.SaveCharacter(slotName)
-    Utility.Wait(2.0)
+    Utility.Wait(1.5)
     
     String safeName = GetSafeCharacterName()
     String diskName = safeName
@@ -117,7 +118,7 @@ bool Function DoBind()
     endif
     
     PlayerRef.PlayIdle(ascendIdle)
-    Utility.Wait(1.5)
+    Utility.Wait(0.8)
     
     if PL_ExtractionFlashWhite
         PL_ExtractionFlashWhite.Play(PlayerRef, -1)
@@ -126,14 +127,14 @@ bool Function DoBind()
         PL_ValorFX.Play(PlayerRef, -1)
     endif
     if PL_BlindingLightInwardParticles
-        PL_BlindingLightInwardParticles.Play(PlayerRef, 3.0)
+        PL_BlindingLightInwardParticles.Play(PlayerRef, 2.0)
     endif
-    Utility.Wait(3.0)
+    Utility.Wait(1.5)
     
     if PL_FXGreybeardAbsorbEffect
-        PL_FXGreybeardAbsorbEffect.Play(PlayerRef, 4.0)
+        PL_FXGreybeardAbsorbEffect.Play(PlayerRef, 2.5)
     endif
-    Utility.Wait(2.0)
+    Utility.Wait(1.2)
     
     if PL_ExtractionFlashWhite
         PL_ExtractionFlashWhite.Stop(PlayerRef)
@@ -151,7 +152,7 @@ bool Function DoBind()
     if PL_FadeToWhite
         PL_FadeToWhite.Apply()
     endif
-    Utility.Wait(2.0)
+    Utility.Wait(1.0)
     if PL_FadeToWhiteHoldImod
         PL_FadeToWhiteHoldImod.Apply()
     endif
@@ -181,9 +182,9 @@ bool Function DoBind()
     (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex(), safeName)
     (vessel as PL_VesselActor).CopyGearFrom(PlayerRef)
     
-    Utility.Wait(5.0)
+    Utility.Wait(2.5)
     vessel.RegenerateHead()
-    Utility.Wait(0.5)
+    Utility.Wait(0.3)
     
     vessel.EnableAI(false)
     
@@ -195,17 +196,17 @@ bool Function DoBind()
     endif
     
     if PL_BlindingLightGold
-        PL_BlindingLightGold.Play(vessel, 5.0)
+        PL_BlindingLightGold.Play(vessel, 3.0)
     endif
     if PL_BlindingLightRed
-        PL_BlindingLightRed.Play(vessel, 5.0)
+        PL_BlindingLightRed.Play(vessel, 3.0)
     endif
     if PL_WarpTargetFX
-        PL_WarpTargetFX.Play(vessel, 5.0)
+        PL_WarpTargetFX.Play(vessel, 3.0)
     endif
     
     BreakPlayerAnimation(PlayerRef)
-    Utility.Wait(0.5)
+    Utility.Wait(0.3)
     ClearPlayerAnimation(PlayerRef)
     
     Game.EnablePlayerControls()
@@ -215,12 +216,22 @@ bool Function DoBind()
 EndFunction
 
 Function DoSummon()
+    Debug.Trace("PL/Station " + SlotIndex + ": DoSummon entered")
     Actor vessel = SpawnedVessel
-    if !vessel || vessel.IsDead()
+    Debug.Trace("PL/Station " + SlotIndex + ": SpawnedVessel = " + vessel)
+    if !vessel
+        Debug.Trace("PL/Station " + SlotIndex + ": vessel is NONE — bailing")
         Debug.Notification("Project Legacy: Vessel not found — rebind required after reload")
         return
     endif
+    if vessel.IsDead()
+        Debug.Trace("PL/Station " + SlotIndex + ": vessel is DEAD — bailing")
+        Debug.Notification("Project Legacy: Vessel not found — rebind required after reload")
+        return
+    endif
+    Debug.Trace("PL/Station " + SlotIndex + ": calling SummonVessel on " + vessel)
     (vessel as PL_VesselActor).SummonVessel(PlayerRef, self)
+    Debug.Trace("PL/Station " + SlotIndex + ": SummonVessel returned")
 EndFunction
 
 Function DoCleanse()
@@ -259,7 +270,11 @@ Event OnActivate(ObjectReference akActionRef)
     else
         int actionBtn = PL_MsgBound.Show()
         if actionBtn == 0
-            DoSummon()
+            ; summon gets the confirm dialog — 0 = "right behind ya", 1 = nah
+            int summonConfirm = PL_MsgSummon.Show()
+            if summonConfirm == 0
+                DoSummon()
+            endif
         elseIf actionBtn == 1
             Actor vessel = SpawnedVessel
             if vessel
@@ -271,5 +286,6 @@ Event OnActivate(ObjectReference akActionRef)
                 DoCleanse()
             endif
         endif
+        ; actionBtn == 3 (or anything unmapped) = cancel, just falls through
     endif
 EndEvent

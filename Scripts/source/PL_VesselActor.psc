@@ -32,17 +32,26 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
     myVesselRace = vesselRace
     myVesselSex = vesselSex
     
-    ; Align native underlying gender cache fields via explicit assignments
-    SetActorBaseSex(self, myVesselSex)
-    Debug.Trace("PL/BindVessel 2: SetActorBaseSex done")
-    bool presetOk = ApplyPlayerPreset(SlotIndex)
-    Debug.Trace("PL/BindVessel 3: ApplyPlayerPreset returned " + presetOk)
-    self.QueueNiNodeUpdate()
-    
+    ; race swap FIRST. SetRace only queues the 3D rebuild — everything below
+    ; (LoadCharacter especially) needs the new body DONE, not scheduled
     if myVesselRace && self.GetRace() != myVesselRace
         self.SetRace(myVesselRace)
-        Debug.Trace("PL/BindVessel 4: SetRace done")
+        Debug.Trace("PL/BindVessel 2: SetRace done")
     endif
+    self.QueueNiNodeUpdate()
+    
+    ; sit here till the engine finishes the rebuild (capped so we can't hang)
+    int safety3D = 50
+    while !self.Is3DLoaded() && safety3D > 0
+        safety3D -= 1
+        Wait(0.1)
+    endWhile
+    Debug.Trace("PL/BindVessel 3: 3D rebuilt after " + (50 - safety3D) + " ticks")
+    
+    ; sex AFTER the race swap — SetRace loves stomping base flags back to default
+    SetActorBaseSex(self, myVesselSex)
+    bool presetOk = ApplyPlayerPreset(SlotIndex)
+    Debug.Trace("PL/BindVessel 4: ApplyPlayerPreset returned " + presetOk)
     
     myEchoName = echoName
     self.GetActorBase().SetName(myEchoName)

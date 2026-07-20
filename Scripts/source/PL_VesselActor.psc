@@ -162,29 +162,37 @@ Function CopyGearFrom(Actor source)
         return
     endif
     
+    Debug.Trace("PL/Gear 1: entered, clearing default outfit")
     ClearDefaultOutfit(self)
+    Debug.Trace("PL/Gear 2: outfit cleared, stripping items")
     self.RemoveAllItems(None, true, true)
     
     int h = 0x00000001
     while h > 0
         Form worn = source.GetWornForm(h)
         if worn != None
+            Debug.Trace("PL/Gear 3: worn slot " + h + " = " + worn.GetName())
             self.AddItem(worn)
             self.EquipItemEx(worn, 0, true)
         endif
         h = Math.LeftShift(h, 1)
     endWhile
+    Debug.Trace("PL/Gear 4: worn loop done")
     
     Form right = source.GetEquippedObject(1)
     Form left = source.GetEquippedObject(0)
     if right != None
+        Debug.Trace("PL/Gear 5: right hand = " + right.GetName())
         self.AddItem(right)
         self.EquipItemEx(right, 1, true)
     endif
     if left != None && left != right
+        Debug.Trace("PL/Gear 6: left hand = " + left.GetName())
         self.AddItem(left)
         self.EquipItemEx(left, 2, true)
     endif
+    Debug.Trace("PL/Gear 7: hands done, calling ApplyPlayerGear")
     
     ApplyPlayerGear(SlotIndex)
+    Debug.Trace("PL/Gear 8: ApplyPlayerGear returned")
 EndFunction

@@ -126,13 +126,7 @@
             "count": 1,
             "form_id": "[Melodic] Egyptian Accessory.esp|0x809",
             "name": "Egyptian Nose Stud",
-            "worn": true
-        },
-        {
-            "count": 1,
-            "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x809",
-            "name": "DXFC CallMeYours Nonet Top",
-            "worn": true
+            "worn": false
         },
         {
             "count": 1,
@@ -144,7 +138,13 @@
             "count": 1,
             "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x84c",
             "name": "DXFC FireYourDesire Panty",
-            "worn": true
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x809",
+            "name": "DXFC CallMeYours Nonet Top",
+            "worn": false
         },
         {
             "count": 1,
@@ -180,13 +180,13 @@
             "count": 1,
             "form_id": "Sharkish_Piercings.esp|0x833",
             "name": "Piercings N - Shield Fancy Sapphire [Steel]",
-            "worn": true
+            "worn": false
         },
         {
             "count": 1,
             "form_id": "Myrtles.esp|0x800",
             "name": "Myrtles Heels - Black",
-            "worn": true
+            "worn": false
         },
         {
             "count": 1,
@@ -287,6 +287,6 @@
             "name": "Combat Heal Rate"
         }
     ],
-    "timestamp": 1784589338,
+    "timestamp": 1784591153,
     "voice_form_id": "Skyrim.esm|0x13ad2"
 }

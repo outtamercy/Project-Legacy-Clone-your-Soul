@@ -82,6 +82,12 @@
         },
         {
             "count": 0,
+            "form_id": "Skyrim.esm|0x39b4a",
+            "name": "Potion of Resist Fire",
+            "worn": false
+        },
+        {
+            "count": 0,
             "form_id": "Skyrim.esm|0x3eb2a",
             "name": "Potion of the Warrior",
             "worn": false
@@ -90,12 +96,6 @@
             "count": 0,
             "form_id": "Skyrim.esm|0x3eb33",
             "name": "Potion of Light Feet",
-            "worn": false
-        },
-        {
-            "count": 0,
-            "form_id": "Skyrim.esm|0x39b4a",
-            "name": "Potion of Resist Fire",
             "worn": false
         },
         {
@@ -130,6 +130,12 @@
         },
         {
             "count": 1,
+            "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x809",
+            "name": "DXFC CallMeYours Nonet Top",
+            "worn": true
+        },
+        {
+            "count": 1,
             "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x85a",
             "name": "DXFC FireYourDesire BowRing",
             "worn": false
@@ -138,12 +144,6 @@
             "count": 1,
             "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x84c",
             "name": "DXFC FireYourDesire Panty",
-            "worn": true
-        },
-        {
-            "count": 1,
-            "form_id": "DX Fetish Fashion Volume 1 SE.esp|0x809",
-            "name": "DXFC CallMeYours Nonet Top",
             "worn": true
         },
         {
@@ -287,6 +287,6 @@
             "name": "Combat Heal Rate"
         }
     ],
-    "timestamp": 1784585880,
+    "timestamp": 1784589338,
     "voice_form_id": "Skyrim.esm|0x13ad2"
 }

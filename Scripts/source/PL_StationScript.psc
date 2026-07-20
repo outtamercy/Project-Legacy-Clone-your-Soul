@@ -203,8 +203,16 @@ bool Function DoBind()
     Debug.Trace("PL/Bind 7: CopyGearFrom done")
     
     Utility.Wait(2.5)
+    ; same disease LoadCharacter had — the equip storm dirtied his 3D again,
+    ; regen on a half-rebuilt head is a coin flip with death. body first.
+    int safetyHead = 50
+    while !vessel.Is3DLoaded() && safetyHead > 0
+        safetyHead -= 1
+        Utility.Wait(0.1)
+    endWhile
+    Debug.Trace("PL/Bind 8a: 3D ready for regen after " + (50 - safetyHead) + " ticks")
     vessel.RegenerateHead()
-    Debug.Trace("PL/Bind 8: RegenerateHead done")
+    Debug.Trace("PL/Bind 8b: RegenerateHead done")
     Utility.Wait(0.3)
     
     vessel.EnableAI(false)

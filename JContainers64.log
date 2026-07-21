@@ -1,19 +1,14 @@
-[18:44:20.574] [111896] [I] JContainers64 v2-0-0-0
-[18:44:20.574] [111896] [I] JContainersNG: form delete observer registered
-[18:44:20.574] [111896] [I] JContainersNG: ready with serialization
-[18:44:23.296] [111896] [I] JContainersNG: root_interface broadcast on 'JCNG'
-[18:44:53.383] [117796] [I] JContainersNG: all natives registered
-[18:45:11.679] [111896] [I] JContainersNG: kPreLoadGame fired
-[18:45:11.781] [111896] [I] JContainersNG: revert callback triggered
-[18:45:11.781] [111896] [I] JContainersNG: reverted
-[18:45:13.729] [111896] [I] JContainersNG: load callback triggered
-[18:45:13.729] [111896] [I] JContainersNG: restored 7 objects
-[18:45:16.030] [116104] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/ats321s pubic hairs.json'
-[18:45:16.030] [116104] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/ats321s pubic hairs.json'
-[18:45:16.030] [116104] [I] JContainersNG: readFromFile 'data/meshes/opubes/ats321s pubic hairs.json' -> handle=12
-[18:45:16.063] [116104] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
-[18:45:16.063] [116104] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
-[18:45:16.063] [116104] [I] JContainersNG: readFromFile 'data/meshes/opubes/Natural Pubic Hairstyles.json' -> handle=13
-[18:45:18.115] [117888] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Pubes Forever.json'
-[18:45:18.115] [117888] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Pubes Forever.json'
-[18:45:18.116] [117888] [I] JContainersNG: readFromFile 'data/meshes/opubes/Pubes Forever.json' -> handle=14
+[19:12:13.161] [125860] [I] JContainers64 v2-0-0-0
+[19:12:13.161] [125860] [I] JContainersNG: form delete observer registered
+[19:12:13.161] [125860] [I] JContainersNG: ready with serialization
+[19:12:14.209] [125860] [I] JContainersNG: root_interface broadcast on 'JCNG'
+[19:12:21.860] [122452] [I] JContainersNG: all natives registered
+[19:12:32.447] [125860] [I] JContainersNG: kPreLoadGame fired
+[19:12:32.516] [125860] [I] JContainersNG: revert callback triggered
+[19:12:32.516] [125860] [I] JContainersNG: reverted
+[19:12:34.327] [125860] [I] JContainersNG: load callback triggered
+[19:12:34.327] [125860] [I] JContainersNG: load callback found no record, but JDB root exists, keeping state
+[19:12:35.003] [125860] [I] JContainersNG: save callback triggered
+[19:12:35.004] [125860] [I] JContainersNG: saved 1 objects (73 bytes)
+[19:17:17.207] [125860] [I] JContainersNG: save callback triggered
+[19:17:17.207] [125860] [I] JContainersNG: saved 1 objects (73 bytes)

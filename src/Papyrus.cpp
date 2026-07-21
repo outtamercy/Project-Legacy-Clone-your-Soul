@@ -208,6 +208,86 @@ namespace ProjectLegacy::Papyrus {
         return true;
     }
 
+    bool PerformBind(RE::Actor* vessel, int32_t slot, std::string slotName, std::string echoName) {
+        auto* player = RE::PlayerCharacter::GetSingleton();
+        auto* npc = vessel ? vessel->GetActorBase() : nullptr;
+        if (!player || !npc) {
+            spdlog::error("PL: PerformBind — bad args (vessel={})", (void*)vessel);
+            return false;
+        }
+
+        // ---- identity, ghost-side. vessel is disabled, no 3D exists,
+        // nothing here may touch the scene graph — writes only, one pass ----
+
+        // sex: plain ACBS flag write. proven safe since the fossil era,
+        // and it lands AFTER papyrus SetRace by call order, so no clobber
+        auto sex = player->GetActorBase()->GetSex();
+        if (sex == RE::SEX::kFemale) {
+            npc->actorData.actorBaseFlags.set(RE::ACTOR_BASE_DATA::Flag::kFemale);
+        }
+        else {
+            npc->actorData.actorBaseFlags.reset(RE::ACTOR_BASE_DATA::Flag::kFemale);
+        }
+
+        // race: deliberately NOT written here. ApplyPlayerPreset's npc->race
+        // poke is what poisoned the rebuild chain — hooks (DBD et al.) read
+        // that base data on every 3D reset. race goes through papyrus
+        // SetRace, the engine's own path. don't re-add it. ever.
+
+        // name + voice: cosmetic, face-gen doesn't read these
+        npc->fullName = echoName.c_str();
+        auto* voice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013543 : 0x00013577);
+        if (voice) {
+            npc->voiceType = voice;
+        }
+        spdlog::info("PL: PerformBind — identity done for '{}'", echoName);
+
+        // ---- gear: file name from the caller, registry as backup ----
+        std::string charName = slotName;
+        if (charName.empty()) {
+            charName = PL::GetSlotCharName(slot);
+        }
+        if (charName.empty() || charName == "None") {
+            spdlog::warn("PL: PerformBind — slot {} has no name, gear skipped", slot);
+            return true;  // identity still applied — not a failure
+        }
+        auto file = GetLegacyDir() / (charName + ".json");
+
+        std::ifstream ifs(file);
+        if (!ifs) {
+            spdlog::warn("PL: PerformBind — no gear payload at {}", file.string());
+            return true;
+        }
+        json data;
+        try {
+            data = json::parse(ifs);
+        }
+        catch (const std::exception& e) {
+            spdlog::error("PL: PerformBind — json parse failed: {}", e.what());
+            return true;
+        }
+
+        auto* equipMgr = RE::ActorEquipManager::GetSingleton();
+        int added = 0, equipped = 0, skipped = 0;
+        if (data.contains("inventory")) {
+            for (auto& jItem : data["inventory"]) {
+                auto* form = DecodeModFormID(jItem.value("form_id", ""));
+                auto* bound = form ? form->As<RE::TESBoundObject>() : nullptr;
+                if (!bound) { skipped++; continue; }  // mod gone between saves — shrug, move on
+                int32_t count = jItem.value("count", 1);
+                bool worn = jItem.value("worn", false);
+                vessel->AddObjectToContainer(bound, nullptr, count, nullptr);
+                added++;
+                if (equipMgr && worn) {
+                    equipMgr->EquipObject(vessel, bound, nullptr, static_cast<std::uint32_t>(count), nullptr, true, true, false, false);
+                    equipped++;
+                }
+            }
+        }
+        spdlog::info("PL: PerformBind — slot {}: {} added, {} equipped, {} skipped", slot, added, equipped, skipped);
+        return true;
+    }
+
     void BreakPlayerAnimation(RE::StaticFunctionTag*, RE::Actor* player) {
         if (!player) return;
         auto task = SKSE::GetTaskInterface();
@@ -580,6 +660,7 @@ namespace ProjectLegacy::Papyrus {
         // New vessel natives — instance methods on PL_VesselActor
         vm->RegisterFunction("ApplyPlayerPreset", "PL_VesselActor", ApplyPlayerPreset, false);
         vm->RegisterFunction("ApplyPlayerGear", "PL_VesselActor", ApplyPlayerGear, false);
+        vm->RegisterFunction("PerformBind", "PL_VesselActor", PerformBind, false);
 
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;

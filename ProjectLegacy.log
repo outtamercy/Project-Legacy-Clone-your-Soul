@@ -1,30 +1,5 @@
-[19:12:13.839] [125860] [I] Project Legacy: loaded
-[19:12:14.211] [125860] [I] PL: JCNG API v1 linked via JContainers64.dll — registry rides their co-save now
-[19:12:21.864] [122452] [I] Project Legacy: Papyrus functions registered.
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0xf x842 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0xa x22 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x3532c x1 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x3a3dd x1 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x1d4ec x0 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x1afe9 x1 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x2d513 x1 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x23ee5 x1 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0xf86fe x0 worn=false
-[19:17:37.195] [127120] [I] PL: gear item Skyrim.esm|0x12eb6 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x2d75a x1 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x1397d x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x12eb7 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x13790 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x1397e x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x3b562 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x3eadd x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x3eae0 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x3eae5 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x3eb2a x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x3eb33 x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Skyrim.esm|0x39b4a x0 worn=false
-[19:17:37.196] [127120] [I] PL: gear item Project Legacy.esp|0x589da x1 worn=false
-[19:17:37.196] [127120] [I] PL: gear item AddItemMenuSE.esp|0x895b x1 worn=false
-[19:17:37.196] [127120] [I] PL: gear item AddItemMenuSE.esp|0x690c x1 worn=false
-[19:17:37.196] [127120] [I] PL: gear item RGMsVanityMirror.esp|0x801 x1 worn=false
-[19:17:37.196] [127120] [I] PL: ApplyPlayerGear — slot 6: 26 added, 0 equipped, 0 skipped (dead forms)
+[00:43:54.629] [137296] [I] Project Legacy: loaded
+[00:43:56.300] [137296] [I] PL: JCNG API v1 linked via JContainers64.dll — registry rides their co-save now
+[00:44:27.393] [130136] [I] Project Legacy: Papyrus functions registered.
+[01:10:25.097] [123632] [I] PL: PerformBind — identity done for 'dez'
+[01:10:25.098] [123632] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped

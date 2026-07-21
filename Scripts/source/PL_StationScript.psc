@@ -40,7 +40,7 @@ Function ClearPlayerAnimation(Actor akPlayer) Global Native
 String Function GetSafeCharacterName() Global Native
 bool Function ClearSlot(int slot, string slotName) Global Native
 String Function GetSlotDiskName(int slot) Global Native
-Form Function GetSlotRaceForm(int slot) Global Native
+int Function GetSlotRaceForm(int slot) Global Native
 int Function GetSlotVesselSex(int slot) Global Native
 
 Function UpdateVisualState()
@@ -60,45 +60,69 @@ Function TryRestoreSlot()
     if !IsSlotBound(SlotIndex)
         return
     endif
-
+    
+    string diskName = GetSlotDiskName(SlotIndex)
+    int raceForm = GetSlotRaceForm(SlotIndex)
+    int slotSex = GetSlotVesselSex(SlotIndex)
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " raceForm=" + raceForm + " sex=" + slotSex)
+    
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     if !spawnMarker
+        Debug.Trace("PL/Station " + SlotIndex + ": restore — no spawn marker")
         return
     endif
-
-    ; identity comes from the registry, NOT the current player — restoring
-    ; under a different character must still bring back the original clone
-    String diskName = GetSlotDiskName(SlotIndex)
-    Race slotRace = GetSlotRaceForm(SlotIndex) as Race
-    int slotSex = GetSlotVesselSex(SlotIndex)
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " sex=" + slotSex + " race=" + slotRace)
-
+    
+    ; same architecture as DoBind — born (or parked) disabled, surgery
+    ; ghost-side, 3D builds once at Enable
     Actor vessel = SpawnedVessel
     if !vessel
-        vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, false) as Actor
+        vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
         SpawnedVessel = vessel
     endif
     if !vessel
+        Debug.Trace("PL/Station " + SlotIndex + ": restore — spawn failed")
         return
     endif
-
-    ; runtime actorbase edits (race/sex/name/face) evaporate on load, so the
-    ; ref survived but the clone didn't — re-run the whole bind on it
+    if !vessel.IsDisabled()
+        vessel.Disable()
+    endif
+    
+    Race slotRace = Game.GetFormEx(raceForm) as Race
+    if !slotRace
+        slotRace = PlayerRef.GetActorBase().GetRace()
+    endif
+    
+    ; race through the engine's front door, then one dll pass for the rest
+    vessel.SetRace(slotRace)
+    (vessel as PL_VesselActor).SlotIndex = SlotIndex
+    bool bindOk = (vessel as PL_VesselActor).PerformBind(SlotIndex, diskName, diskName)
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — PerformBind returned " + bindOk)
+    
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
+    vessel.Enable()
+    
+    int safety3D = 100
+    while !vessel.Is3DLoaded() && safety3D > 0
+        safety3D -= 1
+        Utility.Wait(0.1)
+    endWhile
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — 3D built after " + (100 - safety3D) + " ticks")
+    
+    if diskName != ""
+        PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
+        Bool faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
+        Int iSafety = 5
+        while !faceOk && iSafety > 0
+            iSafety -= 1
+            Utility.Wait(0.5)
+            faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
+        endWhile
+        PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
+        Debug.Trace("PL/Station " + SlotIndex + ": restore — LoadCharacter ok=" + faceOk)
+    endif
+    
     vessel.EnableAI(false)
-    (vessel as PL_VesselActor).SlotIndex = SlotIndex
-    (vessel as PL_VesselActor).BindVessel(diskName, slotRace, slotSex, diskName)
-    ; restore path never cleared the CK default outfit — bind path does it
-    ; inside CopyGearFrom, we gotta do it ourselves here
-    PL_VesselActor.ClearDefaultOutfit(vessel)
-    vessel.RemoveAllItems(None, true, true)
-    (vessel as PL_VesselActor).ApplyPlayerGear(SlotIndex)
-    ; UpdateWeight no-ops when weight's unchanged — force the 3D rebuild or
-    ; she keeps the male spawn body under the female face
-    vessel.QueueNiNodeUpdate()
-    vessel.EnableAI(false)
-    UpdateVisualState()
 EndFunction
 
 bool Function DoBind()
@@ -169,8 +193,7 @@ bool Function DoBind()
     endif
     
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
-    ; abInitiallyDisabled — he's a ghost record till BindVessel wakes him,
-    ; race surgery happens off-stage with no 3D for anyone to race against
+    ; born disabled — all surgery happens ghost-side, 3D builds once at Enable
     Actor vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
     SpawnedVessel = vessel
     Debug.Trace("PL/Bind 4: spawned (disabled), vessel=" + vessel)
@@ -187,26 +210,41 @@ bool Function DoBind()
     
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
-
-    ; Fire structural vessel parameters first, then pass down copy sequences
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
-    (vessel as PL_VesselActor).BindVessel(diskName, PlayerRef.GetActorBase().GetRace(), PlayerRef.GetActorBase().GetSex(), safeName)
-    Debug.Trace("PL/Bind 6: BindVessel done")
-    (vessel as PL_VesselActor).CopyGearFrom(PlayerRef)
-    Debug.Trace("PL/Bind 7: CopyGearFrom done")
     
-    Utility.Wait(2.5)
-    ; same liar as BindVessel — fixed beat first, gate second
-    Utility.Wait(1.0)
-    int safetyHead = 50
-    while !vessel.Is3DLoaded() && safetyHead > 0
-        safetyHead -= 1
+    ; race through the engine's front door so the hook stack gets notified
+    vessel.SetRace(PlayerRef.GetActorBase().GetRace())
+    Debug.Trace("PL/Bind 5: SetRace done (engine path)")
+    
+    ; identity + gear: one controlled pass in the dll
+    bool bindOk = (vessel as PL_VesselActor).PerformBind(SlotIndex, diskName, safeName)
+    Debug.Trace("PL/Bind 6: PerformBind returned " + bindOk)
+    
+    ; wake him — the one and only skeleton build of the whole bind
+    vessel.Enable()
+    int safety3D = 100
+    while !vessel.Is3DLoaded() && safety3D > 0
+        safety3D -= 1
         Utility.Wait(0.1)
     endWhile
-    Debug.Trace("PL/Bind 8a: 3D ready for regen after " + (50 - safetyHead) + " ticks")
-    vessel.RegenerateHead()
-    Debug.Trace("PL/Bind 8b: RegenerateHead done")
-    Utility.Wait(0.3)
+    Debug.Trace("PL/Bind 7: 3D built after " + (100 - safety3D) + " ticks")
+    
+    ; face: papyrus till the SKEE interface phase lands
+    if diskName != ""
+        PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
+        Bool faceOk = CharGen.LoadCharacter(vessel, PlayerRef.GetActorBase().GetRace(), diskName)
+        Int iSafety = 5
+        while !faceOk && iSafety > 0
+            iSafety -= 1
+            Utility.Wait(0.5)
+            faceOk = CharGen.LoadCharacter(vessel, PlayerRef.GetActorBase().GetRace(), diskName)
+        endWhile
+        PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
+        Debug.Trace("PL/Bind 8: LoadCharacter ok=" + faceOk)
+        if !faceOk
+            Debug.Notification("Project Legacy: Face load failed for " + diskName)
+        endif
+    endif
     
     vessel.EnableAI(false)
     
@@ -234,7 +272,6 @@ bool Function DoBind()
     Game.EnablePlayerControls()
     UpdateVisualState()
     Debug.Trace("PL/Bind 9: complete")
-    
     return true
 EndFunction
 

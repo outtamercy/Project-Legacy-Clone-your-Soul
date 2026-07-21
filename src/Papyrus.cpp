@@ -192,10 +192,13 @@ namespace ProjectLegacy::Papyrus {
                 auto* bound = form ? form->As<RE::TESBoundObject>() : nullptr;
                 if (!bound) { skipped++; continue; }  // mod gone between saves — shrug, log, move on
                 int32_t count = jItem.value("count", 1);
+                bool worn = jItem.value("worn", false);
+                // breadcrumb — if we die mid-gear, the last line names the item
+                spdlog::info("PL: gear item {} x{} worn={}", jItem.value("form_id", ""), count, worn);
                 vessel->AddObjectToContainer(bound, nullptr, count, nullptr);
                 added++;
                 // old snapshots have no "worn" flag — they restore as inventory-only
-                if (equipMgr && jItem.value("worn", false)) {
+                if (equipMgr && worn) {
                     equipMgr->EquipObject(vessel, bound, nullptr, static_cast<std::uint32_t>(count), nullptr, true, true, false, false);
                     equipped++;
                 }

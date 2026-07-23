@@ -3,6 +3,7 @@ Scriptname PL_StationScript extends ObjectReference
 int Property SlotIndex Auto
 Actor Property PlayerRef Auto
 ActorBase Property PL_VesselBase Auto
+Activator Property PL_PerkGlow Auto
 Actor Property SpawnedVessel Auto Hidden
 
 Idle Property PL_AscendMale Auto

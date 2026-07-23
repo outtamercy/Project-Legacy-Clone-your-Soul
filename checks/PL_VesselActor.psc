@@ -22,7 +22,7 @@ bool Function UnstageSlotAfterLoad(int slot, string slotName) Global Native
 bool Function ClearDefaultOutfit(Actor target) Global Native
 bool Function SetActorBaseSex(Actor target, int sex) Global Native
 
-; Kimi's Fix: Dropped Global modifier to ensure true instance handling mapping
+; Dropped Global modifier to ensure true instance handling mapping
 bool Function ApplyPlayerPreset(int slot) Native
 bool Function ApplyPlayerGear(int slot) Native
 bool Function PerformBind(int slot, string slotName, string echoName) Native

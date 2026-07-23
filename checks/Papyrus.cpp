@@ -189,15 +189,7 @@ namespace ProjectLegacy::Papyrus {
         json data;
         try { std::ifstream f(jsonPath.wstring()); f >> data; }
         catch (...) { return false; }
-        // voice: prefer the captured one — the hardcoded fallback voices may
-        // lack follower dialogue, which is the "can't talk" symptom
-        if (data.contains("voice_form_id")) {
-            auto* voiceForm = DecodeModFormID(data.value("voice_form_id", ""));
-            auto* capturedVoice = voiceForm ? voiceForm->As<RE::BGSVoiceType>() : nullptr;
-            if (capturedVoice) {
-                npc->voiceType = capturedVoice;
-            }
-        }
+
         auto* equipMgr = RE::ActorEquipManager::GetSingleton();
         int equipped = 0, added = 0, skipped = 0;
         if (data.contains("inventory")) {

@@ -4,6 +4,7 @@ int Property SlotIndex Auto
 Actor Property PlayerRef Auto
 ActorBase Property PL_VesselBase Auto
 Activator Property PL_PerkGlow Auto
+ActorBase Property PL_InvisibleActor Auto
 Actor Property SpawnedVessel Auto Hidden
 
 Idle Property PL_AscendMale Auto
@@ -105,6 +106,7 @@ Function TryRestoreSlot()
     vessel.SetRace(slotRace)
 
     vessel.Enable()
+    vessel.EnableAI(false)
 
     int safety3D = 100
     while !vessel.Is3DLoaded() && safety3D > 0
@@ -356,52 +358,28 @@ Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sen
         return
     endif
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
-    ; the ghost IS an echo of the clone base — no new esp forms needed
-    Actor ghost = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
-    if !ghost
+    ; invisible body — only the equipped gear renders, exactly like ff.
+    ; no SetGhost: the "ghost" was never a person, it's the gear itself
+    Actor carrier = spawnMarker.PlaceAtMe(PL_InvisibleActor, 1, true, true) as Actor
+    if !carrier
         return
     endif
-    ghost.SetGhost(true)
-    ghost.Enable()
-    int gSafety = 50
-    while !ghost.Is3DLoaded() && gSafety > 0
-        gSafety -= 1
+    carrier.EnableAI(false)
+    carrier.Enable()
+    int cSafety = 50
+    while !carrier.Is3DLoaded() && cSafety > 0
+        cSafety -= 1
         Utility.Wait(0.1)
     endWhile
-    ghost.AddItem(sender, 1, true)
-    ghost.EquipItem(sender, false, true)
-    ghost.SetAlpha(0.01, false)
-    ghost.MoveTo(PlayerRef)
-    ghost.SetAlpha(1.0, true)
-    PL_BlindingLightGold.Play(ghost, 0.5)
+    carrier.RemoveAllItems()
+    carrier.AddItem(sender, 1, true)
+    carrier.EquipItem(sender, false, true)
+    carrier.SetAlpha(0.01, false)
+    carrier.MoveTo(PlayerRef)
+    carrier.SetAlpha(1.0, true)
+    PL_BlindingLightGold.Play(carrier, 0.5)
     Utility.Wait(Utility.RandomFloat(0.5, 1.5))
-    ghost.SplineTranslateToRef(spawnMarker, Utility.RandomFloat(350.0, 800.0), 250.0, 10.0)
+    carrier.SplineTranslateToRef(spawnMarker, Utility.RandomFloat(350.0, 800.0), 250.0, 10.0)
     Utility.Wait(3.0)
-    ghost.Delete()
-EndEvent
-
-Event OnPLPerkSaved(string eventName, string strArg, float numArg, Form sender)
-    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
-    PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
-    if glow
-        glow.StartNode = "NPC Head [Head]"
-        glow.Target = PlayerRef
-        glow.FlyTo = spawnMarker
-        glow.EnableNoWait(true)
-    endif
-EndEvent
-
-Event OnPLSpellSaved(string eventName, string strArg, float numArg, Form sender)
-    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
-    PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
-    if glow
-        if Utility.RandomInt(0, 1)
-            glow.StartNode = "NPC L Hand [LHnd]"
-        else
-            glow.StartNode = "NPC R Hand [RHnd]"
-        endif
-        glow.Target = PlayerRef
-        glow.FlyTo = spawnMarker
-        glow.EnableNoWait(true)
-    endif
+    carrier.Delete()
 EndEvent

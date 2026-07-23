@@ -8,32 +8,6 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "ThighInsideThicc_v2"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.5
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "NippleManga"
-      },
-      {
-         "keys" : [
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
             },
@@ -60,12 +34,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.1000000014901161
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.1000000014901161
             }
          ],
          "name" : "BreastsFantasy"
@@ -75,40 +49,39 @@
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
             }
          ],
-         "name" : "MuscleButt"
+         "name" : "ThighInsideThicc_v2"
       },
       {
          "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.800000011920929
-            },
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.5
             }
          ],
-         "name" : "ButtSmall"
+         "name" : "NippleManga"
       },
       {
          "keys" : [
             {
-               "key" : "XPMSE.esp",
+               "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
-            }
-         ],
-         "name" : "XPMSEAASaveCRC_magatk"
-      },
-      {
-         "keys" : [
+            },
             {
-               "key" : "XPMSE.esp",
-               "value" : 0
+               "key" : "OBody",
+               "value" : 0.6000000238418579
             }
          ],
-         "name" : "XPMSEAASaveCRC_maceqp"
+         "name" : "LegsThin"
       },
       {
          "keys" : [
@@ -122,25 +95,65 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.6000000238418579
-            },
+               "key" : "XPMSE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "XPMSEAASaveCRC_maceqp"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "XPMSE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "XPMSEAASaveCRC_magatk"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
             }
          ],
-         "name" : "LegsThin"
+         "name" : "MuscleButt"
       },
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
             },
+            {
+               "key" : "OBody",
+               "value" : 0.800000011920929
+            }
+         ],
+         "name" : "ButtSmall"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
+            }
+         ],
+         "name" : "Hips"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
             },
             {
                "key" : "OClothe",
@@ -152,41 +165,15 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
-            }
-         ],
-         "name" : "Hips"
-      },
-      {
-         "keys" : [
+            },
             {
                "key" : "OBody",
                "value" : 0.1000000014901161
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
             }
          ],
          "name" : "Labiapuffyness"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.1500000059604645
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "HipForward"
       },
       {
          "keys" : [
@@ -204,29 +191,25 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.1000000014901161
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
             },
             {
-               "key" : "OClothe",
-               "value" : -0.1000000014901161
+               "key" : "OBody",
+               "value" : 0.1500000059604645
             }
          ],
-         "name" : "HipCarved"
+         "name" : "HipForward"
       },
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.05000000074505806
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.05000000074505806
             }
          ],
          "name" : "Cutepuffyness"
@@ -234,41 +217,19 @@
       {
          "keys" : [
             {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
                "key" : "OBody",
                "value" : 0.1000000014901161
             },
             {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0.119999997317791
+               "key" : "OClothe",
+               "value" : -0.1000000014901161
             }
          ],
-         "name" : "NippleLength"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.5
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "ChubbyArms"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "Waist"
+         "name" : "HipCarved"
       },
       {
          "keys" : [
@@ -282,41 +243,54 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 1
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
             },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
+            }
+         ],
+         "name" : "Waist"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.5
+            }
+         ],
+         "name" : "ChubbyArms"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0.119999997317791
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.1000000014901161
+            }
+         ],
+         "name" : "NippleLength"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 1
             }
          ],
          "name" : "ShoulderTweak"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.25
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "NipplePerkiness"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.3600000143051147
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "SlimThighs"
       },
       {
          "keys" : [
@@ -330,24 +304,28 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.3600000143051147
             }
          ],
-         "name" : "ThighOutsideThicc_v2"
+         "name" : "SlimThighs"
       },
       {
          "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.25
             }
          ],
-         "name" : "NippleInvert_v2"
+         "name" : "NipplePerkiness"
       },
       {
          "keys" : [
@@ -357,10 +335,10 @@
             },
             {
                "key" : "OClothe",
-               "value" : -0.300000011920929
+               "value" : 0
             }
          ],
-         "name" : "AreolaSize"
+         "name" : "NippleDip"
       },
       {
          "keys" : [
@@ -383,10 +361,10 @@
             },
             {
                "key" : "OClothe",
-               "value" : 0
+               "value" : -0.300000011920929
             }
          ],
-         "name" : "NippleDip"
+         "name" : "AreolaSize"
       },
       {
          "keys" : [
@@ -395,17 +373,30 @@
                "value" : 0
             }
          ],
-         "name" : "BreastsSmall2"
+         "name" : "NippleInvert_v2"
       },
       {
          "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
+            }
+         ],
+         "name" : "ThighOutsideThicc_v2"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
             {
                "key" : "OBody",
                "value" : 0.449999988079071
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
             }
          ],
          "name" : "Arms"
@@ -417,46 +408,7 @@
                "value" : 0
             }
          ],
-         "name" : "BigTorso"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "AnalTexPosRe_v2"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.3499999940395355
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "BellyUnder_v2"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.300000011920929
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            },
-            {
-               "key" : "OClothe",
-               "value" : -0.06650000810623169
-            }
-         ],
-         "name" : "BreastGravity2"
+         "name" : "BreastsSmall2"
       },
       {
          "keys" : [
@@ -474,15 +426,50 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.1000000014901161
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
             },
+            {
+               "key" : "OBody",
+               "value" : 0.300000011920929
+            },
+            {
+               "key" : "OClothe",
+               "value" : -0.06650000810623169
+            }
+         ],
+         "name" : "BreastGravity2"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.3499999940395355
+            }
+         ],
+         "name" : "BellyUnder_v2"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
             }
          ],
-         "name" : "ChubbyLegs"
+         "name" : "AnalTexPosRe_v2"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "BigTorso"
       },
       {
          "keys" : [
@@ -496,64 +483,15 @@
       {
          "keys" : [
             {
-               "key" : "XPMSE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "XPMSEAASave_boweqp"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
-            }
-         ],
-         "name" : "BellyFrontDownFat_v2"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "XPMSE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "XPMSEAASaveCRC_bowidle"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "XPMSE.esp",
-               "value" : 5
-            }
-         ],
-         "name" : "XPMSEAARange_1hmeqp"
-      },
-      {
-         "keys" : [
+            },
             {
                "key" : "OBody",
                "value" : 0.1000000014901161
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
             }
          ],
-         "name" : "BreastsNewSH"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "ChestWidth"
+         "name" : "ChubbyLegs"
       },
       {
          "keys" : [
@@ -571,12 +509,74 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "ChestWidth"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.1000000014901161
+            }
+         ],
+         "name" : "BreastsNewSH"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "XPMSE.esp",
+               "value" : 5
+            }
+         ],
+         "name" : "XPMSEAARange_1hmeqp"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "XPMSE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "XPMSEAASaveCRC_bowidle"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
+            }
+         ],
+         "name" : "BellyFrontDownFat_v2"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "XPMSE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "XPMSEAASave_boweqp"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
             }
          ],
          "name" : "ForearmSize"
@@ -586,41 +586,10 @@
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
-            }
-         ],
-         "name" : "MusclePecs"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "OBody",
-               "value" : 1
             },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "ShoulderSmooth"
-      },
-      {
-         "keys" : [
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
-            }
-         ],
-         "name" : "BellyFrontUpFat_v2"
-      },
-      {
-         "keys" : [
             {
                "key" : "OBody",
                "value" : 0.6499999761581421
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
             },
             {
                "key" : "OClothe",
@@ -636,17 +605,48 @@
                "value" : 0
             }
          ],
-         "name" : "RibsMore_v2"
+         "name" : "BellyFrontUpFat_v2"
       },
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.1599999964237213
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
             },
+            {
+               "key" : "OBody",
+               "value" : 1
+            }
+         ],
+         "name" : "ShoulderSmooth"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "MusclePecs"
+      },
+      {
+         "keys" : [
+            {
+               "key" : "RaceMenuMorphsCBBE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "LabiaNeat_v2"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0.6000000238418579
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.1599999964237213
             },
             {
                "key" : "OClothe",
@@ -662,17 +662,17 @@
                "value" : 0
             }
          ],
-         "name" : "LabiaNeat_v2"
+         "name" : "RibsMore_v2"
       },
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.6000000238418579
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.6000000238418579
             }
          ],
          "name" : "BreastPerkiness"
@@ -680,12 +680,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
             },
             {
                "key" : "OClothe",
@@ -697,11 +697,19 @@
       {
          "keys" : [
             {
-               "key" : "XPMSE.esp",
+               "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.6000000238418579
+            },
+            {
+               "key" : "OClothe",
+               "value" : -0.3004999756813049
             }
          ],
-         "name" : "XPMSEAABase_bowidle"
+         "name" : "BreastTopSlope"
       },
       {
          "keys" : [
@@ -715,19 +723,28 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.6000000238418579
-            },
+               "key" : "XPMSE.esp",
+               "value" : 0
+            }
+         ],
+         "name" : "XPMSEAABase_bowidle"
+      },
+      {
+         "keys" : [
             {
                "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
+               "value" : -1
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.949999988079071
             },
             {
                "key" : "OClothe",
-               "value" : -0.3004999756813049
+               "value" : -0.05000000074505806
             }
          ],
-         "name" : "BreastTopSlope"
+         "name" : "Breasts"
       },
       {
          "keys" : [
@@ -741,29 +758,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.949999988079071
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : -1
+               "value" : 0
             },
-            {
-               "key" : "OClothe",
-               "value" : -0.05000000074505806
-            }
-         ],
-         "name" : "Breasts"
-      },
-      {
-         "keys" : [
             {
                "key" : "OBody",
                "value" : 0.800000011920929
-            },
-            {
-               "key" : "RaceMenuMorphsCBBE.esp",
-               "value" : 0
             }
          ],
          "name" : "ButtSaggy_v2"
@@ -771,12 +771,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 1
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 1
             }
          ],
          "name" : "CalfSmooth"
@@ -784,12 +784,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2000000029802322
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2000000029802322
             }
          ],
          "name" : "ChubbyButt"
@@ -815,12 +815,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.300000011920929
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.300000011920929
             }
          ],
          "name" : "HipUpperWidth"
@@ -837,12 +837,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.6000000238418579
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.6000000238418579
             }
          ],
          "name" : "Innieoutie"
@@ -850,12 +850,12 @@
       {
          "keys" : [
             {
-               "key" : "OBody",
-               "value" : 0.2800000011920929
-            },
-            {
                "key" : "RaceMenuMorphsCBBE.esp",
                "value" : 0
+            },
+            {
+               "key" : "OBody",
+               "value" : 0.2800000011920929
             }
          ],
          "name" : "NippleShy_v2"
@@ -2949,59 +2949,6 @@
          "color" : 16777215,
          "index" : 107,
          "texture" : "!COR\\Warpaints\\Warpaint_Female_71.dds"
-      }
-   ],
-   "transforms" : [
-      {
-         "firstPerson" : false,
-         "keys" : [
-            {
-               "name" : "NodeDestination",
-               "values" : [
-                  {
-                     "data" : "NPC Head [Head]",
-                     "index" : -1,
-                     "key" : 40,
-                     "type" : 2
-                  }
-               ]
-            }
-         ],
-         "node" : "NPC Head MagicNode [Hmag]"
-      },
-      {
-         "firstPerson" : false,
-         "keys" : [
-            {
-               "name" : "XPMSE.esp",
-               "values" : [
-                  {
-                     "data" : 0.8517000079154968,
-                     "index" : 0,
-                     "key" : 30,
-                     "type" : 4
-                  }
-               ]
-            }
-         ],
-         "node" : "ShieldBack"
-      },
-      {
-         "firstPerson" : true,
-         "keys" : [
-            {
-               "name" : "NodeDestination",
-               "values" : [
-                  {
-                     "data" : "NPC Head [Head]",
-                     "index" : -1,
-                     "key" : 40,
-                     "type" : 2
-                  }
-               ]
-            }
-         ],
-         "node" : "NPC Head MagicNode [Hmag]"
       }
    ],
    "version" : {

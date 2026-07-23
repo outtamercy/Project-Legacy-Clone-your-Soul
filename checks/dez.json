@@ -3,13 +3,13 @@
     "gender": "female",
     "inventory": [
         {
-            "count": 1000640,
+            "count": 2000640,
             "form_id": "Skyrim.esm|0xf",
             "name": "Gold",
             "worn": false
         },
         {
-            "count": 510,
+            "count": 1010,
             "form_id": "Skyrim.esm|0xa",
             "name": "Lockpick",
             "worn": false
@@ -299,6 +299,38 @@
             "name": "Combat Heal Rate"
         }
     ],
-    "timestamp": 1784614219,
+    "stats": {
+        "carry_weight_base": 300.0,
+        "carry_weight_current": 400.0,
+        "health_base": 100.0,
+        "health_current": 100.0,
+        "level": 1,
+        "magicka_base": 100.0,
+        "magicka_current": 100.0,
+        "skills": {
+            "Alchemy": 20.0,
+            "Alteration": 20.0,
+            "Archery": 15.0,
+            "Block": 15.0,
+            "Conjuration": 25.0,
+            "Destruction": 15.0,
+            "Enchanting": 15.0,
+            "HeavyArmor": 15.0,
+            "Illusion": 20.0,
+            "LightArmor": 15.0,
+            "Lockpicking": 15.0,
+            "OneHanded": 15.0,
+            "Pickpocket": 15.0,
+            "Restoration": 20.0,
+            "Smithing": 15.0,
+            "Sneak": 15.0,
+            "Speechcraft": 20.0,
+            "TwoHanded": 15.0
+        },
+        "speed_mult": 100.0,
+        "stamina_base": 100.0,
+        "stamina_current": 100.0
+    },
+    "timestamp": 1784823301,
     "voice_form_id": "Skyrim.esm|0x13ad2"
 }

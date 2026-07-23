@@ -120,7 +120,14 @@ RE::TESForm* DecodeModFormID(const std::string& str) {
 
 namespace ProjectLegacy::Papyrus {
 
-    // --- Kimi's Native Instance Alignment Fixes ---
+    // --- Native Instance Alignment Fixes ---
+    static void SendPLModEvent(RE::TESForm* sender, const char* eventName) {
+        auto* source = SKSE::GetModCallbackEventSource();
+        if (!source) return;
+        SKSE::ModCallbackEvent ev(eventName, "", 0.0f, sender);
+        source->SendEvent(&ev);
+    }
+
     bool ApplyPlayerPreset(RE::Actor* self, int32_t slot) {
         auto* vessel = self;
         if (!vessel) {
@@ -234,12 +241,9 @@ namespace ProjectLegacy::Papyrus {
         // that base data on every 3D reset. race goes through papyrus
         // SetRace, the engine's own path. don't re-add it. ever.
 
-        // name + voice: cosmetic, face-gen doesn't read these
+        // name: cosmetic, face-gen doesn't read it. voice is set after the
+        // json parse below — captured voice first, hardcoded as fallback
         npc->fullName = echoName.c_str();
-        auto* voice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013543 : 0x00013577);
-        if (voice) {
-            npc->voiceType = voice;
-        }
         spdlog::info("PL: PerformBind — identity done for '{}'", echoName);
 
         // ---- gear: file name from the caller, registry as backup ----
@@ -267,6 +271,28 @@ namespace ProjectLegacy::Papyrus {
             return true;
         }
 
+        // voice: prefer the captured one — the hardcoded fallback voices may
+        // lack follower dialogue, which is the "can't talk" symptom
+        if (data.contains("voice_form_id")) {
+            auto* voiceForm = DecodeModFormID(data.value("voice_form_id", ""));
+            auto* capturedVoice = voiceForm ? voiceForm->As<RE::BGSVoiceType>() : nullptr;
+            if (capturedVoice) {
+                npc->voiceType = capturedVoice;
+            }
+            else {
+                auto* voice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013543 : 0x00013577);
+                if (voice) {
+                    npc->voiceType = voice;
+                }
+            }
+        }
+        else {
+            auto* voice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013543 : 0x00013577);
+            if (voice) {
+                npc->voiceType = voice;
+            }
+        }
+
         auto* equipMgr = RE::ActorEquipManager::GetSingleton();
         int added = 0, equipped = 0, skipped = 0;
         if (data.contains("inventory")) {
@@ -281,6 +307,7 @@ namespace ProjectLegacy::Papyrus {
                 if (equipMgr && worn) {
                     equipMgr->EquipObject(vessel, bound, nullptr, static_cast<std::uint32_t>(count), nullptr, true, true, false, false);
                     equipped++;
+                    SendPLModEvent(bound, "PL_EquipmentSaved");
                 }
             }
         }
@@ -293,6 +320,7 @@ namespace ProjectLegacy::Papyrus {
                 if (form && form->GetFormType() == RE::FormType::Perk) {
                     vessel->AddPerk(form->As<RE::BGSPerk>());
                     perks++;
+                    SendPLModEvent(form, "PL_PerkSaved");
                 }
             }
         }
@@ -302,6 +330,7 @@ namespace ProjectLegacy::Papyrus {
                 if (form && form->GetFormType() == RE::FormType::Spell) {
                     vessel->AddSpell(form->As<RE::SpellItem>());
                     spells++;
+                    SendPLModEvent(form, "PL_SpellSaved");
                 }
             }
         }
@@ -812,7 +841,7 @@ namespace ProjectLegacy::Papyrus {
         vm->RegisterFunction("ApplyPlayerPreset", "PL_VesselActor", ApplyPlayerPreset, false);
         vm->RegisterFunction("ApplyPlayerGear", "PL_VesselActor", ApplyPlayerGear, false);
         vm->RegisterFunction("PerformBind", "PL_VesselActor", PerformBind, false);
-		vm->RegisterFunction("ApplyStats", "PL_VesselActor", ApplyStats, false);
+        vm->RegisterFunction("ApplyStats", "PL_VesselActor", ApplyStats, false);
 
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;

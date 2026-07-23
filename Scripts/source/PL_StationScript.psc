@@ -3,6 +3,7 @@ Scriptname PL_StationScript extends ObjectReference
 int Property SlotIndex Auto
 Actor Property PlayerRef Auto
 ActorBase Property PL_VesselBase Auto
+Activator Property PL_PerkGlow Auto
 Actor Property SpawnedVessel Auto Hidden
 
 Idle Property PL_AscendMale Auto
@@ -123,6 +124,11 @@ Function TryRestoreSlot()
         endWhile
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Station " + SlotIndex + ": restore — LoadCharacter ok=" + faceOk)
+        if faceOk
+            ; force facegen/tint refresh — pre-jcng did this, we dropped it
+            vessel.QueueNiNodeUpdate()
+            vessel.UpdateWeight(0.0)
+        endif
     endif
 
     (vessel as PL_VesselActor).ApplyStats(SlotIndex, diskName)
@@ -207,8 +213,15 @@ bool Function DoBind()
 
     ; direct copy FIRST — sex/name/voice/gear/perks/spells/shouts land
     ; ghost-side before the race-switch event and before any 3D exists
+        ; visuals listen while the dll copies
+    RegisterForModEvent("PL_EquipmentSaved", "OnPLEquipmentSaved")
+    RegisterForModEvent("PL_PerkSaved", "OnPLPerkSaved")
+    RegisterForModEvent("PL_SpellSaved", "OnPLSpellSaved")
     bool bindOk = (vessel as PL_VesselActor).PerformBind(SlotIndex, diskName, safeName)
     Debug.Trace("PL/Bind 5: PerformBind returned " + bindOk)
+    UnregisterForModEvent("PL_EquipmentSaved")
+    UnregisterForModEvent("PL_PerkSaved")
+    UnregisterForModEvent("PL_SpellSaved")
 
     ; race through the engine's front door so the hook stack gets notified
     vessel.SetRace(PlayerRef.GetActorBase().GetRace())
@@ -236,6 +249,11 @@ bool Function DoBind()
         endWhile
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Bind 8: LoadCharacter ok=" + faceOk)
+        if faceOk
+            ; force facegen/tint refresh — pre-jcng did this, we dropped it
+            vessel.QueueNiNodeUpdate()
+            vessel.UpdateWeight(0.0)
+        endif
         if !faceOk
             Debug.Notification("Project Legacy: Face load failed for " + diskName)
         endif
@@ -330,5 +348,55 @@ Event OnActivate(ObjectReference akActionRef)
         if actionBtn == 0
             DoSummon()
         endif
+    endif
+EndEvent
+
+Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sender)
+    if !(sender as Armor) && !(sender as Weapon)
+        return
+    endif
+    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
+    ; the ghost IS an echo of the clone base — no new esp forms needed
+    Actor ghost = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
+    if !ghost
+        return
+    endif
+    ghost.SetGhost(true)
+    ghost.Enable()
+    ghost.AddItem(sender, 1, true)
+    ghost.EquipItem(sender, false, true)
+    ghost.SetAlpha(0.01, false)
+    ghost.MoveTo(PlayerRef)
+    ghost.SetAlpha(1.0, true)
+    PL_BlindingLightGold.Play(ghost, 0.5)
+    Utility.Wait(Utility.RandomFloat(0.5, 1.5))
+    ghost.SplineTranslateToRef(spawnMarker, Utility.RandomFloat(350.0, 800.0), 250.0, 10.0)
+    Utility.Wait(3.0)
+    ghost.Delete()
+EndEvent
+
+Event OnPLPerkSaved(string eventName, string strArg, float numArg, Form sender)
+    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
+    PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
+    if glow
+        glow.StartNode = "NPC Head [Head]"
+        glow.Target = PlayerRef
+        glow.FlyTo = spawnMarker
+        glow.EnableNoWait(true)
+    endif
+EndEvent
+
+Event OnPLSpellSaved(string eventName, string strArg, float numArg, Form sender)
+    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
+    PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
+    if glow
+        if Utility.RandomInt(0, 1)
+            glow.StartNode = "NPC L Hand [LHnd]"
+        else
+            glow.StartNode = "NPC R Hand [RHnd]"
+        endif
+        glow.Target = PlayerRef
+        glow.FlyTo = spawnMarker
+        glow.EnableNoWait(true)
     endif
 EndEvent

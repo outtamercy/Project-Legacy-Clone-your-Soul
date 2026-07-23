@@ -22,7 +22,7 @@ bool Function UnstageSlotAfterLoad(int slot, string slotName) Global Native
 bool Function ClearDefaultOutfit(Actor target) Global Native
 bool Function SetActorBaseSex(Actor target, int sex) Global Native
 
-; Kimi's Fix: Dropped Global modifier to ensure true instance handling mapping
+; Dropped Global modifier to ensure true instance handling mapping
 bool Function ApplyPlayerPreset(int slot) Native
 bool Function ApplyPlayerGear(int slot) Native
 bool Function PerformBind(int slot, string slotName, string echoName) Native
@@ -100,10 +100,7 @@ EndFunction
 
 Function SummonVessel(Actor targetActor, ObjectReference pedestal)
     Debug.Trace("PL/Vessel: SummonVessel entered, SlotIndex = " + SlotIndex + ", echo = " + myEchoName)
-    SetActorBaseSex(self, myVesselSex)
-    Debug.Trace("PL/Vessel: SetActorBaseSex done, applying preset")
-    bool presetOk = ApplyPlayerPreset(SlotIndex)
-    Debug.Trace("PL/Vessel: ApplyPlayerPreset returned " + presetOk)
+    ; identity is PerformBind's job (bind + restore) — summon is behavior only
     
     if self.IsDisabled()
         Debug.Trace("PL/Vessel: was disabled, enabling")
@@ -115,12 +112,17 @@ Function SummonVessel(Actor targetActor, ObjectReference pedestal)
     
     HomeStation = pedestal
     
-    if PotentialFollowerFaction
-        self.AddToFaction(PotentialFollowerFaction)
+    ; ff's exact recruit recipe — explicit ranks on both factions.
+    ; CurrentFollowerFaction is a fixed vanilla form, no esp edit needed
+    Faction CurrentFollowerFaction = Game.GetForm(0x0005C84E) as Faction
+    if PotentialFollowerFaction && CurrentFollowerFaction
+        self.SetFactionRank(PotentialFollowerFaction, 0)
+        self.SetFactionRank(CurrentFollowerFaction, -1)
         self.SetRelationshipRank(targetActor, 3)
-        Debug.Trace("PL/Vessel: follower faction added")
+        self.SetActorValue("Aggression", 0)
+        Debug.Trace("PL/Vessel: follower factions set (ff recipe)")
     else
-        Debug.Trace("PL/Vessel: WARNING — PotentialFollowerFaction is None")
+        Debug.Trace("PL/Vessel: WARNING — follower faction lookup failed")
     endif
     
     self.EnableAI(true)
@@ -148,6 +150,7 @@ Function DismissVessel()
     self.SetRestrained(true)
     self.BlockActivation(true)
     self.EnableAI(false)
+    self.RemoveFromFaction(Game.GetForm(0x0005C84E) as Faction)
 EndFunction
 
 Function CleanseVessel()

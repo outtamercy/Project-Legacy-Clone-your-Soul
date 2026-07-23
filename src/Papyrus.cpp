@@ -285,8 +285,111 @@ namespace ProjectLegacy::Papyrus {
             }
         }
         spdlog::info("PL: PerformBind — slot {}: {} added, {} equipped, {} skipped", slot, added, equipped, skipped);
+        // ---- perks / spells / shouts: same direct-copy pass, ghost-side ----
+        int perks = 0, spells = 0, shouts = 0;
+        if (data.contains("perks")) {
+            for (auto& jPerk : data["perks"]) {
+                auto* form = DecodeModFormID(jPerk.value("form_id", ""));
+                if (form && form->GetFormType() == RE::FormType::Perk) {
+                    vessel->AddPerk(form->As<RE::BGSPerk>());
+                    perks++;
+                }
+            }
+        }
+        if (data.contains("spells")) {
+            for (auto& jSpell : data["spells"]) {
+                auto* form = DecodeModFormID(jSpell.value("form_id", ""));
+                if (form && form->GetFormType() == RE::FormType::Spell) {
+                    vessel->AddSpell(form->As<RE::SpellItem>());
+                    spells++;
+                }
+            }
+        }
+        if (data.contains("shouts")) {
+            for (auto& jShout : data["shouts"]) {
+                auto* form = DecodeModFormID(jShout.value("form_id", ""));
+                if (form && form->GetFormType() == RE::FormType::Shout) {
+                    vessel->AddShout(form->As<RE::TESShout>());
+                    shouts++;
+                }
+            }
+        }
+        spdlog::info("PL: PerformBind — slot {}: {} perks, {} spells, {} shouts copied", slot, perks, spells, shouts);
+
         return true;
     }
+    bool ApplyStats(RE::Actor* vessel, int32_t slot, std::string slotName) {
+        if (!vessel) {
+            spdlog::error("PL: ApplyStats — null vessel");
+            return false;
+        }
+        std::string charName = slotName;
+        if (charName.empty()) { charName = PL::GetSlotCharName(slot); }
+        if (charName.empty() || charName == "None") {
+            spdlog::warn("PL: ApplyStats — slot {} has no name, skipped", slot);
+            return true;
+        }
+        auto file = GetLegacyDir() / (charName + ".json");
+        std::ifstream ifs(file);
+        if (!ifs) {
+            spdlog::warn("PL: ApplyStats — no payload at {}", file.string());
+            return true;
+        }
+        json data;
+        try { data = json::parse(ifs); }
+        catch (const std::exception& e) {
+            spdlog::error("PL: ApplyStats — json parse failed: {}", e.what());
+            return true;
+        }
+        auto* vav = vessel->AsActorValueOwner();
+        if (!vav || !data.contains("stats")) {
+            spdlog::warn("PL: ApplyStats — no stats block in {}", file.string());
+            return true;
+        }
+        auto& st = data["stats"];
+        int applied = 0;
+        auto setBase = [&](const char* key, RE::ActorValue av) {
+            if (st.contains(key)) {
+                vav->SetBaseActorValue(av, st[key].get<float>());
+                applied++;
+            }
+            };
+        setBase("health_base", RE::ActorValue::kHealth);
+        setBase("magicka_base", RE::ActorValue::kMagicka);
+        setBase("stamina_base", RE::ActorValue::kStamina);
+        setBase("carry_weight_base", RE::ActorValue::kCarryWeight);
+        if (st.contains("skills")) {
+            static const std::pair<const char*, RE::ActorValue> kSkills[] = {
+                { "OneHanded",   RE::ActorValue::kOneHanded },
+                { "TwoHanded",   RE::ActorValue::kTwoHanded },
+                { "Archery",     RE::ActorValue::kArchery },
+                { "Block",       RE::ActorValue::kBlock },
+                { "Smithing",    RE::ActorValue::kSmithing },
+                { "HeavyArmor",  RE::ActorValue::kHeavyArmor },
+                { "LightArmor",  RE::ActorValue::kLightArmor },
+                { "Pickpocket",  RE::ActorValue::kPickpocket },
+                { "Lockpicking", RE::ActorValue::kLockpicking },
+                { "Sneak",       RE::ActorValue::kSneak },
+                { "Alchemy",     RE::ActorValue::kAlchemy },
+                { "Speechcraft", RE::ActorValue::kSpeech },
+                { "Alteration",  RE::ActorValue::kAlteration },
+                { "Conjuration", RE::ActorValue::kConjuration },
+                { "Destruction", RE::ActorValue::kDestruction },
+                { "Illusion",    RE::ActorValue::kIllusion },
+                { "Restoration", RE::ActorValue::kRestoration },
+                { "Enchanting",  RE::ActorValue::kEnchanting },
+            };
+            for (auto& [key, av] : kSkills) {
+                if (st["skills"].contains(key)) {
+                    vav->SetBaseActorValue(av, st["skills"][key].get<float>());
+                    applied++;
+                }
+            }
+        }
+        spdlog::info("PL: ApplyStats — slot {}: {} actor values copied", slot, applied);
+        return true;
+    }
+
 
     void BreakPlayerAnimation(RE::StaticFunctionTag*, RE::Actor* player) {
         if (!player) return;
@@ -441,6 +544,54 @@ namespace ProjectLegacy::Papyrus {
                     data["spells"].push_back(s);
                 }
             }
+        }
+        // --- Shouts ---
+        if (spellData && spellData->shouts && spellData->numShouts > 0) {
+            for (std::uint32_t i = 0; i < spellData->numShouts; ++i) {
+                auto* shout = spellData->shouts[i];
+                if (!shout) continue;
+                json s;
+                s["form_id"] = GetModFormID(shout);
+                s["name"] = shout->GetName() ? shout->GetName() : "";
+                data["shouts"].push_back(s);
+            }
+        }
+
+        // --- Stats (backup schema, named keys) ---
+        auto* avOwner = player->AsActorValueOwner();
+        if (avOwner) {
+            json stats;
+            stats["level"] = player->GetLevel();
+            stats["health_base"] = avOwner->GetBaseActorValue(RE::ActorValue::kHealth);
+            stats["health_current"] = avOwner->GetActorValue(RE::ActorValue::kHealth);
+            stats["magicka_base"] = avOwner->GetBaseActorValue(RE::ActorValue::kMagicka);
+            stats["magicka_current"] = avOwner->GetActorValue(RE::ActorValue::kMagicka);
+            stats["stamina_base"] = avOwner->GetBaseActorValue(RE::ActorValue::kStamina);
+            stats["stamina_current"] = avOwner->GetActorValue(RE::ActorValue::kStamina);
+            stats["carry_weight_base"] = avOwner->GetBaseActorValue(RE::ActorValue::kCarryWeight);
+            stats["carry_weight_current"] = avOwner->GetActorValue(RE::ActorValue::kCarryWeight);
+            stats["speed_mult"] = avOwner->GetActorValue(RE::ActorValue::kSpeedMult);
+            json skills;
+            skills["OneHanded"] = avOwner->GetBaseActorValue(RE::ActorValue::kOneHanded);
+            skills["TwoHanded"] = avOwner->GetBaseActorValue(RE::ActorValue::kTwoHanded);
+            skills["Archery"] = avOwner->GetBaseActorValue(RE::ActorValue::kArchery);
+            skills["Block"] = avOwner->GetBaseActorValue(RE::ActorValue::kBlock);
+            skills["Smithing"] = avOwner->GetBaseActorValue(RE::ActorValue::kSmithing);
+            skills["HeavyArmor"] = avOwner->GetBaseActorValue(RE::ActorValue::kHeavyArmor);
+            skills["LightArmor"] = avOwner->GetBaseActorValue(RE::ActorValue::kLightArmor);
+            skills["Pickpocket"] = avOwner->GetBaseActorValue(RE::ActorValue::kPickpocket);
+            skills["Lockpicking"] = avOwner->GetBaseActorValue(RE::ActorValue::kLockpicking);
+            skills["Sneak"] = avOwner->GetBaseActorValue(RE::ActorValue::kSneak);
+            skills["Alchemy"] = avOwner->GetBaseActorValue(RE::ActorValue::kAlchemy);
+            skills["Speechcraft"] = avOwner->GetBaseActorValue(RE::ActorValue::kSpeech);
+            skills["Alteration"] = avOwner->GetBaseActorValue(RE::ActorValue::kAlteration);
+            skills["Conjuration"] = avOwner->GetBaseActorValue(RE::ActorValue::kConjuration);
+            skills["Destruction"] = avOwner->GetBaseActorValue(RE::ActorValue::kDestruction);
+            skills["Illusion"] = avOwner->GetBaseActorValue(RE::ActorValue::kIllusion);
+            skills["Restoration"] = avOwner->GetBaseActorValue(RE::ActorValue::kRestoration);
+            skills["Enchanting"] = avOwner->GetBaseActorValue(RE::ActorValue::kEnchanting);
+            stats["skills"] = skills;
+            data["stats"] = stats;
         }
 
         // --- Inventory & Worn Outfits ---
@@ -661,6 +812,7 @@ namespace ProjectLegacy::Papyrus {
         vm->RegisterFunction("ApplyPlayerPreset", "PL_VesselActor", ApplyPlayerPreset, false);
         vm->RegisterFunction("ApplyPlayerGear", "PL_VesselActor", ApplyPlayerGear, false);
         vm->RegisterFunction("PerformBind", "PL_VesselActor", PerformBind, false);
+		vm->RegisterFunction("ApplyStats", "PL_VesselActor", ApplyStats, false);
 
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;

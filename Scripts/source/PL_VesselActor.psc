@@ -26,6 +26,7 @@ bool Function SetActorBaseSex(Actor target, int sex) Global Native
 bool Function ApplyPlayerPreset(int slot) Native
 bool Function ApplyPlayerGear(int slot) Native
 bool Function PerformBind(int slot, string slotName, string echoName) Native
+bool Function ApplyStats(int slot, string slotName) Native
 
 Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echoName)
     Debug.Trace("PL/BindVessel 1: entered, race=" + vesselRace + " sex=" + vesselSex)

@@ -125,9 +125,9 @@ Function TryRestoreSlot()
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Station " + SlotIndex + ": restore — LoadCharacter ok=" + faceOk)
         if faceOk
-            ; force facegen/tint refresh — pre-jcng did this, we dropped it
+            ; QueueNiNodeUpdate alone refreshes the tint — UpdateWeight piles a
+            ; full 3D rebuild on top of LoadCharacter's and freezes the frame
             vessel.QueueNiNodeUpdate()
-            vessel.UpdateWeight(0.0)
         endif
     endif
 
@@ -363,6 +363,11 @@ Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sen
     endif
     ghost.SetGhost(true)
     ghost.Enable()
+    int gSafety = 50
+    while !ghost.Is3DLoaded() && gSafety > 0
+        gSafety -= 1
+        Utility.Wait(0.1)
+    endWhile
     ghost.AddItem(sender, 1, true)
     ghost.EquipItem(sender, false, true)
     ghost.SetAlpha(0.01, false)

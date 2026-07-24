@@ -271,26 +271,29 @@ namespace ProjectLegacy::Papyrus {
             return true;
         }
 
-        // voice: prefer the captured one — the hardcoded fallback voices may
-        // lack follower dialogue, which is the "can't talk" symptom
+        // voice: captured voice wins ONLY if its gender matches the vessel.
+        // 0x13AD2 = MaleEvenToned, 0x13ADD = FemaleEvenToned (verified) —
+        // the old hardcoded IDs were unverified, don't reuse them.
+        RE::BGSVoiceType* finalVoice = nullptr;
         if (data.contains("voice_form_id")) {
             auto* voiceForm = DecodeModFormID(data.value("voice_form_id", ""));
             auto* capturedVoice = voiceForm ? voiceForm->As<RE::BGSVoiceType>() : nullptr;
             if (capturedVoice) {
-                npc->voiceType = capturedVoice;
-            }
-            else {
-                auto* voice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013543 : 0x00013577);
-                if (voice) {
-                    npc->voiceType = voice;
+                bool capturedFemale = (static_cast<uint8_t>(capturedVoice->data.flags.get()) & 0x1) != 0;
+                bool vesselFemale = (sex == RE::SEX::kFemale);
+                if (capturedFemale == vesselFemale) {
+                    finalVoice = capturedVoice;
+                }
+                else {
+                    spdlog::warn("PL: PerformBind — captured voice gender mismatch, using fallback");
                 }
             }
         }
-        else {
-            auto* voice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013543 : 0x00013577);
-            if (voice) {
-                npc->voiceType = voice;
-            }
+        if (!finalVoice) {
+            finalVoice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013ADD : 0x00013AD2);
+        }
+        if (finalVoice) {
+            npc->voiceType = finalVoice;
         }
 
         auto* equipMgr = RE::ActorEquipManager::GetSingleton();

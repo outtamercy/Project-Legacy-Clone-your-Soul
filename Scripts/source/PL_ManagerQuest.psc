@@ -22,10 +22,14 @@ Function HandleLoadGame()
     if !IsSKSEPluginLoaded()
         return
     endif
-    
-    ; no more json registry — JDB (via the natives) is the source of truth now.
-    ; TryRestoreSlot self-guards on IsSlotBound, so just ping every station
-    ; and let each one decide if it's got a vessel to put back.
+    ; never construct actors inside the load storm — every mod on the list is
+    ; running load handlers right now. queue the sweep for when it settles.
+    Debug.Trace("PL/Manager: load detected, restore sweep queued")
+    RegisterForSingleUpdate(5.0)
+EndFunction
+
+Event OnUpdate()
+    Debug.Trace("PL/Manager: restore sweep start")
     int i = 0
     while i < Stations.Length
         ObjectReference station = Stations[i]
@@ -37,4 +41,4 @@ Function HandleLoadGame()
         endif
         i += 1
     endWhile
-EndFunction
+EndEvent

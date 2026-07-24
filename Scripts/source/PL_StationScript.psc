@@ -42,7 +42,7 @@ Function ClearPlayerAnimation(Actor akPlayer) Global Native
 String Function GetSafeCharacterName() Global Native
 bool Function ClearSlot(int slot, string slotName) Global Native
 String Function GetSlotDiskName(int slot) Global Native
-int Function GetSlotRaceForm(int slot) Global Native
+Form Function GetSlotRaceForm(int slot) Global Native
 int Function GetSlotVesselSex(int slot) Global Native
 
 Function UpdateVisualState()
@@ -64,9 +64,9 @@ Function TryRestoreSlot()
     endif
 
     string diskName = GetSlotDiskName(SlotIndex)
-    int raceForm = GetSlotRaceForm(SlotIndex)
+    Race slotRace = GetSlotRaceForm(SlotIndex) as Race
     int slotSex = GetSlotVesselSex(SlotIndex)
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " raceForm=" + raceForm + " sex=" + slotSex)
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " raceForm=" + slotRace + " sex=" + slotSex)
 
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     if !spawnMarker
@@ -89,7 +89,6 @@ Function TryRestoreSlot()
         vessel.Disable()
     endif
 
-    Race slotRace = Game.GetFormEx(raceForm) as Race
     if !slotRace
         slotRace = PlayerRef.GetActorBase().GetRace()
     endif

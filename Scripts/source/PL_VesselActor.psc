@@ -49,7 +49,9 @@ Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echo
     
     myEchoName = echoName
     self.GetActorBase().SetName(myEchoName)
-    self.SetDisplayName(myEchoName)
+    if myEchoName != ""
+        self.SetDisplayName(myEchoName)
+    endif
     
     if myVesselSex == 0
         myVesselVoice = Game.GetForm(0x00013577) as VoiceType

@@ -1,24 +1,16 @@
-[17:21:31.862] [247472] [I] JContainers64 v2-0-0-0
-[17:21:31.863] [247472] [I] JContainersNG: form delete observer registered
-[17:21:31.863] [247472] [I] JContainersNG: ready with serialization
-[17:21:34.821] [247472] [I] JContainersNG: root_interface broadcast on 'JCNG'
-[17:22:04.965] [251320] [I] JContainersNG: all natives registered
-[17:22:53.257] [247472] [I] JContainersNG: kPreLoadGame fired
-[17:22:53.385] [247472] [I] JContainersNG: revert callback triggered
-[17:22:53.386] [247472] [I] JContainersNG: reverted
-[17:22:55.451] [247472] [I] JContainersNG: load callback triggered
-[17:22:55.451] [247472] [I] JContainersNG: restored 7 objects
-[17:22:57.538] [256924] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/ats321s pubic hairs.json'
-[17:22:57.538] [256924] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/ats321s pubic hairs.json'
-[17:22:57.538] [256924] [I] JContainersNG: readFromFile 'data/meshes/opubes/ats321s pubic hairs.json' -> handle=12
-[17:22:57.571] [254008] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
-[17:22:57.571] [254008] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
-[17:22:57.571] [254008] [I] JContainersNG: readFromFile 'data/meshes/opubes/Natural Pubic Hairstyles.json' -> handle=13
-[17:22:59.649] [256444] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Pubes Forever.json'
-[17:22:59.649] [256444] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Pubes Forever.json'
-[17:22:59.650] [256444] [I] JContainersNG: readFromFile 'data/meshes/opubes/Pubes Forever.json' -> handle=14
-[17:26:03.596] [247472] [I] JContainersNG: GC collected 3 unreachable objects
-[17:26:03.596] [247472] [I] JContainersNG: save callback triggered
-[17:26:03.596] [247472] [I] JContainersNG: saved 12 objects (13538 bytes)
-[17:26:12.796] [247472] [I] JContainersNG: save callback triggered
-[17:26:12.796] [247472] [I] JContainersNG: saved 12 objects (13538 bytes)
+[21:54:04.039] [263336] [I] JContainers64 v2-0-0-0
+[21:54:04.039] [263336] [I] JContainersNG: form delete observer registered
+[21:54:04.039] [263336] [I] JContainersNG: ready with serialization
+[21:54:07.011] [263336] [I] JContainersNG: root_interface broadcast on 'JCNG'
+[21:54:37.578] [261188] [I] JContainersNG: all natives registered
+[21:54:55.340] [263336] [I] JContainersNG: kPreLoadGame fired
+[21:54:55.435] [263336] [I] JContainersNG: revert callback triggered
+[21:54:55.435] [263336] [I] JContainersNG: reverted
+[21:54:57.701] [263336] [I] JContainersNG: load callback triggered
+[21:54:57.701] [263336] [I] JContainersNG: restored 12 objects
+[21:54:59.987] [259504] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/ats321s pubic hairs.json'
+[21:54:59.987] [259504] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/ats321s pubic hairs.json'
+[21:54:59.988] [259504] [I] JContainersNG: readFromFile 'data/meshes/opubes/ats321s pubic hairs.json' -> handle=19
+[21:55:00.020] [261096] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
+[21:55:00.020] [261096] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
+[21:55:00.021] [261096] [I] JContainersNG: readFromFile 'data/meshes/opubes/Natural Pubic Hairstyles.json' -> handle=20

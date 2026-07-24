@@ -97,6 +97,7 @@ Function TryRestoreSlot()
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
+    (vessel as PL_VesselActor).myEchoName = diskName
 
     ; direct copy FIRST, ghost-side — same law as DoBind
     bool bindOk = (vessel as PL_VesselActor).PerformBind(SlotIndex, diskName, diskName)
@@ -126,11 +127,6 @@ Function TryRestoreSlot()
         endWhile
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Station " + SlotIndex + ": restore — LoadCharacter ok=" + faceOk)
-        if faceOk
-            ; QueueNiNodeUpdate alone refreshes the tint — UpdateWeight piles a
-            ; full 3D rebuild on top of LoadCharacter's and freezes the frame
-            vessel.QueueNiNodeUpdate()
-        endif
     endif
 
     (vessel as PL_VesselActor).ApplyStats(SlotIndex, diskName)
@@ -212,6 +208,7 @@ bool Function DoBind()
     vessel.BlockActivation(true)
     vessel.SetRestrained(true)
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
+    (vessel as PL_VesselActor).myEchoName = safeName
 
     ; direct copy FIRST — sex/name/voice/gear/perks/spells/shouts land
     ; ghost-side before the race-switch event and before any 3D exists
@@ -251,11 +248,7 @@ bool Function DoBind()
         endWhile
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Bind 8: LoadCharacter ok=" + faceOk)
-        if faceOk
-            ; force facegen/tint refresh — pre-jcng did this, we dropped it
-            vessel.QueueNiNodeUpdate()
-            vessel.UpdateWeight(0.0)
-        endif
+
         if !faceOk
             Debug.Notification("Project Legacy: Face load failed for " + diskName)
         endif

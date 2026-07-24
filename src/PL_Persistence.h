@@ -8,8 +8,12 @@ namespace PL {
     bool LinkJCNG();
     bool IsJCNGLinked();
 
-    // slot registry — PL_Slots map hanging off jcng's jdb root.
-    // jcng co-saves the whole jdb, so persistence is their problem now. nice.
+    // slot registry — ONE jcng JMap, disk-backed via jcng's own file api
+    // (PL_Registry.json beside the payloads, ff's _ShrineOfHeroes.json model).
+    // the dll owns the object: ReloadRegistry reads it from disk on boot and
+    // on every game load (jcng rebuilds its db on load — handles go stale),
+    // SetSlotBound/ClearSlot mutate it and commit via jcng's writeToFile.
+    void ReloadRegistry();
     void SetSlotBound(int slot, const std::string& charName, int sex, RE::TESForm* raceForm, const std::string& raceStr);
     bool IsSlotBound(int slot);
     std::string GetSlotCharName(int slot);

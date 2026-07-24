@@ -223,12 +223,44 @@ namespace ProjectLegacy::Papyrus {
             return false;
         }
 
+        // ---- payload FIRST: the soul's data decides identity, not the current
+        // player. at bind the soul IS the player; on restore — possibly a
+        // different character's save — the json is authoritative ----
+        std::string charName = slotName;
+        if (charName.empty()) {
+            charName = PL::GetSlotCharName(slot);
+        }
+        json data = json::object();
+        bool havePayload = false;
+        if (!charName.empty() && charName != "None") {
+            auto file = GetLegacyDir() / (charName + ".json");
+            std::ifstream ifs(file);
+            if (ifs) {
+                try {
+                    data = json::parse(ifs);
+                    havePayload = true;
+                }
+                catch (const std::exception& e) {
+                    spdlog::error("PL: PerformBind — json parse failed: {}", e.what());
+                }
+            }
+            else {
+                spdlog::warn("PL: PerformBind — no payload at {}", file.string());
+            }
+        }
+        else {
+            spdlog::warn("PL: PerformBind — slot {} has no name, payload skipped", slot);
+        }
+
         // ---- identity, ghost-side. vessel is disabled, no 3D exists,
         // nothing here may touch the scene graph — writes only, one pass ----
 
-        // sex: plain ACBS flag write. proven safe since the fossil era,
-        // and it lands AFTER papyrus SetRace by call order, so no clobber
+        // sex: json gender wins; the current player is only the fallback.
+        // restoring dez on a male character's save must NOT flip her male
         auto sex = player->GetActorBase()->GetSex();
+        if (havePayload && data.contains("gender")) {
+            sex = (data.value("gender", "") == "female") ? RE::SEX::kFemale : RE::SEX::kMale;
+        }
         if (sex == RE::SEX::kFemale) {
             npc->actorData.actorBaseFlags.set(RE::ACTOR_BASE_DATA::Flag::kFemale);
         }
@@ -236,46 +268,19 @@ namespace ProjectLegacy::Papyrus {
             npc->actorData.actorBaseFlags.reset(RE::ACTOR_BASE_DATA::Flag::kFemale);
         }
 
-        // race: deliberately NOT written here. ApplyPlayerPreset's npc->race
-        // poke is what poisoned the rebuild chain — hooks (DBD et al.) read
-        // that base data on every 3D reset. race goes through papyrus
+        // race: deliberately NOT written here. race goes through papyrus
         // SetRace, the engine's own path. don't re-add it. ever.
 
-        // name: cosmetic, face-gen doesn't read it. voice is set after the
-        // json parse below — captured voice first, hardcoded as fallback
+        // name: cosmetic, face-gen doesn't read it
         npc->fullName = echoName.c_str();
+
         spdlog::info("PL: PerformBind — identity done for '{}'", echoName);
-
-        // ---- gear: file name from the caller, registry as backup ----
-        std::string charName = slotName;
-        if (charName.empty()) {
-            charName = PL::GetSlotCharName(slot);
-        }
-        if (charName.empty() || charName == "None") {
-            spdlog::warn("PL: PerformBind — slot {} has no name, gear skipped", slot);
-            return true;  // identity still applied — not a failure
-        }
-        auto file = GetLegacyDir() / (charName + ".json");
-
-        std::ifstream ifs(file);
-        if (!ifs) {
-            spdlog::warn("PL: PerformBind — no gear payload at {}", file.string());
-            return true;
-        }
-        json data;
-        try {
-            data = json::parse(ifs);
-        }
-        catch (const std::exception& e) {
-            spdlog::error("PL: PerformBind — json parse failed: {}", e.what());
-            return true;
-        }
 
         // voice: captured voice wins ONLY if its gender matches the vessel.
         // 0x13AD2 = MaleEvenToned, 0x13ADD = FemaleEvenToned (verified) —
         // the old hardcoded IDs were unverified, don't reuse them.
         RE::BGSVoiceType* finalVoice = nullptr;
-        if (data.contains("voice_form_id")) {
+        if (havePayload && data.contains("voice_form_id")) {
             auto* voiceForm = DecodeModFormID(data.value("voice_form_id", ""));
             auto* capturedVoice = voiceForm ? voiceForm->As<RE::BGSVoiceType>() : nullptr;
             if (capturedVoice) {
@@ -296,6 +301,7 @@ namespace ProjectLegacy::Papyrus {
             npc->voiceType = finalVoice;
         }
 
+        // ---- gear ----
         auto* equipMgr = RE::ActorEquipManager::GetSingleton();
         int added = 0, equipped = 0, skipped = 0;
         if (data.contains("inventory")) {
@@ -310,11 +316,13 @@ namespace ProjectLegacy::Papyrus {
                 if (equipMgr && worn) {
                     equipMgr->EquipObject(vessel, bound, nullptr, static_cast<std::uint32_t>(count), nullptr, true, true, false, false);
                     equipped++;
+                    // dll announces, papyrus renders — the flying gear ghost
                     SendPLModEvent(bound, "PL_EquipmentSaved");
                 }
             }
         }
         spdlog::info("PL: PerformBind — slot {}: {} added, {} equipped, {} skipped", slot, added, equipped, skipped);
+
         // ---- perks / spells / shouts: same direct-copy pass, ghost-side ----
         int perks = 0, spells = 0, shouts = 0;
         if (data.contains("perks")) {
@@ -347,9 +355,9 @@ namespace ProjectLegacy::Papyrus {
             }
         }
         spdlog::info("PL: PerformBind — slot {}: {} perks, {} spells, {} shouts copied", slot, perks, spells, shouts);
-
         return true;
     }
+
     bool ApplyStats(RE::Actor* vessel, int32_t slot, std::string slotName) {
         if (!vessel) {
             spdlog::error("PL: ApplyStats — null vessel");

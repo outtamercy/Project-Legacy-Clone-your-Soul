@@ -1,6 +1,10 @@
 #include "PL_Persistence.h"
 #include <SKSE/SKSE.h>
 #include <spdlog/spdlog.h>
+#include <filesystem>
+#include <fstream>
+
+namespace fs = std::filesystem;
 
 // Mirror of jcng's exported v1 api — must match their struct field-for-field.
 // std::string by value across a dll boundary is spicy, but it's their contract
@@ -40,7 +44,7 @@ namespace PL {
             if (!fn) continue;
             g_jcng = reinterpret_cast<JCNG_API_V1 * (*)()>(fn)();
             if (g_jcng && g_jcng->version >= 1) {
-                spdlog::info("PL: JCNG API v{} linked via {} — registry rides their co-save now", g_jcng->version, name);
+                spdlog::info("PL: JCNG API v{} linked via {}", g_jcng->version, name);
                 return true;
             }
         }
@@ -50,43 +54,78 @@ namespace PL {
 
     bool IsJCNGLinked() { return g_jcng != nullptr; }
 
-    // never cache handles — jcng rebuilds the db on every load. same values come
-    // back for co-saved stuff, but a fresh game hands out fresh ones, so resolve
-    // fresh every call. it's a map lookup, not a mortgage
-    static JCNG_Handle GetSlotsMap() {
-        if (!g_jcng) return 0;
-        JCNG_Handle root = g_jcng->jdb_root(nullptr);
-        if (!root) return 0;
-        JCNG_Handle h = g_jcng->jmap_get_obj(nullptr, root, "PL_Slots", 0);
-        if (!h) {
-            h = g_jcng->jmap_object(nullptr);
-            g_jcng->jmap_set_obj(nullptr, root, "PL_Slots", h);
-        }
-        return h;
+    // ================= the registry =================
+    // ONE store: a single jcng JMap, disk-backed via jcng's own file api —
+    // ff's model exactly (their _ShrineOfHeroes.json beside the payloads).
+    // no co-save, no sidecar json, no fallbacks. the dll owns the object:
+    // read on boot + on every game load, mutate on bind/clear, commit via
+    // jcng's native writeToFile.
+    //
+    // why the reload matters: jcng rebuilds its db on every game load, so a
+    // handle read at boot is stale the moment the player loads a save.
+    // plugin.cpp's TESLoadGameEvent sink calls ReloadRegistry() on every
+    // load — that keeps the one store actually true.
+
+    static JCNG_Handle g_registry = 0;
+
+    static std::string GetRegistryPath() {
+        char exePath[MAX_PATH];
+        GetModuleFileNameA(nullptr, exePath, MAX_PATH);
+        fs::path dir = fs::path(exePath).parent_path() / "Data" / "SKSE" / "Plugins" / "ProjectLegacy";
+        std::error_code ec;
+        fs::create_directories(dir, ec);
+        return (dir / "PL_Registry.json").string();
     }
 
+    void ReloadRegistry() {
+        if (!g_jcng) return;
+        auto path = GetRegistryPath();
+        std::error_code ec;
+        if (fs::exists(path, ec)) {
+            g_registry = g_jcng->jvalue_read_from_file(nullptr, path);
+            spdlog::info("PL: registry read from disk, handle={}", g_registry);
+        }
+        if (!g_registry) {
+            // no file yet (or unreadable) — start empty; first bind creates it
+            g_registry = g_jcng->jmap_object(nullptr);
+            spdlog::info("PL: no registry file, started empty, handle={}", g_registry);
+        }
+    }
+
+    static void CommitRegistry() {
+        if (!g_jcng || !g_registry) return;
+        g_jcng->jvalue_write_to_file(nullptr, g_registry, GetRegistryPath());
+    }
+
+    // never cache slot handles either — resolve fresh every call off the
+    // one registry object. it's a map lookup, not a mortgage
     static JCNG_Handle GetSlotObj(int slot, bool create) {
-        JCNG_Handle reg = GetSlotsMap();
-        if (!reg) return 0;
+        if (!g_jcng || !g_registry) return 0;
         std::string key = "slot_" + std::to_string(slot);
-        JCNG_Handle h = g_jcng->jmap_get_obj(nullptr, reg, key, 0);
+        JCNG_Handle h = g_jcng->jmap_get_obj(nullptr, g_registry, key, 0);
         if (!h && create) {
             h = g_jcng->jmap_object(nullptr);
-            g_jcng->jmap_set_obj(nullptr, reg, key, h);
+            g_jcng->jmap_set_obj(nullptr, g_registry, key, h);
         }
         return h;
     }
 
     void SetSlotBound(int slot, const std::string& charName, int sex, RE::TESForm* raceForm, const std::string& raceStr) {
         JCNG_Handle h = GetSlotObj(slot, true);
-        if (!h) return;
+        if (!h) {
+            spdlog::error("PL: SetSlotBound slot {} — no registry", slot);
+            return;
+        }
         g_jcng->jmap_set_int(nullptr, h, "bound", 1);
         g_jcng->jmap_set_str(nullptr, h, "name", charName);
         g_jcng->jmap_set_int(nullptr, h, "sex", sex);
-        // real form ref rides jcng's dirty-sweep — mod uninstalled = null, not crash.
-        // race_str is the "ModName.esp|0xID" fallback for manual re-resolution
-        if (raceForm) g_jcng->jmap_set_form(nullptr, h, "race", raceForm);
+        // forms can't ride a json file meaningfully (load-order dependent),
+        // so the registry stores race_str only; GetSlotRaceForm re-resolves
+        // it through the data handler on every read. (void)raceForm — kept
+        // in the signature so callers don't change.
+        (void)raceForm;
         g_jcng->jmap_set_str(nullptr, h, "race_str", raceStr);
+        CommitRegistry();
     }
 
     bool IsSlotBound(int slot) {
@@ -106,7 +145,19 @@ namespace PL {
 
     RE::TESForm* GetSlotRaceForm(int slot) {
         JCNG_Handle h = GetSlotObj(slot, false);
-        return h ? g_jcng->jmap_get_form(nullptr, h, "race", nullptr) : nullptr;
+        if (!h) return nullptr;
+        std::string raceStr = g_jcng->jmap_get_str(nullptr, h, "race_str", "");
+        auto pipe = raceStr.find("|0x");
+        if (pipe == std::string::npos) return nullptr;
+        std::string modName = raceStr.substr(0, pipe);
+        try {
+            uint32_t localID = std::stoul(raceStr.substr(pipe + 3), nullptr, 16);
+            auto* dh = RE::TESDataHandler::GetSingleton();
+            return dh ? dh->LookupForm(localID, modName) : nullptr;
+        }
+        catch (...) {
+            return nullptr;
+        }
     }
 
     std::string GetSlotRaceString(int slot) {
@@ -115,7 +166,8 @@ namespace PL {
     }
 
     void ClearSlot(int slot) {
-        JCNG_Handle reg = GetSlotsMap();
-        if (reg) g_jcng->jmap_remove_key(nullptr, reg, "slot_" + std::to_string(slot));
+        if (!g_jcng || !g_registry) return;
+        g_jcng->jmap_remove_key(nullptr, g_registry, "slot_" + std::to_string(slot));
+        CommitRegistry();
     }
 }

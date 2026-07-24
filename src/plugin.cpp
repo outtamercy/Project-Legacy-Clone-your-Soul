@@ -3,30 +3,16 @@
 #include "Papyrus.h"
 #include "PL_Persistence.h"
 
-bool CallPapyrusMethod(RE::TESObjectREFR* ref, const char* scriptName, const char* funcName) {
-    auto* vm = RE::BSScript::Internal::VirtualMachine::GetSingleton();
-    if (!vm) return false;
-    auto* policy = vm->GetObjectHandlePolicy();
-    if (!policy) return false;
-    auto handle = policy->GetHandleForObject(ref->GetFormType(), ref);
-    if (!handle) return false;
-    RE::BSTSmartPointer<RE::BSScript::Object> obj;
-    if (!vm->FindBoundObject(handle, scriptName, obj)) return false;
-    RE::BSTSmartPointer<RE::BSScript::IStackCallbackFunctor> callback;
-    vm->DispatchMethodCall(obj, funcName, nullptr, callback);
-    return true;
-}
-
+// on every game load: refresh the disk registry (jcng rebuilds its db on
+// load, so the handle from boot is stale — without this the registry reads
+// garbage). restoring stations is PAPYRUS's job via the load-game alias and
+// its settle delay — this handler used to dispatch TryRestoreSlot directly,
+// which fired full actor construction inside the load storm and raced the
+// alias. never again. registry only.
 class LoadGameHandler : public RE::BSTEventSink<RE::TESLoadGameEvent> {
 public:
     virtual RE::BSEventNotifyControl ProcessEvent(const RE::TESLoadGameEvent*, RE::BSTEventSource<RE::TESLoadGameEvent>*) override {
-        auto* formList = RE::TESForm::LookupByEditorID<RE::BGSListForm>("PL_StationList");
-        if (!formList) return RE::BSEventNotifyControl::kContinue;
-        formList->ForEachForm([&](RE::TESForm* form) {
-            auto* station = form ? form->As<RE::TESObjectREFR>() : nullptr;
-            if (station) CallPapyrusMethod(station, "PL_StationScript", "TryRestoreSlot");
-            return RE::BSContainer::ForEachResult::kContinue;
-            });
+        PL::ReloadRegistry();
         return RE::BSEventNotifyControl::kContinue;
     }
 };
@@ -41,7 +27,9 @@ SKSEPluginLoad(const SKSE::LoadInterface* skse) {
             // grab jcng's api straight from their dll export once every
             // plugin is loaded — no messaging weirdness involved
             if (msg->type == SKSE::MessagingInterface::kPostPostLoad) {
-                PL::LinkJCNG();
+                if (PL::LinkJCNG()) {
+                    PL::ReloadRegistry();  // boot read: existing PL_Registry.json
+                }
             }
             });
     }

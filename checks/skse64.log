@@ -1,4 +1,4 @@
-SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD1ABE3E0A7825, os = 6.2 (9200))
+SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD1B398C99FAC4, os = 6.2 (9200))
 imagebase = 00007FF6CDA30000
 reloc mgr imagebase = 00007FF6CDA30000
 config path = H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\skse.ini
@@ -1088,8 +1088,8 @@ sending message type 5 to plugin 52
 sending message type 5 to plugin 69
 sending message type 5 to plugin 107
 dispatched message.
-save name is Autosave1_AA616FFD_0_64657A_aaBennyShelterArmoryCell_000023_20260721061003_1_1
-full save path: C:\Users\Lore\Documents\My Games\Skyrim Special Edition\__MO_Saves\\Autosave1_AA616FFD_0_64657A_aaBennyShelterArmoryCell_000023_20260721061003_1_1.skse
+save name is Autosave2_AA616FFD_0_64657A_aaBennyShelter_000028_20260724063245_1_1
+full save path: C:\Users\Lore\Documents\My Games\Skyrim Special Edition\__MO_Saves\\Autosave2_AA616FFD_0_64657A_aaBennyShelter_000028_20260724063245_1_1.skse
 dispatch message (2) to plugin listeners
 sending message type 2 to plugin 3
 sending message type 2 to plugin 7
@@ -1250,11 +1250,11 @@ Loading plugin list:
 	(1040425 -> 1040425)	Riften Towers.esl
 	(1040426 -> 1040426)	Kanjs - AIO Books Patch.esl
 	(1040427 -> 1040427)	LockMaster.esl
-	(1040428 -> 1040428)	OPAlterationGrantArmor.esl
-	(1040429 -> 1040429)	PraedysSkeletons.esl
-	(1040430 -> 1040431)	Realistic Bears Proyect.esl
-	(1040431 -> 1040432)	SolitudeLightHouseFix.esl
-	(1040432 -> 1040430)	DisableCharacterLight.esl
+	(1040428 -> 1040428)	PraedysSkeletons.esl
+	(1040429 -> 1040429)	DisableCharacterLight.esl
+	(1040430 -> 1040430)	OPAlterationGrantArmor.esl
+	(1040431 -> 1040431)	Realistic Bears Proyect.esl
+	(1040432 -> 1040432)	SolitudeLightHouseFix.esl
 	(1040433 -> 1040433)	SeranaEyeFix.esp
 	(1040434 -> 1040434)	Unlimited Sprinting.esp
 	(1040435 -> 1040435)	stuck on screen fix.esp
@@ -2114,15 +2114,3 @@ AMOT now switching to symbol skydial
 AMOT now switching to symbol skydial
 AMOT now switching to symbol SkyDial
 AMOT now switching to symbol PictureOfTheDay
-dispatch message (5) to plugin listeners
-sending message type 5 to plugin 22
-sending message type 5 to plugin 52
-sending message type 5 to plugin 69
-sending message type 5 to plugin 107
-dispatched message.
-dispatch message (5) to plugin listeners
-sending message type 5 to plugin 22
-sending message type 5 to plugin 52
-sending message type 5 to plugin 69
-sending message type 5 to plugin 107
-dispatched message.

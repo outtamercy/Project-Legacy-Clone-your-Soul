@@ -1,9 +1,9 @@
-[04:09:12.150] [270704] [I] Project Legacy: loaded
-[04:09:13.872] [270704] [I] PL: JCNG API v1 linked via JContainers64.dll
-[04:09:13.873] [270704] [I] PL: no registry file, started empty, handle=1
-[04:09:45.023] [276292] [I] Project Legacy: Papyrus functions registered.
-[04:10:41.033] [278352] [I] PL: PerformBind — identity done for 'dez'
-[04:10:41.033] [278352] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
-[04:10:41.033] [278352] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied
-[04:10:41.771] [278116] [I] PL: ApplyStats — slot 6: 22 actor values copied
-[04:12:31.550] [270704] [I] PL: registry read from disk, handle=8
+[16:31:21.431] [300804] [I] Project Legacy: loaded
+[16:31:23.215] [300804] [I] PL: JCNG API v1 linked via JContainers64.dll
+[16:31:23.216] [300804] [I] PL: registry read from disk, handle=1
+[16:31:54.915] [295088] [I] Project Legacy: Papyrus functions registered.
+[16:32:29.451] [300804] [I] PL: registry read from disk, handle=8
+[16:32:35.310] [302688] [I] PL: PerformBind — identity done for 'dez'
+[16:32:35.310] [302688] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
+[16:32:35.310] [302688] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied
+[16:32:35.612] [301740] [I] PL: ApplyStats — slot 6: 22 actor values copied

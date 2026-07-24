@@ -66,7 +66,7 @@ Function TryRestoreSlot()
     string diskName = GetSlotDiskName(SlotIndex)
     Race slotRace = GetSlotRaceForm(SlotIndex) as Race
     int slotSex = GetSlotVesselSex(SlotIndex)
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " raceForm=" + slotRace + " sex=" + slotSex)
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " race=" + slotRace + " sex=" + slotSex)
 
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     if !spawnMarker
@@ -74,21 +74,28 @@ Function TryRestoreSlot()
         return
     endif
 
-    ; same architecture as DoBind — born (or parked) disabled, surgery
-    ; ghost-side, 3D builds once at Enable
     Actor vessel = SpawnedVessel
-    if !vessel
-        vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
-        SpawnedVessel = vessel
+    if vessel
+        ; ---- persisted vessel: everything rides the save already — name,
+        ; voice, race, gear, perks, stats, face. Disable/SetRace/Enable would
+        ; each force a 3D reset, and the reset storm is what kills DBD.
+        ; the only correct move here is: make sure it's up, and keep it quiet.
+        if vessel.IsDisabled()
+            vessel.Enable()
+        endif
+        vessel.EnableAI(false)
+        Debug.Trace("PL/Station " + SlotIndex + ": restore — persisted vessel kept, no reconstruction")
+        return
     endif
+
+    ; ---- vessel missing: full construction, same law as DoBind ----
+    Debug.Trace("PL/Station " + SlotIndex + ": restore — no vessel, full construction")
+    vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
+    SpawnedVessel = vessel
     if !vessel
         Debug.Trace("PL/Station " + SlotIndex + ": restore — spawn failed")
         return
     endif
-    if !vessel.IsDisabled()
-        vessel.Disable()
-    endif
-
     if !slotRace
         slotRace = PlayerRef.GetActorBase().GetRace()
     endif
@@ -129,7 +136,6 @@ Function TryRestoreSlot()
     endif
 
     (vessel as PL_VesselActor).ApplyStats(SlotIndex, diskName)
-    vessel.EnableAI(false)
 EndFunction
 
 
@@ -374,4 +380,31 @@ Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sen
     carrier.SplineTranslateToRef(spawnMarker, Utility.RandomFloat(350.0, 800.0), 250.0, 10.0)
     Utility.Wait(3.0)
     carrier.Delete()
+EndEvent
+Event OnPLPerkSaved(string eventName, string strArg, float numArg, Form sender)
+    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
+    PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
+    if glow
+        glow.StartNode = "NPC Head [Head]"
+        glow.Target = PlayerRef
+        glow.FlyTo = spawnMarker
+        glow.EnableNoWait(true)
+        Debug.Trace("PL/FX: perk glow spawned")
+    endif
+EndEvent
+
+Event OnPLSpellSaved(string eventName, string strArg, float numArg, Form sender)
+    ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
+    PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
+    if glow
+        if Utility.RandomInt(0, 1)
+            glow.StartNode = "NPC L Hand [LHnd]"
+        else
+            glow.StartNode = "NPC R Hand [RHnd]"
+        endif
+        glow.Target = PlayerRef
+        glow.FlyTo = spawnMarker
+        glow.EnableNoWait(true)
+        Debug.Trace("PL/FX: spell glow spawned, node=" + glow.StartNode)
+    endif
 EndEvent

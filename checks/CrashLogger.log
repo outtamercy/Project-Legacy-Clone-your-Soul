@@ -1,0 +1,342 @@
+[16:31:20.178] [300804] [I] CrashLogger v1-24-0-0
+[16:31:20.178] [300804] [I] Crash Logs will be written to H:\Mayhem's Madness AE\overwrite\SKSE\Plugins
+[16:31:20.178] [300804] [I] installed crash handlers
+[16:31:20.179] [300804] [I] Thread dump hotkey monitoring started (Ctrl+Shift+F12)
+[16:31:20.179] [300804] [I] CrashLogger has finished loading.
+[16:32:37.318] [301740] [I] Symcache not found at not defined
+[16:32:37.318] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8 (searchPath Data/SKSE/Plugins)
+[16:32:37.338] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8	PDB signature mismatch
+[16:32:37.338] [297236] [I] Found unhandled type:	(NiSkinInstance*)	.?AVNiObject@@ [NiObject]
+[16:32:37.338] [302592] [I] Found unhandled type:	(BSFadeNode*)	.?AVBSFadeNode@@ [BSFadeNode]
+[16:32:37.338] [300712] [I] Found unhandled type:	(BSDynamicTriShape*)	.?AVBSDynamicTriShape@@ [BSDynamicTriShape]
+[16:32:37.338] [300712] [I] Found unhandled type:	(BSDynamicTriShape*)	.?AVBSTriShape@@ [BSTriShape]
+[16:32:37.338] [300712] [I] Found unhandled type:	(BSDynamicTriShape*)	.?AVBSGeometry@@ [BSGeometry]
+[16:32:37.338] [302592] [I] Found unhandled type:	(BSFadeNode*)	.?AVNiNode@@ [NiNode]
+[16:32:37.338] [297236] [I] Found unhandled type:	(NiSkinInstance*)	.?AVNiRefObject@@ [NiRefObject]
+[16:32:37.338] [302592] [I] Found unhandled type:	(BSFadeNode*)	.?AVNiObject@@ [NiObject]
+[16:32:37.338] [302592] [I] Found unhandled type:	(BSFadeNode*)	.?AVNiRefObject@@ [NiRefObject]
+[16:32:37.338] [300712] [I] Found unhandled type:	(BSDynamicTriShape*)	.?AVNiObject@@ [NiObject]
+[16:32:37.339] [300712] [I] Found unhandled type:	(BSDynamicTriShape*)	.?AVNiRefObject@@ [NiRefObject]
+[16:32:37.339] [302824] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+313F9B0 (searchPath Data/SKSE/Plugins)
+[16:32:37.358] [302824] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+313F9B0	PDB signature mismatch
+[16:32:37.358] [301740] [I] Backfilled 1 void* pointers with known object information across all analysis
+[16:32:37.358] [295928] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVBSFaceGenNiNode@@ [BSFaceGenNiNode]
+[16:32:37.358] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESActorBase@@ [TESActorBase]
+[16:32:37.358] [295928] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVNiNode@@ [NiNode]
+[16:32:37.358] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESBoundAnimObject@@ [TESBoundAnimObject]
+[16:32:37.358] [302816] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVBSFaceGenNiNode@@ [BSFaceGenNiNode]
+[16:32:37.358] [301708] [I] Found unhandled type:	(Character*)	.?AVActor@@ [Actor]
+[16:32:37.358] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESBoundObject@@ [TESBoundObject]
+[16:32:37.358] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESObject@@ [TESObject]
+[16:32:37.358] [295928] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVNiObject@@ [NiObject]
+[16:32:37.358] [295928] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVNiRefObject@@ [NiRefObject]
+[16:32:37.358] [302816] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVNiNode@@ [NiNode]
+[16:32:37.358] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.358] [302816] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVNiObject@@ [NiObject]
+[16:32:37.359] [302816] [I] Found unhandled type:	(BSFaceGenNiNode*)	.?AVNiRefObject@@ [NiRefObject]
+[16:32:37.358] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESActorBaseData@@ [TESActorBaseData]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESContainer@@ [TESContainer]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESSpellList@@ [TESSpellList]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESAIForm@@ [TESAIForm]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVActorValueOwner@@ [ActorValueOwner]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBGSDestructibleObjectForm@@ [BGSDestructibleObjectForm]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBGSSkinForm@@ [BGSSkinForm]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVBSHandleRefObject@@ [BSHandleRefObject]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVNiRefObject@@ [NiRefObject]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AV?$BSTEventSink@UBSAnimationGraphEvent@@@@ [BSTEventSink<BSAnimationGraphEvent>]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBGSKeywordForm@@ [BGSKeywordForm]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBGSAttackDataForm@@ [BGSAttackDataForm]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBGSPerkRankArray@@ [BGSPerkRankArray]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVTESRaceForm@@ [TESRaceForm]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBGSOverridePackCollection@@ [BGSOverridePackCollection]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AVBaseFormComponent@@ [BaseFormComponent]
+[16:32:37.359] [301856] [I] Found unhandled type:	(TESNPC*)	.?AV?$BSTEventSink@VMenuOpenCloseEvent@@@@ [BSTEventSink<MenuOpenCloseEvent>]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVIAnimationGraphManagerHolder@@ [IAnimationGraphManagerHolder]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVMagicTarget@@ [MagicTarget]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVActorValueOwner@@ [ActorValueOwner]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVActorState@@ [ActorState]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AUIMovementState@@ [IMovementState]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AUIMovementInterface@@ [IMovementInterface]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AV?$BSTEventSink@VBSTransformDeltaEvent@@@@ [BSTEventSink<BSTransformDeltaEvent>]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AV?$BSTEventSink@VbhkCharacterMoveFinishEvent@@@@ [BSTEventSink<bhkCharacterMoveFinishEvent>]
+[16:32:37.359] [301708] [I] Found unhandled type:	(Character*)	.?AVIPostAnimationChannelUpdateFunctor@@ [IPostAnimationChannelUpdateFunctor]
+[16:32:37.359] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375 (searchPath Data/SKSE/Plugins)
+[16:32:37.378] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375	PDB signature mismatch
+[16:32:37.379] [300712] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+3272E98 (searchPath Data/SKSE/Plugins)
+[16:32:37.398] [300712] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+3272E98	PDB signature mismatch
+[16:32:37.399] [300668] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 (searchPath Data/SKSE/Plugins)
+[16:32:37.409] [300668] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:37.421] [300668] [I] Symbol returning:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:79 void hdt::BSFaceGenNiNodeEx::SkinAllGeometryCalls(NiNode *,BSGeometry *,char) [?SkinAllGeometryCalls@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:37.421] [300668] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:79 void hdt::BSFaceGenNiNodeEx::SkinAllGeometryCalls(NiNode *,BSGeometry *,char) [?SkinAllGeometryCalls@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:37.422] [298160] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+1768100 (searchPath Data/SKSE/Plugins)
+[16:32:37.441] [298160] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+1768100	PDB signature mismatch
+[16:32:37.442] [300304] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0D26568 (searchPath Data/SKSE/Plugins)
+[16:32:37.461] [300304] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0D26568	PDB signature mismatch
+[16:32:37.462] [301940] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 (searchPath Data/SKSE/Plugins)
+[16:32:37.465] [301940] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\skse\plugins\MuJointFix.pdb
+[16:32:37.468] [301940] [I] Symbol returning:  D:\VS\MuJointFix\src\Hook.cpp:19 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z] D:\VS\MuJointFix\src\Hook.cpp:30 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z]
+[16:32:37.468] [301940] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086:  D:\VS\MuJointFix\src\Hook.cpp:19 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z] D:\VS\MuJointFix\src\Hook.cpp:30 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z]
+[16:32:37.470] [302572] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723 (searchPath Data/SKSE/Plugins)
+[16:32:37.481] [302572] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:37.492] [302572] [I] Symbol returning:  D:\a\_work\1\s\src\vctools\crt\github\stl\src\mutex.cpp:161 _Mtx_unlock
+[16:32:37.492] [302572] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723:  D:\a\_work\1\s\src\vctools\crt\github\stl\src\mutex.cpp:161 _Mtx_unlock
+[16:32:37.493] [302020] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/Data/Platform/Distribution/RuntimeDependencies/libcef.dll+30822D6 (searchPath Data/SKSE/Plugins)
+[16:32:37.680] [297108] [I] Found unhandled type:	(BSJobs::JobThread*)	.?AVJobThread@BSJobs@@ [BSJobs::JobThread]
+[16:32:37.680] [297108] [I] Found unhandled type:	(BSJobs::JobThread*)	.?AVBSThread@@ [BSThread]
+[16:32:45.547] [302020] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/Data/Platform/Distribution/RuntimeDependencies/libcef.dll+30822D6	PDB signature mismatch
+[16:32:45.549] [299964] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1 (searchPath Data/SKSE/Plugins)
+[16:32:45.568] [299964] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1	PDB signature mismatch
+[16:32:45.569] [301876] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC (searchPath Data/SKSE/Plugins)
+[16:32:45.579] [301876] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:45.590] [301876] [I] Symbol returning:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:135 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z] G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:164 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:45.590] [301876] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:135 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z] G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:164 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:45.591] [282464] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93 (searchPath Data/SKSE/Plugins)
+[16:32:45.610] [282464] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93	PDB signature mismatch
+[16:32:45.611] [299312] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+072773A (searchPath Data/SKSE/Plugins)
+[16:32:45.630] [299312] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+072773A	PDB signature mismatch
+[16:32:45.632] [302720] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C8 (searchPath Data/SKSE/Plugins)
+[16:32:45.650] [302720] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C8	PDB signature mismatch
+[16:32:45.652] [295200] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C0 (searchPath Data/SKSE/Plugins)
+[16:32:45.666] [295200] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C0	PDB signature mismatch
+[16:32:45.667] [299336] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF (searchPath Data/SKSE/Plugins)
+[16:32:45.686] [299336] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF	PDB signature mismatch
+[16:32:45.687] [300928] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C4 (searchPath Data/SKSE/Plugins)
+[16:32:45.706] [300928] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C4	PDB signature mismatch
+[16:32:45.707] [297236] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C8 (searchPath Data/SKSE/Plugins)
+[16:32:45.726] [297236] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C8	PDB signature mismatch
+[16:32:45.727] [302552] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC (searchPath Data/SKSE/Plugins)
+[16:32:45.746] [302552] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC	PDB signature mismatch
+[16:32:45.748] [300628] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+20FC2E8 (searchPath Data/SKSE/Plugins)
+[16:32:45.766] [300628] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+20FC2E8	PDB signature mismatch
+[16:32:45.768] [302824] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 (searchPath Data/SKSE/Plugins)
+[16:32:45.774] [302824] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:45.780] [302824] [I] Symbol returning:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:45 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:45.780] [302824] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:45 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:45.781] [302592] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480 (searchPath Data/SKSE/Plugins)
+[16:32:45.786] [302592] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:45.793] [302592] [I] Symbol returning:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:42 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:45.793] [302592] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:42 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:45.794] [295928] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C4 (searchPath Data/SKSE/Plugins)
+[16:32:45.813] [295928] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C4	PDB signature mismatch
+[16:32:45.815] [302816] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C0 (searchPath Data/SKSE/Plugins)
+[16:32:45.833] [302816] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C0	PDB signature mismatch
+[16:32:45.835] [296368] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C8 (searchPath Data/SKSE/Plugins)
+[16:32:45.853] [296368] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+32580C8	PDB signature mismatch
+[16:32:45.855] [301856] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8 (searchPath Data/SKSE/Plugins)
+[16:32:45.873] [301856] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8	PDB signature mismatch
+[16:32:45.875] [301708] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8 (searchPath Data/SKSE/Plugins)
+[16:32:45.893] [301708] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8	PDB signature mismatch
+[16:32:45.895] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0647A01 (searchPath Data/SKSE/Plugins)
+[16:32:45.909] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0647A01	PDB signature mismatch
+[16:32:45.910] [300712] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8 (searchPath Data/SKSE/Plugins)
+[16:32:45.929] [300712] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8	PDB signature mismatch
+[16:32:45.930] [300668] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06D356F (searchPath Data/SKSE/Plugins)
+[16:32:45.949] [300668] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06D356F	PDB signature mismatch
+[16:32:45.950] [298160] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8 (searchPath Data/SKSE/Plugins)
+[16:32:45.969] [298160] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8	PDB signature mismatch
+[16:32:45.970] [300304] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07766D4 (searchPath Data/SKSE/Plugins)
+[16:32:45.989] [300304] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07766D4	PDB signature mismatch
+[16:32:45.990] [301940] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7888 (searchPath Data/SKSE/Plugins)
+[16:32:46.009] [301940] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7888	PDB signature mismatch
+[16:32:46.010] [302572] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8 (searchPath Data/SKSE/Plugins)
+[16:32:46.029] [302572] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B5D8	PDB signature mismatch
+[16:32:46.030] [295528] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNELBASE.dll+006291D (searchPath Data/SKSE/Plugins)
+[16:32:46.031] [295528] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNELBASE.dll+006291D	PDB signature mismatch
+[16:32:46.032] [297108] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B588 (searchPath Data/SKSE/Plugins)
+[16:32:46.051] [297108] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B588	PDB signature mismatch
+[16:32:46.053] [299024] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+326DE00 (searchPath Data/SKSE/Plugins)
+[16:32:46.071] [299024] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+326DE00	PDB signature mismatch
+[16:32:46.073] [301904] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7E51 (searchPath Data/SKSE/Plugins)
+[16:32:46.091] [301904] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7E51	PDB signature mismatch
+[16:32:46.092] [301332] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF61DA (searchPath Data/SKSE/Plugins)
+[16:32:46.111] [301332] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF61DA	PDB signature mismatch
+[16:32:46.112] [302924] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B501 (searchPath Data/SKSE/Plugins)
+[16:32:46.131] [302924] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+325B501	PDB signature mismatch
+[16:32:46.132] [255008] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CD0DBD (searchPath Data/SKSE/Plugins)
+[16:32:46.151] [255008] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CD0DBD	PDB signature mismatch
+[16:32:46.153] [301084] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+31CC370 (searchPath Data/SKSE/Plugins)
+[16:32:46.171] [301084] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+31CC370	PDB signature mismatch
+[16:32:46.173] [296820] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNEL32.DLL+001259D (searchPath Data/SKSE/Plugins)
+[16:32:46.174] [296820] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNEL32.DLL+001259D	PDB signature mismatch
+[16:32:46.175] [301476] [I] Attempting to load pdb for C:/WINDOWS/SYSTEM32/ntdll.dll+005AF78 (searchPath Data/SKSE/Plugins)
+[16:32:46.176] [301476] [I] Failed to open pdb for dll C:/WINDOWS/SYSTEM32/ntdll.dll+005AF78	PDB signature mismatch
+[16:32:46.177] [299392] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNELBASE.dll+0181A60 (searchPath Data/SKSE/Plugins)
+[16:32:46.178] [299392] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNELBASE.dll+0181A60	PDB signature mismatch
+[16:32:46.277] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8 (searchPath Data/SKSE/Plugins)
+[16:32:46.296] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8	PDB signature mismatch
+[16:32:46.297] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8 (searchPath Data/SKSE/Plugins)
+[16:32:46.316] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8	PDB signature mismatch
+[16:32:46.317] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375 (searchPath Data/SKSE/Plugins)
+[16:32:46.332] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375	PDB signature mismatch
+[16:32:46.333] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375 (searchPath Data/SKSE/Plugins)
+[16:32:46.352] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375	PDB signature mismatch
+[16:32:46.353] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 (searchPath Data/SKSE/Plugins)
+[16:32:46.363] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:46.374] [301740] [I] Symbol returning:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:79 void hdt::BSFaceGenNiNodeEx::SkinAllGeometryCalls(NiNode *,BSGeometry *,char) [?SkinAllGeometryCalls@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:46.374] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:79 void hdt::BSFaceGenNiNodeEx::SkinAllGeometryCalls(NiNode *,BSGeometry *,char) [?SkinAllGeometryCalls@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:46.376] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 (searchPath Data/SKSE/Plugins)
+[16:32:46.387] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:46.478] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC (searchPath Data/SKSE/Plugins)
+[16:32:46.487] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:46.497] [301740] [I] Symbol returning:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:135 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z] G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:164 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:46.497] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:135 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z] G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:164 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:46.499] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC (searchPath Data/SKSE/Plugins)
+[16:32:46.510] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:46.550] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 (searchPath Data/SKSE/Plugins)
+[16:32:46.553] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\skse\plugins\MuJointFix.pdb
+[16:32:46.556] [301740] [I] Symbol returning:  D:\VS\MuJointFix\src\Hook.cpp:19 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z] D:\VS\MuJointFix\src\Hook.cpp:30 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z]
+[16:32:46.556] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086:  D:\VS\MuJointFix\src\Hook.cpp:19 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z] D:\VS\MuJointFix\src\Hook.cpp:30 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z]
+[16:32:46.557] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 (searchPath Data/SKSE/Plugins)
+[16:32:46.559] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\skse\plugins\MuJointFix.pdb
+[16:32:46.574] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1 (searchPath Data/SKSE/Plugins)
+[16:32:46.593] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1	PDB signature mismatch
+[16:32:46.594] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1 (searchPath Data/SKSE/Plugins)
+[16:32:46.613] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1	PDB signature mismatch
+[16:32:46.614] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93 (searchPath Data/SKSE/Plugins)
+[16:32:46.633] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93	PDB signature mismatch
+[16:32:46.634] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93 (searchPath Data/SKSE/Plugins)
+[16:32:46.653] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93	PDB signature mismatch
+[16:32:46.654] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF (searchPath Data/SKSE/Plugins)
+[16:32:46.673] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF	PDB signature mismatch
+[16:32:46.674] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF (searchPath Data/SKSE/Plugins)
+[16:32:46.692] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF	PDB signature mismatch
+[16:32:46.694] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC (searchPath Data/SKSE/Plugins)
+[16:32:46.713] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC	PDB signature mismatch
+[16:32:46.714] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC (searchPath Data/SKSE/Plugins)
+[16:32:46.732] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC	PDB signature mismatch
+[16:32:46.734] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 (searchPath Data/SKSE/Plugins)
+[16:32:46.738] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:46.743] [301740] [I] Symbol returning:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:45 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:46.743] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:45 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:46.745] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 (searchPath Data/SKSE/Plugins)
+[16:32:46.749] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:46.976] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8 (searchPath Data/SKSE/Plugins)
+[16:32:46.999] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8	PDB signature mismatch
+[16:32:47.000] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8 (searchPath Data/SKSE/Plugins)
+[16:32:47.019] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CEC9C8	PDB signature mismatch
+[16:32:47.021] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375 (searchPath Data/SKSE/Plugins)
+[16:32:47.039] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375	PDB signature mismatch
+[16:32:47.040] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375 (searchPath Data/SKSE/Plugins)
+[16:32:47.059] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0432375	PDB signature mismatch
+[16:32:47.060] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 (searchPath Data/SKSE/Plugins)
+[16:32:47.070] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:47.083] [301740] [I] Symbol returning:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:79 void hdt::BSFaceGenNiNodeEx::SkinAllGeometryCalls(NiNode *,BSGeometry *,char) [?SkinAllGeometryCalls@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:47.083] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:79 void hdt::BSFaceGenNiNodeEx::SkinAllGeometryCalls(NiNode *,BSGeometry *,char) [?SkinAllGeometryCalls@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:47.084] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 (searchPath Data/SKSE/Plugins)
+[16:32:47.094] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA054 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:47.121] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC (searchPath Data/SKSE/Plugins)
+[16:32:47.130] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:47.140] [301740] [I] Symbol returning:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:135 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z] G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:164 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:47.140] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC:  G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:135 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z] G:\source\hdtsmp-working\HDTSMP-Sandbox\Flex for 1.6.1170 - .8.00.17\hdtSMP64\Hooks.cpp:164 void hdt::BSFaceGenNiNodeEx::SkinAllGeometry(NiNode *,BSGeometry *,char) [?SkinAllGeometry@BSFaceGenNiNodeEx@hdt@@QEAAXPEAVNiNode@@PEAVBSGeometry@@D@Z]
+[16:32:47.141] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC (searchPath Data/SKSE/Plugins)
+[16:32:47.150] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+00DA3FC from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:47.175] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 (searchPath Data/SKSE/Plugins)
+[16:32:47.177] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\skse\plugins\MuJointFix.pdb
+[16:32:47.180] [301740] [I] Symbol returning:  D:\VS\MuJointFix\src\Hook.cpp:19 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z] D:\VS\MuJointFix\src\Hook.cpp:30 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z]
+[16:32:47.180] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086:  D:\VS\MuJointFix\src\Hook.cpp:19 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z] D:\VS\MuJointFix\src\Hook.cpp:30 void Mus::onFaceGen(RE::BSFaceGenNiNode *,RE::NiNode *,RE::BSGeometry *,char) [?onFaceGen@Mus@@YAXPEAVBSFaceGenNiNode@RE@@PEAVNiNode@3@PEAVBSGeometry@3@D@Z]
+[16:32:47.181] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 (searchPath Data/SKSE/Plugins)
+[16:32:47.184] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/skse/plugins/MuJointFix.dll+0026086 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\skse\plugins\MuJointFix.pdb
+[16:32:47.195] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1 (searchPath Data/SKSE/Plugins)
+[16:32:47.214] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1	PDB signature mismatch
+[16:32:47.215] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1 (searchPath Data/SKSE/Plugins)
+[16:32:47.234] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+03BCCE1	PDB signature mismatch
+[16:32:47.235] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93 (searchPath Data/SKSE/Plugins)
+[16:32:47.254] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93	PDB signature mismatch
+[16:32:47.255] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93 (searchPath Data/SKSE/Plugins)
+[16:32:47.274] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06E3D93	PDB signature mismatch
+[16:32:47.275] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF (searchPath Data/SKSE/Plugins)
+[16:32:47.294] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF	PDB signature mismatch
+[16:32:47.295] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF (searchPath Data/SKSE/Plugins)
+[16:32:47.314] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/skse64_1_6_1170.dll+000DEFF	PDB signature mismatch
+[16:32:47.315] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC (searchPath Data/SKSE/Plugins)
+[16:32:47.334] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC	PDB signature mismatch
+[16:32:47.336] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC (searchPath Data/SKSE/Plugins)
+[16:32:47.354] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07270AC	PDB signature mismatch
+[16:32:47.356] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 (searchPath Data/SKSE/Plugins)
+[16:32:47.360] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:47.365] [301740] [I] Symbol returning:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:45 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:47.365] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:45 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:47.367] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 (searchPath Data/SKSE/Plugins)
+[16:32:47.371] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+00434A8 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:47.390] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723 (searchPath Data/SKSE/Plugins)
+[16:32:47.399] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:47.410] [301740] [I] Symbol returning:  D:\a\_work\1\s\src\vctools\crt\github\stl\src\mutex.cpp:161 _Mtx_unlock
+[16:32:47.410] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723:  D:\a\_work\1\s\src\vctools\crt\github\stl\src\mutex.cpp:161 _Mtx_unlock
+[16:32:47.411] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723 (searchPath Data/SKSE/Plugins)
+[16:32:47.421] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/hdtSMP64.dll+019A723 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\hdtSMP64.pdb
+[16:32:47.445] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/Data/Platform/Distribution/RuntimeDependencies/libcef.dll+30822D6 (searchPath Data/SKSE/Plugins)
+[16:32:47.447] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/Data/Platform/Distribution/RuntimeDependencies/libcef.dll+30822D6	PDB signature mismatch
+[16:32:47.448] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/Data/Platform/Distribution/RuntimeDependencies/libcef.dll+30822D6 (searchPath Data/SKSE/Plugins)
+[16:32:47.450] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/Data/Platform/Distribution/RuntimeDependencies/libcef.dll+30822D6	PDB signature mismatch
+[16:32:47.451] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0D26568 (searchPath Data/SKSE/Plugins)
+[16:32:47.470] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0D26568	PDB signature mismatch
+[16:32:47.471] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0D26568 (searchPath Data/SKSE/Plugins)
+[16:32:47.490] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0D26568	PDB signature mismatch
+[16:32:47.491] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+072773A (searchPath Data/SKSE/Plugins)
+[16:32:47.510] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+072773A	PDB signature mismatch
+[16:32:47.511] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+072773A (searchPath Data/SKSE/Plugins)
+[16:32:47.530] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+072773A	PDB signature mismatch
+[16:32:47.531] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480 (searchPath Data/SKSE/Plugins)
+[16:32:47.536] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:47.542] [301740] [I] Symbol returning:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:42 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:47.542] [301740] [I] Public symbol found for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480:  C:\Development\skse64\DynamicBodyDistribution\src\DBD\Hooks\Hooks.cpp:42 static void DBD::Hooks::DoReset3D(RE::Actor &,bool) [?DoReset3D@Hooks@DBD@@CAXAEAVActor@RE@@_N@Z]
+[16:32:47.543] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480 (searchPath Data/SKSE/Plugins)
+[16:32:47.548] [301740] [I] Successfully opened pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/data/SKSE/Plugins/DynamicBodyDistribution.dll+0043480 from H:\SteamLibrary\steamapps\common\Skyrim Special Edition\data\SKSE\Plugins\DynamicBodyDistribution.pdb
+[16:32:47.565] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0647A01 (searchPath Data/SKSE/Plugins)
+[16:32:47.583] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0647A01	PDB signature mismatch
+[16:32:47.585] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0647A01 (searchPath Data/SKSE/Plugins)
+[16:32:47.603] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0647A01	PDB signature mismatch
+[16:32:47.605] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06D356F (searchPath Data/SKSE/Plugins)
+[16:32:47.624] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06D356F	PDB signature mismatch
+[16:32:47.625] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06D356F (searchPath Data/SKSE/Plugins)
+[16:32:47.644] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+06D356F	PDB signature mismatch
+[16:32:47.645] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07766D4 (searchPath Data/SKSE/Plugins)
+[16:32:47.664] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07766D4	PDB signature mismatch
+[16:32:47.665] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07766D4 (searchPath Data/SKSE/Plugins)
+[16:32:47.684] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+07766D4	PDB signature mismatch
+[16:32:47.685] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7888 (searchPath Data/SKSE/Plugins)
+[16:32:47.708] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7888	PDB signature mismatch
+[16:32:47.709] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7888 (searchPath Data/SKSE/Plugins)
+[16:32:47.728] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7888	PDB signature mismatch
+[16:32:47.729] [301740] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNELBASE.dll+006291D (searchPath Data/SKSE/Plugins)
+[16:32:47.730] [301740] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNELBASE.dll+006291D	PDB signature mismatch
+[16:32:47.731] [301740] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNELBASE.dll+006291D (searchPath Data/SKSE/Plugins)
+[16:32:47.732] [301740] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNELBASE.dll+006291D	PDB signature mismatch
+[16:32:47.733] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7E51 (searchPath Data/SKSE/Plugins)
+[16:32:47.756] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7E51	PDB signature mismatch
+[16:32:47.758] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7E51 (searchPath Data/SKSE/Plugins)
+[16:32:47.776] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF7E51	PDB signature mismatch
+[16:32:47.778] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF61DA (searchPath Data/SKSE/Plugins)
+[16:32:47.796] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF61DA	PDB signature mismatch
+[16:32:47.797] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF61DA (searchPath Data/SKSE/Plugins)
+[16:32:47.816] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CF61DA	PDB signature mismatch
+[16:32:47.818] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CD0DBD (searchPath Data/SKSE/Plugins)
+[16:32:47.836] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CD0DBD	PDB signature mismatch
+[16:32:47.837] [301740] [I] Attempting to load pdb for H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CD0DBD (searchPath Data/SKSE/Plugins)
+[16:32:47.856] [301740] [I] Failed to open pdb for dll H:/SteamLibrary/steamapps/common/Skyrim Special Edition/SkyrimSE.exe+0CD0DBD	PDB signature mismatch
+[16:32:47.858] [301740] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNEL32.DLL+001259D (searchPath Data/SKSE/Plugins)
+[16:32:47.858] [301740] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNEL32.DLL+001259D	PDB signature mismatch
+[16:32:47.860] [301740] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNEL32.DLL+001259D (searchPath Data/SKSE/Plugins)
+[16:32:47.860] [301740] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNEL32.DLL+001259D	PDB signature mismatch
+[16:32:47.862] [301740] [I] Attempting to load pdb for C:/WINDOWS/SYSTEM32/ntdll.dll+005AF78 (searchPath Data/SKSE/Plugins)
+[16:32:47.862] [301740] [I] Failed to open pdb for dll C:/WINDOWS/SYSTEM32/ntdll.dll+005AF78	PDB signature mismatch
+[16:32:47.864] [301740] [I] Attempting to load pdb for C:/WINDOWS/SYSTEM32/ntdll.dll+005AF78 (searchPath Data/SKSE/Plugins)
+[16:32:47.865] [301740] [I] Failed to open pdb for dll C:/WINDOWS/SYSTEM32/ntdll.dll+005AF78	PDB signature mismatch
+[16:32:47.866] [301740] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNELBASE.dll+0181A60 (searchPath Data/SKSE/Plugins)
+[16:32:47.867] [301740] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNELBASE.dll+0181A60	PDB signature mismatch
+[16:32:47.868] [301740] [I] Attempting to load pdb for C:/WINDOWS/System32/KERNELBASE.dll+0181A60 (searchPath Data/SKSE/Plugins)
+[16:32:47.869] [301740] [I] Failed to open pdb for dll C:/WINDOWS/System32/KERNELBASE.dll+0181A60	PDB signature mismatch
+[16:32:48.130] [301740] [I] Attempting to auto-open log: H:\Mayhem's Madness AE\overwrite\SKSE\Plugins\crash-2026-07-24-16-32-37.log
+[16:32:48.304] [301740] [I] Successfully auto-opened log with default handler

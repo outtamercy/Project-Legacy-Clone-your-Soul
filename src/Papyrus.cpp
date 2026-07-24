@@ -30,6 +30,7 @@
 #include <atomic>
 #include <algorithm>
 #include <regex>
+#include <cstring>
 
 #ifdef min
 #undef min
@@ -276,30 +277,22 @@ namespace ProjectLegacy::Papyrus {
 
         spdlog::info("PL: PerformBind — identity done for '{}'", echoName);
 
-        // voice: captured voice wins ONLY if its gender matches the vessel.
-        // 0x13AD2 = MaleEvenToned, 0x13ADD = FemaleEvenToned (verified) —
-        // the old hardcoded IDs were unverified, don't reuse them.
-        RE::BGSVoiceType* finalVoice = nullptr;
-        if (havePayload && data.contains("voice_form_id")) {
-            auto* voiceForm = DecodeModFormID(data.value("voice_form_id", ""));
-            auto* capturedVoice = voiceForm ? voiceForm->As<RE::BGSVoiceType>() : nullptr;
-            if (capturedVoice) {
-                bool capturedFemale = (static_cast<uint8_t>(capturedVoice->data.flags.get()) & 0x1) != 0;
-                bool vesselFemale = (sex == RE::SEX::kFemale);
-                if (capturedFemale == vesselFemale) {
-                    finalVoice = capturedVoice;
-                }
-                else {
-                    spdlog::warn("PL: PerformBind — captured voice gender mismatch, using fallback");
-                }
-            }
-        }
-        if (!finalVoice) {
-            finalVoice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013ADD : 0x00013AD2);
-        }
+        // voice: gender-matched default, ff-style — ff never copies the
+        // player's voice either, it only warns when the voice can't do
+        // follower dialogue. 0x13AD2 = MaleEvenToned, 0x13ADD = FemaleEvenToned
+        // (verified, both follower-capable)
+        auto* finalVoice = RE::TESForm::LookupByID<RE::BGSVoiceType>(sex == RE::SEX::kFemale ? 0x00013ADD : 0x00013AD2);
         if (finalVoice) {
             npc->voiceType = finalVoice;
         }
+
+        // ---- class & combat behavior: direct copy, ghost-side. ff had to
+        // guess combat style from the equipped weapon because papyrus can't
+        // read it — we're in c++, we just copy ----
+        auto* playerNpc = player->GetActorBase();
+        npc->combatStyle = playerNpc->combatStyle;
+        npc->npcClass = playerNpc->npcClass;
+        npc->aiData = playerNpc->aiData;
 
         // ---- gear ----
         auto* equipMgr = RE::ActorEquipManager::GetSingleton();

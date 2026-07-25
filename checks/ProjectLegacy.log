@@ -1,5 +1,8 @@
-[09:48:36.997] [94200] [I] Project Legacy: loaded
-[09:48:38.629] [94200] [I] PL: JCNG API v1 linked via JContainers64.dll
-[09:48:38.630] [94200] [I] PL: registry read (load event) ok, handle=1
-[09:49:08.696] [95724] [I] Project Legacy: Papyrus functions registered.
-[09:50:56.966] [94200] [I] PL: registry read (load event) ok, handle=2
+[11:24:01.018] [102408] [I] Project Legacy: loaded
+[11:24:02.707] [102408] [I] PL: JCNG API v1 linked via JContainers64.dll
+[11:24:02.708] [102408] [I] PL: registry read (load event) ok, handle=1
+[11:24:32.795] [98872] [I] Project Legacy: Papyrus functions registered.
+[11:25:19.751] [102408] [I] PL: registry read (load event) ok, handle=2
+[11:27:44.044] [100552] [I] PL: PerformBind — identity done for 'dez'
+[11:27:44.045] [100552] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
+[11:27:44.045] [100552] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied

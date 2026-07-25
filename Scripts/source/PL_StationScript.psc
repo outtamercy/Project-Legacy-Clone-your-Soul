@@ -1,4 +1,15 @@
 Scriptname PL_StationScript extends ObjectReference
+; ---------------------------------------------------------------------------
+; invisible-until-summon architecture:
+;   vessels are NEVER constructed or enabled at load. load only refreshes
+;   the trigger's prompt from the registry. construction happens mid-game,
+;   on a player activation — the exact conditions the bind path survives.
+;   this removes the entire load-path DBD::DoReset3D crash surface.
+;
+; trigger prompt is the state indicator:
+;   vacant  -> "Soul Sucker"     (activate = bind)
+;   bound   -> "Summon <name>"   (activate = summon / lazy-construct)
+; ---------------------------------------------------------------------------
 
 int Property SlotIndex Auto
 Actor Property PlayerRef Auto
@@ -45,7 +56,18 @@ String Function GetSlotDiskName(int slot) Global Native
 Form Function GetSlotRaceForm(int slot) Global Native
 int Function GetSlotVesselSex(int slot) Global Native
 
+; ---- trigger prompt = state. name lives here, not on any mesh. ----
+Function UpdateTriggerName()
+    string boundName = GetSlotDiskName(SlotIndex)
+    if IsSlotBound(SlotIndex) && boundName != ""
+        self.SetDisplayName("Summon " + boundName, true)
+    else
+        self.SetDisplayName("Soul Sucker", true)
+    endif
+EndFunction
+
 Function UpdateVisualState()
+    UpdateTriggerName()
     ObjectReference physicalPedestal = self.GetLinkedRef(PL_GlowLink)
     if IsSlotBound(SlotIndex)
         if PL_Blind01 && physicalPedestal
@@ -58,46 +80,44 @@ Function UpdateVisualState()
     endif
 EndFunction
 
+Event OnCellLoad()
+    ; prompt must reflect bind state every time the cell comes up —
+    ; this is the only "restore" the new architecture does at load
+    UpdateVisualState()
+EndEvent
+
+; ---- load path: registry check + prompt refresh. NO actor work, ever. ----
 Function TryRestoreSlot()
     if !IsSlotBound(SlotIndex)
+        UpdateTriggerName()
         return
     endif
+    Debug.Trace("PL/Station " + SlotIndex + ": bound (" + GetSlotDiskName(SlotIndex) + ") — vessel dormant until summon")
+    UpdateVisualState()
+EndFunction
 
+; ---- full construction from the registry payload. runs ONLY on player ----
+; ---- activation (summon), never at load. same law as DoBind.         ----
+Actor Function ConstructVesselFromRegistry()
     string diskName = GetSlotDiskName(SlotIndex)
     Race slotRace = GetSlotRaceForm(SlotIndex) as Race
-    int slotSex = GetSlotVesselSex(SlotIndex)
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — name=" + diskName + " race=" + slotRace + " sex=" + slotSex)
+    Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — name=" + diskName + " race=" + slotRace)
 
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     if !spawnMarker
-        Debug.Trace("PL/Station " + SlotIndex + ": restore — no spawn marker")
-        return
-    endif
-
-    Actor vessel = SpawnedVessel
-    if vessel
-        ; ---- persisted vessel: everything rides the save already — name,
-        ; voice, race, gear, perks, stats, face. Disable/SetRace/Enable would
-        ; each force a 3D reset, and the reset storm is what kills DBD.
-        ; the only correct move here is: make sure it's up, and keep it quiet.
-        if vessel.IsDisabled()
-            vessel.Enable()
-        endif
-        vessel.EnableAI(false)
-        Debug.Trace("PL/Station " + SlotIndex + ": restore — persisted vessel kept, no reconstruction")
-        return
-    endif
-
-    ; ---- vessel missing: full construction, same law as DoBind ----
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — no vessel, full construction")
-    vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
-    SpawnedVessel = vessel
-    if !vessel
-        Debug.Trace("PL/Station " + SlotIndex + ": restore — spawn failed")
-        return
+        Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — no spawn marker")
+        return None
     endif
     if !slotRace
         slotRace = PlayerRef.GetActorBase().GetRace()
+    endif
+
+    ; born disabled — all surgery ghost-side, 3D builds once at Enable
+    Actor vessel = spawnMarker.PlaceAtMe(PL_VesselBase, 1, true, true) as Actor
+    SpawnedVessel = vessel
+    if !vessel
+        Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — spawn failed")
+        return None
     endif
 
     vessel.BlockActivation(true)
@@ -105,11 +125,13 @@ Function TryRestoreSlot()
     (vessel as PL_VesselActor).SlotIndex = SlotIndex
     (vessel as PL_VesselActor).myEchoName = diskName
 
-    ; direct copy FIRST, ghost-side — same law as DoBind
+    ; direct copy FIRST, ghost-side — sex/name/voice/gear/perks/spells/shouts
+    ; land before the race-switch event and before any 3D exists.
+    ; the json payload is authoritative, not the current player.
     bool bindOk = (vessel as PL_VesselActor).PerformBind(SlotIndex, diskName, diskName)
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — PerformBind returned " + bindOk)
+    Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — PerformBind returned " + bindOk)
 
-    ; race after identity, through the engine's front door
+    ; race through the engine's front door so the hook stack gets notified
     vessel.SetRace(slotRace)
 
     vessel.Enable()
@@ -120,7 +142,7 @@ Function TryRestoreSlot()
         safety3D -= 1
         Utility.Wait(0.1)
     endWhile
-    Debug.Trace("PL/Station " + SlotIndex + ": restore — 3D built after " + (100 - safety3D) + " ticks")
+    Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — 3D built after " + (100 - safety3D) + " ticks")
 
     if diskName != ""
         PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
@@ -132,12 +154,16 @@ Function TryRestoreSlot()
             faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
         endWhile
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
-        Debug.Trace("PL/Station " + SlotIndex + ": restore — LoadCharacter ok=" + faceOk)
+        Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — LoadCharacter ok=" + faceOk)
+        if !faceOk
+            Debug.Notification("Project Legacy: Face load failed for " + diskName)
+        endif
     endif
 
+    ; stats last — SetRace/LoadCharacter recalc AVs, copy after they're done
     (vessel as PL_VesselActor).ApplyStats(SlotIndex, diskName)
+    return vessel
 EndFunction
-
 
 bool Function DoBind()
     Game.ForceThirdPerson()
@@ -274,10 +300,21 @@ bool Function DoBind()
     endif
     Utility.Wait(1.5)
 
-    ; solidify — ghost becomes the finished clone
+    ; solidify for a beat so the player sees the finished clone...
     vessel.SetGhost(false)
     vessel.EnableAI(false)
     Debug.Trace("PL/Bind 9: solidified")
+
+    Utility.Wait(2.0)
+
+    ; ...then she returns to the stand. vessels stay dormant until summoned —
+    ; the soul is stored, not standing around. brief fade-out as she goes.
+    if PL_BlindingLightGold
+        PL_BlindingLightGold.Play(vessel, 2.0)
+    endif
+    Utility.Wait(0.8)
+    vessel.Disable()
+    Debug.Trace("PL/Bind 9b: vessel dormant (invisible-until-summon)")
 
     BreakPlayerAnimation(PlayerRef)
     Utility.Wait(0.3)
@@ -293,17 +330,25 @@ EndFunction
 Function DoSummon()
     Debug.Trace("PL/Station " + SlotIndex + ": DoSummon entered")
     Actor vessel = SpawnedVessel
-    Debug.Trace("PL/Station " + SlotIndex + ": SpawnedVessel = " + vessel)
+
+    if vessel && vessel.IsDead()
+        Debug.Trace("PL/Station " + SlotIndex + ": vessel is DEAD — rebuilding from payload")
+        vessel.Delete()
+        SpawnedVessel = None
+        vessel = None
+    endif
+
     if !vessel
-        Debug.Trace("PL/Station " + SlotIndex + ": vessel is NONE — bailing")
-        Debug.Notification("Project Legacy: Vessel not found — rebind required after reload")
-        return
+        ; lazy construction — first summon in this save. mid-game, on a
+        ; player action: the exact conditions the bind path survives.
+        Debug.Trace("PL/Station " + SlotIndex + ": no vessel — lazy construct from registry")
+        vessel = ConstructVesselFromRegistry()
+        if !vessel
+            Debug.Notification("Project Legacy: Summon failed — could not construct vessel")
+            return
+        endif
     endif
-    if vessel.IsDead()
-        Debug.Trace("PL/Station " + SlotIndex + ": vessel is DEAD — bailing")
-        Debug.Notification("Project Legacy: Vessel not found — rebind required after reload")
-        return
-    endif
+
     Debug.Trace("PL/Station " + SlotIndex + ": calling SummonVessel on " + vessel)
     (vessel as PL_VesselActor).SummonVessel(PlayerRef, self)
     Debug.Trace("PL/Station " + SlotIndex + ": SummonVessel returned")
@@ -316,7 +361,7 @@ Function DoCleanse()
         vessel.Delete()
         SpawnedVessel = None
     endif
-    
+
     String diskName = GetSlotDiskName(SlotIndex)
     ClearSlot(SlotIndex, diskName)
     UpdateVisualState()
@@ -326,10 +371,9 @@ Event OnActivate(ObjectReference akActionRef)
     if akActionRef != PlayerRef
         return
     endif
-    
-    UpdateVisualState()
-    
+
     if !IsSlotBound(SlotIndex)
+        UpdateVisualState()
         int btn = PL_MsgEmpty.Show()
         if btn == 0
             int confirm = PL_MsgBindConfirm.Show()
@@ -343,11 +387,8 @@ Event OnActivate(ObjectReference akActionRef)
             endif
         endif
     else
-        ; bound — "What now?" IS the menu. 0 = summon, anything else = walk away
-        int actionBtn = PL_MsgSummon.Show()
-        if actionBtn == 0
-            DoSummon()
-        endif
+        ; prompt already said "Summon <name>" — activation IS the command
+        DoSummon()
     endif
 EndEvent
 

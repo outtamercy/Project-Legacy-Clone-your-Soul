@@ -1,11 +1,12 @@
 Scriptname PL_PlayerLoadGameAlias extends ReferenceAlias
 
-Event OnPlayerLoadGame()
+; OnPlayerLoadGame is MISSED on saves where this alias initializes during
+; that very load — OnInit covers the first-load case, OnPlayerLoadGame
+; covers every load after.
+Event OnInit()
     (GetOwningQuest() as PL_ManagerQuest).HandleLoadGame()
 EndEvent
-Event OnInit()
-    ; on saves where this alias initializes DURING the load (any save that
-    ; predates it), OnPlayerLoadGame already fired before we registered —
-    ; queue the sweep manually so restore works on first sight
+
+Event OnPlayerLoadGame()
     (GetOwningQuest() as PL_ManagerQuest).HandleLoadGame()
 EndEvent

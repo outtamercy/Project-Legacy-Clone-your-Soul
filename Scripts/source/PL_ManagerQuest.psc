@@ -22,8 +22,9 @@ Function HandleLoadGame()
     if !IsSKSEPluginLoaded()
         return
     endif
-    ; never construct actors inside the load storm — every mod on the list is
-    ; running load handlers right now. queue the sweep for when it settles.
+    ; the sweep is now CHEAP — TryRestoreSlot does no actor work, only
+    ; registry checks + prompt refreshes. the delay stays purely so the
+    ; registry reload (dll side) has settled before we read it.
     Debug.Trace("PL/Manager: load detected, restore sweep queued")
     RegisterForSingleUpdate(5.0)
 EndFunction
@@ -41,4 +42,5 @@ Event OnUpdate()
         endif
         i += 1
     endWhile
+    Debug.Trace("PL/Manager: restore sweep done — all vessels dormant until summoned")
 EndEvent

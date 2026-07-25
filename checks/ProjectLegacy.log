@@ -1,8 +1,11 @@
-[11:24:01.018] [102408] [I] Project Legacy: loaded
-[11:24:02.707] [102408] [I] PL: JCNG API v1 linked via JContainers64.dll
-[11:24:02.708] [102408] [I] PL: registry read (load event) ok, handle=1
-[11:24:32.795] [98872] [I] Project Legacy: Papyrus functions registered.
-[11:25:19.751] [102408] [I] PL: registry read (load event) ok, handle=2
-[11:27:44.044] [100552] [I] PL: PerformBind — identity done for 'dez'
-[11:27:44.045] [100552] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
-[11:27:44.045] [100552] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied
+[11:52:52.591] [106684] [I] Project Legacy: loaded
+[11:52:54.224] [106684] [I] PL: JCNG API v1 linked via JContainers64.dll
+[11:52:54.225] [106684] [I] PL: registry read (load event) ok, handle=1
+[11:53:24.028] [109312] [I] Project Legacy: Papyrus functions registered.
+[11:53:52.445] [106684] [I] PL: registry read (load event) ok, handle=2
+[11:54:57.507] [108676] [I] PL: PerformBind — identity done for 'dez'
+[11:54:57.508] [108676] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
+[11:54:57.508] [108676] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied
+[11:54:57.877] [101392] [I] PL: StageSlotForLoad 'dez' — jslot=true dds=true
+[11:54:57.879] [101392] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\dez.jslot (ok)
+[11:54:57.880] [101392] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\dez.dds (ok)

@@ -30,7 +30,6 @@
 #include <atomic>
 #include <algorithm>
 #include <regex>
-#include <cstring>
 
 #ifdef min
 #undef min
@@ -290,6 +289,8 @@ namespace ProjectLegacy::Papyrus {
         // guess combat style from the equipped weapon because papyrus can't
         // read it — we're in c++, we just copy ----
         auto* playerNpc = player->GetActorBase();
+        // class & combat behavior: direct TESNPC members (NOT under actorData),
+        // camelCase aiData — compile-verified against CommonLibSSE-NG
         npc->combatStyle = playerNpc->combatStyle;
         npc->npcClass = playerNpc->npcClass;
         npc->aiData = playerNpc->aiData;
@@ -674,12 +675,25 @@ namespace ProjectLegacy::Papyrus {
         auto dstJslot = GetCharGenPath(name);
         auto dstDds = GetCharGenTexturePath(name);
 
+        // logging every branch — the new-char summon froze somewhere in the
+        // stage -> LoadCharacter window and CrashLogger didn't write. split it.
+        bool haveJslot = fs::exists(srcJslot);
+        bool haveDds = fs::exists(srcDds);
+        spdlog::info("PL: StageSlotForLoad '{}' — jslot={} dds={}", name, haveJslot, haveDds);
+
         std::error_code ec;
         fs::create_directories(dstJslot.parent_path(), ec);
         fs::create_directories(dstDds.parent_path(), ec);
 
-        if (fs::exists(srcJslot)) fs::copy_file(srcJslot, dstJslot, fs::copy_options::overwrite_existing, ec);
-        if (fs::exists(srcDds)) fs::copy_file(srcDds, dstDds, fs::copy_options::overwrite_existing, ec);
+        if (haveJslot) {
+            fs::copy_file(srcJslot, dstJslot, fs::copy_options::overwrite_existing, ec);
+            spdlog::info("PL: staged jslot -> {} ({})", dstJslot.string(), ec ? ec.message() : "ok");
+        }
+        if (haveDds) {
+            ec.clear();
+            fs::copy_file(srcDds, dstDds, fs::copy_options::overwrite_existing, ec);
+            spdlog::info("PL: staged dds -> {} ({})", dstDds.string(), ec ? ec.message() : "ok");
+        }
         return true;
     }
 

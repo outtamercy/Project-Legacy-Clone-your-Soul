@@ -1,4 +1,4 @@
-SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD1C51FE9C2B78, os = 6.2 (9200))
+SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD1C5606BC0519, os = 6.2 (9200))
 imagebase = 00007FF7E82F0000
 reloc mgr imagebase = 00007FF7E82F0000
 config path = H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\skse.ini
@@ -1283,8 +1283,8 @@ sending message type 5 to plugin 68
 sending message type 5 to plugin 106
 dispatched message.
 plugin 96 allocated 14 bytes from branch pool
-save name is Save39_1CFEA61E_0_507269736F6E6572_Sovngarde01_000242_20260725162520_1_1
-full save path: C:\Users\Lore\Documents\My Games\Skyrim Special Edition\__MO_Saves\\Save39_1CFEA61E_0_507269736F6E6572_Sovngarde01_000242_20260725162520_1_1.skse
+save name is Save33_1CFEA61E_0_507269736F6E6572_Sovngarde01_000242_20260725165353_1_1
+full save path: C:\Users\Lore\Documents\My Games\Skyrim Special Edition\__MO_Saves\\Save33_1CFEA61E_0_507269736F6E6572_Sovngarde01_000242_20260725165353_1_1.skse
 dispatch message (4) to plugin listeners
 sending message type 4 to plugin 3
 sending message type 4 to plugin 7
@@ -2203,8 +2203,8 @@ WidgetLoader.as: loadWidget(a_widgetID = 4, a_widgetSource = AMOTDateWidget.swf)
 WidgetLoader.as: loadWidget(a_widgetID = 5, a_widgetSource = AMOTSymbolWidget.swf)
 AMOT now switching to symbol skydial
 WidgetLoader.as: loadWidget(a_widgetID = 6, a_widgetSource = skyui/activeeffects.swf)
-AMOT now switching to symbol SkyDial
 AMOT now switching to symbol PictureOfTheDay
+AMOT now switching to symbol SkyDial
 dispatch message (5) to plugin listeners
 sending message type 5 to plugin 22
 sending message type 5 to plugin 51
@@ -2271,8 +2271,8 @@ sending message type 5 to plugin 51
 sending message type 5 to plugin 68
 sending message type 5 to plugin 106
 dispatched message.
-save name is Autosave2_1CFEA61E_0_507269736F6E6572_aaBennyShelterArmoryCell_000243_20260725162623_1_1
-full save path: C:\Users\Lore\Documents\My Games\Skyrim Special Edition\__MO_Saves\\Autosave2_1CFEA61E_0_507269736F6E6572_aaBennyShelterArmoryCell_000243_20260725162623_1_1.skse
+save name is Autosave2_1CFEA61E_0_507269736F6E6572_aaBennyShelterArmoryCell_000243_20260725165447_1_1
+full save path: C:\Users\Lore\Documents\My Games\Skyrim Special Edition\__MO_Saves\\Autosave2_1CFEA61E_0_507269736F6E6572_aaBennyShelterArmoryCell_000243_20260725165447_1_1.skse
 dispatch message (4) to plugin listeners
 sending message type 4 to plugin 3
 sending message type 4 to plugin 7
@@ -3181,9 +3181,3 @@ Saving NiNode update event registrations...
 Saving SKSEPersistentObjectStorage data...
 Saving SKSEDelayFunctorManager data...
 cleared save path
-dispatch message (5) to plugin listeners
-sending message type 5 to plugin 22
-sending message type 5 to plugin 51
-sending message type 5 to plugin 68
-sending message type 5 to plugin 106
-dispatched message.

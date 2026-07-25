@@ -12,6 +12,13 @@ Scriptname PL_StationScript extends ObjectReference
 ; ---------------------------------------------------------------------------
 
 int Property SlotIndex Auto
+FormList Property PL_TriggerForms Auto
+; ^ all PL_StationTrigger base forms, in slot order (trigger01 first).
+; new property = old saves have NO baked value for it, so it always
+; initializes from the esp — unlike SlotIndex, which saves BAKE IN.
+; (char B's save had SlotIndex=1 baked from the duplicate-then-rename
+; era; the esp fix to 6 never reached it. never trust baked props.)
+
 Actor Property PlayerRef Auto
 ActorBase Property PL_VesselBase Auto
 Activator Property PL_PerkGlow Auto
@@ -56,6 +63,20 @@ String Function GetSlotDiskName(int slot) Global Native
 Form Function GetSlotRaceForm(int slot) Global Native
 int Function GetSlotVesselSex(int slot) Global Native
 
+; ---- derive the slot from the base form's position in PL_TriggerForms. ----
+; esp data, immune to save-baking — a stale/misnumbered SlotIndex
+; self-corrects the first time anyone sees or touches the stand.
+Function ResolveSlotIndex()
+    if !PL_TriggerForms
+        return
+    endif
+    int idx = PL_TriggerForms.Find(self.GetBaseObject())
+    if idx >= 0 && SlotIndex != idx + 1
+        Debug.Trace("PL/Station: slot corrected " + SlotIndex + " -> " + (idx + 1) + " (baked property was stale)")
+        SlotIndex = idx + 1
+    endif
+EndFunction
+
 ; ---- trigger prompt = state. name lives here, not on any mesh. ----
 Function UpdateTriggerName()
     bool bound = IsSlotBound(SlotIndex)
@@ -85,12 +106,14 @@ EndFunction
 Event OnCellLoad()
     ; prompt must reflect bind state every time the cell comes up —
     ; this is the only "restore" the new architecture does at load
+    ResolveSlotIndex()
     Debug.Trace("PL/Station " + SlotIndex + ": OnCellLoad fired")
     UpdateVisualState()
 EndEvent
 
 ; ---- load path: registry check + prompt refresh. NO actor work, ever. ----
 Function TryRestoreSlot()
+    ResolveSlotIndex()
     if !IsSlotBound(SlotIndex)
         UpdateTriggerName()
         return
@@ -149,7 +172,9 @@ Actor Function ConstructVesselFromRegistry()
 
     if diskName != ""
         PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
+        Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — staged, calling LoadCharacter")
         Bool faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
+        Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — LoadCharacter returned " + faceOk)
         Int iSafety = 5
         while !faceOk && iSafety > 0
             iSafety -= 1
@@ -374,6 +399,8 @@ Event OnActivate(ObjectReference akActionRef)
     if akActionRef != PlayerRef
         return
     endif
+
+    ResolveSlotIndex()
 
     if !IsSlotBound(SlotIndex)
         UpdateVisualState()

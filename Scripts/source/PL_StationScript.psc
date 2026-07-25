@@ -58,8 +58,10 @@ int Function GetSlotVesselSex(int slot) Global Native
 
 ; ---- trigger prompt = state. name lives here, not on any mesh. ----
 Function UpdateTriggerName()
+    bool bound = IsSlotBound(SlotIndex)
     string boundName = GetSlotDiskName(SlotIndex)
-    if IsSlotBound(SlotIndex) && boundName != ""
+    Debug.Trace("PL/Station " + SlotIndex + ": UpdateTriggerName — bound=" + bound + " name='" + boundName + "'")
+    if bound && boundName != ""
         self.SetDisplayName("Summon " + boundName, true)
     else
         self.SetDisplayName("Soul Sucker", true)
@@ -83,6 +85,7 @@ EndFunction
 Event OnCellLoad()
     ; prompt must reflect bind state every time the cell comes up —
     ; this is the only "restore" the new architecture does at load
+    Debug.Trace("PL/Station " + SlotIndex + ": OnCellLoad fired")
     UpdateVisualState()
 EndEvent
 

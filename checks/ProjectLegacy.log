@@ -1,0 +1,11 @@
+[14:41:20.189] [112752] [I] Project Legacy: loaded
+[14:41:21.890] [112752] [I] PL: JCNG API v1 linked via JContainers64.dll
+[14:41:21.891] [112752] [I] PL: registry read (load event) ok, handle=1
+[14:41:51.798] [115184] [I] Project Legacy: Papyrus functions registered.
+[14:42:17.468] [112752] [I] PL: registry read (load event) ok, handle=10
+[14:44:12.051] [115176] [I] PL: PerformBind — identity done for 'dez'
+[14:44:12.051] [115176] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
+[14:44:12.052] [115176] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied
+[14:44:12.435] [112268] [I] PL: StageSlotForLoad 'dez' — jslot=true dds=true
+[14:44:12.437] [112268] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\dez.jslot (ok)
+[14:44:12.439] [112268] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\dez.dds (ok)

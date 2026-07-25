@@ -67,6 +67,11 @@ namespace PL {
     // load — that keeps the one store actually true.
 
     static JCNG_Handle g_registry = 0;
+    // did the current handle come from a REAL file read? the load-event read
+    // can fail when jcng's db for the incoming save isn't rebuilt yet — the
+    // fallback empty jmap also gets a nonzero handle, so "handle=8" in the
+    // log proved nothing. track truth, retry lazily on first access.
+    static bool g_registryFromDisk = false;
 
     static std::string GetRegistryPath() {
         char exePath[MAX_PATH];
@@ -77,30 +82,57 @@ namespace PL {
         return (dir / "PL_Registry.json").string();
     }
 
-    void ReloadRegistry() {
-        if (!g_jcng) return;
+    static bool TryReadRegistryFromDisk(const char* why) {
         auto path = GetRegistryPath();
         std::error_code ec;
-        if (fs::exists(path, ec)) {
-            g_registry = g_jcng->jvalue_read_from_file(nullptr, path);
-            spdlog::info("PL: registry read from disk, handle={}", g_registry);
+        if (!fs::exists(path, ec)) {
+            spdlog::info("PL: registry read ({}) — no file on disk", why);
+            return false;
+        }
+        JCNG_Handle h = g_jcng->jvalue_read_from_file(nullptr, path);
+        if (!h) {
+            // jcng not ready / parse failed — log LOUDLY; this was the silent
+            // cross-save killer (fell through to the empty jmap, every slot
+            // read as vacant on the other character's save)
+            spdlog::warn("PL: registry read ({}) FAILED — file exists but jcng returned 0; will retry on first access", why);
+            return false;
+        }
+        g_registry = h;
+        g_registryFromDisk = true;
+        spdlog::info("PL: registry read ({}) ok, handle={}", why, g_registry);
+        return true;
+    }
+
+    void ReloadRegistry() {
+        if (!g_jcng) return;
+        g_registryFromDisk = false;  // handles go stale across loads — never trust the old one
+        if (TryReadRegistryFromDisk("load event")) {
+            return;
         }
         if (!g_registry) {
             // no file yet (or unreadable) — start empty; first bind creates it
             g_registry = g_jcng->jmap_object(nullptr);
-            spdlog::info("PL: no registry file, started empty, handle={}", g_registry);
+            spdlog::info("PL: no registry yet, started empty, handle={}", g_registry);
         }
     }
 
     static void CommitRegistry() {
         if (!g_jcng || !g_registry) return;
         g_jcng->jvalue_write_to_file(nullptr, g_registry, GetRegistryPath());
+        g_registryFromDisk = true;  // we just wrote it — this handle is the truth
     }
 
     // never cache slot handles either — resolve fresh every call off the
     // one registry object. it's a map lookup, not a mortgage
     static JCNG_Handle GetSlotObj(int slot, bool create) {
-        if (!g_jcng || !g_registry) return 0;
+        if (!g_jcng) return 0;
+        // lazy self-heal: if the load-event read failed (jcng db not rebuilt
+        // yet at event time), the first real access — the load sweep, an
+        // OnCellLoad prompt refresh — retries now that jcng has settled
+        if (!g_registryFromDisk) {
+            TryReadRegistryFromDisk("lazy access");
+        }
+        if (!g_registry) return 0;
         std::string key = "slot_" + std::to_string(slot);
         JCNG_Handle h = g_jcng->jmap_get_obj(nullptr, g_registry, key, 0);
         if (!h && create) {

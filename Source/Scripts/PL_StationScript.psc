@@ -104,10 +104,27 @@ Function UpdateVisualState()
 EndFunction
 
 Event OnCellLoad()
-    ; prompt must reflect bind state every time the cell comes up —
-    ; this is the only "restore" the new architecture does at load
+    ; kept for completeness, but this event empirically NEVER fires on
+    ; base-form scripted activators — OnLoad below is the reliable one
     ResolveSlotIndex()
     Debug.Trace("PL/Station " + SlotIndex + ": OnCellLoad fired")
+    UpdateVisualState()
+EndEvent
+
+Event OnLoad()
+    ; 3D-based event — proven to fire on these refs (the perk glow uses it).
+    ; every stand renames itself when its model loads, no dependency on the
+    ; manager's Stations array pointing at the same physical object
+    ResolveSlotIndex()
+    Debug.Trace("PL/Station " + SlotIndex + ": OnLoad fired")
+    UpdateVisualState()
+    ; once more after the load settles — the dll's registry reload can land
+    ; AFTER this OnLoad, and a stale first read must not stick
+    RegisterForSingleUpdate(6.0)
+EndEvent
+
+Event OnUpdate()
+    Debug.Trace("PL/Station " + SlotIndex + ": OnUpdate rename refresh")
     UpdateVisualState()
 EndEvent
 
@@ -426,6 +443,12 @@ Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sen
     if !(sender as Armor) && !(sender as Weapon)
         return
     endif
+    ; skip body-slot (32) armor in the fly visual — a cuirass on an invisible
+    ; carrier reads as a hollow BODY parked at the stand, not as flying gear
+    Armor akArmor = sender as Armor
+    if akArmor && Math.LogicalAnd(akArmor.GetSlotMask(), 0x4)
+        return
+    endif
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     ; invisible body — only the equipped gear renders, exactly like ff.
     ; no SetGhost: the "ghost" was never a person, it's the gear itself
@@ -447,8 +470,10 @@ Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sen
     carrier.MoveTo(PlayerRef)
     carrier.SetAlpha(1.0, true)
     PL_BlindingLightGold.Play(carrier, 0.5)
-    Utility.Wait(Utility.RandomFloat(0.5, 1.5))
-    carrier.SplineTranslateToRef(spawnMarker, Utility.RandomFloat(350.0, 800.0), 250.0, 10.0)
+    ; linger on the player, then fly slow enough to track —
+    ; 350-800 u/s was a blur; the only piece ever SEEN was a stuck one
+    Utility.Wait(Utility.RandomFloat(1.0, 2.2))
+    carrier.SplineTranslateToRef(spawnMarker, Utility.RandomFloat(160.0, 380.0), 250.0, 10.0)
     Utility.Wait(3.0)
     carrier.Delete()
 EndEvent

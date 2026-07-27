@@ -1,4 +1,4 @@
-SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD1DDC2071CC1B, os = 6.2 (9200))
+SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD1DED319070B2, os = 6.2 (9200))
 imagebase = 00007FF6A53B0000
 reloc mgr imagebase = 00007FF6A53B0000
 config path = H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\skse.ini
@@ -1231,12 +1231,12 @@ Loading plugin list:
 	(1040424 -> 1040424)	EarthForgeSurvival.esl
 	(1040425 -> 1040425)	skoomapipes.esl
 	(1040426 -> 1040426)	Kanjs - AIO Books Patch.esl
-	(1040427 -> 1040427)	LockMaster.esl
-	(1040428 -> 1040428)	OPAlterationGrantArmor.esl
-	(1040429 -> 1040429)	PraedysSkeletons.esl
-	(1040430 -> 1040430)	Riften Towers.esl
-	(1040431 -> 1040432)	SimpleVampFixesSSE.esl
-	(1040432 -> 1040431)	DisableCharacterLight.esl
+	(1040427 -> 1040428)	LockMaster.esl
+	(1040428 -> 1040431)	OPAlterationGrantArmor.esl
+	(1040429 -> 1040432)	PraedysSkeletons.esl
+	(1040430 -> 1040427)	Riften Towers.esl
+	(1040431 -> 1040429)	SimpleVampFixesSSE.esl
+	(1040432 -> 1040430)	DisableCharacterLight.esl
 	(1040433 -> 1040433)	SeranaEyeFix.esp
 	(1040434 -> 1040434)	Unlimited Sprinting.esp
 	(1040435 -> 1040435)	stuck on screen fix.esp
@@ -2095,6 +2095,18 @@ AMOT now switching to symbol skydial
 AMOT now switching to symbol skydial
 AMOT now switching to symbol SkyDial
 AMOT now switching to symbol PictureOfTheDay
+dispatch message (5) to plugin listeners
+sending message type 5 to plugin 21
+sending message type 5 to plugin 50
+sending message type 5 to plugin 67
+sending message type 5 to plugin 105
+dispatched message.
+dispatch message (5) to plugin listeners
+sending message type 5 to plugin 21
+sending message type 5 to plugin 50
+sending message type 5 to plugin 67
+sending message type 5 to plugin 105
+dispatched message.
 dispatch message (5) to plugin listeners
 sending message type 5 to plugin 21
 sending message type 5 to plugin 50

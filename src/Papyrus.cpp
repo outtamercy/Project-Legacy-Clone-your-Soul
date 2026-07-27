@@ -255,17 +255,14 @@ namespace ProjectLegacy::Papyrus {
         // ---- identity, ghost-side. vessel is disabled, no 3D exists,
         // nothing here may touch the scene graph — writes only, one pass ----
 
-        // sex: json gender wins; the current player is only the fallback.
-        // restoring dez on a male character's save must NOT flip her male
+        // SEX FLAG IS NOT WRITTEN HERE. proven order from the she-male era:
+        // race first (engine's path), gender AFTER. papyrus asserts it via
+        // SetActorBaseSex once SetRace is done — the only sex write in the
+        // whole pipeline. we only READ the json gender for the voice pick:
+        // restoring dez on a male character's save must NOT flip her voice
         auto sex = player->GetActorBase()->GetSex();
         if (havePayload && data.contains("gender")) {
             sex = (data.value("gender", "") == "female") ? RE::SEX::kFemale : RE::SEX::kMale;
-        }
-        if (sex == RE::SEX::kFemale) {
-            npc->actorData.actorBaseFlags.set(RE::ACTOR_BASE_DATA::Flag::kFemale);
-        }
-        else {
-            npc->actorData.actorBaseFlags.reset(RE::ACTOR_BASE_DATA::Flag::kFemale);
         }
 
         // race: deliberately NOT written here. race goes through papyrus

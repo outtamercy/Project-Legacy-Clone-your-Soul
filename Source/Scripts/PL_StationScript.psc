@@ -193,6 +193,9 @@ Actor Function ConstructVesselFromRegistry()
 
     ; race through the engine's front door so the hook stack gets notified
     vessel.SetRace(slotRace)
+    ; RE-ASSERT sex — SetRace can clobber the flag PerformBind set (the
+    ; she-male relapse: female preset applied to a male body hangs skee)
+    PL_VesselActor.SetActorBaseSex(vessel, GetSlotVesselSex(SlotIndex))
 
     vessel.Enable()
     vessel.EnableAI(false)
@@ -319,7 +322,9 @@ bool Function DoBind()
 
     ; race through the engine's front door so the hook stack gets notified
     vessel.SetRace(PlayerRef.GetActorBase().GetRace())
-    Debug.Trace("PL/Bind 6: SetRace done (engine path)")
+    ; RE-ASSERT sex — SetRace can clobber the flag PerformBind set
+    PL_VesselActor.SetActorBaseSex(vessel, GetSlotVesselSex(SlotIndex))
+    Debug.Trace("PL/Bind 6: SetRace done (engine path), sex re-asserted")
 
     ; born as the ghost — the white silhouette IS the clone mid-copy
     vessel.SetGhost(true)

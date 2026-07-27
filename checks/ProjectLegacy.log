@@ -1,12 +1,12 @@
-[12:27:29.657] [98896] [I] Project Legacy: loaded
-[12:27:31.300] [98896] [I] PL: JCNG API v1 linked via JContainers64.dll
-[12:27:31.301] [98896] [I] PL: registry read (load event) ok, handle=1
-[12:28:00.616] [86496] [I] Project Legacy: Papyrus functions registered.
-[12:28:28.509] [98896] [I] PL: registry read (load event) ok, handle=11
-[12:29:53.768] [89276] [I] PL: PerformBind — identity done for 'Petunia'
-[12:29:53.769] [89276] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
-[12:29:53.769] [89276] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
-[12:29:54.096] [89276] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
-[12:29:54.100] [89276] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
-[12:29:54.101] [89276] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
-[12:29:54.142] [96568] [I] PL: DeleteFaceGenData — removed 0 cached facegen file(s) for base C80022D6
+[14:29:01.936] [101324] [I] Project Legacy: loaded
+[14:29:03.610] [101324] [I] PL: JCNG API v1 linked via JContainers64.dll
+[14:29:03.611] [101324] [I] PL: registry read (load event) ok, handle=1
+[14:29:34.085] [98252] [I] Project Legacy: Papyrus functions registered.
+[14:30:00.546] [101324] [I] PL: registry read (load event) ok, handle=11
+[14:30:41.017] [96348] [I] PL: PerformBind — identity done for 'Petunia'
+[14:30:41.018] [96348] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
+[14:30:41.018] [96348] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
+[14:30:42.759] [28496] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
+[14:30:42.761] [28496] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
+[14:30:42.762] [28496] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
+[14:30:42.812] [98292] [I] PL: DeleteFaceGenData — removed 0 cached facegen file(s) for base C80022D6

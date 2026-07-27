@@ -1,20 +1,11 @@
-[14:59:02.068] [115568] [I] Project Legacy: loaded
-[14:59:03.733] [115568] [I] PL: JCNG API v1 linked via JContainers64.dll
-[14:59:03.734] [115568] [I] PL: registry read (load event) ok, handle=1
-[14:59:34.057] [118848] [I] Project Legacy: Papyrus functions registered.
-[15:07:00.246] [115568] [I] PL: registry read (load event) ok, handle=8
-[15:07:43.677] [117824] [I] PL: PerformBind — identity done for 'dez'
-[15:07:43.678] [117824] [I] PL: PerformBind — slot 6: 36 added, 2 equipped, 0 skipped
-[15:07:43.678] [117824] [I] PL: PerformBind — slot 6: 12 perks, 3 spells, 0 shouts copied
-[15:07:43.878] [116772] [I] PL: StageSlotForLoad 'dez' — jslot=true dds=true
-[15:07:43.879] [116772] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\dez.jslot (ok)
-[15:07:43.880] [116772] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\dez.dds (ok)
-[15:07:43.952] [117824] [I] PL: ApplyStats — slot 6: 22 actor values copied
-[15:11:04.379] [115568] [I] PL: registry read (load event) ok, handle=8
-[15:11:21.414] [118408] [I] PL: PerformBind — identity done for 'gurl'
-[15:11:21.414] [118408] [I] PL: PerformBind — slot 5: 34 added, 5 equipped, 0 skipped
-[15:11:21.414] [118408] [I] PL: PerformBind — slot 5: 12 perks, 3 spells, 0 shouts copied
-[15:11:23.130] [118324] [I] PL: StageSlotForLoad 'gurl' — jslot=true dds=true
-[15:11:23.132] [118324] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\gurl.jslot (ok)
-[15:11:23.133] [118324] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\gurl.dds (ok)
-[15:11:23.688] [117824] [I] PL: ApplyStats — slot 5: 22 actor values copied
+[22:07:47.191] [108896] [I] Project Legacy: loaded
+[22:07:49.771] [108896] [I] PL: JCNG API v1 linked via JContainers64.dll
+[22:07:49.773] [108896] [I] PL: registry read (load event) ok, handle=1
+[22:08:24.694] [113200] [I] Project Legacy: Papyrus functions registered.
+[22:09:10.606] [108896] [I] PL: registry read (load event) ok, handle=2
+[22:30:34.110] [113236] [I] PL: PerformBind — identity done for 'Petunia'
+[22:30:34.110] [113236] [I] PL: PerformBind — slot 3: 36 added, 8 equipped, 0 skipped
+[22:30:34.110] [113236] [I] PL: PerformBind — slot 3: 12 perks, 3 spells, 6 shouts copied
+[22:30:34.412] [113304] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
+[22:30:34.414] [113304] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
+[22:30:34.416] [113304] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)

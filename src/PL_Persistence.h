@@ -18,6 +18,8 @@ namespace PL {
     bool IsSlotBound(int slot);
     std::string GetSlotCharName(int slot);
     int GetSlotSex(int slot);
+    void SetSlotScale(int slot, bool scale);
+    bool GetSlotScale(int slot);
     RE::TESForm* GetSlotRaceForm(int slot);
     std::string GetSlotRaceString(int slot);
     void ClearSlot(int slot);

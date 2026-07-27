@@ -667,6 +667,38 @@ namespace ProjectLegacy::Papyrus {
         return true;
     }
 
+    // ff's hang fix, learned the hard way by verteiron: delete the actor
+    // base's cached FaceGen before applying a new face. all PL vessels share
+    // ONE base, so the first face ever loaded poisons every later one —
+    // LoadCharacter collides with the stale FaceGeom/FaceTint and hangs.
+    bool DeleteFaceGenData(RE::Actor* actor) {
+        if (!actor) return false;
+        auto* base = actor->GetActorBase();
+        if (!base) return false;
+        auto* file = base->GetFile(0);
+        if (!file) return false;
+        std::string plugin(file->GetFilename());
+        uint32_t id = base->GetFormID();
+
+        uint32_t candidates[2] = { id & 0xFFFFFF, ((id >> 24) == 0xFE) ? (id & 0xFFF) : 0 };
+        auto geomDir = GetGamePath() / "Data" / "Meshes" / "Actors" / "Character" / "FaceGenData" / "FaceGeom" / plugin;
+        auto tintDir = GetGamePath() / "Data" / "Textures" / "Actors" / "Character" / "FaceGenData" / "FaceTint" / plugin;
+
+        int removed = 0;
+        std::error_code ec;
+        for (uint32_t c : candidates) {
+            if (!c) continue;
+            char fn[16];
+            snprintf(fn, sizeof(fn), "%08X", c);
+            if (fs::remove(geomDir / (std::string(fn) + ".nif"), ec)) removed++;
+            ec.clear();
+            if (fs::remove(tintDir / (std::string(fn) + ".dds"), ec)) removed++;
+            ec.clear();
+        }
+        spdlog::info("PL: DeleteFaceGenData — removed {} cached facegen file(s) for base {:08X}", removed, id);
+        return true;
+    }
+
     bool StageSlotForLoad(RE::StaticFunctionTag*, int32_t slot, RE::BSFixedString slotName) {
         std::string name = slotName.c_str();
         auto legacyDir = GetLegacyDir();
@@ -757,6 +789,49 @@ namespace ProjectLegacy::Papyrus {
         return PL::IsSlotBound(slot);
     }
 
+    void SetSlotScale(RE::StaticFunctionTag*, int32_t slot, bool scale) {
+        PL::SetSlotScale(slot, scale);
+    }
+
+    bool GetSlotScale(RE::StaticFunctionTag*, int32_t slot) {
+        return PL::GetSlotScale(slot);
+    }
+
+    // scale mode: copy the CURRENT player's actor values onto the vessel —
+    // same 22-AV set as ApplyStats, but sourced live instead of the payload.
+    // called at every summon while the slot's scale flag is set, so the
+    // vessel grows as the player grows.
+    bool ApplyStatsFromPlayer(RE::Actor* vessel) {
+        if (!vessel) {
+            spdlog::error("PL: ApplyStatsFromPlayer — null vessel");
+            return false;
+        }
+        auto* player = RE::PlayerCharacter::GetSingleton();
+        if (!player) {
+            spdlog::error("PL: ApplyStatsFromPlayer — no player");
+            return false;
+        }
+        auto* vav = vessel->AsActorValueOwner();
+        auto* pav = player->AsActorValueOwner();
+        if (!vav || !pav) return false;
+        static const RE::ActorValue kAVs[] = {
+            RE::ActorValue::kHealth, RE::ActorValue::kMagicka, RE::ActorValue::kStamina, RE::ActorValue::kCarryWeight,
+            RE::ActorValue::kOneHanded, RE::ActorValue::kTwoHanded, RE::ActorValue::kArchery,
+            RE::ActorValue::kBlock, RE::ActorValue::kSmithing, RE::ActorValue::kHeavyArmor,
+            RE::ActorValue::kLightArmor, RE::ActorValue::kPickpocket, RE::ActorValue::kLockpicking,
+            RE::ActorValue::kSneak, RE::ActorValue::kAlchemy, RE::ActorValue::kSpeech,
+            RE::ActorValue::kAlteration, RE::ActorValue::kConjuration, RE::ActorValue::kDestruction,
+            RE::ActorValue::kIllusion, RE::ActorValue::kRestoration, RE::ActorValue::kEnchanting
+        };
+        int applied = 0;
+        for (auto av : kAVs) {
+            vav->SetBaseActorValue(av, pav->GetBaseActorValue(av));
+            applied++;
+        }
+        spdlog::info("PL: ApplyStatsFromPlayer — {} actor values scaled to player", applied);
+        return true;
+    }
+
     // --- Latency Tracker Namespace ---
     namespace {
         std::mutex g_latencyMutex;
@@ -840,6 +915,8 @@ namespace ProjectLegacy::Papyrus {
         vm->RegisterFunction("GetSlotDiskName", "PL_StationScript", GetSlotDiskName, false);
         vm->RegisterFunction("GetSlotRaceForm", "PL_StationScript", GetSlotRaceForm, false);
         vm->RegisterFunction("GetSlotVesselSex", "PL_StationScript", GetSlotVesselSex, false);
+        vm->RegisterFunction("SetSlotScale", "PL_StationScript", SetSlotScale, false);
+        vm->RegisterFunction("GetSlotScale", "PL_StationScript", GetSlotScale, true);
 
         // Return type: int32_t -> use false
         vm->RegisterFunction("ExportPlayerPreset", "PL_StationScript", ExportPlayerPreset, false);
@@ -860,6 +937,8 @@ namespace ProjectLegacy::Papyrus {
         vm->RegisterFunction("ApplyPlayerGear", "PL_VesselActor", ApplyPlayerGear, false);
         vm->RegisterFunction("PerformBind", "PL_VesselActor", PerformBind, false);
         vm->RegisterFunction("ApplyStats", "PL_VesselActor", ApplyStats, false);
+        vm->RegisterFunction("ApplyStatsFromPlayer", "PL_VesselActor", ApplyStatsFromPlayer, false);
+        vm->RegisterFunction("DeleteFaceGenData", "PL_VesselActor", DeleteFaceGenData, false);
 
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;

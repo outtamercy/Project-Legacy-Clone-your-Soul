@@ -1,11 +1,12 @@
-[22:07:47.191] [108896] [I] Project Legacy: loaded
-[22:07:49.771] [108896] [I] PL: JCNG API v1 linked via JContainers64.dll
-[22:07:49.773] [108896] [I] PL: registry read (load event) ok, handle=1
-[22:08:24.694] [113200] [I] Project Legacy: Papyrus functions registered.
-[22:09:10.606] [108896] [I] PL: registry read (load event) ok, handle=2
-[22:30:34.110] [113236] [I] PL: PerformBind — identity done for 'Petunia'
-[22:30:34.110] [113236] [I] PL: PerformBind — slot 3: 36 added, 8 equipped, 0 skipped
-[22:30:34.110] [113236] [I] PL: PerformBind — slot 3: 12 perks, 3 spells, 6 shouts copied
-[22:30:34.412] [113304] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
-[22:30:34.414] [113304] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
-[22:30:34.416] [113304] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
+[10:25:20.203] [77460] [I] Project Legacy: loaded
+[10:25:22.056] [77460] [I] PL: JCNG API v1 linked via JContainers64.dll
+[10:25:22.057] [77460] [I] PL: registry read (load event) ok, handle=1
+[10:25:54.385] [93320] [I] Project Legacy: Papyrus functions registered.
+[10:26:26.133] [77460] [I] PL: registry read (load event) ok, handle=11
+[10:26:49.243] [77392] [I] PL: PerformBind — identity done for 'Petunia'
+[10:26:49.243] [77392] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
+[10:26:49.243] [77392] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
+[10:26:49.544] [77720] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
+[10:26:49.546] [77720] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
+[10:26:49.547] [77720] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
+[10:26:49.592] [77392] [I] PL: DeleteFaceGenData — removed 0 cached facegen file(s) for base C80022D6

@@ -35,9 +35,24 @@ Message Property PL_MsgBindFail Auto
 Message Property PL_MsgBound Auto
 Message Property PL_MsgSummon Auto
 Message Property PL_MsgCleanseConfirm Auto
+Message Property PL_MsgBoundMenu Auto  ; Summon / Add to Story / Grow With Me (toggle) / Release / Leave
 
 Keyword Property PL_VesselLink Auto
 Keyword Property PL_GlowLink Auto
+
+Quest Property MQ101 Auto  ; Unbound — ff's hard-won lesson: CharGen hangs on
+; saves where the intro hasn't completed. gate every face load on it.
+
+; wait until the game itself has finished initializing chargen state.
+; bounded so LAL-style starts that skip MQ101 can't deadlock the bind.
+Function WaitForCharGenReady()
+    int safety = 120  ; up to 60s
+    while MQ101 && !MQ101.IsCompleted() && safety > 0
+        safety -= 1
+        Utility.Wait(0.5)
+    endWhile
+    Debug.Trace("PL/Station " + SlotIndex + ": chargen gate — MQ101 completed=" + MQ101.IsCompleted() + " (" + (120 - safety) + " ticks)")
+EndFunction
 
 EffectShader Property PL_Blind01 Auto
 
@@ -54,6 +69,8 @@ VisualEffect Property PL_FXGreybeardAbsorbEffect Auto
 EffectShader Property PL_BlindingLightRed Auto
 
 bool Function IsSlotBound(int slot) Global Native
+bool Function GetSlotScale(int slot) Global Native
+Function SetSlotScale(int slot, bool scale) Global Native
 int Function ExportPlayerPreset(int slot, string slotName) Global Native
 Function BreakPlayerAnimation(Actor akPlayer) Global Native
 Function ClearPlayerAnimation(Actor akPlayer) Global Native
@@ -189,6 +206,8 @@ Actor Function ConstructVesselFromRegistry()
 
     if diskName != ""
         PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
+        WaitForCharGenReady()
+        (vessel as PL_VesselActor).DeleteFaceGenData()
         Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — staged, calling LoadCharacter")
         Bool faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
         Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — LoadCharacter returned " + faceOk)
@@ -315,6 +334,8 @@ bool Function DoBind()
     ; face snaps under the ghost shader — never visible
     if diskName != ""
         PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
+        WaitForCharGenReady()
+        (vessel as PL_VesselActor).DeleteFaceGenData()
         Bool faceOk = CharGen.LoadCharacter(vessel, PlayerRef.GetActorBase().GetRace(), diskName)
         Int iSafety = 5
         while !faceOk && iSafety > 0
@@ -397,6 +418,45 @@ Function DoSummon()
     Debug.Trace("PL/Station " + SlotIndex + ": calling SummonVessel on " + vessel)
     (vessel as PL_VesselActor).SummonVessel(PlayerRef, self)
     Debug.Trace("PL/Station " + SlotIndex + ": SummonVessel returned")
+
+    ; scale mode: payload stats applied during construction — now overwrite
+    ; them with the CURRENT player's. runs every summon, so she tracks your
+    ; growth even mid-save, no menu visit needed
+    if GetSlotScale(SlotIndex)
+        (vessel as PL_VesselActor).ApplyStatsFromPlayer()
+        Debug.Trace("PL/Station " + SlotIndex + ": scale mode — stats matched to player")
+    endif
+EndFunction
+
+; ---- re-capture the player's CURRENT state into this slot's payload. ----
+; the clone is a snapshot; this refreshes it. vessels rebuild from the
+; payload at every summon, so updating the payload updates the clone in
+; EVERY save automatically. guarded: only the original character may update.
+Function DoUpdate()
+    string boundName = GetSlotDiskName(SlotIndex)
+    string safeName = GetSafeCharacterName()
+    if safeName != boundName
+        Debug.Notification("Not your face. Not your call.")
+        return
+    endif
+
+    string slotName = "PL_Slot" + SlotIndex
+    CharGen.SaveCharacter(slotName)  ; overwrites the face preset
+    Utility.Wait(1.5)
+    int result = ExportPlayerPreset(SlotIndex, slotName)  ; overwrites gear/perks/spells/shouts/stats json
+    if result != 0
+        Debug.Notification("Project Legacy: Update failed.")
+        return
+    endif
+
+    ; kill any existing vessel so the next summon rebuilds from the new data
+    Actor vessel = SpawnedVessel
+    if vessel
+        vessel.Delete()
+        SpawnedVessel = None
+    endif
+    Debug.Trace("PL/Station " + SlotIndex + ": payload updated by " + safeName)
+    Debug.Notification("Story updated. She's you again — current you, unfortunately.")
 EndFunction
 
 Function DoCleanse()
@@ -434,8 +494,29 @@ Event OnActivate(ObjectReference akActionRef)
             endif
         endif
     else
-        ; prompt already said "Summon <name>" — activation IS the command
-        DoSummon()
+        ; bound — offer the menu. button order must match PL_MsgBoundMenu in
+        ; the esp: 0=Summon, 1=Add to Story (update), 2=Grow With Me (scale
+        ; toggle), 3=Release (cleanse), 4=Leave
+        int btn = PL_MsgBoundMenu.Show()
+        if btn == 0
+            DoSummon()
+        elseif btn == 1
+            DoUpdate()
+        elseif btn == 2
+            ; scale toggle — per-slot, rides the registry, applies at summon
+            bool scale = !GetSlotScale(SlotIndex)
+            SetSlotScale(SlotIndex, scale)
+            if scale
+                Debug.Notification("Alright, yeeted. She's your co-pilot now, gods help you.")
+            else
+                Debug.Notification("Back to her own story. Yours was getting predictable.")
+            endif
+        elseif btn == 3
+            int confirm = PL_MsgCleanseConfirm.Show()
+            if confirm == 0
+                DoCleanse()
+            endif
+        endif
     endif
 EndEvent
 

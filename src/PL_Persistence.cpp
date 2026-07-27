@@ -175,6 +175,20 @@ namespace PL {
         return h ? g_jcng->jmap_get_int(nullptr, h, "sex", 0) : 0;
     }
 
+    // scale mode: vessel stats track the current player at summon instead of
+    // the frozen payload. per-slot toggle, rides the registry like everything
+    void SetSlotScale(int slot, bool scale) {
+        JCNG_Handle h = GetSlotObj(slot, true);
+        if (!h) return;
+        g_jcng->jmap_set_int(nullptr, h, "scale", scale ? 1 : 0);
+        CommitRegistry();
+    }
+
+    bool GetSlotScale(int slot) {
+        JCNG_Handle h = GetSlotObj(slot, false);
+        return h && g_jcng->jmap_get_int(nullptr, h, "scale", 0) == 1;
+    }
+
     RE::TESForm* GetSlotRaceForm(int slot) {
         JCNG_Handle h = GetSlotObj(slot, false);
         if (!h) return nullptr;

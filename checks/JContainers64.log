@@ -1,36 +1,28 @@
-[22:07:45.476] [108896] [I] JContainers64 v2-0-0-0
-[22:07:45.476] [108896] [I] JContainersNG: form delete observer registered
-[22:07:45.476] [108896] [I] JContainersNG: ready with serialization
-[22:07:49.768] [108896] [I] JContainersNG: root_interface broadcast on 'JCNG'
-[22:07:49.772] [108896] [I] JContainersNG: readFromFile RAW path = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
-[22:07:49.772] [108896] [I] JContainersNG: readFromFile RESOLVED to = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
-[22:07:49.773] [108896] [I] JContainersNG: readFromFile 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json' -> handle=1
-[22:08:24.684] [113200] [I] JContainersNG: all natives registered
-[22:09:06.663] [108896] [I] JContainersNG: kPreLoadGame fired
-[22:09:06.772] [108896] [I] JContainersNG: revert callback triggered
-[22:09:06.772] [108896] [I] JContainersNG: reverted
-[22:09:09.747] [108896] [I] JContainersNG: load callback triggered
-[22:09:09.747] [108896] [I] JContainersNG: load callback found no record, but JDB root exists, keeping state
-[22:09:10.606] [108896] [I] JContainersNG: readFromFile RAW path = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
-[22:09:10.606] [108896] [I] JContainersNG: readFromFile RESOLVED to = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
-[22:09:10.606] [108896] [I] JContainersNG: readFromFile 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json' -> handle=2
-[22:09:11.760] [108896] [I] JContainersNG: save callback triggered
-[22:09:11.760] [108896] [I] JContainersNG: saved 4 objects (270 bytes)
-[22:09:12.198] [113300] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/ats321s pubic hairs.json'
-[22:09:12.198] [113300] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/ats321s pubic hairs.json'
-[22:09:12.199] [113300] [I] JContainersNG: readFromFile 'data/meshes/opubes/ats321s pubic hairs.json' -> handle=8
-[22:09:12.231] [113236] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
-[22:09:12.231] [113236] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
-[22:09:12.232] [113236] [I] JContainersNG: readFromFile 'data/meshes/opubes/Natural Pubic Hairstyles.json' -> handle=9
-[22:09:14.358] [108896] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Pubes Forever.json'
-[22:09:14.358] [108896] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Pubes Forever.json'
-[22:09:14.358] [108896] [I] JContainersNG: readFromFile 'data/meshes/opubes/Pubes Forever.json' -> handle=10
-[22:09:19.825] [113300] [I] JContainersNG: __isInstalled CALLED, returning TRUE
-[22:09:19.925] [113300] [I] JContainersNG: readFromFile RAW path = 'Data/NL_MCM/Eld Beri II/persistence/settings.nlset'
-[22:09:19.925] [113300] [I] JContainersNG: readFromFile RESOLVED to = 'Data/NL_MCM/Eld Beri II/persistence/settings.nlset'
-[22:09:19.925] [113300] [W] JContainersNG: readFromFile FAILED to open 'Data/NL_MCM/Eld Beri II/persistence/settings.nlset'
-[22:30:02.287] [108896] [I] JContainersNG: save callback triggered
-[22:30:02.288] [108896] [I] JContainersNG: saved 10 objects (13535 bytes)
-[22:30:30.130] [113304] [I] JContainersNG: writeToFile RAW path = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
-[22:30:30.130] [113304] [I] JContainersNG: writeToFile RESOLVED to = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
-[22:30:30.132] [113304] [I] JContainersNG: writeToFile successfully saved to 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:25:18.919] [77460] [I] JContainers64 v2-0-0-0
+[10:25:18.919] [77460] [I] JContainersNG: form delete observer registered
+[10:25:18.919] [77460] [I] JContainersNG: ready with serialization
+[10:25:22.052] [77460] [I] JContainersNG: root_interface broadcast on 'JCNG'
+[10:25:22.057] [77460] [I] JContainersNG: readFromFile RAW path = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:25:22.057] [77460] [I] JContainersNG: readFromFile RESOLVED to = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:25:22.057] [77460] [I] JContainersNG: readFromFile 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json' -> handle=1
+[10:25:54.376] [93320] [I] JContainersNG: all natives registered
+[10:26:22.738] [77460] [I] JContainersNG: kPreLoadGame fired
+[10:26:22.859] [77460] [I] JContainersNG: revert callback triggered
+[10:26:22.859] [77460] [I] JContainersNG: reverted
+[10:26:25.301] [77460] [I] JContainersNG: load callback triggered
+[10:26:25.302] [77460] [I] JContainersNG: restored 10 objects
+[10:26:26.132] [77460] [I] JContainersNG: readFromFile RAW path = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:26:26.132] [77460] [I] JContainersNG: readFromFile RESOLVED to = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:26:26.133] [77460] [I] JContainersNG: readFromFile 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json' -> handle=11
+[10:26:27.399] [77392] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/ats321s pubic hairs.json'
+[10:26:27.399] [77392] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/ats321s pubic hairs.json'
+[10:26:27.399] [77392] [I] JContainersNG: readFromFile 'data/meshes/opubes/ats321s pubic hairs.json' -> handle=18
+[10:26:27.432] [77392] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
+[10:26:27.432] [77392] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Natural Pubic Hairstyles.json'
+[10:26:27.432] [77392] [I] JContainersNG: readFromFile 'data/meshes/opubes/Natural Pubic Hairstyles.json' -> handle=19
+[10:26:29.527] [77356] [I] JContainersNG: readFromFile RAW path = 'data/meshes/opubes/Pubes Forever.json'
+[10:26:29.527] [77356] [I] JContainersNG: readFromFile RESOLVED to = 'data/meshes/opubes/Pubes Forever.json'
+[10:26:29.527] [77356] [I] JContainersNG: readFromFile 'data/meshes/opubes/Pubes Forever.json' -> handle=20
+[10:26:45.259] [77156] [I] JContainersNG: writeToFile RAW path = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:26:45.259] [77156] [I] JContainersNG: writeToFile RESOLVED to = 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'
+[10:26:45.261] [77156] [I] JContainersNG: writeToFile successfully saved to 'H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\ProjectLegacy\PL_Registry.json'

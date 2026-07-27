@@ -27,6 +27,8 @@ bool Function ApplyPlayerPreset(int slot) Native
 bool Function ApplyPlayerGear(int slot) Native
 bool Function PerformBind(int slot, string slotName, string echoName) Native
 bool Function ApplyStats(int slot, string slotName) Native
+bool Function ApplyStatsFromPlayer() Native  ; scale mode: stats track the current player
+bool Function DeleteFaceGenData() Native     ; ff's fix: clear stale facegen before LoadCharacter
 
 Function BindVessel(String slotName, Race vesselRace, int vesselSex, String echoName)
     Debug.Trace("PL/BindVessel 1: entered, race=" + vesselRace + " sex=" + vesselSex)

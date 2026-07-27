@@ -1,7 +1,0 @@
-Scriptname BennyShelterWaterValveScript extends ObjectReference
-
-Potion Property aaBennyWaterBottle Auto
-
-Event OnActivate(ObjectReference akActionRef)
-    akActionRef.AddItem(aaBennyWaterBottle, 1)
-EndEvent

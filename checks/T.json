@@ -1,0 +1,324 @@
+{
+    "bound": true,
+    "gender": "female",
+    "inventory": [
+        {
+            "count": 1000640,
+            "form_id": "Skyrim.esm|0xf",
+            "name": "Gold",
+            "worn": false
+        },
+        {
+            "count": 510,
+            "form_id": "Skyrim.esm|0xa",
+            "name": "Lockpick",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x10e039",
+            "name": "Prisoner's Cuffs",
+            "worn": false
+        },
+        {
+            "count": 23,
+            "form_id": "Skyrim.esm|0x1397d",
+            "name": "Arrow - Iron",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x12eb7",
+            "name": "Iron Sword",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x13790",
+            "name": "Iron War Axe",
+            "worn": true
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x1397e",
+            "name": "Iron Dagger",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x3b562",
+            "name": "Long Bow",
+            "worn": false
+        },
+        {
+            "count": 2,
+            "form_id": "Skyrim.esm|0x1d4ec",
+            "name": "Torch",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0xf86fe",
+            "name": "The Book of the Dragonborn",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x12eb6",
+            "name": "Iron Shield",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x3c9fe",
+            "name": "Roughspun Tunic",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x3ca00",
+            "name": "Footwraps",
+            "worn": false
+        },
+        {
+            "count": 5,
+            "form_id": "Skyrim.esm|0x3eadd",
+            "name": "Potion of Minor Healing",
+            "worn": false
+        },
+        {
+            "count": 5,
+            "form_id": "Skyrim.esm|0x3eae0",
+            "name": "Potion of Minor Magicka",
+            "worn": false
+        },
+        {
+            "count": 5,
+            "form_id": "Skyrim.esm|0x3eae5",
+            "name": "Potion of Minor Stamina",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x3eb2a",
+            "name": "Potion of the Warrior",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Skyrim.esm|0x3eb33",
+            "name": "Potion of Light Feet",
+            "worn": false
+        },
+        {
+            "count": 2,
+            "form_id": "Skyrim.esm|0x39b4a",
+            "name": "Potion of Resist Fire",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Helgen Reborn.esp|0xd7ade",
+            "name": "Helgen Reborn Guide",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "LockMaster.esl|0x800",
+            "name": "Key Ring",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "AcquisitiveSoulGemMultithreaded.esp|0x4e0f",
+            "name": "[Settings]ASGM Options",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "bm_SimpleAction.esp|0x182e",
+            "name": "How to Sit, Sleep and Meditate",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "_pocketcraftshop.esp|0xd63",
+            "name": "[Pocket Crafting]",
+            "worn": false
+        },
+        {
+            "count": 3,
+            "form_id": "Paraphernalia - Ambience Flicker Shadows.esp|0x800",
+            "name": "Shadow Casting Torch",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "LvxMagicks-Eclipse-Airship.esp|0xe480d",
+            "name": "The Eclipse - Flute",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "LvxMagicks-Eclipse-Airship.esp|0x536a",
+            "name": "Deed: The Eclipse (Yacht)",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "Sentinel.esp|0x821",
+            "name": "Rugged Iron Helmet",
+            "worn": true
+        },
+        {
+            "count": 1,
+            "form_id": "Sentinel.esp|0x820",
+            "name": "Rugged Iron Gauntlets",
+            "worn": true
+        },
+        {
+            "count": 1,
+            "form_id": "Sentinel.esp|0x81e",
+            "name": "Rugged Iron Armor",
+            "worn": true
+        },
+        {
+            "count": 1,
+            "form_id": "Sentinel.esp|0x81d",
+            "name": "Rugged Iron Boots",
+            "worn": true
+        },
+        {
+            "count": 1,
+            "form_id": "Project Legacy.esp|0x589da",
+            "name": "Portal Cube",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "AddItemMenuSE.esp|0x895b",
+            "name": "[AddItemMenuSE -  Search]",
+            "worn": false
+        },
+        {
+            "count": 1,
+            "form_id": "AddItemMenuSE.esp|0x690d",
+            "name": "[AddItemMenuSE Pack]",
+            "worn": false
+        }
+    ],
+    "perks": [
+        {
+            "form_id": "Skyrim.esm|0x1711c",
+            "name": "Well Fitted",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0x1711e",
+            "name": "Well Fitted",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0x2ba1d",
+            "name": "Feed",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xa725c",
+            "name": "",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xaec05",
+            "name": "",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xcf02c",
+            "name": "Thirst for Blood",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xcf788",
+            "name": "Skill Boosts",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xf11a9",
+            "name": "Allow Shouting",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xf5d2f",
+            "name": "Valdr's Dagger",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0xfe304",
+            "name": "",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0x10582a",
+            "name": "Targe Bashing Bleeding",
+            "rank": 1
+        },
+        {
+            "form_id": "Skyrim.esm|0x105a03",
+            "name": "Windshear Bash Perk",
+            "rank": 1
+        }
+    ],
+    "player_name": "T",
+    "race_form_id": "COR_AllRace.esp|0x5a179",
+    "slot": 4,
+    "slot_name": "T",
+    "spells": [
+        {
+            "form_id": "Skyrim.esm|0x12fcc",
+            "name": "Healing"
+        },
+        {
+            "form_id": "Skyrim.esm|0x12fcd",
+            "name": "Flames"
+        },
+        {
+            "form_id": "Skyrim.esm|0x1031d3",
+            "name": "Combat Heal Rate"
+        }
+    ],
+    "stats": {
+        "carry_weight_base": 300.0,
+        "carry_weight_current": 400.0,
+        "health_base": 100.0,
+        "health_current": 100.0,
+        "level": 1,
+        "magicka_base": 100.0,
+        "magicka_current": 100.0,
+        "skills": {
+            "Alchemy": 15.0,
+            "Alteration": 15.0,
+            "Archery": 15.0,
+            "Block": 20.0,
+            "Conjuration": 15.0,
+            "Destruction": 20.0,
+            "Enchanting": 20.0,
+            "HeavyArmor": 20.0,
+            "Illusion": 15.0,
+            "LightArmor": 15.0,
+            "Lockpicking": 15.0,
+            "OneHanded": 20.0,
+            "Pickpocket": 15.0,
+            "Restoration": 25.0,
+            "Smithing": 15.0,
+            "Sneak": 15.0,
+            "Speechcraft": 15.0,
+            "TwoHanded": 15.0
+        },
+        "speed_mult": 100.0,
+        "stamina_base": 100.0,
+        "stamina_current": 100.0
+    },
+    "timestamp": 1785187771,
+    "voice_form_id": "Skyrim.esm|0x13ad2"
+}

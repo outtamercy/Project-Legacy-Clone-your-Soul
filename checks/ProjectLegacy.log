@@ -1,12 +1,47 @@
-[14:29:01.936] [101324] [I] Project Legacy: loaded
-[14:29:03.610] [101324] [I] PL: JCNG API v1 linked via JContainers64.dll
-[14:29:03.611] [101324] [I] PL: registry read (load event) ok, handle=1
-[14:29:34.085] [98252] [I] Project Legacy: Papyrus functions registered.
-[14:30:00.546] [101324] [I] PL: registry read (load event) ok, handle=11
-[14:30:41.017] [96348] [I] PL: PerformBind — identity done for 'Petunia'
-[14:30:41.018] [96348] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
-[14:30:41.018] [96348] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
-[14:30:42.759] [28496] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
-[14:30:42.761] [28496] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
-[14:30:42.762] [28496] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
-[14:30:42.812] [98292] [I] PL: DeleteFaceGenData — removed 0 cached facegen file(s) for base C80022D6
+[16:26:02.548] [97220] [I] Project Legacy: loaded
+[16:26:04.231] [97220] [I] PL: JCNG API v1 linked via JContainers64.dll
+[16:26:04.232] [97220] [I] PL: registry read (load event) ok, handle=1
+[16:26:33.988] [106324] [I] Project Legacy: Papyrus functions registered.
+[16:29:35.620] [104536] [I] PL: PerformBind — identity done for 'T'
+[16:29:35.620] [104536] [I] PL: PerformBind — slot 4: 34 added, 5 equipped, 0 skipped
+[16:29:35.620] [104536] [I] PL: PerformBind — slot 4: 12 perks, 3 spells, 0 shouts copied
+[16:29:37.573] [95292] [I] PL: StageSlotForLoad 'T' — jslot=true dds=true
+[16:29:37.577] [95292] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\T.jslot (ok)
+[16:29:37.577] [95292] [I] PL: dds staging SKIPPED (diagnostic) — tint not applied
+[16:29:37.623] [103672] [I] PL: DeleteFaceGenData — removed 0 cached facegen file(s) for base C80022D6
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0xf x1000640 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0xa x510 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x10e039 x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x1397d x23 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x12eb7 x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x13790 x1 worn=true
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x1397e x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3b562 x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x1d4ec x2 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0xf86fe x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x12eb6 x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3c9fe x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3ca00 x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eadd x5 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eae0 x5 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eae5 x5 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eb2a x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eb33 x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x39b4a x2 worn=false
+[16:29:37.748] [100348] [I] PL: gear item Helgen Reborn.esp|0xd7ade x1 worn=false
+[16:29:37.748] [100348] [I] PL: gear item LockMaster.esl|0x800 x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item AcquisitiveSoulGemMultithreaded.esp|0x4e0f x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item bm_SimpleAction.esp|0x182e x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item _pocketcraftshop.esp|0xd63 x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item Paraphernalia - Ambience Flicker Shadows.esp|0x800 x3 worn=false
+[16:29:37.749] [100348] [I] PL: gear item LvxMagicks-Eclipse-Airship.esp|0xe480d x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item LvxMagicks-Eclipse-Airship.esp|0x536a x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x821 x1 worn=true
+[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x820 x1 worn=true
+[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x81e x1 worn=true
+[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x81d x1 worn=true
+[16:29:37.749] [100348] [I] PL: gear item Project Legacy.esp|0x589da x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item AddItemMenuSE.esp|0x895b x1 worn=false
+[16:29:37.749] [100348] [I] PL: gear item AddItemMenuSE.esp|0x690d x1 worn=false
+[16:29:37.749] [100348] [I] PL: ApplyPlayerGear — slot 4: 34 added, 5 equipped, 0 skipped (dead forms)
+[16:29:37.764] [103672] [I] PL: ApplyStats — slot 4: 22 actor values copied

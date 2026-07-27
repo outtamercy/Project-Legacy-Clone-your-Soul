@@ -718,10 +718,14 @@ namespace ProjectLegacy::Papyrus {
             fs::copy_file(srcJslot, dstJslot, fs::copy_options::overwrite_existing, ec);
             spdlog::info("PL: staged jslot -> {} ({})", dstJslot.string(), ec ? ec.message() : "ok");
         }
+        // DDS STAGING DISABLED (diagnostic): SaveCharacter regenerates the tint
+        // every bind, so deleting it by hand can't test it. skip the copy —
+        // LoadCharacter applies morphs WITHOUT the tint mask. if the hang
+        // stops, the exported tint was the poison all along.
         if (haveDds) {
-            ec.clear();
-            fs::copy_file(srcDds, dstDds, fs::copy_options::overwrite_existing, ec);
-            spdlog::info("PL: staged dds -> {} ({})", dstDds.string(), ec ? ec.message() : "ok");
+            std::error_code rec;
+            fs::remove(dstDds, rec);  // make sure no stale tint lingers
+            spdlog::info("PL: dds staging SKIPPED (diagnostic) — tint not applied");
         }
         return true;
     }

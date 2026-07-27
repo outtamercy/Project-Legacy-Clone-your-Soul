@@ -1,0 +1,47 @@
+Scriptname BennyShelterSellChestScript extends ObjectReference
+
+ObjectReference Property aaBennyBhaNoteRef Auto
+ObjectReference Property aaBennyShelterJunkChestRef Auto
+ObjectReference Property aaBennyShelterGoldStrongboxRef Auto
+GlobalVariable Property aaBennySellInterval Auto
+GlobalVariable Property aaBennyBhaNoteRead Auto
+GlobalVariable Property aaBennyLastSellDay Auto
+GlobalVariable Property aaBennySellValuePct Auto
+GlobalVariable Property GameDaysPassed Auto
+Message Property aaBennySellChestMessage Auto
+Actor Property PlayerRef Auto
+
+int Function ProcessSellChest(ObjectReference junkChest, ObjectReference goldChest, float sellPct) Global Native
+
+Auto State NoteUnreadState
+    Event OnActivate(ObjectReference akActionRef)
+        If aaBennyBhaNoteRead.GetValueInt() == 0
+            aaBennyBhaNoteRef.Activate(PlayerRef)
+            GoToState("NoteReadState")
+        Else
+            GoToState("NoteReadState")
+        EndIf
+    EndEvent
+EndState
+
+State NoteReadState
+    Event OnLoad()
+        Int CurrentGameDaysPassed = GameDaysPassed.GetValueInt()
+        Float CurrentInterval = CurrentGameDaysPassed - aaBennyLastSellDay.GetValueInt()
+        Int SellInterval = aaBennySellInterval.GetValueInt()
+
+        If CurrentInterval >= SellInterval
+            aaBennyLastSellDay.SetValue(CurrentGameDaysPassed)
+            
+            int totalGold = ProcessSellChest(aaBennyShelterJunkChestRef, aaBennyShelterGoldStrongboxRef, aaBennySellValuePct.GetValue())
+            
+            If totalGold > 0
+                aaBennySellChestMessage.Show(0, totalGold)
+            EndIf
+        EndIf
+    EndEvent
+
+    Event OnActivate(ObjectReference akActionRef)
+        ; Do Nothing
+    EndEvent
+EndState

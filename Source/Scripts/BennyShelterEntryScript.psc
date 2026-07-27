@@ -8,11 +8,20 @@ ObjectReference Property aaBennySoulBindingStandRef Auto
 GlobalVariable Property aaBennySoulBound Auto
 GlobalVariable Property aaBennySaltChamberRepaired Auto
 Spell Property aaBennyPDCarryWeightBuffSpell Auto
+Spell Property aaBennyShelterAllyEntryCloakSpell Auto
 Potion Property aaBennyShelterEntryDevice Auto
 Location Property aaBennyShelterLocation Auto
 Actor Property PlayerRef Auto
 
 Event OnEffectStart(Actor akTarget, Actor akCaster)
+    bool PlayerInShelterLocation = PlayerRef.IsInLocation(aaBennyShelterLocation)
+    PlayerRef.GetCombatState()
+    If !PlayerInShelterLocation && PlayerRef.GetCombatState() == 0
+        aaBennyShelterAllyEntryCloakSpell.Cast(PlayerRef, PlayerRef)
+    EndIf
+EndEvent
+
+Event OnEffectFinish(Actor akTarget, Actor akCaster)
     bool PlayerInShelterLocation = PlayerRef.IsInLocation(aaBennyShelterLocation)
     If PlayerInShelterLocation
         PlayerRef.AddItem(aaBennyShelterEntryDevice, 1, True)

@@ -1,12 +1,11 @@
 Scriptname BennyShelterMCMScript extends MCM_ConfigBase
 
-; ---- Project Legacy ----
-Actor Property PlayerRef Auto
-MiscItem Property PL_PortalCube Auto
-
-; ---- Benny Shelter globals ----
+; General Options
 GlobalVariable Property aaBennySaltChamberAmount Auto
+GlobalVariable Property aaBennyExperienceLossPct Auto
+GlobalVariable Property aaBennyGoldLossPct Auto
 
+; Sorting Options
 GlobalVariable Property aaBennySortArmor Auto
 GlobalVariable Property aaBennySortAmmo Auto
 GlobalVariable Property aaBennySortBook Auto
@@ -31,7 +30,10 @@ GlobalVariable Property aaBennySortQuestItems Auto
 
 Event OnConfigInit()
     aaBennySaltChamberAmount.SetValue(GetModSettingInt("iSaltGeneratorAmount:General"))
+    aaBennyExperienceLossPct.SetValue(GetModSettingFloat("fAlternateDeathExpLoss:General"))
+    aaBennyGoldLossPct.SetValue(GetModSettingFloat("fAlternateDeathGoldLoss:General"))
 
+    ; Bool as int ?
     aaBennySortArmor.SetValueInt(GetModSettingBool("bSortArmor:Sorting") as int)
     aaBennySortAmmo.SetValueInt(GetModSettingBool("bSortAmmo:Sorting") as int)
     aaBennySortBook.SetValueInt(GetModSettingBool("bSortBook:Sorting") as int)
@@ -58,6 +60,10 @@ EndEvent
 Event OnSettingChange(string a_ID)
     If a_ID == "iSaltGeneratorAmount:General"
         aaBennySaltChamberAmount.SetValue(GetModSettingInt(a_ID))
+    ElseIf a_ID == "fAlternateDeathExpLoss:General"
+        aaBennyExperienceLossPct.SetValue(GetModSettingFloat(a_ID))
+    ElseIf a_ID == "fAlternateDeathGoldLoss:General"
+        aaBennyGoldLossPct.SetValue(GetModSettingFloat(a_ID))
     ElseIf a_ID == "bSortArmor:Sorting"
         aaBennySortArmor.SetValueInt(GetModSettingBool(a_ID) as int)
     ElseIf a_ID == "bSortAmmo:Sorting"
@@ -100,16 +106,5 @@ Event OnSettingChange(string a_ID)
         aaBennySellInterval.SetValue(GetModSettingInt(a_ID))
     ElseIf a_ID == "bSortQuestItems:Sorting"
         aaBennySortQuestItems.SetValueInt(GetModSettingBool(a_ID) as int)
-    EndIf
-EndEvent
-
-Event OnSettingSelect(string a_ID)
-    If a_ID == "bGivePortalCube:General"
-        If PlayerRef.GetItemCount(PL_PortalCube) == 0
-            PlayerRef.AddItem(PL_PortalCube, 1, false)
-            Debug.Notification("Project Legacy: Portal Cube added.")
-        Else
-            Debug.Notification("Project Legacy: You already have a Portal Cube.")
-        EndIf
     EndIf
 EndEvent

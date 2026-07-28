@@ -13,6 +13,19 @@ Scriptname PL_StationScript extends ObjectReference
 
 int Property SlotIndex Auto
 FormList Property PL_TriggerForms Auto
+ObjectReference[] fxRefs  ; every glow/carrier this station spawned — the sweep list
+int fxCount = 0
+
+Function TrackFX(ObjectReference fx)
+    if !fxRefs
+        fxRefs = new ObjectReference[64]
+        fxCount = 0
+    endif
+    if fx && fxCount < fxRefs.Length
+        fxRefs[fxCount] = fx
+        fxCount += 1
+    endif
+EndFunction
 ; ^ all PL_StationTrigger base forms, in slot order (trigger01 first).
 ; new property = old saves have NO baked value for it, so it always
 ; initializes from the esp — unlike SlotIndex, which saves BAKE IN.
@@ -143,7 +156,46 @@ EndEvent
 Event OnUpdate()
     Debug.Trace("PL/Station " + SlotIndex + ": OnUpdate rename refresh")
     UpdateVisualState()
+    SweepStrayFX()
+    RegisterForSingleUpdate(6.0)  ; heartbeat — this event PROVABLY fires, glow/carrier OnUpdates do not
 EndEvent
+
+; the graveyard shift. papyrus backstops ON the fx refs are dead — a ref
+; blocked inside SplineTranslateToRef never services its own OnUpdate
+; (zero OnUpdate traces across a 12 mb log, hundreds of registrations).
+; so the station — whose heartbeat fires — sweeps its own spawn list
+; instead. no extender needed: it spawned them, it remembers them.
+Function SweepStrayFX()
+    if !fxRefs
+        return
+    endif
+    float now = Utility.GetCurrentRealTime()
+    int i = 0
+    while i < fxCount
+        ObjectReference fx = fxRefs[i]
+        if fx
+            if fx.IsDeleted()
+                fxRefs[i] = None  ; natural death — free the slot
+            else
+                float born = -1.0
+                PL_PerkGlowScript glow = fx as PL_PerkGlowScript
+                PL_GearCarrierScript car = fx as PL_GearCarrierScript
+                if glow
+                    born = glow.BornAt
+                elseif car
+                    born = car.BornAt
+                endif
+                if born > 0.0 && now - born > 15.0
+                    fx.DisableNoWait()
+                    fx.Delete()
+                    fxRefs[i] = None
+                    Debug.Trace("PL/Station " + SlotIndex + ": swept stray FX " + fx)
+                endif
+            endif
+        endif
+        i += 1
+    endWhile
+EndFunction
 
 ; ---- load path: registry check + prompt refresh. NO actor work, ever. ----
 Function TryRestoreSlot()
@@ -207,10 +259,10 @@ Actor Function ConstructVesselFromRegistry()
     endWhile
     Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — 3D built after " + (100 - safety3D) + " ticks")
 
+    ; KISS: same stripped flow as DoBind — stage, load, unstage. nothing else.
     if diskName != ""
         PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
-        WaitForCharGenReady()
-        (vessel as PL_VesselActor).DeleteFaceGenData()
+        PL_VesselActor.AcquireCharGenLock()  ; same turnstile as DoBind
         Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — staged, calling LoadCharacter")
         Bool faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
         Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — LoadCharacter returned " + faceOk)
@@ -220,6 +272,7 @@ Actor Function ConstructVesselFromRegistry()
             Utility.Wait(0.5)
             faceOk = CharGen.LoadCharacter(vessel, slotRace, diskName)
         endWhile
+        PL_VesselActor.ReleaseCharGenLock()
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Station " + SlotIndex + ": lazy construct — LoadCharacter ok=" + faceOk)
         if !faceOk
@@ -337,10 +390,12 @@ bool Function DoBind()
     Debug.Trace("PL/Bind 7: 3D built after " + (100 - safety3D) + " ticks")
 
     ; face snaps under the ghost shader — never visible
+    ; KISS: this is the 6149d99 flow, the one that bound gurl and dez.
+    ; mq101 gate, facegen delete, naked-first, dds games — all added during
+    ; the petunia hunt, none ever fixed anything, all stripped.
     if diskName != ""
         PL_VesselActor.StageSlotForLoad(SlotIndex, diskName)
-        WaitForCharGenReady()
-        (vessel as PL_VesselActor).DeleteFaceGenData()
+        PL_VesselActor.AcquireCharGenLock()  ; ff's busy-lock — one chargen load at a time, mod-wide
         Bool faceOk = CharGen.LoadCharacter(vessel, PlayerRef.GetActorBase().GetRace(), diskName)
         Int iSafety = 5
         while !faceOk && iSafety > 0
@@ -348,6 +403,7 @@ bool Function DoBind()
             Utility.Wait(0.5)
             faceOk = CharGen.LoadCharacter(vessel, PlayerRef.GetActorBase().GetRace(), diskName)
         endWhile
+        PL_VesselActor.ReleaseCharGenLock()
         PL_VesselActor.UnstageSlotAfterLoad(SlotIndex, diskName)
         Debug.Trace("PL/Bind 8: LoadCharacter ok=" + faceOk)
 
@@ -542,6 +598,8 @@ Event OnPLEquipmentSaved(string eventName, string strArg, float numArg, Form sen
     if !carrier
         return
     endif
+    (carrier as PL_GearCarrierScript).BornAt = Utility.GetCurrentRealTime()
+    TrackFX(carrier)
     carrier.EnableAI(false)
     carrier.Enable()
     int cSafety = 50
@@ -567,6 +625,8 @@ Event OnPLPerkSaved(string eventName, string strArg, float numArg, Form sender)
     ObjectReference spawnMarker = self.GetLinkedRef(PL_VesselLink)
     PL_PerkGlowScript glow = spawnMarker.PlaceAtMe(PL_PerkGlow, 1, true, true) as PL_PerkGlowScript
     if glow
+        glow.BornAt = Utility.GetCurrentRealTime()
+        TrackFX(glow)
         glow.StartNode = "NPC Head [Head]"
         glow.Target = PlayerRef
         glow.FlyTo = spawnMarker
@@ -584,6 +644,8 @@ Event OnPLSpellSaved(string eventName, string strArg, float numArg, Form sender)
         else
             glow.StartNode = "NPC R Hand [RHnd]"
         endif
+        glow.BornAt = Utility.GetCurrentRealTime()
+        TrackFX(glow)
         glow.Target = PlayerRef
         glow.FlyTo = spawnMarker
         glow.EnableNoWait(true)

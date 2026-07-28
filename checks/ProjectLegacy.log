@@ -1,47 +1,14 @@
-[16:26:02.548] [97220] [I] Project Legacy: loaded
-[16:26:04.231] [97220] [I] PL: JCNG API v1 linked via JContainers64.dll
-[16:26:04.232] [97220] [I] PL: registry read (load event) ok, handle=1
-[16:26:33.988] [106324] [I] Project Legacy: Papyrus functions registered.
-[16:29:35.620] [104536] [I] PL: PerformBind — identity done for 'T'
-[16:29:35.620] [104536] [I] PL: PerformBind — slot 4: 34 added, 5 equipped, 0 skipped
-[16:29:35.620] [104536] [I] PL: PerformBind — slot 4: 12 perks, 3 spells, 0 shouts copied
-[16:29:37.573] [95292] [I] PL: StageSlotForLoad 'T' — jslot=true dds=true
-[16:29:37.577] [95292] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\T.jslot (ok)
-[16:29:37.577] [95292] [I] PL: dds staging SKIPPED (diagnostic) — tint not applied
-[16:29:37.623] [103672] [I] PL: DeleteFaceGenData — removed 0 cached facegen file(s) for base C80022D6
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0xf x1000640 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0xa x510 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x10e039 x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x1397d x23 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x12eb7 x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x13790 x1 worn=true
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x1397e x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3b562 x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x1d4ec x2 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0xf86fe x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x12eb6 x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3c9fe x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3ca00 x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eadd x5 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eae0 x5 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eae5 x5 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eb2a x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x3eb33 x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Skyrim.esm|0x39b4a x2 worn=false
-[16:29:37.748] [100348] [I] PL: gear item Helgen Reborn.esp|0xd7ade x1 worn=false
-[16:29:37.748] [100348] [I] PL: gear item LockMaster.esl|0x800 x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item AcquisitiveSoulGemMultithreaded.esp|0x4e0f x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item bm_SimpleAction.esp|0x182e x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item _pocketcraftshop.esp|0xd63 x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item Paraphernalia - Ambience Flicker Shadows.esp|0x800 x3 worn=false
-[16:29:37.749] [100348] [I] PL: gear item LvxMagicks-Eclipse-Airship.esp|0xe480d x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item LvxMagicks-Eclipse-Airship.esp|0x536a x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x821 x1 worn=true
-[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x820 x1 worn=true
-[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x81e x1 worn=true
-[16:29:37.749] [100348] [I] PL: gear item Sentinel.esp|0x81d x1 worn=true
-[16:29:37.749] [100348] [I] PL: gear item Project Legacy.esp|0x589da x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item AddItemMenuSE.esp|0x895b x1 worn=false
-[16:29:37.749] [100348] [I] PL: gear item AddItemMenuSE.esp|0x690d x1 worn=false
-[16:29:37.749] [100348] [I] PL: ApplyPlayerGear — slot 4: 34 added, 5 equipped, 0 skipped (dead forms)
-[16:29:37.764] [103672] [I] PL: ApplyStats — slot 4: 22 actor values copied
+[01:05:57.105] [110700] [I] Project Legacy: loaded
+[01:05:58.796] [110700] [I] PL: JCNG API v1 linked via JContainers64.dll
+[01:05:58.797] [110700] [I] PL: registry read (load event) ok, handle=1
+[01:06:29.234] [110580] [I] Project Legacy: Papyrus functions registered.
+[01:06:56.718] [110700] [I] PL: registry read (load event) ok, handle=11
+[01:07:49.393] [113636] [I] PL: PerformBind — identity done for 'Petunia'
+[01:07:49.394] [113636] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
+[01:07:49.394] [113636] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
+[01:07:49.726] [113652] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
+[01:07:49.728] [113652] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
+[01:07:49.731] [113652] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
+[01:07:49.740] [113652] [I] PL: chargen lock acquired (0 ms wait)
+[01:07:51.409] [113652] [I] PL: chargen lock released
+[01:07:51.426] [112600] [I] PL: ApplyStats — slot 1: 22 actor values copied

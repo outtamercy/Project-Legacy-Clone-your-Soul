@@ -1,4 +1,10 @@
 {
+  "slot_1": {
+    "bound": 1,
+    "name": "Petunia",
+    "race_str": "AedraRace.esp|0x5900",
+    "sex": 1
+  },
   "slot_4": {
     "bound": 1,
     "name": "T",

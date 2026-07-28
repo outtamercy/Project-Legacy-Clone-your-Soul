@@ -1,5 +1,6 @@
 #include "Papyrus.h"
 #include "PL_Persistence.h"
+#include <atomic>
 #include <RE/A/Actor.h>
 #include <RE/A/ActorEquipManager.h>
 #include <RE/B/BGSBipedObjectForm.h>
@@ -696,6 +697,32 @@ namespace ProjectLegacy::Papyrus {
         return true;
     }
 
+    // ff's OTHER hard-won lesson, the one we skipped: vMYC_CharGenLoading.
+    // skee cannot survive two concurrent CharGen loads — it dies silently,
+    // no log, no crash dump. six stations lazy-constructing on one cell
+    // load can do exactly that. one process-wide turnstile: papyrus calls
+    // Acquire before LoadCharacter and Release after, no matter what.
+    // bounded at ~30s so a wedged skee can't deadlock every future bind.
+    static std::atomic_bool g_charGenBusy{ false };
+
+    bool AcquireCharGenLock(RE::StaticFunctionTag*) {
+        for (int i = 0; i < 3000; i++) {
+            bool expected = false;
+            if (g_charGenBusy.compare_exchange_weak(expected, true)) {
+                spdlog::info("PL: chargen lock acquired ({} ms wait)", i * 10);
+                return true;
+            }
+            Sleep(10);
+        }
+        spdlog::warn("PL: chargen lock TIMEOUT — proceeding anyway (previous holder wedged?)");
+        return false;
+    }
+
+    void ReleaseCharGenLock(RE::StaticFunctionTag*) {
+        g_charGenBusy.store(false);
+        spdlog::info("PL: chargen lock released");
+    }
+
     bool StageSlotForLoad(RE::StaticFunctionTag*, int32_t slot, RE::BSFixedString slotName) {
         std::string name = slotName.c_str();
         auto legacyDir = GetLegacyDir();
@@ -718,14 +745,12 @@ namespace ProjectLegacy::Papyrus {
             fs::copy_file(srcJslot, dstJslot, fs::copy_options::overwrite_existing, ec);
             spdlog::info("PL: staged jslot -> {} ({})", dstJslot.string(), ec ? ec.message() : "ok");
         }
-        // DDS STAGING DISABLED (diagnostic): SaveCharacter regenerates the tint
-        // every bind, so deleting it by hand can't test it. skip the copy —
-        // LoadCharacter applies morphs WITHOUT the tint mask. if the hang
-        // stops, the exported tint was the poison all along.
+        // dds staging RESTORED (kiss): the 6149d99-era flow staged the tint
+        // and bound fine — the diagnostic skip never proved anything except
+        // that a tintless face loads dark.
         if (haveDds) {
-            std::error_code rec;
-            fs::remove(dstDds, rec);  // make sure no stale tint lingers
-            spdlog::info("PL: dds staging SKIPPED (diagnostic) — tint not applied");
+            fs::copy_file(srcDds, dstDds, fs::copy_options::overwrite_existing, ec);
+            spdlog::info("PL: staged dds -> {} ({})", dstDds.string(), ec ? ec.message() : "ok");
         }
         return true;
     }
@@ -940,6 +965,8 @@ namespace ProjectLegacy::Papyrus {
         vm->RegisterFunction("ApplyStats", "PL_VesselActor", ApplyStats, false);
         vm->RegisterFunction("ApplyStatsFromPlayer", "PL_VesselActor", ApplyStatsFromPlayer, false);
         vm->RegisterFunction("DeleteFaceGenData", "PL_VesselActor", DeleteFaceGenData, false);
+        vm->RegisterFunction("AcquireCharGenLock", "PL_VesselActor", AcquireCharGenLock, false);
+        vm->RegisterFunction("ReleaseCharGenLock", "PL_VesselActor", ReleaseCharGenLock, false);
 
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;

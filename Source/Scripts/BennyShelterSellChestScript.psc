@@ -3,14 +3,16 @@ Scriptname BennyShelterSellChestScript extends ObjectReference
 ObjectReference Property aaBennyBhaNoteRef Auto
 ObjectReference Property aaBennyShelterJunkChestRef Auto
 ObjectReference Property aaBennyShelterGoldStrongboxRef Auto
-GlobalVariable Property aaBennySellInterval Auto
-GlobalVariable Property aaBennyBhaNoteRead Auto
-GlobalVariable Property aaBennyLastSellDay Auto
 GlobalVariable Property aaBennySellValuePct Auto
-GlobalVariable Property GameDaysPassed Auto
+GlobalVariable Property aaBennyBhaNoteRead Auto
+GlobalVariable Property aaBennySellInterval Auto   ; DEPRECATED — instant sell killed the clock. leave filled in ck, costs nothing
+GlobalVariable Property aaBennyLastSellDay Auto    ; DEPRECATED — same
+GlobalVariable Property GameDaysPassed Auto        ; DEPRECATED — same
 Message Property aaBennySellChestMessage Auto
 MiscObject Property Gold001 Auto
 Actor Property PlayerRef Auto
+
+int Function ProcessSellChest(ObjectReference junkChest, ObjectReference goldChest, float sellPct) Global Native
 
 Event OnLoad()
     ; Do Nothing
@@ -21,72 +23,32 @@ Event OnActivate(ObjectReference akActionRef)
 EndEvent
 
 Auto State NoteUnreadState
-    Event OnLoad()
-        Debug.Trace("[Benny'sShelter] Player has not read Bha's note yet.")
-    EndEvent
-
     Event OnActivate(ObjectReference akActionRef)
         If aaBennyBhaNoteRead.GetValueInt() == 0
-            ; Force player to read the note first
+            ; Force player to read the note first — the tutorial gate stays
             aaBennyBhaNoteRef.Activate(PlayerRef)
             GoToState("NoteReadState")
         Else
-            ; Already read, switch to NoteReadState
             GoToState("NoteReadState")
         EndIf
     EndEvent
 EndState
 
 State NoteReadState
-    Event OnLoad()
-        Int CurrentGameDaysPassed = GameDaysPassed.GetValueInt()
-        Float CurrentInterval = CurrentGameDaysPassed - aaBennyLastSellDay.GetValueInt()
-        Int SellInterval = aaBennySellInterval.GetValueInt()
-        Debug.Trace("[Benny'sShelter] Sell Chest loaded. Days since last sell: " + CurrentInterval + ". Sell interval: " + SellInterval + ".")
-        If CurrentInterval >= SellInterval
-            Int SellIntervalMultiplier = Math.Floor(CurrentInterval / SellInterval)
-            Debug.Trace("[Benny'sShelter] Sell interval reached. Multiplier: " + SellIntervalMultiplier)
-            Debug.Trace("[Benny'sShelter] Starting sell process ...")
-            ; Time to sell junk
-            aaBennyLastSellDay.SetValue(CurrentGameDaysPassed)
-            Form[] SellItems = aaBennyShelterJunkChestRef.GetContainerForms()
-            Int ItemCount = SellItems.Length
-            Int ItemsToSell = Utility.RandomInt(1, ItemCount)
-            Int TotalSellValue = 0
-            Int ii = 0
-            Int i = 0
-            While i < SellIntervalMultiplier - 1
-                Debug.Trace("[Benny'sShelter] Increasing items to sell for interval multiplier. Current items to sell: " + ItemsToSell)
-                ItemsToSell += Utility.RandomInt(1, ItemCount)
-                i += 1
-            EndWhile
-            If ItemsToSell > ItemCount
-                ItemsToSell = ItemCount
-            EndIf
-            While ii < ItemsToSell
-                Form currentItem = SellItems[ii]
-                Int currentItemCount = aaBennyShelterJunkChestRef.GetItemCount(currentItem)
-                Float SingleGoldValue = currentItem.GetGoldValue() * aaBennySellValuePct.GetValue()
-                Int TotalValue = Math.Floor(SingleGoldValue * currentItemCount)
-                If TotalValue > 0
-                    aaBennyShelterJunkChestRef.RemoveItem(currentItem, currentItemCount)
-                    TotalSellValue += TotalValue
-                    Debug.Trace("[Benny'sShelter] Sold " + currentItemCount + " of " + currentItem.GetName() + " for " + TotalValue + " gold.")
-                EndIf
-                ii += 1
-            EndWhile
-            If TotalSellValue > 0
-                aaBennyShelterGoldStrongboxRef.AddItem(Gold001, TotalSellValue)
-            EndIf
-            Debug.Trace("[Benny'sShelter] Sell process completed. Items sold: " + ItemsToSell + ", Total gold earned: " + TotalSellValue)
-            Utility.wait(4.0) ; Wait a moment before showing message in case player is still loading in.
-            aaBennySellChestMessage.Show(ItemsToSell, TotalSellValue)
-        Else
-            Debug.Trace("[Benny'sShelter] Sell interval not reached yet. Skipping sell process.")
-        EndIf
-    EndEvent
-
     Event OnActivate(ObjectReference akActionRef)
-        ; Do Nothing
+        ; Do Nothing — the chest itself opens normally
     EndEvent
 EndState
+
+; INSTANT SELL: drop junk in, close the lid, gold lands in the strongbox.
+; no interval, no lottery, no waiting. the dll liquidates, papyrus announces.
+Event OnClose(ObjectReference akContainer)
+    If aaBennyBhaNoteRead.GetValueInt() == 0
+        return  ; hasn't done the tutorial yet — nothing sells
+    EndIf
+    Int TotalSellValue = ProcessSellChest(aaBennyShelterJunkChestRef, aaBennyShelterGoldStrongboxRef, aaBennySellValuePct.GetValue())
+    If TotalSellValue > 0
+        Debug.Trace("[Benny'sShelter] Instant sell complete. Total gold earned: " + TotalSellValue)
+        Debug.Notification("Benny fences the lot. " + TotalSellValue + " gold lands in the strongbox.")
+    EndIf
+EndEvent

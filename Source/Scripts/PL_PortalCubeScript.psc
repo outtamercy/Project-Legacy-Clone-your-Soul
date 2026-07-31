@@ -12,6 +12,11 @@ ImageSpaceModifier Property PL_FadeToWhite Auto
 ImageSpaceModifier Property PL_FadeToWhiteHoldImod Auto
 ImageSpaceModifier Property PL_FadeToWhiteBackImod Auto
 
+; the follower ferry — dll native. finds player teammates near the player
+; (summoned vessels count: they carry follower factions) and moves them.
+; no cloak spell, no allies formlist.
+Function TeleportFollowers(ObjectReference dest, float radius) Global Native
+
 Event OnEquipped(Actor akActor)
     if akActor != PlayerRef
         return
@@ -43,6 +48,7 @@ Event OnEquipped(Actor akActor)
 
     ; snap to shelter
     PlayerRef.MoveTo(PL_ShelterMarker)
+    TeleportFollowers(PL_ShelterMarker, 1500.0)  ; bring the crew — 1500u ≈ same room
     Wait(0.01)
 
     ; hold white while cell loads, then fade back

@@ -1,14 +1,16 @@
-[01:05:57.105] [110700] [I] Project Legacy: loaded
-[01:05:58.796] [110700] [I] PL: JCNG API v1 linked via JContainers64.dll
-[01:05:58.797] [110700] [I] PL: registry read (load event) ok, handle=1
-[01:06:29.234] [110580] [I] Project Legacy: Papyrus functions registered.
-[01:06:56.718] [110700] [I] PL: registry read (load event) ok, handle=11
-[01:07:49.393] [113636] [I] PL: PerformBind — identity done for 'Petunia'
-[01:07:49.394] [113636] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
-[01:07:49.394] [113636] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
-[01:07:49.726] [113652] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
-[01:07:49.728] [113652] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
-[01:07:49.731] [113652] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
-[01:07:49.740] [113652] [I] PL: chargen lock acquired (0 ms wait)
-[01:07:51.409] [113652] [I] PL: chargen lock released
-[01:07:51.426] [112600] [I] PL: ApplyStats — slot 1: 22 actor values copied
+[15:25:04.931] [48272] [I] Project Legacy: loaded
+[15:25:06.485] [48272] [I] PL: JCNG API v1 linked via JContainers64.dll
+[15:25:06.486] [48272] [I] PL: registry read (load event) ok, handle=1
+[15:25:35.869] [53464] [I] Project Legacy: Papyrus functions registered.
+[15:26:10.573] [48272] [I] PL: registry read (load event) ok, handle=8
+[15:26:42.738] [52552] [I] PL: TeleportFollowers — 0 teammate(s) ferried
+[15:29:34.752] [52408] [I] PL: PerformBind — identity done for 'Petunia'
+[15:29:34.753] [52408] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
+[15:29:34.753] [52408] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
+[15:29:35.069] [52552] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
+[15:29:35.071] [52552] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
+[15:29:35.072] [52552] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
+[15:29:35.101] [52408] [I] PL: chargen lock acquired (0 ms wait)
+[15:29:35.277] [52540] [I] PL: chargen lock released
+[15:29:35.309] [52408] [I] PL: ApplyStats — slot 1: 22 actor values copied
+[15:36:23.962] [52324] [I] PL: TeleportFollowers — 0 teammate(s) ferried

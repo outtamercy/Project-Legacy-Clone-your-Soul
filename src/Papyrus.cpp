@@ -482,6 +482,29 @@ namespace ProjectLegacy::Papyrus {
         return totalGold;
     }
 
+    // cube's follower ferry: find every player teammate near the player and
+    // move them to dest. replaces dpd's cloak + allies formlist + teleport
+    // script — no spell, no list, works both directions. bonus: summoned
+    // vessels carry follower factions, so they ride too, free of charge.
+    void TeleportFollowers(RE::StaticFunctionTag*, RE::TESObjectREFR* dest, float radius) {
+        auto* player = RE::PlayerCharacter::GetSingleton();
+        if (!player || !dest) return;
+        auto* proc = RE::ProcessLists::GetSingleton();
+        if (!proc) return;
+        const auto playerPos = player->GetPosition();
+        int moved = 0;
+        for (auto& handle : proc->highActorHandles) {
+            auto actorPtr = handle.get();
+            auto* actor = actorPtr.get();
+            if (!actor || actor == player || actor->IsDead()) continue;
+            if (!actor->IsPlayerTeammate()) continue;
+            if (radius > 0.0f && actor->GetPosition().GetDistance(playerPos) > radius) continue;
+            actor->MoveTo(dest);
+            moved++;
+        }
+        spdlog::info("PL: TeleportFollowers — {} teammate(s) ferried", moved);
+    }
+
     RE::BSFixedString GetLegacyDirString(RE::StaticFunctionTag*) {
         return RE::BSFixedString(GetLegacyDir().string().c_str());
     }
@@ -967,6 +990,9 @@ namespace ProjectLegacy::Papyrus {
         vm->RegisterFunction("DeleteFaceGenData", "PL_VesselActor", DeleteFaceGenData, false);
         vm->RegisterFunction("AcquireCharGenLock", "PL_VesselActor", AcquireCharGenLock, false);
         vm->RegisterFunction("ReleaseCharGenLock", "PL_VesselActor", ReleaseCharGenLock, false);
+
+        // Portal cube natives
+        vm->RegisterFunction("TeleportFollowers", "PL_PortalCubeScript", TeleportFollowers, false);
 
         spdlog::info("Project Legacy: Papyrus functions registered.");
         return true;

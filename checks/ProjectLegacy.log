@@ -1,16 +1,14 @@
-[15:25:04.931] [48272] [I] Project Legacy: loaded
-[15:25:06.485] [48272] [I] PL: JCNG API v1 linked via JContainers64.dll
-[15:25:06.486] [48272] [I] PL: registry read (load event) ok, handle=1
-[15:25:35.869] [53464] [I] Project Legacy: Papyrus functions registered.
-[15:26:10.573] [48272] [I] PL: registry read (load event) ok, handle=8
-[15:26:42.738] [52552] [I] PL: TeleportFollowers — 0 teammate(s) ferried
-[15:29:34.752] [52408] [I] PL: PerformBind — identity done for 'Petunia'
-[15:29:34.753] [52408] [I] PL: PerformBind — slot 1: 37 added, 8 equipped, 0 skipped
-[15:29:34.753] [52408] [I] PL: PerformBind — slot 1: 12 perks, 3 spells, 6 shouts copied
-[15:29:35.069] [52552] [I] PL: StageSlotForLoad 'Petunia' — jslot=true dds=true
-[15:29:35.071] [52552] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\Petunia.jslot (ok)
-[15:29:35.072] [52552] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\Petunia.dds (ok)
-[15:29:35.101] [52408] [I] PL: chargen lock acquired (0 ms wait)
-[15:29:35.277] [52540] [I] PL: chargen lock released
-[15:29:35.309] [52408] [I] PL: ApplyStats — slot 1: 22 actor values copied
-[15:36:23.962] [52324] [I] PL: TeleportFollowers — 0 teammate(s) ferried
+[20:38:27.720] [84248] [I] Project Legacy: loaded
+[20:38:29.316] [84248] [I] PL: JCNG API v1 linked via JContainers64.dll
+[20:38:29.317] [84248] [I] PL: registry read (load event) ok, handle=1
+[20:39:00.738] [92040] [I] Project Legacy: Papyrus functions registered.
+[20:39:37.725] [84248] [I] PL: registry read (load event) ok, handle=8
+[20:40:04.842] [91060] [I] PL: PerformBind — identity done for 'girl'
+[20:40:04.843] [91060] [I] PL: PerformBind — slot 5: 36 added, 4 equipped, 0 skipped
+[20:40:04.843] [91060] [I] PL: PerformBind — slot 5: 12 perks, 3 spells, 0 shouts copied
+[20:40:05.059] [15632] [I] PL: StageSlotForLoad 'girl' — jslot=true dds=true
+[20:40:06.845] [15632] [I] PL: staged jslot -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\CharGen\Exported\girl.jslot (ok)
+[20:40:06.847] [15632] [I] PL: staged dds -> H:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Textures\CharGen\Exported\girl.dds (ok)
+[20:40:06.851] [1568 ] [I] PL: chargen lock acquired (0 ms wait)
+[20:40:06.937] [15632] [I] PL: chargen lock released
+[20:40:07.074] [91060] [I] PL: ApplyStats — slot 5: 22 actor values copied

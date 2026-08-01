@@ -1,14 +1,8 @@
 {
-  "slot_1": {
+  "slot_5": {
     "bound": 1,
-    "name": "Petunia",
+    "name": "girl",
     "race_str": "AedraRace.esp|0x5900",
-    "sex": 1
-  },
-  "slot_4": {
-    "bound": 1,
-    "name": "T",
-    "race_str": "COR_AllRace.esp|0x5a179",
     "sex": 1
   }
 }

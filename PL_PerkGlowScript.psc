@@ -1,5 +1,6 @@
 Scriptname PL_PerkGlowScript extends ObjectReference
 
+Float Property BornAt Auto  ; stamped by the station at spawn — the sweeper's clock (0 = pre-sweeper orphan)
 String Property StartNode Auto
 ObjectReference Property Target Auto        ; who to start on (the player)
 ObjectReference Property FlyTo Auto         ; where to fly to (the station)

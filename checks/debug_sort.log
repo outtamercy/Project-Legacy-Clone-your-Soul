@@ -1,0 +1,2139 @@
+=== modslut debug trace ===
+categories.dat: found
+conflict index: NOT AVAILABLE - conflict auto-fix pass skipped
+
+--- pass 1: section assignment (per mod) ---
+  Smooth Terrain | cat none | T4 no rule, category, or keyword matched | stay
+  THE NIGHT KING (GOT) MOD. A tribute to his glory | cat none | T4 no rule, category, or keyword matched | stay
+  Convert Fallout 4 Armor into Skyrim CBBE or 3BA 3BBB Bodies TUTORIAL | cat none | T4 no rule, category, or keyword matched | stay
+  Output - Synthesis SFW | cat #0 "<unknown id 0>" | guard: generated output, never moves | stay
+  Output - Synthesis | cat none | guard: generated output, never moves | stay
+  Output - Bash | cat none | guard: generated output, never moves | stay
+  Output - DynDOLOD | cat none | guard: generated output, never moves | stay
+  Output - TexGen | cat none | guard: generated output, never moves | stay
+  Output - xLodGen | cat none | guard: generated output, never moves | stay
+  Output - ParallaxGen | cat none | guard: generated output, never moves | stay
+  Output - VramR | cat none | guard: generated output, never moves | stay
+  Output - Mismatcher | cat none | guard: generated output, never moves | stay
+  Output - Bodyslide | cat none | guard: generated output, never moves | stay
+  SkyGen_Output | cat none | T4 no rule, category, or keyword matched | stay
+  Output - Pandora | cat none | guard: generated output, never moves | stay
+  Output - Bendr | cat none | guard: generated output, never moves | stay
+  Output ParallaxR | cat none | guard: generated output, never moves | stay
+  Stable Hands - VR Mouse Stabilization mod | cat none | T4 no rule, category, or keyword matched | stay
+  Open Composite - Main (No VR Keyboard) | cat none | T4 no rule, category, or keyword matched | stay
+  Open Composite - Oclulus Default Controller Bindings | cat none | T4 no rule, category, or keyword matched | stay
+  Open Composite - Main | cat none | T4 no rule, category, or keyword matched | stay
+  Open Composite - ENB Fix (Wireless Only) | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim VR OpenComposite Fixes Custom Build (physical keyboard) | cat none | T4 no rule, category, or keyword matched | stay
+  Open Composite skyrim vr fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Open Composite SkyUIVR Fix ReverbG2 | cat none | family: follows master [Open Composite] | stay
+  Open Composite | cat none | T4 no rule, category, or keyword matched | stay
+  Terrain Shadows - Mod Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Constructible Objects Custom Keyword Framework - Settlement Builder Patch | cat none | T4 no rule, category, or keyword matched | stay
+  BHKS - TNG - Official Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Upscaler VR - Enable DLAA- Nvidia Only | cat none | T4 no rule, category, or keyword matched | stay
+  VR Performance Kit (Probably just use Upscaler) | cat none | T4 no rule, category, or keyword matched | stay
+  VR FPS Stabilizer (REINSTALL FMOD AND CONFIGURE) | cat none | T4 no rule, category, or keyword matched | stay
+  Shadow Boost | cat none | T4 no rule, category, or keyword matched | stay
+  KonsumE AE | cat none | T4 no rule, category, or keyword matched | stay
+  KreatE | cat none | T4 no rule, category, or keyword matched | stay
+  IMAGINATOR - Visual Control Device for Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Performance and Standard Terrain Lod for Atlantean with Roads for ACMOS | cat none | T4 no rule, category, or keyword matched | stay
+  Jk's Rb and Eek Dragonsreach patch | cat none | T4 no rule, category, or keyword matched | stay
+  Jaxonz Map Markers (SSE Port) | cat none | T4 no rule, category, or keyword matched | stay
+  CoMAP | cat none | T4 no rule, category, or keyword matched | stay
+  Colorful Map Markers VR | cat none | T4 no rule, category, or keyword matched | stay
+  Colorful Map Markers | cat none | T4 no rule, category, or keyword matched | stay
+  Local Map Upgrade | cat none | T4 no rule, category, or keyword matched | stay
+  A Clear Map of Skyrim and Other Worlds | cat none | T4 no rule, category, or keyword matched | stay
+  Grass Precache for Folkvangr Grass | cat none | T4 no rule, category, or keyword matched | stay
+  ACMOS Road Generator | cat none | T4 no rule, category, or keyword matched | stay
+  Grass Density INI - Quality | cat none | T4 no rule, category, or keyword matched | stay
+  Grass Density INI - Performance | cat none | T4 no rule, category, or keyword matched | stay
+  xLODGen Resource - SSE Terrain Tamriel | cat none | T4 no rule, category, or keyword matched | stay
+  Terrain Lod for Atlantean with Roads for ACMOS | cat none | T4 no rule, category, or keyword matched | stay
+  Grass Cache Helper NG | cat none | T4 no rule, category, or keyword matched | stay
+  Likeness | cat none | T4 no rule, category, or keyword matched | stay
+  Producing Unique Personas of Skyrim (PUPS) | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Body Distribution - DBD | cat none | T4 no rule, category, or keyword matched | stay
+  RaceCompatibility with fixes for SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Glowmapped 3D Lava | cat none | T4 no rule, category, or keyword matched | stay
+  Rudy ENB NAT ADDONS and REQUiRED Files | cat none | T3 keyword [enb] | stay
+  NAT-ENB SUMMER PATCH | cat none | T4 no rule, category, or keyword matched | stay
+  NAT III ENB - A Clear Map of Skyrim Patch | cat none | T4 no rule, category, or keyword matched | stay
+  ENB Extender and Helper Skyrim | cat none | T3 keyword [enb] | stay
+  NAT.ENB - ENB PRESET v3.1.1C | cat none | T3 keyword [enb] | stay
+  Unreal ENB | cat none | T3 keyword [enb] | stay
+  Rudy ENB for NAT 3 | cat none | T3 keyword [enb] | stay
+  NAT.ENB III - Natural and Atmospheric Tamriel ENB 3.1.1C | cat none | T3 keyword [enb] | stay
+  Cubemap Reflections | cat none | T4 no rule, category, or keyword matched | stay
+  ENB Helper VR | cat none | T3 keyword [enb] | stay
+  ENB Helper SE | cat none | T3 keyword [enb] | stay
+  VR Parallax Shader Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Optimized meshes for ENB lights Rustic Rudy Misc Silverware | cat none | T3 keyword [enb] | stay
+  Optimized meshes for ENB lights | cat none | T3 keyword [enb] | stay
+  NAT3 HOSE - ENB Preset | cat none | T3 keyword [enb] | stay
+  Enhanced Volumetric Lighting and Shadows (EVLaS) | cat none | T4 no rule, category, or keyword matched | stay
+  ENB Lights For Effect Shaders VR | cat none | T3 keyword [enb] | stay
+  ENB Light | cat none | T3 keyword [enb] | stay
+  ENB Helper Plus | cat none | T3 keyword [enb] | stay
+  ENB Frame Generation | cat none | T3 keyword [enb] | stay
+  ENB Binaries | cat none | T3 keyword [enb] | stay
+  NordwarUA Armours - ENB Dynamic Cubemaps - Sons of Skyrim etc | cat none | T3 keyword [enb] | stay
+  Dynamic Cubemaps | cat none | T4 no rule, category, or keyword matched | stay
+  Dovahnique's Diverse Deadly Nightshade - (BOS - ENB Lights) | cat none | T3 keyword [enb] | stay
+  Dovahnique's Diverse Dark Elf Lanterns (BOS - ENB Lights - High Poly) | cat none | T3 keyword [enb] | stay
+  Complex Parallax Materials | cat none | T4 no rule, category, or keyword matched | stay
+  Bright Snow Fix for ENB | cat none | T4 no rule, category, or keyword matched | stay
+  Auto Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  ENB Anti-Aliasing - AMD FSR 3.1 - NVIDIA DLAA | cat none | T3 keyword [enb] | stay
+  Optional Lux Resource Pack (ENB light) | cat none | T3 keyword [enb] | stay
+  Holidays Lanterns ENB Light | cat none | T3 keyword [enb] | stay
+  Winterhold Statue - Animated with ENB Lights | cat none | T3 keyword [enb] | stay
+  Rock Grass for ENB Complex Grass SE (with Guide) | cat none | T3 keyword [enb] | stay
+  VRAMr | cat none | T4 no rule, category, or keyword matched | stay
+  eFPS - Exterior FPS boost | cat none | T4 no rule, category, or keyword matched | stay
+  Grass Sampler Fix | cat none | T4 no rule, category, or keyword matched | stay
+  NVIDIA Reflex Support | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Upscaler VR - DLSS FSR2 XeSS | cat none | T4 no rule, category, or keyword matched | stay
+  DVLASS | cat none | T4 no rule, category, or keyword matched | stay
+  TAA Sharpen | cat none | T4 no rule, category, or keyword matched | stay
+  Skylighting - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Effects 11 - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Upscaling - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Terrain Blending - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Screen Space Global Illumination (SSGI) - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Hair Specular - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Community Shaders Expanded (CSX) | cat none | T3 keyword [community shaders] | stay
+  Sky Sync - Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Community Shaders - Particle Lights (Unofficial Fork) | cat none | T3 keyword [community shaders] | stay
+  Community Shaders | cat none | T3 keyword [community shaders] | stay
+  Skylighting | cat none | T4 no rule, category, or keyword matched | stay
+  Spell Wheel VR | cat none | T4 no rule, category, or keyword matched | stay
+  Spell Hotbar | cat none | T4 no rule, category, or keyword matched | stay
+  FloraFixer - Mutagen Patcher and Data | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Cubemap Patcher - Mod Organizer 2 Plugin | cat none | T4 no rule, category, or keyword matched | stay
+  Screenshot Helper - Updated - Fixed 1.5.97 - 1.6.1170 | cat none | T4 no rule, category, or keyword matched | stay
+  Fam Faces 2.0 | cat #0 "<unknown id 0>" | T4 no rule, category, or keyword matched | stay
+  vMYC_FamiliarFaces | cat none | T4 no rule, category, or keyword matched | stay
+  Familiar Faces | cat none | T4 no rule, category, or keyword matched | stay
+  NoDelete - Wabbajack.Customizer(read documentation on how to set up) | cat none | T4 no rule, category, or keyword matched | stay
+  Wabbajack customizer | cat none | T4 no rule, category, or keyword matched | stay
+  Jaxonz Positioner Converter Remastered | cat none | T4 no rule, category, or keyword matched | stay
+  Rogue Master Detector | cat none | T4 no rule, category, or keyword matched | stay
+  Multiple Amulets and Rings... Automatically - MARA | cat none | T4 no rule, category, or keyword matched | stay
+  ParallaxR | cat none | T4 no rule, category, or keyword matched | stay
+  BENDr | cat none | T4 no rule, category, or keyword matched | stay
+  MisMatchR | cat none | T4 no rule, category, or keyword matched | stay
+  Screenshot Location and Metadata | cat none | T4 no rule, category, or keyword matched | stay
+  PROTEUS | cat none | T4 no rule, category, or keyword matched | stay
+  Q10s Convenient Cheat Tools and NPC Controls | cat none | T4 no rule, category, or keyword matched | stay
+  Player Cell Position | cat none | T4 no rule, category, or keyword matched | stay
+  Modern Wait Menu | cat none | T4 no rule, category, or keyword matched | stay
+  Gilded Spinning Main Menu Emblem - Chrome Version | cat none | T4 no rule, category, or keyword matched | stay
+  Main Menu Spinning Skyrim Emblem | cat none | T4 no rule, category, or keyword matched | stay
+  Main Menu Randomizer SE | cat none | T4 no rule, category, or keyword matched | stay
+  Dramatic Main Menu | cat none | T4 no rule, category, or keyword matched | stay
+  Asset Doctor | cat none | T4 no rule, category, or keyword matched | stay
+  ESLifier | cat none | T4 no rule, category, or keyword matched | stay
+  Broom - The Loose File Sweeper - Sample Rules | cat none | T4 no rule, category, or keyword matched | stay
+  Broom - The Loose File Sweeper | cat none | T4 no rule, category, or keyword matched | stay
+  Upgraded Fish for Distinct Interiors | cat none | T4 no rule, category, or keyword matched | stay
+  Upgraded Silverware for Distinct Interiors | cat none | T4 no rule, category, or keyword matched | stay
+  Upgraded Food Barrels for Distinct Interiors | cat none | T4 no rule, category, or keyword matched | stay
+  Distinct Interiors - Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Distinct Interiors Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Distinct Interiors | cat none | T4 no rule, category, or keyword matched | stay
+  Snazzy Interiors - The Retching Netch | cat none | T4 no rule, category, or keyword matched | stay
+  Decorator Helper | cat none | T4 no rule, category, or keyword matched | stay
+  Cozy Cots - A Cot Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Divide and Conquer - A Noble Divider Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Comfy Coffins | cat none | T4 no rule, category, or keyword matched | stay
+  Malacath's Chosen - An Orc Furniture Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Bedroll Alternative - Use Those Variant Blankets | cat none | T4 no rule, category, or keyword matched | stay
+  Reclusive Respite - BOS Color Variance Use Those Blankets patch | cat none | T4 no rule, category, or keyword matched | stay
+  Reclusive Respite - A High Hrothgar Bed Chair and Bench Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Bedroll Alternative - BOS Color Variance | cat none | T4 no rule, category, or keyword matched | stay
+  Use Those Blankets | cat none | T4 no rule, category, or keyword matched | stay
+  Dunmer Dreams - A Dark Elf Bed Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Peasant Dreams - A Common Bed Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Ignoble Beds - A Noble and Upper Class Bed Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Divine Dragonscale Decor - A Skyrim Furniture Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Overhauled Furniture Assembly-SOFA-Clean | cat none | T4 no rule, category, or keyword matched | stay
+  Blue Retching Netch | cat none | T4 no rule, category, or keyword matched | stay
+  Half Moon Mill Patches FOMOD | cat none | T4 no rule, category, or keyword matched | stay
+  Navigator Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Kalilies NPCs AI Overhaul Patch | cat none | T4 no rule, category, or keyword matched | stay
+  EmbersXD - Campfire Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Deadly Spell Impact - Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Parallax Mesh Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  FYX 3D Stockades - Compatibility Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Keyword Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  JKs Guild HQ Interiors Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Distinct Interiors for Cities of the North | cat none | T4 no rule, category, or keyword matched | stay
+  The Distinct JK's Ragged Flagon - Lux patch | cat none | family: follows master [Distinct JK's Ragged Flagon] | stay
+  Distinct JK's Ragged Flagon | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Interiors Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Skyrim Modders Patch - USMP - Patch Emporium | cat none | T4 no rule, category, or keyword matched | stay
+  kryptopyr's Automated Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Fixed Texture Paths for Small Things in EEK's Whiterun Interiors | cat none | T1 exact name rule | stay
+  EEKs Whiterun Interiors SSE | cat none | T3 keyword [eeks] | stay
+  EEKs Immersive Whiterun Fixes | cat #0 "<unknown id 0>" | family: follows master [EEKs Immersive Whiterun] | stay
+  EEKs Immersive Whiterun Asset Pack | cat none | T3 keyword [eeks] | stay
+  EEKs Immersive Whiterun | cat none | T3 keyword [eeks] | stay
+  EEKs Beautiful Whiterun | cat none | T3 keyword [eeks] | stay
+  Cursed Crypts - MLO2 RELight Addon | cat none | T1 exact name rule | stay
+  Emberveil Lighting - A Cinematic ReLight Preset | cat none | T1 exact name rule | stay
+  RELight - Official Light Addon | cat none | T1 exact name rule | stay
+  ReLight | cat none | T1 exact name rule | stay
+  CS Light | cat none | T4 no rule, category, or keyword matched | stay
+  Luma Utility | cat none | T4 no rule, category, or keyword matched | stay
+  True Light | cat none | T4 no rule, category, or keyword matched | stay
+  Flickering Meshes Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Intellightent | cat none | T4 no rule, category, or keyword matched | stay
+  Realm of Lorkhan Lighting Patch for Lux | cat none | T3 keyword [lux] | stay
+  Mesh patches for Lux and Lux Orbis | cat none | T3 keyword [lux] | stay
+  Mara Valentine lighting patch for Lux | cat none | T3 keyword [lux] | stay
+  Lux Via - Repaired Whiterun Bridge Add-on | cat none | T3 keyword [lux] | stay
+  EEKs Whiterun Interiors - Lux and Embers XD Conflict Resolution | cat none | T3 keyword [lux] | stay
+  Modern Lighting Overhaul 2 (MLO2) | cat none | T4 no rule, category, or keyword matched | stay
+  Lux | cat none | T3 keyword [lux] | stay
+  Lux Orbis | cat none | T3 keyword [lux] | stay
+  Lux - Via | cat none | T3 keyword [lux] | stay
+  Lux Variants | cat none | T3 keyword [lux] | stay
+  Lux (patch hub) | cat none | T3 keyword [lux] | stay
+  Lux Orbis (patch hub) | cat none | T3 keyword [lux] | stay
+  Lux - Via (patch hub) | cat none | T3 keyword [lux] | stay
+  Lux - RedBag's Falkreath Lanterns | cat none | T3 keyword [lux] | stay
+  Meridia's Luxon Beacon Replacer | cat none | T3 keyword [lux] | stay
+  Eld-beri II - NPC Support (Spid Distribution file) | cat none | T1 exact name rule | stay
+  Quick Beri - Wearable particle light lanterns SPIDified (CS and ENB) | cat none | T1 exact name rule | stay
+  Spider Webs and Particles for ENB | cat none | T1 exact name rule | stay
+  Particle Lights - Christmas in Skyrim - Whiterun (ENB and Community Shaders) | cat none | T1 exact name rule | stay
+  Eld-beri II - Full Particle Light lantern mod (CS LLF or ENB Light) | cat none | T3 keyword [enb] | MOVE -> [ENB]
+  ENB Particle Light for Wearable Lanterns | cat none | T3 keyword [enb] | MOVE -> [ENB]
+  ECPLW -ENB Complex Particle Lights for Windows | cat none | T3 keyword [enb] | MOVE -> [ENB]
+  Azura Statue Improved + ENB Particle Light | cat none | T3 keyword [enb] | MOVE -> [ENB]
+  Dark Elf Lantern ENB Light - Particle Patch for ENB - Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Particle Patch -Glow Maps | cat none | T4 no rule, category, or keyword matched | stay
+  Particle Patch for ENB | cat none | T4 no rule, category, or keyword matched | stay
+  Ghost Pile Seam Fix (Skyrim Particle Patch) | cat none | T4 no rule, category, or keyword matched | stay
+  Particle Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Eld-beri II - Lanterns Reworked | cat none | T4 no rule, category, or keyword matched | stay
+  Dark Elf Lantern - ENB Light - Community Shader Light Limit Fix Light - Animated Glow | cat none | T4 no rule, category, or keyword matched | stay
+  Optional Quick Start - SE | cat none | T4 no rule, category, or keyword matched | stay
+  Helgen and Alternate Perspective NPC replacer | cat none | T3 keyword [alternate perspective] | stay
+  Alternate Perspective - Realm of Lorkhan Patch (Updated for v4) | cat none | family: follows master [Alternate Perspective - Realm of Lorkhan Patch] | stay
+  Alternate Perspective - Realm of Lorkhan Patch | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Bring Back the Tamriel Shards Patch | cat none | T3 keyword [realm of lorkhan] | stay
+  Alternate Perspective - Modded Armors In Wardrobe - SkyPatched | cat none | T3 keyword [alternate perspective] | stay
+  Alternate Perspective - Voiced Addon | cat none | T3 keyword [alternate perspective] | stay
+  Alternate Perspective - Assorted Fixes and Patches | cat none | T3 keyword [alternate perspective] | stay
+  Realistic RS Children and Alternate Perspective Patch | cat none | T3 keyword [alternate perspective] | stay
+  Realm of Lorkhan Nicer Trees | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Forgotten Shrines | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan Better Bridges | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Bleak Falls Barrow Dragonstone Skip | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Unbound Quest Fix | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Shard cost reversed | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Freeform Alternate Start 4 | cat none | T3 keyword [realm of lorkhan] | stay
+  Realm of Lorkhan - Freeform Alternate Start | cat none | T3 keyword [realm of lorkhan] | stay
+  Alternate Perspective 4.0.3 - Alternate Start | cat none | T3 keyword [alternate perspective] | stay
+  Alternate Perspective - Alternate Start | cat none | T3 keyword [alternate perspective] | stay
+  Alternate Perspective 4.0.3- Alternate Start | cat none | T3 keyword [alternate perspective] | stay
+  Standing Stone the Lover | cat none | T4 no rule, category, or keyword matched | stay
+  Menhir - Standing Stones of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Ryn's Standing Stones | cat none | T4 no rule, category, or keyword matched | stay
+  Andromeda - Unique Standing Stones of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Crowded Streets | cat none | T4 no rule, category, or keyword matched | stay
+  Stacks of Septims - 3D Coin Piles - My patches SE by Xtudo | cat none | T4 no rule, category, or keyword matched | stay
+  Stacks of Septims - 3d Coin Piles | cat none | T4 no rule, category, or keyword matched | stay
+  Buy Lumber In Larger Stacks | cat none | T4 no rule, category, or keyword matched | stay
+  Acquisitive Soul Gems Multithreaded | cat none | T4 no rule, category, or keyword matched | stay
+  YASTM - Yet Another Soul Trap Manager VR | cat none | T4 no rule, category, or keyword matched | stay
+  YASTM - Yet Another Soul Trap Manager | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Impacts | cat none | T4 no rule, category, or keyword matched | stay
+  Throw Stone -- Simple Distraction Tool | cat none | T4 no rule, category, or keyword matched | stay
+  Surrender - Enemies Yield and Comply with Your Demands | cat none | T4 no rule, category, or keyword matched | stay
+  HFs - Archery target remodel - Diverse BOS | cat none | T4 no rule, category, or keyword matched | stay
+  Archery Target Retexture 2k | cat none | T4 no rule, category, or keyword matched | stay
+  Jabber's 2K Archery Targets | cat none | T4 no rule, category, or keyword matched | stay
+  Passive Weapon Enchantment Recharging - Enchanted Weapons Recharge Over Time | cat none | T4 no rule, category, or keyword matched | stay
+  Mage Armor Script Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Singularity | cat none | T4 no rule, category, or keyword matched | stay
+  Obscure Magic | cat none | T4 no rule, category, or keyword matched | stay
+  Magic Improvements for Skyrim VR | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim RE-Vision | cat none | T4 no rule, category, or keyword matched | stay
+  Roleplaying In Skyrim - Origins | cat none | T4 no rule, category, or keyword matched | stay
+  Unlimited Bookshelves | cat none | T4 no rule, category, or keyword matched | stay
+  Multilayer Parallax Gems | cat none | T4 no rule, category, or keyword matched | stay
+  Hearthfire multiple adoptions - Now with custom home support for kids and spouse | cat none | T4 no rule, category, or keyword matched | stay
+  Sleeping Expanded - Animations and NPC reactions | cat none | T4 no rule, category, or keyword matched | stay
+  Unlimited Sprinting | cat none | T4 no rule, category, or keyword matched | stay
+  ElSopa - Azura's Star Redone SE | cat none | T4 no rule, category, or keyword matched | stay
+  True Thane SE | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Outfit Equipment System NG | cat none | T4 no rule, category, or keyword matched | stay
+  Fancy Fishing - Minigame and Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Automatic Item Storage | cat none | T4 no rule, category, or keyword matched | stay
+  Simple Actions 4.0 - Go to bed patch | cat none | T4 no rule, category, or keyword matched | stay
+  Miscellaneous Embers XD Patches | cat none | T4 no rule, category, or keyword matched | stay
+  CC Fishing Campfire patch | cat none | T4 no rule, category, or keyword matched | stay
+  Simple Actions - The floor is as good a place to sleep (or sit) as any by BralorMarr | cat none | T4 no rule, category, or keyword matched | stay
+  Go to bed | cat none | T4 no rule, category, or keyword matched | stay
+  Bathtubs Basins and Beyond - BiSR edit | cat none | T4 no rule, category, or keyword matched | stay
+  Bathtubs Basins and Beyond | cat none | T4 no rule, category, or keyword matched | stay
+  Bathing in Skyrim - Renewed | cat none | T4 no rule, category, or keyword matched | stay
+  Bathing in Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Campfire - Complete Camping System (Supports Skyrim VR) | cat none | T4 no rule, category, or keyword matched | stay
+  Azurite Weathers III - Enhanced | cat none | T4 no rule, category, or keyword matched | stay
+  Azurite Weathers - Alluring Sunsets and Sunrises | cat none | T4 no rule, category, or keyword matched | stay
+  Ambient Templates for Lighting Mods | cat none | T4 no rule, category, or keyword matched | stay
+  Sky Reflection Fix | cat none | T4 no rule, category, or keyword matched | stay
+  NAT III Weather - From Dusk Till Dawn - Every Cloud Different - SLFR - Bizarre Shadow Fix - Compatibility Patch | cat none | T4 no rule, category, or keyword matched | stay
+  From Dusk Till Dawn | cat none | T4 no rule, category, or keyword matched | stay
+  JS Dragon Claws - Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Soulgem Stand Redone | cat none | T4 no rule, category, or keyword matched | stay
+  Crystalline Soul Gems | cat none | T4 no rule, category, or keyword matched | stay
+  [Melodic] Lacey dress SE | cat none | T4 no rule, category, or keyword matched | stay
+  [Melodic] Goldbikini SE | cat none | T4 no rule, category, or keyword matched | stay
+  MultiLayer Parallax Soul Gems SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Dark Dreams | cat none | T4 no rule, category, or keyword matched | stay
+  Soulgems Azura's star realm and holders HD SE | cat none | T4 no rule, category, or keyword matched | stay
+  Icestorm High Heels Collection For Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Queen Marika's Dress | cat none | T4 no rule, category, or keyword matched | stay
+  Raven HDT-SMP Armor | cat none | T4 no rule, category, or keyword matched | stay
+  Tera Armors Collection Skyim Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Invisible Armors Enhanced | cat none | T4 no rule, category, or keyword matched | stay
+  DCR - King Crusader Mega Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Staves (Creation) - Minor Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Paraphernalia - VR Dragon Riding | cat none | T4 no rule, category, or keyword matched | stay
+  Palantirs of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  JS Dragon Claws SE | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon Claws Auto-Unlock | cat none | T4 no rule, category, or keyword matched | stay
+  Sons of Skyrim - HIMBO | cat none | T1 exact name rule | stay
+  Divine Daedric Cloaks - Skypatched | cat none | T4 no rule, category, or keyword matched | stay
+  Nirn Necessities - My patches SE by Xtudo - Non-HDT Optimized Textures Backpack Satchel Scarf Cape Cloak Gaiter | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Unlimited Rings and Amulets SSE | cat none | T4 no rule, category, or keyword matched | stay
+  [Melodic] Egyptian Accesories CBBE 3BA SE | cat none | T4 no rule, category, or keyword matched | stay
+  ELLE - Dangerous Gladiator 3BA-BHUNP - Recolor | cat none | T4 no rule, category, or keyword matched | stay
+  [Melodic] Egyptian Accessory CBBE | cat none | T4 no rule, category, or keyword matched | stay
+  [Melodic] Egyptian Accessory | cat none | T4 no rule, category, or keyword matched | stay
+  DX Merta Assassin Armor BHUNP-3BA SE | cat none | T4 no rule, category, or keyword matched | stay
+  Sharkish Piercings - BHUNP and 3BA Body Piercings | cat none | T4 no rule, category, or keyword matched | stay
+  Tera Armors Collection 3BA Conversion | cat none | T4 no rule, category, or keyword matched | stay
+  Simple God Ring | cat none | T4 no rule, category, or keyword matched | stay
+  El Men's Underwear | cat none | T4 no rule, category, or keyword matched | stay
+  Countess Ensemble BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  DX Azur Lane St. Louis CBBE - 3BA - BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  Catsuits and Corsets by 1Nye (3BA) | cat none | T4 no rule, category, or keyword matched | stay
+  DX RedRibbon CBBE Physics 3BA BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  Obi's Greaser Outfit 3BA 4k | cat none | T4 no rule, category, or keyword matched | stay
+  Ata High Heels | cat none | T4 no rule, category, or keyword matched | stay
+  More Varied Clothes | cat none | T4 no rule, category, or keyword matched | stay
+  Common Clothing Expansion - Common Clothes and Armors Integration - SkyPatched | cat none | T4 no rule, category, or keyword matched | stay
+  Common Clothing Expansion - CBBE 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  Common Clothing Expansion | cat none | T4 no rule, category, or keyword matched | stay
+  Blue Jeans Plus Volume 3 Recolor and Port | cat none | T4 no rule, category, or keyword matched | stay
+  TBOS Hepsy Jeans SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Artesian Cloaks of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Divine and Daedric Cloaks | cat none | T4 no rule, category, or keyword matched | stay
+  Cloaks of Lace for Lady SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Nirn Necessities - SMP Accessories | cat none | T4 no rule, category, or keyword matched | stay
+  Jennes Thigh Boots- -BHUNP 3BBB- -CBBE 3BBB- | cat none | T4 no rule, category, or keyword matched | stay
+  Vertigo Thigh High Boots - CBBE 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  IceStorm NG ShoesPack(clothes) | cat none | T4 no rule, category, or keyword matched | stay
+  Myrtles Heels SSE - with Optional Heels Sound | cat none | T4 no rule, category, or keyword matched | stay
+  N.U.D.E. powered by Underwear.dll | cat none | T4 no rule, category, or keyword matched | stay
+  Underwear.dll | cat none | T4 no rule, category, or keyword matched | stay
+  The Ghoulish Pendant | cat none | T4 no rule, category, or keyword matched | stay
+  Gemling Queen Jewelry SE USSEP Circlet Fix | cat none | family: follows master [Gemling Queen Jewelry SE] | stay
+  Gemling Queen Jewelry SE | cat none | T4 no rule, category, or keyword matched | stay
+  Opulent Robe Retexture 2K SE | cat none | T4 no rule, category, or keyword matched | stay
+  Farm Hat 01 Clipping Fix | cat none | T4 no rule, category, or keyword matched | stay
+  JS Circlet Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Skrub's Guns and Funs Mod AKA 1st Person Guns in Skyrim V1 | cat none | T4 no rule, category, or keyword matched | stay
+  Spear of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Lasers (Magicka Blasters) | cat none | T4 no rule, category, or keyword matched | stay
+  Wolverine Claws - animated SSE | cat none | T4 no rule, category, or keyword matched | stay
+  ELAF Gunpowder | cat none | T4 no rule, category, or keyword matched | stay
+  Project Flintlock SE | cat none | T4 no rule, category, or keyword matched | stay
+  Trueflame and Hopesfire - New Model Visuals and Enchantment | cat none | T4 no rule, category, or keyword matched | stay
+  True Trueflame and Hopesfire | cat none | T4 no rule, category, or keyword matched | stay
+  dwarven beam blades | cat none | T4 no rule, category, or keyword matched | stay
+  Kemper's Weapon Collection II | cat none | T4 no rule, category, or keyword matched | stay
+  Kemper's Weapon Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Sword of Thorns | cat none | T4 no rule, category, or keyword matched | stay
+  Vibrant Weapons EAE - Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Vibrant Weapons EAE - Enchantment Lights | cat none | T4 no rule, category, or keyword matched | stay
+  Vibrant Weapons EAE | cat none | T4 no rule, category, or keyword matched | stay
+  Apophysis Dragon Priest Masks SE | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon Glass Weapons | cat none | T4 no rule, category, or keyword matched | stay
+  CBPC Equipment Physics | cat none | T4 no rule, category, or keyword matched | stay
+  AutoCrossbow - Remesh | cat none | T4 no rule, category, or keyword matched | stay
+  Automatic Crossbows SE | cat none | T4 no rule, category, or keyword matched | stay
+  Legendary Skyrim Crossbows SSE | cat none | T4 no rule, category, or keyword matched | stay
+  LWs BSW Orcish Greatsword inventory fix - sheath | cat none | T4 no rule, category, or keyword matched | stay
+  LeanWolf's Better-Shaped Weapons - All in One Installer | cat none | T4 no rule, category, or keyword matched | stay
+  Pan NPCs DG - Legendary Skyrim Crossbows | cat none | T4 no rule, category, or keyword matched | stay
+  Iban's Staff SE | cat none | T4 no rule, category, or keyword matched | stay
+  Flintlock Pistols for Adventurers - VR Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Flaming Skull Bikini Pasties BHUNP CBBE3BA Dynamic Conditional | cat none | T4 no rule, category, or keyword matched | stay
+  ELLE Viper 3BA - BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  Obsidian Elegance (CBBE 3BA) | cat none | T4 no rule, category, or keyword matched | stay
+  Silver Witch 3BA SMP | cat none | T4 no rule, category, or keyword matched | stay
+  DX Fetish Fashion Volume 2 SE - CBBE Physics - 3BA - BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  DX Fetish Fashion Volume 1 SE CBBE - 3BA - BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  Fuse00 - Helga Armor 3BA UBE SMP (v2) | cat none | T4 no rule, category, or keyword matched | stay
+  ELLE - Sparrows Mage 3BA-BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  ELLE - Dark Rebel 3BA-BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  ELLE - Dangerous Gladiator 3BA-BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  Skyforge Assassins CBBE - 3BA - BHUNP | cat none | T4 no rule, category, or keyword matched | stay
+  Flintlock Pistols for Adventurers (Fix for 1.6.1170) | cat none | T4 no rule, category, or keyword matched | stay
+  Flintlock Pistols for Adventurers (travelling in hostile environments) | cat none | T4 no rule, category, or keyword matched | stay
+  AC Black Flag - Edward Kenway outfit | cat none | T4 no rule, category, or keyword matched | stay
+  DX Merta Assassin Outfit - UNP | cat none | T4 no rule, category, or keyword matched | stay
+  SOS V2.0 - SE by Xtudo - Sentinel patch | cat none | T4 no rule, category, or keyword matched | stay
+  Sentinel - Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Sons of Skyrim - HDT Physics for Cloaks Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Sons of Skyrim - My patches and fixes SE by Xtudo - Desaturated 2K textures | cat none | T4 no rule, category, or keyword matched | stay
+  Sentinel Patch for Sons of Skyrim - HDT-SMP Cloaks | cat none | T4 no rule, category, or keyword matched | stay
+  Sons of Skyrim Complex Material | cat none | T4 no rule, category, or keyword matched | stay
+  Sons of Skyrim v2.0 - 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  Sons of Skyrim for v2.0 - Dawnstar Guard Armor Fix | cat none | family: follows master [Sons of Skyrim] | stay
+  Sons of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Sentinel - An Equipment Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Sentinel - Required Resources | cat none | T4 no rule, category, or keyword matched | stay
+  Multilayer Parallax Animated Dawnbreaker PBR | cat none | T4 no rule, category, or keyword matched | stay
+  Busy Follower Framework | cat none | T4 no rule, category, or keyword matched | stay
+  Nether's Follower Framework | cat none | T4 no rule, category, or keyword matched | stay
+  Go On Ahead | cat none | T4 no rule, category, or keyword matched | stay
+  Refracting Stalhrim Armors and Weapons - ENB Refract Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Refracting Stalhrim Armors and Weapons | cat none | T4 no rule, category, or keyword matched | stay
+  Light Refracting Glass Armors and Weapons (reinstall fomod for other options) | cat none | T4 no rule, category, or keyword matched | stay
+  Player-exclusive HDT-SMP Armors | cat none | T4 no rule, category, or keyword matched | stay
+  Heels Sound | cat none | T4 no rule, category, or keyword matched | stay
+  JS Essence Extractor SE | cat none | T4 no rule, category, or keyword matched | stay
+  JS Dwarven Oil SE - 2k Textures | cat none | T4 no rule, category, or keyword matched | stay
+  JS Attunement Sphere and Lexicons SE - Glowmapped - Improved Dwemer Glass Patch | cat none | family: follows master [JS Attunement Sphere and Lexicons SE - Glowmapped] | stay
+  JS Attunement Sphere and Lexicons SE - Glowmapped | cat none | T4 no rule, category, or keyword matched | stay
+  JS Attunement Sphere and Lexicons SE | cat none | T4 no rule, category, or keyword matched | stay
+  Vtaw Wardrobe 5 - CBBE SE - CBBE SMP - CBBE 3BA - BodySlide | cat none | T3 keyword [vtaw] | stay
+  Vtaw Wardrobe 4 - CBBE - BHUNP - BodySlide with 3BBB Support | cat none | T3 keyword [vtaw] | stay
+  Converse Shoes UNP-CBBE SSE Bodyslide | cat none | T3 keyword [converse shoes] | stay
+  Ankle Boots - CBBE BodySlide | cat none | T3 keyword [ankle boots] | stay
+  Cathedral Armory - Fur Shader | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral Armory - HIMBO BodySlide Compatibility Patch | cat none | family: follows master [Cathedral - Armory] | stay
+  Cathedral - Armory - CBBE BodySlide Patch | cat none | family: follows master [Cathedral - Armory] | stay
+  Cathedral - Armory | cat none | T4 no rule, category, or keyword matched | stay
+  Positive Undressed Reactions ESL | cat none | T4 no rule, category, or keyword matched | stay
+  Naked Comments Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Dialogue Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Horde - A Light-Weight SKSE Follower Management System | cat none | T4 no rule, category, or keyword matched | stay
+  Vanilla Civil War Dialogue Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Cheeky Kids | cat none | T4 no rule, category, or keyword matched | stay
+  Collision Dialogue Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Riley Steel Follower SE | cat none | T4 no rule, category, or keyword matched | stay
+  Pantheon - Anja Iceheart - Nord Frost Witch | cat none | T4 no rule, category, or keyword matched | stay
+  NeusKharp Female Followers HPH and EDM Full Custom 3BA AiO ESPFE | cat none | T4 no rule, category, or keyword matched | stay
+  Mana Vault Follower Resource Pool CBBE 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  Gwenifyr - Custom-voiced Breton Female Follower | cat none | T4 no rule, category, or keyword matched | stay
+  All Female Housecarls - Essential And Slightly Improved | cat none | T4 no rule, category, or keyword matched | stay
+  The Iceheart Sisters - Followers - Location - Quests - NPC Comments - Banter | cat none | T4 no rule, category, or keyword matched | stay
+  !Beefcake Adventurers | cat none | T4 no rule, category, or keyword matched | stay
+  Masculine Housecarls | cat none | T4 no rule, category, or keyword matched | stay
+  Shang-Chi and Jason Statham with you in Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  All in one pack Schwarzenegger | cat none | T4 no rule, category, or keyword matched | stay
+  Duneborne Followers | cat none | T4 no rule, category, or keyword matched | stay
+  Dead and Daedric Guardians | cat none | T4 no rule, category, or keyword matched | stay
+  Simply Open Source Voice Pack - for Busy Follower Framework only | cat none | T4 no rule, category, or keyword matched | stay
+  Relationship Dialogue Overhaul (RDO) NPCs - a replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Better Males Remesh for Skyrim SE | cat none | T4 no rule, category, or keyword matched | stay
+  Male Feet Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Relationship Dialogue Overhaul - RDO SE | cat none | T4 no rule, category, or keyword matched | stay
+  No Ugly Skinny Offset for Males | cat none | T4 no rule, category, or keyword matched | stay
+  Relatable male body hair pattern | cat none | T4 no rule, category, or keyword matched | stay
+  Heartbreaker - Male CS Advanced Skin | cat none | T4 no rule, category, or keyword matched | stay
+  MOXIE - Masculine Skinblend (Male Skin) | cat none | T4 no rule, category, or keyword matched | stay
+  REALORE MEN'S Skin Texture | cat none | T4 no rule, category, or keyword matched | stay
+  BnP male skin (Replacer+Player version) | cat none | T4 no rule, category, or keyword matched | stay
+  Highly Improved Male Body Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  To Your Face SE - AE - VR | cat none | T4 no rule, category, or keyword matched | stay
+  AI Overhaul SSE - Official Patch Hub | cat none | T4 no rule, category, or keyword matched | stay
+  AI Overhaul SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Wind Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  slightly Better Dust aka Dust not Clouds | cat none | T4 no rule, category, or keyword matched | stay
+  Realistic Dust (formerly Less Noticeable Dust SE) | cat none | T4 no rule, category, or keyword matched | stay
+  RASS - NAT III Weather | cat none | T4 no rule, category, or keyword matched | stay
+  Shut Up Heimskr | cat none | T4 no rule, category, or keyword matched | stay
+  FleshFX | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC SPRIGGAN EFFECTS | cat none | T4 no rule, category, or keyword matched | stay
+  Universal Unwanted Effects Clearer - Visual Effects - Imagespace Modifiers - Effect Shaders - Clairvoyance | cat none | T4 no rule, category, or keyword matched | stay
+  Enhanced Blood Textures | cat none | T4 no rule, category, or keyword matched | stay
+  Arctic - Frost Effects Redux | cat none | T4 no rule, category, or keyword matched | stay
+  Parallax Spell Impacts | cat none | T4 no rule, category, or keyword matched | stay
+  Deadly Spell Impacts Transparency Fix for ENB | cat none | T4 no rule, category, or keyword matched | stay
+  Deadly Spell Impacts | cat none | T4 no rule, category, or keyword matched | stay
+  Eternal Flames | cat none | T4 no rule, category, or keyword matched | stay
+  Candle Flame VFX Edit | cat none | T4 no rule, category, or keyword matched | stay
+  Flame VFX Edit | cat none | T4 no rule, category, or keyword matched | stay
+  Healing VFX Edit | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon Breath VFX Edit | cat none | T4 no rule, category, or keyword matched | stay
+  Lightning VFX Edit | cat none | T4 no rule, category, or keyword matched | stay
+  Dragonborn Pastures | cat none | T4 no rule, category, or keyword matched | stay
+  Craftable Saddles from Witcher 3 | cat none | T4 no rule, category, or keyword matched | stay
+  Phantom Horse - New Phantom Mounts | cat none | T4 no rule, category, or keyword matched | stay
+  Phantom Horse - Horse Replacer Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Phantom Horse | cat none | T4 no rule, category, or keyword matched | stay
+  The Four Horses of the Apocalypse SSE port | cat none | T4 no rule, category, or keyword matched | stay
+  No more glitchy textures. Witcher Horse Expansion compatibility patches (ENG) | cat none | T4 no rule, category, or keyword matched | stay
+  Witcher Horse Expansion | cat none | T4 no rule, category, or keyword matched | stay
+  Equestrian - An SC Horses Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Steeds of Ultima - VR Mounted combat | cat none | T4 no rule, category, or keyword matched | stay
+  Dragonactorscript infinite loop fix (FOMOD Repatch if using Dragonwar) | cat none | T4 no rule, category, or keyword matched | stay
+  Majestic Dragons - Larger and immersive proportions | cat none | T4 no rule, category, or keyword matched | stay
+  RedBag's Dragonsreach - GoT The Black Dread Skull Replacer Patch | cat none | T4 no rule, category, or keyword matched | stay
+  GoT The Black Dread Skull Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Drogon Alduin - Xila's Monstrrous GoT Dragons | cat none | T4 no rule, category, or keyword matched | stay
+  Rhaegal Paarthurnax - Monstrrous GoT Dragons | cat none | T4 no rule, category, or keyword matched | stay
+  GoT Dragons Textures - Fixed Soul Absorb And Optimized | cat none | T1 exact name rule | stay
+  GoT Dragons 16K-8K - Cleaned and Upscaled Textures (Game of Thrones) | cat none | T4 no rule, category, or keyword matched | stay
+  HOTD - Meleys as Odahviing | cat none | T4 no rule, category, or keyword matched | stay
+  HotD Dragons - Arrax and Vermax | cat none | T4 no rule, category, or keyword matched | stay
+  HotD Dragons - Season 2 | cat none | T4 no rule, category, or keyword matched | stay
+  HotD Dragons - Caraxes | cat none | T4 no rule, category, or keyword matched | stay
+  HotD Dragons-Textures | cat none | T4 no rule, category, or keyword matched | stay
+  GoT Dragons-Textures | cat none | T4 no rule, category, or keyword matched | stay
+  HotD and GoT Dragons Standalone | cat none | T4 no rule, category, or keyword matched | stay
+  Kojaks Inquisitive Dragons | cat none | T4 no rule, category, or keyword matched | stay
+  Incubated Eggs SE (esl) | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon Nests Of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon Nests and Eggs | cat none | T4 no rule, category, or keyword matched | stay
+  Mount Anthor Dragon Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon War - Rescaled | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon War - Rebalanced | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon War - A Dragon Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Nithhogg Dragon | cat none | T4 no rule, category, or keyword matched | stay
+  Diverse Dog Textures - SPID | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Arachnophobia - Spiders are Wolves - Chaurus are Bears - No Cobwebs or Eggs | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Fancy Mihail's Roosters SPID or Replacer | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Ice Wraith Teeth Collision Fixes (FOMOD check for Repatch) | cat none | T4 no rule, category, or keyword matched | stay
+  SSS-CT - Slaughterfish Stay Submerged - Collision Tweak (Savage Skyrim Patch available) | cat none | T4 no rule, category, or keyword matched | stay
+  (ESL) Rats for Skeevers Replacement SE | cat none | T4 no rule, category, or keyword matched | stay
+  Radiant Atronachs | cat none | T4 no rule, category, or keyword matched | stay
+  Unaggressive Dragon Priests Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Insects Begone REDUX | cat none | T4 no rule, category, or keyword matched | stay
+  Butterfly Improved by zzjay - SE | cat none | T4 no rule, category, or keyword matched | stay
+  Butterflies Land True | cat none | T4 no rule, category, or keyword matched | stay
+  Tiny Torchbugs and Bitsy Bees | cat none | T4 no rule, category, or keyword matched | stay
+  Transparent and refracting Icicle and Frost Atronach | cat none | T4 no rule, category, or keyword matched | stay
+  Blackreach Tentacle Mesh Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Rotten Corpses SE | cat none | T4 no rule, category, or keyword matched | stay
+  SRW0 Undead | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon.Priest.by.Kajuan | cat none | T4 no rule, category, or keyword matched | stay
+  WiZkiD Hagraven Clutter and Bones | cat none | T4 no rule, category, or keyword matched | stay
+  Realistic Skin Shaders - Falmer and Hagravens | cat none | T4 no rule, category, or keyword matched | stay
+  Skeleton Replacer HD | cat none | T4 no rule, category, or keyword matched | stay
+  Night Mother | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC DAEDRA - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC SPRIGGAN - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC DEATH HOUND and GARGOYLE - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Giants Are GIANTS | cat none | T4 no rule, category, or keyword matched | stay
+  Dongo Giants - a Game of Thrones inspired Giant replacer | cat none | T4 no rule, category, or keyword matched | stay
+  New Female Giant Dressed | cat none | T4 no rule, category, or keyword matched | stay
+  New Spriggan Matron | cat none | T4 no rule, category, or keyword matched | stay
+  New Spriggans SFW | cat none | T4 no rule, category, or keyword matched | stay
+  New Wispmother | cat none | T4 no rule, category, or keyword matched | stay
+  New Flame Atronach | cat none | T4 no rule, category, or keyword matched | stay
+  New Earth Mother Spriggan | cat none | T4 no rule, category, or keyword matched | stay
+  Troll Variance | cat none | T4 no rule, category, or keyword matched | stay
+  Trolls of Cyrodiil - My optimized textures SE by Xtudo | cat none | T4 no rule, category, or keyword matched | stay
+  Kanjs - Troll and Santa Troll | cat none | T4 no rule, category, or keyword matched | stay
+  Trolls SE | cat none | T4 no rule, category, or keyword matched | stay
+  Falmer Overhaul - New models and textures | cat none | T4 no rule, category, or keyword matched | stay
+  Bellyaches Animal and Creature Pack Revamp | cat none | T4 no rule, category, or keyword matched | stay
+  The Killer Rabbit of Caerbannog- 2023 Easter Special (SE-AE version) | cat none | T4 no rule, category, or keyword matched | stay
+  New Dogs Replacers SE | cat none | T4 no rule, category, or keyword matched | stay
+  DMT's All Dogs Go To Sovngarde V3 Pet Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Dog Followers are Huskies - No Barking - Silent Stealth | cat none | T4 no rule, category, or keyword matched | stay
+  Realistic Bears Project | cat none | T4 no rule, category, or keyword matched | stay
+  Bears of the North Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Wall mounted dead animals fixes (Bears of the north patch available) | cat none | family: follows master [Bears of the North] | stay
+  Bears of the North | cat none | T4 no rule, category, or keyword matched | stay
+  Wolves of Cyrodiil - My optimized textures SE by Xtudo | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Animal Variants (1.2.2) | cat none | T4 no rule, category, or keyword matched | stay
+  Dream's Unique Dogs SE | cat none | T4 no rule, category, or keyword matched | stay
+  High-Res Dartwing (Dragonfly) Texture | cat none | T4 no rule, category, or keyword matched | stay
+  Simply Bigger Giants and Mammoths (With fixed hitboxes) | cat none | T4 no rule, category, or keyword matched | stay
+  Mammoth babies for the Mournful Giant | cat none | T4 no rule, category, or keyword matched | stay
+  HD Reworked Mammoths 4K | cat none | T4 no rule, category, or keyword matched | stay
+  Simply Open Source Voice Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Baby Dragon - A Pet Follower | cat none | T4 no rule, category, or keyword matched | stay
+  Heartbreaker SAM Light -SOSAM Patch | cat none | T3 keyword [sosam] | stay
+  COtR - HQ Characters creation addon for RM | cat none | T4 no rule, category, or keyword matched | stay
+  Miggyluv's Heavy Bodyhair Nipple Fix for HIMBO 5 | cat none | T3 keyword [himbo] | stay
+  [Predator] HP Head SMP | cat none | T4 no rule, category, or keyword matched | stay
+  [Dint999] Magic Nails (SE) | cat none | T4 no rule, category, or keyword matched | stay
+  SOS Light Body that can use SOS Full Texture - FINALLY | cat none | T4 no rule, category, or keyword matched | stay
+  Face Discoloration Fix VR | cat none | T4 no rule, category, or keyword matched | stay
+  Face Discoloration Fix | cat none | T4 no rule, category, or keyword matched | stay
+  BnP teeth overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  SOS V2.0 - SE by Xtudo - Smaller Shields | cat none | T4 no rule, category, or keyword matched | stay
+  Koralina's Face Details for COtR | cat none | T4 no rule, category, or keyword matched | stay
+  Complexions for CotR | cat none | T4 no rule, category, or keyword matched | stay
+  SOS V2.0 - SE by Xtudo - Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  BnP - COTR Teeth Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  BnP - COtR faces | cat none | T4 no rule, category, or keyword matched | stay
+  High Poly COTR | cat none | T4 no rule, category, or keyword matched | stay
+  SavrenX Himbo to SAM and Reverse | cat none | T3 keyword [himbo] | stay
+  COTR Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  SOSAM - Bodyslide Support | cat none | T3 keyword [sosam] | stay
+  BnP male skin schlong normal fix | cat none | T3 keyword [schlong] | stay
+  High Poly Head SE | cat none | T4 no rule, category, or keyword matched | stay
+  SavrenX Schlong of SAM | cat none | T3 keyword [schlong] | stay
+  Schlongs of Skyrim AE | cat none | T3 keyword [schlong] | stay
+  Slightly Refined Hands for HIMBO | cat none | T3 keyword [himbo] | stay
+  BnP - Child Skin | cat none | T4 no rule, category, or keyword matched | stay
+  Tempered Skins for Males - SOS Full Version | cat none | T4 no rule, category, or keyword matched | stay
+  Reverie | cat none | T4 no rule, category, or keyword matched | stay
+  Underwear.dll 3BA and HIMBO Conversion | cat none | T3 keyword [himbo] | stay
+  The New Gentleman Pubic Addons | cat none | T4 no rule, category, or keyword matched | stay
+  The New Gentleman - SoS Keyword Patch | cat none | T4 no rule, category, or keyword matched | stay
+  The New Gentleman - Wet Schlongs | cat none | T3 keyword [schlong] | stay
+  The New Gentleman | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral Armory - Fur Shader - HIMBO Bodyslides | cat none | T3 keyword [himbo] | stay
+  Tera Armors Collection - HIMBO Conversion | cat none | T3 keyword [himbo] | stay
+  El Men's Underwear - SOSAM Refit | cat none | T3 keyword [sosam] | stay
+  Nordwarua - Sons of Skyrim - SOSAM Conversion | cat none | T3 keyword [sosam] | stay
+  Fuse00 HDT-SMP Rogue Set HIMBO Refit and Variants | cat none | T3 keyword [himbo] | stay
+  Underwear.dll urbon's Edit - SOSAM Refit | cat none | T3 keyword [sosam] | stay
+  Khajiit Fluffy Fur Body HIMBO and 3BA | cat none | T3 keyword [himbo] | stay
+  Fluffy Khajiit 2 Himbo | cat none | T3 keyword [himbo] | stay
+  Realistic Racial Body Diversity - OBody NG Config (CBBE 3BA - HIMBO) | cat none | T3 keyword [himbo] | stay
+  Shield-Brother Physique - SerketHetyt's HIMBO Bodyslide Preset | cat none | T3 keyword [himbo] | stay
+  Player-exclusive HDT-SMP Vanilla Armors - HIMBO | cat none | T3 keyword [himbo] | stay
+  Willow Card Collector | cat none | T4 no rule, category, or keyword matched | stay
+  Loving family | cat none | T4 no rule, category, or keyword matched | stay
+  SexLab Madness | cat none | T3 keyword [sexlab] | stay
+  Paraphernalia - End of Life | cat none | T4 no rule, category, or keyword matched | stay
+  SexLab Solutions Revisited Addon | cat none | family: follows master [SexLab Solutions] | stay
+  SexLab Solutions | cat none | T3 keyword [sexlab] | stay
+  SexLab Random Sex NG | cat none | T3 keyword [sexlab] | stay
+  SexLab Dragons | cat none | T3 keyword [sexlab] | stay
+  Animal SOS ABC SE | cat none | T4 no rule, category, or keyword matched | stay
+  SexLab Creature Framework | cat none | T3 keyword [sexlab] | stay
+  SexLab Aroused Creatures SE | cat none | T3 keyword [sexlab] | stay
+  Sensual Needs for Flower Girls or SexLab or Ostim | cat none | T3 keyword [sexlab] | stay
+  SexLab Framework PPLUS - V2.10.2.2 - VR | cat none | family: follows master [SexLab Framework PPLUS] | stay
+  SexLab Framework PPLUS NG | cat none | T3 keyword [sexlab] | stay
+  SexLab Framework PPLUS | cat none | T3 keyword [sexlab] | stay
+  SexLab Eager NPCs ERev | cat none | T3 keyword [sexlab] | stay
+  SexLab Eager NPCs - Voice Files | cat none | T3 keyword [sexlab] | stay
+  Animal SOS SE | cat none | T4 no rule, category, or keyword matched | stay
+  SLSB_Billyy_Animations v | cat none | T3 keyword [slsb] | stay
+  The Circle of Lust | cat none | T1 exact name rule | stay
+  Toys Packs - Love Music LoveCum | cat none | T3 keyword [toys] | stay
+  Toys Voices | cat none | T3 keyword [toys] | stay
+  Toys and Love | cat none | T3 keyword [toys] | stay
+  TBPainterly Cum Texture | cat none | T3 keyword [cum texture] | stay
+  Calyps's adult toys chest SE (ported) NSFW | cat none | T3 keyword [nsfw] | stay
+  Intelligent Voiced Dirty Talk SE | cat none | T3 keyword [dirty talk] | stay
+  dse-buttplug | cat none | T3 keyword [buttplug] | stay
+  Sex Grants Experience | cat none | T1 exact name rule | stay
+  BBR - a hundred NSFW collectible cards | cat none | T3 keyword [nsfw] | stay
+  Follow me for Sex | cat none | T1 exact name rule | stay
+  Automated SLSB Conversions 0.9 | cat none | T3 keyword [slsb] | stay
+  Automated SLSB Conversions | cat none | T3 keyword [slsb] | stay
+  Billyy's SLAL Animations 8.2 | cat none | T3 keyword [slal] | stay
+  Billyy's SLAL Animations | cat none | T3 keyword [slal] | stay
+  Cobalt Animation Spanking Pack SE | cat none | T3 keyword [spanking] | stay
+  KomAnim AIO SSE | cat none | T1 exact name rule | stay
+  FunnyBizness | cat none | T1 exact name rule | stay
+  Horny Creatures of Skyrim SE | cat none | T3 keyword [horny creatures] | stay
+  SexLab More Nasty Critters Patches | cat none | family: follows master [More Nasty Critters] | stay
+  More Nasty Critters | cat none | T3 keyword [nasty critters] | stay
+  [Predator] MME Milk Harness | cat none | T1 exact name rule | stay
+  OSL Aroused | cat none | T3 keyword [aroused] | stay
+  SexLab VR Patch | cat none | T3 keyword [sexlab] | stay
+  SexLab Framework SE | cat none | T3 keyword [sexlab] | stay
+  MuJointFix | cat none | T4 no rule, category, or keyword matched | stay
+  Mu Joint Fix | cat none | T4 no rule, category, or keyword matched | stay
+  XP32 First Person Skeleton CTD Bugfix for VR | cat none | T4 no rule, category, or keyword matched | stay
+  XP32 Maximum Skeleton Special Extended - Fixed Scripts | cat none | T4 no rule, category, or keyword matched | stay
+  XP32 Maximum Skeleton Special Extended | cat none | T4 no rule, category, or keyword matched | stay
+  From the Deeps SE | cat none | T4 no rule, category, or keyword matched | stay
+  Cool Drugs | cat none | T4 no rule, category, or keyword matched | stay
+  Cannabis Skyrim SE | cat none | T4 no rule, category, or keyword matched | stay
+  SL Solutions Revisited Voicepack | cat none | T4 no rule, category, or keyword matched | stay
+  Baka ABC Beast Cocks | cat none | T4 no rule, category, or keyword matched | stay
+  HIMBOSAM - A male body preset | cat none | T1 exact name rule | stay
+  Young Wolverine- A RaceMenu Preset | cat none | T1 exact name rule | stay
+  Vrayth's Racemenu Presets - Male and Female - EFM - High Poly Head | cat none | T1 exact name rule | stay
+  The Wolverine - A RaceMenu Preset | cat none | T1 exact name rule | stay
+  Dracula Racemenu Preset by AlenVex | cat none | T1 exact name rule | stay
+  Preset Pack For Aedra Race and Daedra Race | cat none | T4 no rule, category, or keyword matched | stay
+  Pride of Skyrim 11 - High Poly Head Male Presets Vol. 2 | cat none | T4 no rule, category, or keyword matched | stay
+  Khajiit Paw (Digitigrade looking feet) | cat none | T4 no rule, category, or keyword matched | stay
+  fae's Presets for OBody | cat none | T3 keyword [obody] | stay
+  OWrong Bodies - 3BA Bodyslide presets for OBody | cat none | T3 keyword [bodyslide] | stay
+  Muscular Khajiit Textures and Skeleton | cat none | T4 no rule, category, or keyword matched | stay
+  Aetherial girl CBBE 3BA bodyslide preset | cat none | T3 keyword [bodyslide] | stay
+  Fluffy Khajiit CBBE 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  Masculine Khajiit Textures (Grey Cat and Leopard) [Vanilla] | cat none | T4 no rule, category, or keyword matched | stay
+  Feminine Khajiit Textures (Grey Cat and Leopard) [CBBE] | cat none | T4 no rule, category, or keyword matched | stay
+  EBD SSE - EveryBodys Different Redone for SSE | cat none | T4 no rule, category, or keyword matched | stay
+  OBody HotSwap - CBPC presets for OBody | cat none | T3 keyword [obody] | stay
+  OBody Next Generation | cat none | T3 keyword [obody] | stay
+  BodySlide and Outfit Studio | cat none | T3 keyword [bodyslide] | stay
+  Fort Knox Bodyslide | cat none | T3 keyword [bodyslide] | stay
+  Creation Club CBBE 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  Player-exclusive HDT-SMP Vanilla Armors - CBBE 3BA | cat none | T4 no rule, category, or keyword matched | stay
+  BnP female pubes 2k CBBE (Replacer and player) | cat none | T4 no rule, category, or keyword matched | stay
+  Female Hands Redone 3BA Patch for CBBE | cat none | T4 no rule, category, or keyword matched | stay
+  Female Hands Redone | cat none | T1 exact name rule | stay
+  BnP female skin (Replacer+Player version) | cat none | T1 exact name rule | stay
+  CBBE 3BA | cat none | T1 exact name rule | stay
+  Caliente's Beautiful Bodies Enhancer -CBBE- | cat none | T1 exact name rule | stay
+  Piglet - The courageous piggy companion - CC | cat none | T4 no rule, category, or keyword matched | stay
+  Goofy Dragonborn Macho Walk | cat none | T4 no rule, category, or keyword matched | stay
+  Fenrir the frost wolf sse | cat none | T4 no rule, category, or keyword matched | stay
+  Simple Pistol Shooting Animation by Loop(Include standalone pistol and crossbow) - SSE | cat none | T4 no rule, category, or keyword matched | stay
+  No More Swimming In Air - Fixed Floating SwimIdle | cat none | T4 no rule, category, or keyword matched | stay
+  No Spinning Death Animation SE | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Animation Casting - NG | cat none | T4 no rule, category, or keyword matched | stay
+  Animation Motion Revolution | cat none | T4 no rule, category, or keyword matched | stay
+  Expressive Facial Animation -Male Edition- | cat none | T4 no rule, category, or keyword matched | stay
+  Expressive Facial Animation -Female Edition- | cat none | T4 no rule, category, or keyword matched | stay
+  Flex SMP | cat none | T4 no rule, category, or keyword matched | stay
+  EFM SE - Racemenu plugin | cat none | T3 keyword [racemenu] | MOVE -> [Character Creation]
+  HIMBO V3 Bodyhair Overlays for Racemenu | cat none | T3 keyword [racemenu] | MOVE -> [Character Creation]
+  Tramp Stamp - Racemenu Overlays - Tramp Stamp (CBBE 3BA) | cat none | T3 keyword [racemenu] | MOVE -> [Character Creation]
+  UNP AND CBBE Racemenu SE Collection of Tattoos Warpaints and Overlays | cat none | T3 keyword [racemenu] | MOVE -> [Character Creation]
+  Female Makeup Suite - Face - RaceMenu Overlays of Eyeliner EyeShadow Contours and Highlights - Special Edition | cat none | T3 keyword [racemenu] | MOVE -> [Character Creation]
+  Havok's Racemenu Makeup Overlays (Lipstick) | cat none | T3 keyword [racemenu] | MOVE -> [Character Creation]
+  Attractive Female body tattoo you may love | cat none | T4 no rule, category, or keyword matched | stay
+  Slave Tats SE | cat none | T4 no rule, category, or keyword matched | stay
+  Incaendo's Overlays | cat none | T4 no rule, category, or keyword matched | stay
+  Lyru's Tattoo pack collection 2 | cat none | T4 no rule, category, or keyword matched | stay
+  Lyru's Tattoo pack collection | cat none | T4 no rule, category, or keyword matched | stay
+  Auds Anal AcroTats | cat none | T4 no rule, category, or keyword matched | stay
+  Koralina's Makeup for COtR | cat none | T4 no rule, category, or keyword matched | stay
+  KML Makeup Suite - Female Eyeliners Eyeshadows Blushes | cat none | T4 no rule, category, or keyword matched | stay
+  Stoja's Warpaints High Resolution Makeup Kit for Skyrim (Special Edition) | cat none | T4 no rule, category, or keyword matched | stay
+  Extended Makeup and Features | cat none | T4 no rule, category, or keyword matched | stay
+  Pocky's 4k human female makeup | cat none | T4 no rule, category, or keyword matched | stay
+  Sakora's Make Over Kit - SKSE64 | cat none | T4 no rule, category, or keyword matched | stay
+  Xara's Makeup and Warpaints SE | cat none | T4 no rule, category, or keyword matched | stay
+  Auds Goth Girls | cat none | T4 no rule, category, or keyword matched | stay
+  PAINTERLY - a High Res Vanilla Warpaint Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  Ultra Realistic Hair Colors Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  [Dint999] HairPack02 SSE | cat none | T4 no rule, category, or keyword matched | stay
+  [[Dint999] BDOR Hairs SSE | cat none | T4 no rule, category, or keyword matched | stay
+  [Dint999] BDOR Hairs SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Random Physics Hair for NPCs | cat none | T4 no rule, category, or keyword matched | stay
+  Vanilla hair - Salt and Wind | cat none | T4 no rule, category, or keyword matched | stay
+  Vanilla hair remake SMP | cat none | T4 no rule, category, or keyword matched | stay
+  ApachiiSky Hair SSE | cat none | T4 no rule, category, or keyword matched | stay
+  HG Hairdos SE | cat none | T4 no rule, category, or keyword matched | stay
+  The Eyes Of Beauty SSE | cat none | T4 no rule, category, or keyword matched | stay
+  H.U.E - Natural Eyes | cat none | T4 no rule, category, or keyword matched | stay
+  SUEMR SSE-Eye Mesh Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  TRE Brows 2 - New Brow Textures | cat none | T4 no rule, category, or keyword matched | stay
+  The Eyes of Beauty - Revamped 2k | cat none | T4 no rule, category, or keyword matched | stay
+  H.U.E - Handmade Unique Eyes SE 2.0 - Standalone | cat none | T4 no rule, category, or keyword matched | stay
+  Kalilies Brows for High Poly Head - COTR - UBE | cat none | T4 no rule, category, or keyword matched | stay
+  Kalilies Brows | cat none | T4 no rule, category, or keyword matched | stay
+  Hvergelmir's Aesthetics - Brows | cat none | T4 no rule, category, or keyword matched | stay
+  HPH SV Beards | cat none | T4 no rule, category, or keyword matched | stay
+  Brows by Hvergelmir for High Poly Head - COTR - UBE | cat none | T4 no rule, category, or keyword matched | stay
+  Charmers of the Reach SV Beards SE for COtR - HQ Characters creation addon | cat none | T4 no rule, category, or keyword matched | stay
+  Natural Pubic Hairstyles | cat none | T4 no rule, category, or keyword matched | stay
+  Wodo's NPC Outfitter for KS Hairdos HDT SMP - ESL and Patch | cat none | family: follows master [NPC Outfitter for KS Hairdos HDT SMP] | stay
+  NPC Outfitter for KS Hairdos HDT SMP | cat none | T3 keyword [ks hairdos] | stay
+  OPubes NG - NPC Pubes Distributor | cat none | T4 no rule, category, or keyword matched | stay
+  Pubes Forever SSE | cat none | T4 no rule, category, or keyword matched | stay
+  High Poly Head SV Beards | cat none | T4 no rule, category, or keyword matched | stay
+  Beards by Hvergelmir for High Poly Head | cat none | T4 no rule, category, or keyword matched | stay
+  Hvergelmir's Aesthetics - Beards | cat none | T4 no rule, category, or keyword matched | stay
+  HG Hairdos 1 and 2 - Grayscale Retextures | cat none | T4 no rule, category, or keyword matched | stay
+  Apachii Hair Shine | cat none | T4 no rule, category, or keyword matched | stay
+  KS Hairdos SMP 3BA Collision Bodyslides Low to High ESPFE | cat none | T3 keyword [ks hairdos] | stay
+  3BA Collision Bodyslides for KS Hairdos - HDT SMP (Physics) | cat none | T3 keyword [ks hairdos] | stay
+  KS Hairdos - HDT SMP (Physics) | cat none | T3 keyword [ks hairdos] | stay
+  KS Hairdos SMP - Vanilla Replacer | cat none | T3 keyword [ks hairdos] | stay
+  SC - KS Hairdos Retextured - Physics | cat none | T3 keyword [ks hairdos] | stay
+  SC - KS Hairdos Retextured | cat none | T3 keyword [ks hairdos] | stay
+  KS Hairdos SSE | cat none | T3 keyword [ks hairdos] | stay
+  Better Dressed Kids - Willybach Textures SPID | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  SMP Vanilla Hair Remake wigs for RS Children (SPID) | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Pandorable's big overhauls AIO | cat none | T3 keyword [pandora] | MOVE -> [Extension Frameworks - Animation & Behavior Engine]
+  Books of Skyrim - RS Children Patch | cat none | T3 keyword [rs children] | stay
+  Conquest of Skyrim - Botox Patch | cat none | T3 keyword [botox] | stay
+  Havardr - Botox Patch | cat none | T3 keyword [botox] | stay
+  Creation Club - Botox Patch - NPC Overhaul | cat none | T3 keyword [botox] | stay
+  Become High King of Skyrim - Botox Patch | cat none | T3 keyword [botox] | stay
+  Skyfall Estate - Botox Patch | cat none | T3 keyword [botox] | stay
+  Phenderix Magic World - Botox Patch | cat none | T3 keyword [botox] | stay
+  The Scarlett - Botox Patch | cat none | T3 keyword [botox] | stay
+  Lakeview Manor Avant Garden EX - Botox Patch | cat none | T3 keyword [botox] | stay
+  Silverstead - Botox Patch | cat none | T3 keyword [botox] | stay
+  Kalilies NPCs De-Standalone | cat none | T4 no rule, category, or keyword matched | stay
+  Karura's Thieves Guild Refined | cat none | T4 no rule, category, or keyword matched | stay
+  Botox For Skyrim - Textures | cat none | T3 keyword [botox] | stay
+  Botox For Skyrim SE | cat none | T3 keyword [botox] | stay
+  Lionheart - SerketHetyt's Mjoll Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Sanguis Noxius - SerketHetyt's Harkon and Valerica Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Brynjolf NPC Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Bijin Redux Patches | cat none | family: follows master [Bijin Redux] | stay
+  Bijin Redux | cat none | T3 keyword [bijin] | stay
+  RS Children -- Red Kid Redemption -- | cat none | T3 keyword [rs children] | stay
+  RS Children Overhaul Patch Database | cat none | family: follows master [RS Children Overhaul] | stay
+  Realistic RS Children Overhaul | cat none | T3 keyword [rs children] | stay
+  XPMSSE Skeleton for RS Children Overhaul | cat none | T3 keyword [rs children] | stay
+  RS Children Overhaul | cat none | T3 keyword [rs children] | stay
+  Children of the Hist - An Argonian NPC Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Better Argonian Horns | cat none | T4 no rule, category, or keyword matched | stay
+  Botox of Skyrim - Patch Hub | cat none | T3 keyword [botox] | stay
+  RS Children Patch Compendium | cat none | T3 keyword [rs children] | stay
+  Diamond Skin - RS Children | cat none | T3 keyword [rs children] | stay
+  High Fantasy Pack- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Skeletal Revenants- Mihail Monsters and Animals (SE-AE version) (''undead'') | cat none | T3 keyword [mihail] | stay
+  Sea Giants and Ice Titans- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Dragonlings- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Cliff Racers Fly So High- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Mihail Soul Cairn Drainlife Crystal - Retexture | cat none | T3 keyword [mihail] | stay
+  Beef Unending - A Civil War Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Wolves of Cyrodiil - Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Baby Mammoths - Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Mammoth Expansion - Mihail Monsters and Animals (SE-AE version) (''megafauna'') | cat none | T3 keyword [mihail] | stay
+  Trolls of Cyrodiil - Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Sewer Rats - Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Realistic Skin And Hair Shaders - Giants | cat none | T4 no rule, category, or keyword matched | stay
+  Pigeons- Mihail Monsters and Animals (SE-AE version) (''bird'') | cat none | T3 keyword [mihail] | stay
+  More Cow Variants- Mihail Monsters and Animals (SE-AE) | cat none | T3 keyword [mihail] | stay
+  Mihail's Animal VR resize | cat none | T3 keyword [mihail] | stay
+  Giant.by.Kajuan | cat none | T4 no rule, category, or keyword matched | stay
+  Frogs- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Crows and Ravens- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Cow Replacer- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Chickens and Chicks- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  bonewalker SMIM_FIX | cat none | T4 no rule, category, or keyword matched | stay
+  Bonewalker | cat none | T4 no rule, category, or keyword matched | stay
+  Arcs WispMother Redux 2k - 4k | cat none | T4 no rule, category, or keyword matched | stay
+  Giant Club Variety- Mihail Weapons and Shields (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Mihail's Rabbit Replacers - Optimized Textures | cat none | T3 keyword [mihail] | stay
+  Optimized Meshes - Rabbit Replacer- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Rabbit Replacer- Mihail Monsters and Animals (SE-AE version) | cat none | T3 keyword [mihail] | stay
+  Roosters- Mihail Monsters and Animals (SE-AE version) (''chicken'') | cat none | T3 keyword [mihail] | stay
+  Frostbite Spider UV Fix | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Creatures Resized for VR - SE | cat none | T4 no rule, category, or keyword matched | stay
+  Chickens and Chicks - My optimized textures SE by Xtudo | cat none | T4 no rule, category, or keyword matched | stay
+  Schlongs of Skyrim - PapyrusUtil SexLab Tweaks | cat #0 "<unknown id 0>" | T3 keyword [papyrus] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Kanjs - Books AIO Animated (SkyPatched) | cat none | T4 no rule, category, or keyword matched | stay
+  Orc Strongholds - Largashbur | cat none | T4 no rule, category, or keyword matched | stay
+  TB's Better Plaster - A 4K Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Thieves Guild Overhaul w General Stores | cat none | T4 no rule, category, or keyword matched | stay
+  General Stores - Auto Sorting Cloud Storage Resource for packrats SE Convert | cat none | T4 no rule, category, or keyword matched | stay
+  Auto Open Doors | cat none | T4 no rule, category, or keyword matched | stay
+  Kanjs - Nordic Puzzle Door Animated | cat none | T4 no rule, category, or keyword matched | stay
+  Glorious Doors of Skyrim (GDOS) | cat none | T4 no rule, category, or keyword matched | stay
+  ParallaxR-burpst | cat none | T4 no rule, category, or keyword matched | stay
+  BURP - Spell Tomes (SkyPatched) | cat none | T4 no rule, category, or keyword matched | stay
+  BURP Spell Tomes Patches | cat none | T4 no rule, category, or keyword matched | stay
+  BURP Spell Tomes-ParallaxR-textures | cat none | T4 no rule, category, or keyword matched | stay
+  BURP Spell Tomes | cat none | T4 no rule, category, or keyword matched | stay
+  Iconic's Alduin's Wall Retexture (16K-8K-4K) | cat none | T4 no rule, category, or keyword matched | stay
+  Kanjs - Books All In One | cat none | T4 no rule, category, or keyword matched | stay
+  Book Covers Skyrim - SkyPatched Missing Books | cat none | T4 no rule, category, or keyword matched | stay
+  Book Covers Skyrim - Lost Library REDUX 4K-2K | cat none | T4 no rule, category, or keyword matched | stay
+  Book Covers Skyrim - SkyPatched | cat none | T4 no rule, category, or keyword matched | stay
+  Book Covers Skyrim - Lost Library | cat none | T4 no rule, category, or keyword matched | stay
+  Book Covers Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Books of Skyrim SE - Redux | cat none | T4 no rule, category, or keyword matched | stay
+  Books of Skyrim SE | cat none | T4 no rule, category, or keyword matched | stay
+  HP Lovecraft Books (SSE) | cat none | T4 no rule, category, or keyword matched | stay
+  Silverstead Prebuilt Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Silverstead Grass Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Miscellaneous Blackthorn Manor Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Lively's Patches for Blackthorn and Tree Mods | cat none | T4 no rule, category, or keyword matched | stay
+  Project Legacy | cat none | T4 no rule, category, or keyword matched | stay
+  The Scarlett - A Buildable Ship (SE) | cat none | T4 no rule, category, or keyword matched | stay
+  Levelers Tower | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim - Settlement Builder - Expansion Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim - Settlement Builder | cat none | T4 no rule, category, or keyword matched | stay
+  General Stores Sorting and Cloud Storage in Blackthorn Manor | cat none | T4 no rule, category, or keyword matched | stay
+  Blackthorn - A Buildable Town - Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Blackthorn - A Buildable Town in The Rift (SE) | cat none | T4 no rule, category, or keyword matched | stay
+  Dimensional Rift Home | cat none | T4 no rule, category, or keyword matched | stay
+  Snow Globe House CTD Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Spirit of Saturalia - A Christmas Quest - Snow Globe House | cat none | T4 no rule, category, or keyword matched | stay
+  Snow Globe House AE | cat none | T4 no rule, category, or keyword matched | stay
+  Havardr | cat none | T4 no rule, category, or keyword matched | stay
+  Silverstead (SE) | cat none | T4 no rule, category, or keyword matched | stay
+  Morskom Estate Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  Mörskom Estate | cat none | T4 no rule, category, or keyword matched | stay
+  Tranquil Windstad | cat none | T4 no rule, category, or keyword matched | stay
+  HS Player Homes - Severin Manor | cat none | T4 no rule, category, or keyword matched | stay
+  HS Player Homes - Vlindrel Hall | cat none | T4 no rule, category, or keyword matched | stay
+  Hjertesten Hall - Player Home and Settlement | cat none | T4 no rule, category, or keyword matched | stay
+  HS Player Homes - Proudspire Manor | cat none | T4 no rule, category, or keyword matched | stay
+  Lakeview Manor Upgrades Enhanced Edition | cat none | T4 no rule, category, or keyword matched | stay
+  HS Player Homes - Hjerim | cat none | T4 no rule, category, or keyword matched | stay
+  Breezehome Fully Upgraded for Group Bathing | cat none | T4 no rule, category, or keyword matched | stay
+  Breezehome Fully Upgradable | cat none | T4 no rule, category, or keyword matched | stay
+  Mannequin Designs | cat none | T4 no rule, category, or keyword matched | stay
+  Mannequin Management | cat none | T4 no rule, category, or keyword matched | stay
+  Hearthfires Houses Building Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Hearthfire Building Materials God Chests | cat none | T4 no rule, category, or keyword matched | stay
+  The Scarlett 4K - Cleaned Plugin and Upscaled Textures for A Buildable Ship | cat none | T4 no rule, category, or keyword matched | stay
+  Blackthorn 4K - Cleaned Plugin and Upscaled Textures for A Buildable Town in the Rift | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Teleportations | cat none | T4 no rule, category, or keyword matched | stay
+  Bat Travel Vampire Power | cat none | T4 no rule, category, or keyword matched | stay
+  LvxMagicks - Eclipse - Airship - Flying - Alpha | cat none | T4 no rule, category, or keyword matched | stay
+  Liminal Portals | cat none | T4 no rule, category, or keyword matched | stay
+  Paraglider Replacers 2k-4k | cat none | T4 no rule, category, or keyword matched | stay
+  Paraglider Auto-Equip Tarhiel's Gale | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim's Paraglider | cat none | T4 no rule, category, or keyword matched | stay
+  (ESP-ESL) Dwarven Motorcycle and other Vehicles SE | cat none | T4 no rule, category, or keyword matched | stay
+  HFs - Wagon Wheel | cat none | T4 no rule, category, or keyword matched | stay
+  Carriages HD UHD Wood Texture Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Carriages HD UHD | cat none | T4 no rule, category, or keyword matched | stay
+  New Sails for Sailable Ships | cat none | T4 no rule, category, or keyword matched | stay
+  Sailable Ship VR and SE | cat none | T4 no rule, category, or keyword matched | stay
+  Flying Mod Rework | cat none | T4 no rule, category, or keyword matched | stay
+  Flying Mod Beta by porroone and Flying Mod Overhaul by Indefiance (Converted for SSE) | cat none | T4 no rule, category, or keyword matched | stay
+  Torches Cast Shadows SE | cat none | T4 no rule, category, or keyword matched | stay
+  Rally's Smithy | cat none | T4 no rule, category, or keyword matched | stay
+  Skyland Blacksmith Texture Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Inferno - Fire Effects Redux | cat none | T4 no rule, category, or keyword matched | stay
+  TB's Improved Smoke | cat none | T4 no rule, category, or keyword matched | stay
+  Smoking Torches and Candles SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Paraphernalia - Ambience | cat none | T4 no rule, category, or keyword matched | stay
+  EmbersXD Torch Edit | cat none | T4 no rule, category, or keyword matched | stay
+  Embers XD | cat none | T4 no rule, category, or keyword matched | stay
+  Collectible Dragonling Eggs - SkyPatched | cat none | T4 no rule, category, or keyword matched | stay
+  Collectible Dragonling Eggs | cat none | T4 no rule, category, or keyword matched | stay
+  More Underwater Treasures | cat none | T4 no rule, category, or keyword matched | stay
+  Iconic's Crown of Barenziah | cat none | T4 no rule, category, or keyword matched | stay
+  RogueUnicorn - City Trees | cat none | T4 no rule, category, or keyword matched | stay
+  Thrones of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Thrones Expanded | cat none | T4 no rule, category, or keyword matched | stay
+  The Blackest Reaches USSEP patch | cat none | family: follows master [The Blackest Reaches] | stay
+  The Blackest Reaches | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Septimus Signus's Outpost | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Fort Dawnguard | cat none | T4 no rule, category, or keyword matched | stay
+  Cities of the North Optimized Meshes | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Sky Haven Temple | cat none | T4 no rule, category, or keyword matched | stay
+  JK's High Hrothgar | cat none | T4 no rule, category, or keyword matched | stay
+  Jets Resources | cat none | T4 no rule, category, or keyword matched | stay
+  Stroti's Mushroom House Resource | cat none | T4 no rule, category, or keyword matched | stay
+  HS Resources | cat none | T4 no rule, category, or keyword matched | stay
+  Spiders of Solstheim - Transparency Fix | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Raven Rock Bathhouse and Raven Rock Reborn Patch (ESL) | cat none | family: follows master [Raven Rock Bathhouse] | stay
+  Raven Rock Bathhouse | cat none | T3 keyword [raven rock] | stay
+  Raven Rock Building Tweaks | cat none | T3 keyword [raven rock] | stay
+  Rally's Raven Rock | cat none | T3 keyword [raven rock] | stay
+  Rally's Solstheim - Parallax | cat none | T3 keyword [solstheim] | stay
+  Raven Rock Architecture Retexture - 4K - Optimized | cat none | T3 keyword [raven rock] | stay
+  Rally's Solstheim Landscapes Complex Terrain Parallax Edition 2k | cat none | T3 keyword [solstheim] | stay
+  Raven Rock Reborn | cat none | T3 keyword [raven rock] | stay
+  Shaders of Solstheim - Ash and Moss | cat none | T3 keyword [solstheim] | stay
+  Remove Map Camera Limits - Skyrim and Solstheim | cat none | T3 keyword [solstheim] | stay
+  Dragonborn - Solstheim Boat Travel | cat none | T3 keyword [solstheim] | stay
+  Winterhold Spellblades - Guard Tweaks and Armor Replacer | cat none | T3 keyword [winterhold] | stay
+  Enter the College of Winterhold without joining | cat none | T3 keyword [winterhold] | stay
+  Winterhold Bathhouse | cat none | T3 keyword [winterhold] | stay
+  College of Winterhold - Glowing Symbols | cat none | T3 keyword [winterhold] | stay
+  College of Winterhold Quest Start Fixes | cat none | T3 keyword [winterhold] | stay
+  Winterhold Restored - Parallax Meshes | cat none | T3 keyword [winterhold] | stay
+  Winterhold Restored and Enhanced | cat none | T3 keyword [winterhold] | stay
+  Winterhold Restored | cat none | T3 keyword [winterhold] | stay
+  Mrf's White Gold Winterhold - ParallaxR'd | cat none | T3 keyword [winterhold] | stay
+  Mrf's white-gold winterhold | cat none | T3 keyword [winterhold] | stay
+  Winterhold College Gate Glow Restored - Cut Content Restoration | cat none | T3 keyword [winterhold] | stay
+  Racc's College Bridge Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Windhelm Lighthouse (Bug Fixes) | cat none | T3 keyword [windhelm] | stay
+  Windhelm Lighthouse (New) | cat none | T3 keyword [windhelm] | stay
+  Windhelm Bridge Revived - Patches and Add-ons | cat none | family: follows master [Windhelm Bridge Revived] | stay
+  Windhelm Bridge Revived - Upscaled Textures | cat none | T3 keyword [windhelm] | stay
+  Windhelm Bridge Revived | cat none | T3 keyword [windhelm] | stay
+  Riton Windhelm | cat none | T3 keyword [windhelm] | stay
+  patch for jk's palace of the kings | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Palace of the Kings | cat none | T4 no rule, category, or keyword matched | stay
+  Windhelm Snow Bridge | cat none | T3 keyword [windhelm] | stay
+  The Smallest Windhelm Mesh Fix - Parallax | cat none | family: follows master [The Smallest Windhelm Mesh Fix] | stay
+  The Smallest Windhelm Mesh Fix | cat none | T3 keyword [windhelm] | stay
+  Twins of Windhelm - Nord Followers | cat none | T3 keyword [windhelm] | stay
+  Whiterun Mesh Fixes (Wizkid Hall of dead patch available) | cat none | T3 keyword [whiterun] | stay
+  JK's and Redbag's Dragonsreach Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Another Whiterun Tree Circle - Raw Wood | cat none | T3 keyword [whiterun] | stay
+  Whiterun Wall Rubble Fixed - meshes without seams | cat none | T3 keyword [whiterun] | stay
+  Whiterun roof tiles by infinition | cat none | T3 keyword [whiterun] | stay
+  Cannabis Whiterun Road test | cat none | T3 keyword [whiterun] | stay
+  Cannabis Whiterun Road | cat none | T3 keyword [whiterun] | stay
+  Dark Whiterun Walls by infinition | cat none | T3 keyword [whiterun] | stay
+  The Great Porch in Skyrim - Standalone (ESL) | cat none | T4 no rule, category, or keyword matched | stay
+  4K SMIM Whiterun Bench | cat none | T3 keyword [whiterun] | stay
+  Whiterun castle carvings 4k with parallax | cat none | T3 keyword [whiterun] | stay
+  Turquaz Floor - Whiterun Mosaic | cat none | T3 keyword [whiterun] | stay
+  Rainbow Pebble Whiterun Road -Parallax | cat none | T3 keyword [whiterun] | stay
+  Warmaiden Reforged | cat none | T4 no rule, category, or keyword matched | stay
+  Ivy - Whiterun - Well Overhaul | cat none | T3 keyword [whiterun] | stay
+  Whiterun Horse Statue - Market Placement and Patches | cat none | family: follows master [Whiterun Horse Statue] | stay
+  Whiterun Horse Statue | cat none | T3 keyword [whiterun] | stay
+  2K Whiterun Stockade | cat none | T3 keyword [whiterun] | stay
+  Snazzy Interiors - JK's Dragonsreach | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Dragonsreach | cat none | T4 no rule, category, or keyword matched | stay
+  RedBag's Dragonsreach - SE | cat none | T4 no rule, category, or keyword matched | stay
+  Tomato's Whiterun - Complex Parallax Material - 2K 4K | cat none | T3 keyword [whiterun] | stay
+  Tomato's Whiterun | cat none | T3 keyword [whiterun] | stay
+  JK's Whiterun Outskirts - Parallax Wall Fix | cat none | family: follows master [JK's Whiterun Outskirts] | stay
+  JK's Whiterun Outskirts | cat none | T3 keyword [whiterun] | stay
+  Witcherun A Verdant Whiterun Overhaul Fixes | cat #0 "<unknown id 0>" | family: follows master [Witcherun - A Verdant Whiterun Overhaul] | stay
+  Witcherun - A Verdant Whiterun Overhaul | cat none | T3 keyword [whiterun] | stay
+  Whiterun Roof Repair | cat none | T3 keyword [whiterun] | stay
+  Whiterun Tablecloth Replacer | cat none | T3 keyword [whiterun] | stay
+  Whiterun Bench - Replacer | cat none | T3 keyword [whiterun] | stay
+  Skyforge Complete | cat none | T4 no rule, category, or keyword matched | stay
+  Especially Special Dragonsreach | cat none | T4 no rule, category, or keyword matched | stay
+  Better Skyforge SE | cat none | T4 no rule, category, or keyword matched | stay
+  Whiterun Fence Base Seam Fix Parallax | cat none | family: follows master [Whiterun Fence Base Seam Fix] | stay
+  Whiterun Fence Base Seam Fix | cat none | T3 keyword [whiterun] | stay
+  Solitude and Temple Frescoes - mesh fix and cubemap patch | cat none | T3 keyword [solitude] | stay
+  BHKS - JK's Solitude Outskirts Patch - ESL-Flagged | cat none | family: follows master [JK's Solitude Outskirts] | stay
+  JK's Solitude Outskirts Patch Collection | cat none | family: follows master [JK's Solitude Outskirts] | stay
+  JK's Solitude Outskirts | cat none | T3 keyword [solitude] | stay
+  BHKS - Solitude Docks Updated Patch - ESL Flagged | cat none | family: follows master [Solitude Docks Updated] | stay
+  Solitude Docks Updated | cat none | T3 keyword [solitude] | stay
+  Art's Solitude Streets | cat none | T3 keyword [solitude] | stay
+  Lights Out. Solitude Lighthouse Fix | cat none | T3 keyword [solitude] | stay
+  3D Solitude Market Trellis Expansion | cat none | T3 keyword [solitude] | stay
+  3D Solitude Market Trellis | cat none | T3 keyword [solitude] | stay
+  Solitude Watchtower | cat none | T3 keyword [solitude] | stay
+  Solitude Dome Paintings SSE | cat none | T3 keyword [solitude] | stay
+  HD Textures for Solitude and Temple Frescoes | cat none | T3 keyword [solitude] | stay
+  Solitude and Temple Frescoes SSE | cat none | T3 keyword [solitude] | stay
+  Parallax Roofs for Solitude | cat none | T3 keyword [solitude] | stay
+  Blue Palace Roof - Parallax 8K | cat none | T4 no rule, category, or keyword matched | stay
+  Blue Palace Roof - Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  Thay's Blue Palace Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Novigrad my Solitude | cat none | T3 keyword [solitude] | stay
+  Royal Wooden Floor RETEXTURE FOR Mrf's Solitude | cat none | T3 keyword [solitude] | stay
+  Mrf's Solitude | cat none | T3 keyword [solitude] | stay
+  Solitude farmhouses rework | cat none | T3 keyword [solitude] | stay
+  Extravagant Interiors - Solitude | cat none | T3 keyword [solitude] | stay
+  Stones of Solitude - Better Blended Rock Piles | cat none | T3 keyword [solitude] | stay
+  Riften Bathhouse and JK's Bee and Barb Patch - ESL Flagged | cat none | family: follows master [RIften Bathhouse] | stay
+  RIften Bathhouse | cat none | T3 keyword [riften] | stay
+  ALT - Riften Well | cat none | T3 keyword [riften] | stay
+  Riften Architectural Details | cat none | T3 keyword [riften] | stay
+  Riften Gate Restored | cat none | T3 keyword [riften] | stay
+  HS Riften - Temple of Mara | cat none | T3 keyword [riften] | stay
+  HS Riften - The Pawned Prawn | cat none | T3 keyword [riften] | stay
+  HS Riften - Elgrim's Elixirs | cat none | T3 keyword [riften] | stay
+  JKs Ragged Flagon Water Fix | cat none | T4 no rule, category, or keyword matched | stay
+  JK's The Ragged Flagon | cat none | T4 no rule, category, or keyword matched | stay
+  RYFTEN DOWN - A little addition to the Riften canal | cat none | T3 keyword [riften] | stay
+  FYX - Riften Canal and Round Posts | cat none | T3 keyword [riften] | stay
+  Riften Towers | cat none | T3 keyword [riften] | stay
+  Rustling Riften Leaves SE-ParallaxR'd | cat none | T3 keyword [riften] | stay
+  Rustling Riften Leaves SE | cat none | T3 keyword [riften] | stay
+  Mayhem In Riften | cat none | T3 keyword [riften] | stay
+  Riften of Reverie SE - 8K - Parallax | cat none | T3 keyword [riften] | stay
+  JK's The Bee and Barb | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Mistveil Keep | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Haelga's Bunkhouse | cat none | T4 no rule, category, or keyword matched | stay
+  Thuldor's Ivarstead - Riften Stone Alternate Texture | cat none | T3 keyword [riften] | stay
+  Brynjolf and the Riften Guild - Birthright | cat none | T3 keyword [riften] | stay
+  Don't Rush Me - Riften (No Brynjolf and Maul Forcegreets) | cat none | T3 keyword [riften] | stay
+  RedBag's Morthal Patches- FOMOD | cat none | T3 keyword [morthal] | stay
+  Redbag's Morthal Fixes | cat none | T3 keyword [morthal] | stay
+  Redbag's Morthal - Texture Fixes | cat none | T3 keyword [morthal] | stay
+  RedBag's Morthal - FOMOD | cat none | T3 keyword [morthal] | stay
+  RedBag's Morthal - SE | cat none | T3 keyword [morthal] | stay
+  TB's Photorealistic Markarth Roads | cat none | T3 keyword [markarth] | stay
+  Understone Keep Swept | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Silver-Blood Inn | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Temple of Dibella | cat none | T4 no rule, category, or keyword matched | stay
+  JK's The Hag's Cure | cat none | T4 no rule, category, or keyword matched | stay
+  JK's Arnleif and Sons Trading Company | cat none | T4 no rule, category, or keyword matched | stay
+  Seifu's PBR Preem Pipeworks - Part 2a - Bronze 2K | cat none | T4 no rule, category, or keyword matched | stay
+  Seifu's PBR Preem Dwarven Pipeworks - HD Models and Textures | cat none | T4 no rule, category, or keyword matched | stay
+  Seifu's PREEM Dwarven Pipeworks Redux | cat none | T4 no rule, category, or keyword matched | stay
+  Seifu's Skyrim Rene Vol. I - Resources | cat none | T4 no rule, category, or keyword matched | stay
+  Stony AF Markarth - Dwemer Pipework Reworked 2K | cat none | T3 keyword [markarth] | stay
+  ALT - (B) Markarth's Forge - Parallax | cat none | T3 keyword [markarth] | stay
+  Stony AF Markarth and Dwemer Ruins - Retextures - 2K - 4K - Parallax | cat none | T3 keyword [markarth] | stay
+  Markarth Entrance Overhaul Fixed | cat none | T3 keyword [markarth] | stay
+  Markarth - City of Stone | cat none | T3 keyword [markarth] | stay
+  Markarth Fixed AF | cat none | T3 keyword [markarth] | stay
+  Falkreath Bathhouse | cat none | T3 keyword [falkreath] | stay
+  RedBag's Falkreath - Pinewatch Addon | cat none | family: follows master [RedBag's Falkreath] | stay
+  RedBag's Falkreath - Half-Moon Mill Addon | cat none | family: follows master [RedBag's Falkreath] | stay
+  RedBag's Falkreath - Patch Collection | cat none | family: follows master [RedBag's Falkreath] | stay
+  RedBag's Falkreath | cat none | T3 keyword [falkreath] | stay
+  Ivy - Riverwood Well Addon | cat none | T3 keyword [riverwood] | stay
+  Skyrim Trading Posts Remastered - SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Spaghetti's Towns - Shor's Stone | cat none | T3 keyword [shor's stone] | stay
+  Gonzeh - Shor's Stone Overhaul - Spaghetti Patch | cat none | family: follows master [Gonzeh - Shor's Stone Overhaul] | stay
+  Gonzeh - Shor's Stone Overhaul | cat none | T3 keyword [shor's stone] | stay
+  Cotn Dawnstar Updated meshes | cat none | T3 keyword [dawnstar] | stay
+  Cities of the North - Dawnstar - Retexture | cat none | T3 keyword [dawnstar] | stay
+  Cities of the North - Dawnstar | cat none | T3 keyword [dawnstar] | stay
+  RedBag's Rorikstead - Enhanced | cat none | T3 keyword [rorikstead] | stay
+  RedBag's Rorikstead | cat none | T3 keyword [rorikstead] | stay
+  Northern Fortifications - Riverwood | cat none | T3 keyword [riverwood] | stay
+  Riverwood Revitalized my Patch | cat none | family: follows master [Riverwood Revitalized] | stay
+  Riverwood Revitalized Sign Fix | cat none | family: follows master [Riverwood Revitalized] | stay
+  Riverwood Revitalized | cat none | T3 keyword [riverwood] | stay
+  Riverwood Mushroom Village | cat none | T3 keyword [riverwood] | stay
+  Falls of Ivarstead | cat none | T3 keyword [ivarstead] | stay
+  Thuldor's Ivarstead - Tweaks and Addons | cat none | family: follows master [Thuldor's Ivarstead] | stay
+  Thuldor's Ivarstead - Farmhouse Roofs | cat none | T3 keyword [ivarstead] | stay
+  Thuldor's Ivarstead Patch Hub | cat none | family: follows master [Thuldor's Ivarstead] | stay
+  Distinct Thuldor's Ivarstead | cat none | T3 keyword [ivarstead] | stay
+  Thuldor's Ivarstead | cat none | T3 keyword [ivarstead] | stay
+  Rodryk's Dragon Bridge Retexture 2K | cat none | T3 keyword [dragon bridge] | stay
+  Rodryk's Dragon Bridge - Patch Collection | cat none | family: follows master [Rodryk's Dragon Bridge] | stay
+  Rodryk's Dragon Bridge | cat none | T3 keyword [dragon bridge] | stay
+  COTN Dawnstar Patch Collection | cat none | T3 keyword [dawnstar] | stay
+  Greater Skaal Village | cat none | T4 no rule, category, or keyword matched | stay
+  Skooma Pipes | cat none | T4 no rule, category, or keyword matched | stay
+  Fort Knox | cat none | T4 no rule, category, or keyword matched | stay
+  Phenderix Magic World - The Magical World of Manantis | cat none | T4 no rule, category, or keyword matched | stay
+  Sweet Roll Hut SE | cat none | T4 no rule, category, or keyword matched | stay
+  Olenveld | cat none | T4 no rule, category, or keyword matched | stay
+  Werewolf VR-Werewolf Body for VR | cat none | T4 no rule, category, or keyword matched | stay
+  Werewolf VR- WereBear Body for VR | cat none | T4 no rule, category, or keyword matched | stay
+  Vampires Cast No Shadow 2 VR | cat none | T4 no rule, category, or keyword matched | stay
+  Vampire Lord Body for VR - Male | cat none | T4 no rule, category, or keyword matched | stay
+  Vampire Lord Body for VR - Female | cat none | T4 no rule, category, or keyword matched | stay
+  SUEMR SSE-Vampire Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Gold Bar - Replacer - Pfuscher | cat none | T4 no rule, category, or keyword matched | stay
+  Pocket Crafting Shop SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Crossbow Integration (Including Creation Club) | cat none | T4 no rule, category, or keyword matched | stay
+  Security Overhaul SKSEVR - Lock Variations VR | cat none | T3 keyword [sksevr] | MOVE -> [Essentials]
+  Security Overhaul SKSE - Add-ons | cat none | T4 no rule, category, or keyword matched | stay
+  Security Overhaul SKSE - Extra Locks | cat none | T4 no rule, category, or keyword matched | stay
+  Security Overhaul SKSE - Regional Locks | cat none | T4 no rule, category, or keyword matched | stay
+  Security Overhaul SKSE - Lock Variations | cat none | T4 no rule, category, or keyword matched | stay
+  Skeleton Key Dilemma | cat none | T4 no rule, category, or keyword matched | stay
+  HFs - StrongBox Diverse Model Swapper | cat none | T4 no rule, category, or keyword matched | stay
+  LockMaster - Lock Doors Containers and Usable Skeleton Key | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks Radiance Alternative EAL | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks Additions Alternative EAL | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks - Enhancements | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks - Radiance | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks - Additions | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks Alternative EAL | cat none | T4 no rule, category, or keyword matched | stay
+  Amazing Lockpicks | cat none | T4 no rule, category, or keyword matched | stay
+  Skeleton Key is a Key SE | cat none | T4 no rule, category, or keyword matched | stay
+  Better Chests | cat none | T4 no rule, category, or keyword matched | stay
+  ElSopa - Safe And Strongbox Redone | cat none | T4 no rule, category, or keyword matched | stay
+  Scarcity SE - Less Loot Mod | cat none | T4 no rule, category, or keyword matched | stay
+  Potion Condenser | cat none | T4 no rule, category, or keyword matched | stay
+  Levitation - a Paraglider add-on Stand-Alone | cat none | T4 no rule, category, or keyword matched | stay
+  SB's Mage Hover Shouts Animations - Standalone | cat none | T4 no rule, category, or keyword matched | stay
+  Elemental Mastery Magic | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Teleportation Collection | cat none | T4 no rule, category, or keyword matched | stay
+  Abyssal Wind Magic | cat none | T4 no rule, category, or keyword matched | stay
+  Draconic Mastery Overhaul (Dragons Spells) ENG_SE_ESL | cat none | T4 no rule, category, or keyword matched | stay
+  Lanternlight - A Candlelight Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Alteration - Grant Armor | cat none | T4 no rule, category, or keyword matched | stay
+  WInter Wonderland Magic | cat none | T4 no rule, category, or keyword matched | stay
+  Earth Forge | cat none | T4 no rule, category, or keyword matched | stay
+  HANABI (Fireworks) | cat none | T4 no rule, category, or keyword matched | stay
+  Dishonored Blink Spell | cat none | T4 no rule, category, or keyword matched | stay
+  Jaxonz Blink Teleport SE | cat none | T4 no rule, category, or keyword matched | stay
+  Magical Blink | cat none | T4 no rule, category, or keyword matched | stay
+  Optimised Scripts for Apocalypse | cat none | T4 no rule, category, or keyword matched | stay
+  Apocalypse - Magic of Skyrim Cleaned and Enhanced Textures | cat none | T4 no rule, category, or keyword matched | stay
+  More Apocalypse - An expansion for Apocalypse - Magic of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Apocalypse - Magic of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Invisible Clairvoyance NG | cat none | T4 no rule, category, or keyword matched | stay
+  Clairvoyance Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Clairvoyance and other concentration powers | cat none | T4 no rule, category, or keyword matched | stay
+  A Guiding Light - Clairvoyance Reimagined | cat none | T4 no rule, category, or keyword matched | stay
+  Craftable Perfumes and Colognes | cat none | T4 no rule, category, or keyword matched | stay
+  All Female High Heels Sound | cat none | T4 no rule, category, or keyword matched | stay
+  A New Realistic High Heels Sound Bank (HQ) | cat none | T4 no rule, category, or keyword matched | stay
+  Sound for High Heels framework | cat none | T4 no rule, category, or keyword matched | stay
+  Heel sound footstep sound replacement | cat none | T4 no rule, category, or keyword matched | stay
+  Wolverine Claws Impact SFX - Sound for Wolverine's Claws | cat none | T4 no rule, category, or keyword matched | stay
+  Dovahkiin No The Mirmulnir Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Wyrm - The Ancient Ones | cat none | T4 no rule, category, or keyword matched | stay
+  Wyrm - Dragons Sounds Rework | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial High Definition Audio Project | cat none | T4 no rule, category, or keyword matched | stay
+  Crackling Fire | cat none | T4 no rule, category, or keyword matched | stay
+  The Sounds of Towns and Cities | cat none | T4 no rule, category, or keyword matched | stay
+  Colossus -Giants SFX Voice Rework | cat none | T4 no rule, category, or keyword matched | stay
+  Mastodon - Mammoth Audio | cat none | T4 no rule, category, or keyword matched | stay
+  Sound Fix for Large Sector Drives | cat none | T4 no rule, category, or keyword matched | stay
+  C.O.I.N. - Coins of Interesting Natures | cat none | T4 no rule, category, or keyword matched | stay
+  Weapons Armor Clothing and Clutter Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  DCR - Daring King Crusader Armor | cat none | T4 no rule, category, or keyword matched | stay
+  HDT-SMP Vanilla Armors | cat none | T4 no rule, category, or keyword matched | stay
+  The Timelost Dwemer SE - ESSENTIALS PATCHER | cat none | family: follows master [Essentials] | MOVE -> [Essentials]
+  Lively's Deep Elf Race Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Race Compatibility - At Your Own Pace Patch | cat none | T3 keyword [race compatibility] | stay
+  Harmonized Race Heights | cat none | T4 no rule, category, or keyword matched | stay
+  Lossless Race Change | cat none | T4 no rule, category, or keyword matched | stay
+  Angel And Fallen Race 3.0 (The Old Dragons) | cat none | T4 no rule, category, or keyword matched | stay
+  Aedra Race - Powers Once Lost | cat none | T4 no rule, category, or keyword matched | stay
+  Complete Alchemy & Cooking Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Race Compatibility SKSE - Patch Hub | cat none | family: follows master [Race Compatibility SKSE] | stay
+  Race Compatibility Dialogue SSE | cat none | T3 keyword [race compatibility] | stay
+  Race Compatibility SKSE | cat none | T3 keyword [race compatibility] | stay
+  AI Overhaul - Relationship Dialogue Overhaul Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Optimised Scripts for Enhanced Blood Textures - SPID version | cat none | T3 keyword [spid] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Blue_RetchingNetch | cat none | T4 no rule, category, or keyword matched | stay
+  Nordic Carving - Great Portal of Dragonsreach SE | cat none | T4 no rule, category, or keyword matched | stay
+  Return From A Room With A View | cat none | T4 no rule, category, or keyword matched | stay
+  HFs - Barrels All-in-One | cat none | T4 no rule, category, or keyword matched | stay
+  Revised Barrels | cat none | T4 no rule, category, or keyword matched | stay
+  EEKs Dragonsreach - EEKs Dovahsreach SSE | cat none | T3 keyword [eeks] | MOVE -> [Special Load After Lighting Mods]
+  Dynamic Interior Ambient Lighting (DIAL) | cat none | T4 no rule, category, or keyword matched | stay
+  Animated Embers | cat none | T4 no rule, category, or keyword matched | stay
+  TB's Improved Dust Particles | cat none | T4 no rule, category, or keyword matched | stay
+  Remove Ugly Torch Glow Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  No Edge Glow - Magic and Transformations | cat none | T4 no rule, category, or keyword matched | stay
+  FYX - Campfire Reacts to the Wind - EmbersXD Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Labyrinthian Shalidor's Maze Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Immersive Dawnguard Dayspring Pass SE (IDDP) | cat none | T4 no rule, category, or keyword matched | stay
+  Gems in All Mines - SE | cat none | T4 no rule, category, or keyword matched | stay
+  Cheat Room - Additions and Merchant NPC | cat none | T4 no rule, category, or keyword matched | stay
+  Cheat Room | cat none | T4 no rule, category, or keyword matched | stay
+  Bradenm1's Cheat Room Legendary Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Apachii Divine Elegance Store | cat none | T4 no rule, category, or keyword matched | stay
+  GG's Temple of Kynareth | cat none | T4 no rule, category, or keyword matched | stay
+  WAVY Waterfalls Effect | cat none | T3 keyword [waterfall] | stay
+  Natural Waterfalls Patch for Rapid Rocks | cat none | family: follows master [Natural Waterfalls] | stay
+  Natural Waterfalls | cat none | T3 keyword [waterfall] | stay
+  Crystal Clear Frozen Lakes and Ponds | cat none | T4 no rule, category, or keyword matched | stay
+  TB's Better Foam | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Nightshade | cat none | T4 no rule, category, or keyword matched | stay
+  GKB Waves Reborn | cat none | T4 no rule, category, or keyword matched | stay
+  GKB Waves | cat none | T4 no rule, category, or keyword matched | stay
+  Underwater Blackreach | cat none | T4 no rule, category, or keyword matched | stay
+  Underwater Skyrim- Rivers and Lakes | cat none | T4 no rule, category, or keyword matched | stay
+  Depths of Skyrim - An Underwater Overhaul SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Green Water Cubemap Fix GSO | cat none | T4 no rule, category, or keyword matched | stay
+  Green Water Cubemap Fix | cat none | T4 no rule, category, or keyword matched | stay
+  DROPS By Ramccoid | cat none | T4 no rule, category, or keyword matched | stay
+  Water Blending | cat none | T4 no rule, category, or keyword matched | stay
+  Simplicity of Sea - Water Color Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - Water Overhaul and Bug Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Water Mod | cat none | T4 no rule, category, or keyword matched | stay
+  FYX - Water Mesh Optimization | cat none | T4 no rule, category, or keyword matched | stay
+  Alternate Perspective - Skyrim Landscape and Water Fixes Patch | cat none | family: follows master [Skyrim Landscape and Water Fixes] | stay
+  Skyrim Landscape and Water Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Artisto RWT texture tweaks for Water for ENB | cat none | T3 keyword [enb] | MOVE -> [ENB]
+  A Clear Map Of Skyrim - Water for ENB Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Water for ENB | cat none | T1 exact name rule | stay
+  QW's Grass Patch 2 - Origins of Forest - Cathedral - Folkvangr | cat none | T4 no rule, category, or keyword matched | stay
+  Festival Flags Upscaled | cat none | T4 no rule, category, or keyword matched | stay
+  A Festive Christmas - SSE Conversion | cat none | T4 no rule, category, or keyword matched | stay
+  No Grassias - A Universal Grass Fix For Grass Mods | cat none | T4 no rule, category, or keyword matched | stay
+  Holidays Cathedral Wreath | cat none | T4 no rule, category, or keyword matched | stay
+  Unique Festival Ropes HQ Texture Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Unique Festival Ropes | cat none | T4 no rule, category, or keyword matched | stay
+  Folkvangr rocks, twigs and leaves remover | cat none | T4 no rule, category, or keyword matched | stay
+  Rally's Barsets | cat none | T4 no rule, category, or keyword matched | stay
+  Holidays 4K-2K - Cleaned and Upscaled Textures | cat none | T4 no rule, category, or keyword matched | stay
+  Fixed Script for Holidays | cat none | T4 no rule, category, or keyword matched | stay
+  Origins Of Forest - 3D Forest Grass | cat none | T4 no rule, category, or keyword matched | stay
+  ladder 3d immersion vanilla style | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Pine Grass | cat none | T4 no rule, category, or keyword matched | stay
+  Holidays | cat none | T4 no rule, category, or keyword matched | stay
+  No Grass In Objects | cat none | T4 no rule, category, or keyword matched | stay
+  No More Hay Beds SSE | cat none | T4 no rule, category, or keyword matched | stay
+  RUDL - Removing Unpleasant Details from Logs | cat none | T4 no rule, category, or keyword matched | stay
+  ElSopa HD - Unique Hand Painted Road Signs SE | cat none | T4 no rule, category, or keyword matched | stay
+  WiZkiD Specific Signs | cat none | T4 no rule, category, or keyword matched | stay
+  WiZkiD Signs | cat none | T4 no rule, category, or keyword matched | stay
+  Nordic Carving - Wallbaskets SE | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC CLUTTER COLLECTION - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Rally's Orc Furniture | cat none | T4 no rule, category, or keyword matched | stay
+  Lucidstorm Barrel | cat none | T4 no rule, category, or keyword matched | stay
+  Iron Throne | cat none | T4 no rule, category, or keyword matched | stay
+  Fish Plaque Fixes and Improvements | cat none | T4 no rule, category, or keyword matched | stay
+  Arcs Gem Stone Redux (Multilayer Parallax) | cat none | T4 no rule, category, or keyword matched | stay
+  Archery Target Retexture 2k and 4k added | cat none | T4 no rule, category, or keyword matched | stay
+  Arcane Blacksmith's Apron - Hood Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Snazzy Wall Mounted Trophies - DTA Patch | cat none | T3 keyword [wall mounted] | stay
+  Alternate Banners and Uniforms for Phenderix Magic World - Manantis | cat none | T3 keyword [banners] | stay
+  HFs - Cast iron pots | cat none | T3 keyword [cast iron] | stay
+  Golden Claw - Dynamic Cubemapped | cat none | T1 exact name rule | stay
+  Praedy's Azura's Star and Realm - SE | cat none | T1 exact name rule | stay
+  Rally's Handcarts | cat none | T3 keyword [handcarts] | stay
+  Quality CubeMaps - HD Cube Maps Optimized | cat none | T1 exact name rule | stay
+  ElSopa - Training Dummies Redone | cat none | T3 keyword [training dummies] | stay
+  Pottery Recolor-The Third Set-SSE | cat none | T3 keyword [pottery] | stay
+  Awesome Potions Simplified by Revoith | cat none | T1 exact name rule | stay
+  RUSTIC ELDERSCROLL - Special Edition | cat none | T3 keyword [elderscroll] | stay
+  Cultured Orc Furniture | cat none | T1 exact name rule | stay
+  4K Retextured Mage Tables | cat none | T3 keyword [mage tables] | stay
+  RUGNAROK - Special Edition | cat none | T3 keyword [rugnarok] | stay
+  Silver Objects SMIMed - Silver - Sovngarde - Thieves Guild - Vampire | cat none | T3 keyword [silver objects] | stay
+  Still Beating Hearts | cat none | T3 keyword [beating hearts] | stay
+  PELTAPALOOZA - Special Edition | cat none | T3 keyword [peltapalooza] | stay
+  Rally's Banners of Skyrim | cat none | T3 keyword [banners] | stay
+  Immersive HD Banners | cat none | T3 keyword [banners] | stay
+  HQ Battle Maps - 2k | cat none | T3 keyword [battle maps] | stay
+  JS Purses and Septims SE | cat none | T3 keyword [purses] | stay
+  JS Instruments of Skyrim SE | cat none | T1 exact name rule | stay
+  JS Dragon Claws AE - Animated Gem Claws | cat none | T1 exact name rule | stay
+  JS Dragon Claws AE Anniversary Edition | cat none | T1 exact name rule | stay
+  SD's Horn Candles SE | cat none | T3 keyword [horn candles] | stay
+  Rally's Market Stalls | cat none | T3 keyword [market stalls] | stay
+  Iconic's Remastered Paragon Gems | cat none | T3 keyword [paragon gems] | stay
+  Dressed Hearthfire Doll | cat none | T3 keyword [hearthfire doll] | stay
+  Dark Brotherhood Tenets Restored - Performance Edition | cat none | T3 keyword [tenets] | stay
+  JS Bloodstone Chalice SE | cat none | T3 keyword [bloodstone chalice] | stay
+  Metallurgy - Ingots Ore and Veins HD | cat none | T3 keyword [metallurgy] | stay
+  Ore Vein Texture Fix | cat none | T3 keyword [ore vein] | stay
+  Rudy HQ - Miscellaneous SE | cat none | T1 exact name rule | stay
+  Ore Vein Cube Map and Shader Fixes | cat none | T3 keyword [ore vein] | stay
+  Smaller Goblets Cups and Jugs - Base Object Swapper | cat none | T3 keyword [base object swapper] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Diverse Foods - Base Object Swapper | cat none | T3 keyword [base object swapper] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Dawnbreaker Pedestal Meridia Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  Statue of Kynareth | cat none | T4 no rule, category, or keyword matched | stay
+  LeanWolf's Better-Shaped Talos with Greatsword | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Material Fix - Stunning Statues of Skyrim patch | cat none | T4 no rule, category, or keyword matched | stay
+  Stunning Statues of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  JS Shrines of the Divines SE | cat none | T4 no rule, category, or keyword matched | stay
+  Daedric Shrines - All in One | cat none | T4 no rule, category, or keyword matched | stay
+  Improved Dwemer Glass | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Puzzle Cube SE - Glowmapped | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Puzzle Cube SE | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Kitchenware SE | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Ichor Barrels SE - 2k Textures | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Control Cube SE - Glowmapped | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Control Cube SE | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Artifacts SE - Glowmapped | cat none | T3 keyword [dwemer] | stay
+  JS Dwemer Artifacts SE | cat none | T3 keyword [dwemer] | stay
+  Dwemer Tech Glowmapped | cat none | T3 keyword [dwemer] | stay
+  Dwemer Pipework Reworked - Underground Patch | cat none | family: follows master [Dwemer Pipework Reworked] | stay
+  Dwemer Pipework Reworked | cat none | T3 keyword [dwemer] | stay
+  Deep Slumber - A Dwemer Bed Replacer | cat none | T3 keyword [dwemer] | stay
+  Dwemer Weapons Glowmapped | cat none | T3 keyword [dwemer] | stay
+  Dwemer Armor Glowmapped CBBE HIMBO | cat none | T3 keyword [dwemer] | stay
+  Dwemer Armor Glowmapped | cat none | T3 keyword [dwemer] | stay
+  Dwemer Pocket Dimension | cat none | T3 keyword [dwemer] | stay
+  Dwemer Armory | cat none | T3 keyword [dwemer] | stay
+  The Timelost Dwemer - A Deep Elf Race SE 2.302 | cat none | T3 keyword [dwemer] | stay
+  Dwemer Ballista Crash fix | cat none | T3 keyword [dwemer] | stay
+  Underground - Complex Parallax Addon | cat none | T4 no rule, category, or keyword matched | stay
+  4K Nordic Murals | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC RELIEFS | cat none | T4 no rule, category, or keyword matched | stay
+  OSHA-Compliant Sovngarde Mesh Fixes - Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  CleverCharff's Sovngarde 2K - Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  CleverCharff's Sovngarde 4K 2K | cat none | T4 no rule, category, or keyword matched | stay
+  Mrf's Castle Volkihar | cat none | T4 no rule, category, or keyword matched | stay
+  Arri's Snow Elf Ruins Retexture Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Remastered - Caves | cat none | T4 no rule, category, or keyword matched | stay
+  Underground - a dungeon texture overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Sepolcri - A complete Burial Sites overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Dungeons - Revisited | cat none | T4 no rule, category, or keyword matched | stay
+  Better Forgotten Vale Portal Textures | cat none | T4 no rule, category, or keyword matched | stay
+  Ayleid Ruins Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  Medieval Textiles for Dovahnique's Diverse Vendor Carts | cat none | T4 no rule, category, or keyword matched | stay
+  Khajiit Has Tents Animated | cat none | T4 no rule, category, or keyword matched | stay
+  Khajiit Has Tents 2k | cat none | T4 no rule, category, or keyword matched | stay
+  4K Imperial Tents Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  Utenlands Nordic Tents - BOS Color Variance | cat none | T4 no rule, category, or keyword matched | stay
+  Kanjs - Soup and Stew AIO Animated (SkyPatched) | cat none | T4 no rule, category, or keyword matched | stay
+  Improved Farmhouse Doors | cat none | T4 no rule, category, or keyword matched | stay
+  CC's UHD Coal Piles | cat none | T4 no rule, category, or keyword matched | stay
+  Improved Gourds | cat none | T4 no rule, category, or keyword matched | stay
+  Kanjs - Apples - up to 4k | cat none | T4 no rule, category, or keyword matched | stay
+  Cabbage HD - My optimized textures SE by Xtudo | cat none | T4 no rule, category, or keyword matched | stay
+  Cabbage - A Cabbage Mod | cat none | T4 no rule, category, or keyword matched | stay
+  Glowing Mushroom Collision Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  2K Stockade | cat none | T4 no rule, category, or keyword matched | stay
+  Arc's MeadBarrel Redux 2k-4k | cat none | T4 no rule, category, or keyword matched | stay
+  Kanjs - Soup and Stew All In One Animated | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D Cooking | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC COOKING - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  SMIM Food Items Resize All In One | cat none | T4 no rule, category, or keyword matched | stay
+  Realistic HD Food Remastered | cat none | T4 no rule, category, or keyword matched | stay
+  Basic Dining Set Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  FYX - 3D Stockades - Walls and Gate - Collision Improvements | cat none | T4 no rule, category, or keyword matched | stay
+  FYX - 3D Stockades - Improved Collisions Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  FYX - 3D Stockades - Walls and Gate | cat none | T4 no rule, category, or keyword matched | stay
+  FYX - 3D Stockades | cat none | T4 no rule, category, or keyword matched | stay
+  Spice Of Life - Orc Longhouses | cat none | T4 no rule, category, or keyword matched | stay
+  RUSTIC WINDOWS - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D Docks and Boardwalks | cat none | T4 no rule, category, or keyword matched | stay
+  Nordic Stonewall Terraces | cat none | T4 no rule, category, or keyword matched | stay
+  Nordic Stonewalls Complex Parallax Material | cat none | T4 no rule, category, or keyword matched | stay
+  Nordic Stonewalls | cat none | T4 no rule, category, or keyword matched | stay
+  Riton Farmhouse parallax III Retex | cat none | T4 no rule, category, or keyword matched | stay
+  Riton Farmhouse parallax III | cat none | T4 no rule, category, or keyword matched | stay
+  Unique Northern Vanilla Farmhouses - Roof remesh | cat none | T4 no rule, category, or keyword matched | stay
+  Unique Northern Vanilla Farmhouses - Non Snowy Regions | cat none | T4 no rule, category, or keyword matched | stay
+  Fabled Aspens Ablaze | cat none | T4 no rule, category, or keyword matched | stay
+  Fabled Forests - Arboreal Ascension Pines Mixed Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Fabled Forests - Ivy on Trees | cat none | T4 no rule, category, or keyword matched | stay
+  Fabled Forests - Floating Trees fix BOS version | cat none | T4 no rule, category, or keyword matched | stay
+  Fabled Forests Patch Compendium | cat none | T4 no rule, category, or keyword matched | stay
+  Fabled Forests - Exclude Morthal Marsh (Plus Various Enhanced Landscape - Dead Marsh Standalone Patches) | cat none | family: follows master [Fabled Forests] | stay
+  Fabled Forests | cat none | T4 no rule, category, or keyword matched | stay
+  Yggdrasil - World Tree Redux | cat none | T4 no rule, category, or keyword matched | stay
+  TREES ADDON SE | cat none | T4 no rule, category, or keyword matched | stay
+  M.O.I.S.T. - Massive Outstandingly Insane Swamp Tree | cat none | T4 no rule, category, or keyword matched | stay
+  Blubbos Apple Tree Replacer for JK Mods | cat none | T4 no rule, category, or keyword matched | stay
+  DMT's Stuie Appleseeds Apple Trees in Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Cover Woods SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Skyfall's Sleeping Hist Tree Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Blubbos Gildergreen 2023 | cat none | T4 no rule, category, or keyword matched | stay
+  HD Remastered Tree Bark - Happy Little Trees - 16k 8k 4k 2k | cat none | T4 no rule, category, or keyword matched | stay
+  Skyland Happy Little Trees Bark Complex Material | cat none | T4 no rule, category, or keyword matched | stay
+  Holidays Happy Little Trees Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Happy Little Trees | cat none | T4 no rule, category, or keyword matched | stay
+  Aspens Ablaze Add-On - DynDOLOD 3 -Performance | cat none | T4 no rule, category, or keyword matched | stay
+  Aspens Ablaze Add-On - DynDOLOD 3 -Quality | cat none | T4 no rule, category, or keyword matched | stay
+  Aspens Ablaze | cat none | T4 no rule, category, or keyword matched | stay
+  Arboreal Ascension Improved Tree Textures 2K | cat none | T4 no rule, category, or keyword matched | stay
+  Arboreal Ascension - Enhanced Pine Trees of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Blubbo_Shrubs_Replacer_darker_Patch.zip | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Tundra Shrubs | cat none | T4 no rule, category, or keyword matched | stay
+  Plant Size Variety | cat none | T4 no rule, category, or keyword matched | stay
+  Smaller Cathedral 3D Plants | cat none | T4 no rule, category, or keyword matched | stay
+  ICFur's Tundra Scrubs Version 2 | cat none | T4 no rule, category, or keyword matched | stay
+  Rally's Cathedral 3D Dragons Tongue | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral 3D Plants - Darker and Desat | cat none | T4 no rule, category, or keyword matched | stay
+  No More Dead Shrub | cat none | T4 no rule, category, or keyword matched | stay
+  Blubbos Shrub Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Tundra Cotton | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Thistle | cat none | T4 no rule, category, or keyword matched | stay
+  Fall Forest And Yellow Shrubs Redone | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Pine Shrubs | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Sword Ferns | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Snow Berries | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Flora Overhaul SE | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Mountain Flowers | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Lavender | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Deathbell | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Clover Plant | cat none | T4 no rule, category, or keyword matched | stay
+  Dovahnique's Diverse Vendor Carts - Base Object Swapper | cat none | T3 keyword [base object swapper] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Hanging Moss to Climbing Roses - Base Object Swapper | cat none | T3 keyword [base object swapper] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim | cat none | T3 keyword [base object swapper] | MOVE -> [Extension Frameworks - Extended Functionality]
+  Rally's Hanging Moss | cat none | T4 no rule, category, or keyword matched | stay
+  TB's 8K Parallax Driftwood | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - Mushrooms | cat none | T4 no rule, category, or keyword matched | stay
+  Voeille's Soul Cairn HD Expansion Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  Soul Cairn HD | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D Windmill | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D High Hrothgar Steps | cat none | T4 no rule, category, or keyword matched | stay
+  L.V.X Magick's - Boats | cat none | T4 no rule, category, or keyword matched | stay
+  Ships and boats of Tamriel | cat none | T4 no rule, category, or keyword matched | stay
+  Stalhrim Source | cat none | T4 no rule, category, or keyword matched | stay
+  Praedy's Blackreach deposits glowing rocks and falmer cave ceiling glow | cat none | T4 no rule, category, or keyword matched | stay
+  BLACKREACH OVERHAUL LUX PATCH Timelost Dwemer | cat none | family: follows master [Blackreach Overhaul Lux Patch] | stay
+  Blackreach Overhaul Lux Patch | cat none | family: follows master [Blackreach Overhaul] | stay
+  Blackreach Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  SMIM Up Furniture Smooth Dark 2K | cat none | T4 no rule, category, or keyword matched | stay
+  High Poly Project - My fixes SE-AE by Xtudo | cat none | T4 no rule, category, or keyword matched | stay
+  High Poly Project | cat none | T4 no rule, category, or keyword matched | stay
+  Ruins Clutter Improved - Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Ruins Clutter Improved SE - Complex Parallax Addon | cat none | T4 no rule, category, or keyword matched | stay
+  Ruins Clutter Improved SE | cat none | T4 no rule, category, or keyword matched | stay
+  Static Mesh improvement Mod - SMIM - Quality Addon | cat none | T4 no rule, category, or keyword matched | stay
+  Static Mesh Improvement Mod | cat none | T4 no rule, category, or keyword matched | stay
+  TB's 3D Driftwood | cat none | T4 no rule, category, or keyword matched | stay
+  Gourd Plant Mesh Fix (FOMOD check for Repatch) | cat none | T4 no rule, category, or keyword matched | stay
+  Creep Cluster Collision Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  High Quality Ivy for SD's Farmhouse Fences | cat none | T4 no rule, category, or keyword matched | stay
+  High Quality Ivy | cat none | T4 no rule, category, or keyword matched | stay
+  A Nirnroot | cat none | T4 no rule, category, or keyword matched | stay
+  Vine Maple Redone | cat none | T4 no rule, category, or keyword matched | stay
+  Mari's Reach Ferns - Vanilla Mesh Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Juniper by Mari | cat none | T4 no rule, category, or keyword matched | stay
+  Mari's flora | cat none | T4 no rule, category, or keyword matched | stay
+  Simplicity of Snow - Blended Roads Patch | cat none | T1 exact name rule | stay
+  Simplicity of Snow | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic snow For Map | cat none | T3 keyword [dynamic snow] | stay
+  Ugly Shine Wet Gloss begone R.A.S.S. Fix | cat none | T3 keyword [r.a.s.s] | stay
+  R.A.S.S. Rain Ash And Snow Shaders - Wet Frost Cold Dust - Settings Loader | cat none | T3 keyword [r.a.s.s] | stay
+  R.A.S.S. - Rain Ash And Snow Shaders | cat none | T3 keyword [r.a.s.s] | stay
+  Remove Blurry Snowflakes | cat none | T3 keyword [snowflake] | stay
+  Simple Snow Improvements - Solstheim Ruins (BOS) | cat none | T3 keyword [simple snow] | stay
+  Paraphernalia - Snow Colour Fixes | cat none | T3 keyword [snow colour] | stay
+  Better Dynamic Snow - Complex Parallax Materials | cat none | T3 keyword [dynamic snow] | stay
+  Better Dynamic Snow SE - projected noise Tweak | cat none | T3 keyword [dynamic snow] | stay
+  Better Dynamic Snow SE | cat none | T3 keyword [dynamic snow] | stay
+  Better Snowflakes - A falling snow improvement mod | cat none | T3 keyword [snowflake] | stay
+  real life snowflakes SSE | cat none | T3 keyword [snowflake] | stay
+  Dynamic Shader-Dynamic Snow | cat none | T3 keyword [dynamic snow] | stay
+  Floating Ash Pile Fix | cat none | T3 keyword [floating ash pile] | stay
+  Simple Snow Improvements - Snow Forts (BOS) | cat none | T3 keyword [simple snow] | stay
+  Simple Snow Improvements - Skyrim Fixes (BOS) | cat none | T3 keyword [simple snow] | stay
+  Simple Snow Improvements - Giant Obelisk Fixes (BOS) | cat none | T3 keyword [simple snow] | stay
+  Stretched Snow Begone Definitive Edition - Stretched Snow On Walls and Buildings Fix | cat none | T3 keyword [stretched snow] | stay
+  Icy Cave Remaster - Ice Material Patch | cat none | family: follows master [Icy Cave Remaster] | stay
+  Icy Cave Remaster Patch | cat none | family: follows master [Icy Cave Remaster] | stay
+  Icy Cave Remaster | cat none | T3 keyword [icy] | stay
+  Icy Mesh Remaster | cat none | T3 keyword [icy] | stay
+  ProjectedDiffuse Patch Hub | cat none | T3 keyword [projecteddiffuse] | stay
+  Glacierslab SSE | cat none | T3 keyword [glacier] | stay
+  Multilayer Glacier Replacer | cat none | T3 keyword [glacier] | stay
+  Enhanced Rocks and Mountains - Addon | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D Rocks Gray Retexture | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D Rocks | cat none | T4 no rule, category, or keyword matched | stay
+  Cave Rocks Improved - Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  Riton Mountains (Dark Grey) | cat none | T4 no rule, category, or keyword matched | stay
+  Riton Mountain | cat none | T4 no rule, category, or keyword matched | stay
+  ERM - Complex Materials | cat none | T4 no rule, category, or keyword matched | stay
+  Rapid Rocks | cat none | T4 no rule, category, or keyword matched | stay
+  ERM - Enhanced Rocks and Mountains | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim 3D roads | cat none | T4 no rule, category, or keyword matched | stay
+  Misc. Blended Road Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Medieval Blended Roads | cat none | T3 keyword [blended roads] | stay
+  Blended Roads Retexture | cat none | T3 keyword [blended roads] | stay
+  Tomato's Landscape - Blended Roads CM Patch | cat none | family: follows master [Blended Roads] | stay
+  Blended Roads | cat none | T3 keyword [blended roads] | stay
+  Skyrim Better Roads | cat none | T4 no rule, category, or keyword matched | stay
+  HFs - Slightly improved ugly bridges | cat none | T4 no rule, category, or keyword matched | stay
+  Landscape Seam Fixes | cat none | T3 keyword [landscape] | stay
+  Rally's Tel Mithryn | cat none | T4 no rule, category, or keyword matched | stay
+  Rally's Riekling Outposts | cat none | T4 no rule, category, or keyword matched | stay
+  Riton Landscape | cat none | T3 keyword [landscape] | stay
+  Tomato's Complex Parallax Material Landscapes AIO - With DLCs | cat none | T3 keyword [landscape] | stay
+  Atlantean Landscape | cat none | T3 keyword [landscape] | stay
+  Northfire's Skidmarks SE 2K-4K | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Remastered - Azura and Blackreach Crystals | cat none | T4 no rule, category, or keyword matched | stay
+  SD's Farmhouse Fences SE | cat none | T4 no rule, category, or keyword matched | stay
+  Terrain Parallax Blending Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Landscape Fixes For Grass Mods | cat none | T3 keyword [landscape] | stay
+  Folkvangr - Grass and Landscape Overhaul | cat none | T3 keyword [landscape] | stay
+  Forgotten Retex Project 2023 (Everything Option) | cat none | T3 keyword [forgotten retex] | stay
+  Forgotten Retex Project | cat none | T3 keyword [forgotten retex] | stay
+  Septentrional Parallax 2K | cat none | T3 keyword [septentrional] | stay
+  Septentrional Landscapes SE - 8K | cat none | T3 keyword [septentrional] | stay
+  Audio Overhaul - Immersive Sounds Integration (AOS - ISC Compatibility Patch) | cat none | T4 no rule, category, or keyword matched | stay
+  Reverb Interior Sounds Expansion | cat none | T4 no rule, category, or keyword matched | stay
+  Immersive Sounds Compendium - SkyPatched | cat none | T4 no rule, category, or keyword matched | stay
+  Immersive Sounds - Compendium | cat none | T4 no rule, category, or keyword matched | stay
+  Audio Overhaul for Skyrim (4.1.2) | cat none | T4 no rule, category, or keyword matched | stay
+  Patches for Water for ENB - Acoustic Space Improvement Fixes - Lighting Overhauls | cat none | T4 no rule, category, or keyword matched | stay
+  Acoustic Space Improvement Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Auto Audio Switch | cat none | T4 no rule, category, or keyword matched | stay
+  Heels - Sound Record Distributor (SRD) - Patch Hub | cat none | T4 no rule, category, or keyword matched | stay
+  Sound Record Distributor | cat none | T4 no rule, category, or keyword matched | stay
+  ETHEREAL CLOUDS - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Rally's Celestial Canvas | cat none | T4 no rule, category, or keyword matched | stay
+  DALC Fix Preset | cat none | T4 no rule, category, or keyword matched | stay
+  E.C.D. Every Cloud Different NAT Add On | cat none | T4 no rule, category, or keyword matched | stay
+  Skygazer Moons SSE - Masser and Secunda HD Textures - WITH GLOW | cat none | T4 no rule, category, or keyword matched | stay
+  ETHEREAL COSMOS - Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Textures Redone - Stars | cat none | T4 no rule, category, or keyword matched | stay
+  Shooting Stars 2K SE - Cleaned and Upscaled Textures | cat none | T4 no rule, category, or keyword matched | stay
+  Shooting Stars SE - Remove Leaflet | cat none | T4 no rule, category, or keyword matched | stay
+  Shooting Stars SE | cat none | T4 no rule, category, or keyword matched | stay
+  Moons And Stars - Sky Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Aurora Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Wind Framework - SKSE Plugin | cat none | T4 no rule, category, or keyword matched | stay
+  Rainbows Remade | cat none | T4 no rule, category, or keyword matched | stay
+  Rudy fix for Splashes of Storms and ENB | cat none | T4 no rule, category, or keyword matched | stay
+  Splashes of Storms VR | cat none | T4 no rule, category, or keyword matched | stay
+  Splashes Of Storms | cat none | T4 no rule, category, or keyword matched | stay
+  Distant Rolling Thunder | cat none | T4 no rule, category, or keyword matched | stay
+  Storm Lightning for SSE and VR (Minty Lightning 2019) | cat none | T4 no rule, category, or keyword matched | stay
+  Picta Series - Improved Sky Meshes | cat none | T4 no rule, category, or keyword matched | stay
+  Solar Lens Flare Redux (SLFR) | cat none | T4 no rule, category, or keyword matched | stay
+  Aetherial Link - Cloud and Linked Storage for Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  SSAssist Tools SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Vanity Mirror SE | cat none | T4 no rule, category, or keyword matched | stay
+  Animated Wings Ultimate | cat none | T4 no rule, category, or keyword matched | stay
+  Reverb and Ambiance Overhaul UPDATED ESL | cat none | T4 no rule, category, or keyword matched | stay
+  Lucidity Sound FX v2u | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon-Voiced Word Walls | cat none | T4 no rule, category, or keyword matched | stay
+  Binaural 3D Surround Sound for SKYRIM VR | cat none | T4 no rule, category, or keyword matched | stay
+  Magic Student (WIChangeLocation04) Quest Fix | cat none | T4 no rule, category, or keyword matched | stay
+  King Olaf's Fire Festival Not Ending Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Dark Brotherhood for Good Guys | cat none | T4 no rule, category, or keyword matched | stay
+  Guild Master's Armor First Person Texture Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Revealing Rune | cat none | T4 no rule, category, or keyword matched | stay
+  Localized Thieves Guild Jobs | cat none | T4 no rule, category, or keyword matched | stay
+  Brynjolf has Time for You SE | cat none | T4 no rule, category, or keyword matched | stay
+  Dustman's Cairn Farkas Scene Fix | cat none | T4 no rule, category, or keyword matched | stay
+  The Companions - Don't be a Milk Drinker | cat none | T4 no rule, category, or keyword matched | stay
+  Proving Honor Companions Quest Progression Fix | cat none | T4 no rule, category, or keyword matched | stay
+  ElSopa - Azura's Star Redone SE - Light Placer | cat none | T4 no rule, category, or keyword matched | stay
+  QuickLight - Real floating Candle replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Torch Permanent - Mounted Wall Torch Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  Street Lights of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Candles - Blow Them Out and Light Again | cat none | T4 no rule, category, or keyword matched | stay
+  NAT.CS - From Dusk Till Dawn | cat none | T4 no rule, category, or keyword matched | stay
+  NAT.CS III | cat none | T4 no rule, category, or keyword matched | stay
+  Phitt's Morrowind Style Lanterns | cat none | T4 no rule, category, or keyword matched | stay
+  Pretty Lantern Replacer SE | cat none | T4 no rule, category, or keyword matched | stay
+  201 Stained Glass Lanterns | cat none | T4 no rule, category, or keyword matched | stay
+  Radiant - Candles | cat none | T4 no rule, category, or keyword matched | stay
+  Subtle Wind FX | cat none | T4 no rule, category, or keyword matched | stay
+  Mists of Tamriel NAT III patch | cat none | T4 no rule, category, or keyword matched | stay
+  Mists of Tamriel - Blue Haze | cat none | T4 no rule, category, or keyword matched | stay
+  Mists of Tamriel | cat none | T4 no rule, category, or keyword matched | stay
+  NAT.ENB - ESP WEATHER PLUGIN v3.1.1C - Fixed | cat none | T4 no rule, category, or keyword matched | stay
+  Conquest of Skyrim (Don't enable before finishing the civil war) | cat none | T4 no rule, category, or keyword matched | stay
+  Far Object LOD Improvement Project SSE | cat none | T4 no rule, category, or keyword matched | stay
+  HD LODs Textures SE | cat none | T4 no rule, category, or keyword matched | stay
+  The Thieves Guild Ladder - Skyrim Special Edition | cat none | T4 no rule, category, or keyword matched | stay
+  HD Enhanced Terrain | cat none | T4 no rule, category, or keyword matched | stay
+  Civil War Repairs | cat none | T4 no rule, category, or keyword matched | stay
+  After the Civil War - Siege Damage Repairs | cat none | T4 no rule, category, or keyword matched | stay
+  Civil War Neutrality SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Finding Susanna Alive | cat none | T4 no rule, category, or keyword matched | stay
+  Blood on the Ice Redux - Re-Voiced | cat none | T4 no rule, category, or keyword matched | stay
+  Blood on the Ice Redux - Voiced ESP-FE | cat none | T4 no rule, category, or keyword matched | stay
+  Blood on the Ice Redux SE | cat none | T4 no rule, category, or keyword matched | stay
+  Stormcloaks For Good Guys-LESS RACIST | cat none | T4 no rule, category, or keyword matched | stay
+  Namira for Good Guys | cat none | T4 no rule, category, or keyword matched | stay
+  Boethiah for Good Guys | cat none | T4 no rule, category, or keyword matched | stay
+  Source of Stalhrim Quest Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Favor Quests Separated | cat none | T4 no rule, category, or keyword matched | stay
+  Even Better Quest Objectives - Quests Are In Skyrim Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Quests Are In Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Wild Horses Quest Markers (CC) | cat none | T4 no rule, category, or keyword matched | stay
+  Paarthurnax - Quest Expansion patch for Navigate VR or Even Better Quest Objectives | cat none | T4 no rule, category, or keyword matched | stay
+  Paarthurnax - Quest Expansion | cat none | T4 no rule, category, or keyword matched | stay
+  Even Better Quest Objectives SE | cat none | T4 no rule, category, or keyword matched | stay
+  MW Elevated Heights SkyPatched - No ESP | cat none | T4 no rule, category, or keyword matched | stay
+  Journey to Baan Malur Addon - Silgrad | cat none | T4 no rule, category, or keyword matched | stay
+  Fishermen Fish | cat none | T4 no rule, category, or keyword matched | stay
+  Helgen UV Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Become High King of Skyrim TNG | cat none | T4 no rule, category, or keyword matched | stay
+  Become High King of Skyrim V2 SE | cat none | T4 no rule, category, or keyword matched | stay
+  Alternate Perspective - Helgen Reborn Patch | cat none | family: follows master [Helgen Reborn] | stay
+  Helgen Reborn's Keepers of Hattu Retexture SE | cat none | T3 keyword [helgen reborn] | stay
+  Unique Helgen Reborn | cat none | T3 keyword [helgen reborn] | stay
+  Helgen Reborn | cat none | T3 keyword [helgen reborn] | stay
+  Vvardenfell The New South | cat none | T4 no rule, category, or keyword matched | stay
+  Subtleties of Skyrim - Red Mountain Lava - Distant Ships - Vvardenfell Mushroom | cat none | T4 no rule, category, or keyword matched | stay
+  Journey to Baan Malur and Morrowind | cat none | T4 no rule, category, or keyword matched | stay
+  DynDOLOD Modders Resource Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  DyndoLOD FX Glow Accurate Disabler - Quality of Life | cat none | T4 no rule, category, or keyword matched | stay
+  Lod Model Library for DynDOLOD | cat none | T4 no rule, category, or keyword matched | stay
+  DynDOLOD DLL NG and Scripts | cat none | T4 no rule, category, or keyword matched | stay
+  DynDOLOD 3 Alpha | cat none | T4 no rule, category, or keyword matched | stay
+  DynDOLOD Resources SE (Reinstall to Configure) | cat none | T4 no rule, category, or keyword matched | stay
+  DynDolod - Darken texture for generation - The good one last one | cat none | T4 no rule, category, or keyword matched | stay
+  DynDOLOD TexGen Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  LOD Mesh Fixes for DynDOLOD | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic Gamma SKSE | cat none | T4 no rule, category, or keyword matched | stay
+  NAT Effect 11 | cat none | T4 no rule, category, or keyword matched | stay
+  Native Mesh Light Flicker Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Horizon Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Smoother Skies | cat none | T4 no rule, category, or keyword matched | stay
+  Wetness Effects | cat none | T4 no rule, category, or keyword matched | stay
+  Terrain Variation | cat none | T4 no rule, category, or keyword matched | stay
+  Terrain Helper | cat none | T4 no rule, category, or keyword matched | stay
+  Light Placer | cat none | T4 no rule, category, or keyword matched | stay
+  Cloud Shadows | cat none | T4 no rule, category, or keyword matched | stay
+  Open Shaders | cat none | T4 no rule, category, or keyword matched | stay
+  Paraphernalia - Lustre (Reshade) | cat none | T4 no rule, category, or keyword matched | stay
+  Paraphernalia - Anti-Flicker | cat none | T4 no rule, category, or keyword matched | stay
+  Eye Adaptation Fix for SE and VR | cat none | T4 no rule, category, or keyword matched | stay
+  Default Female at Character Creation | cat none | T4 no rule, category, or keyword matched | stay
+  RaceMenu ESL Patch | cat none | T3 keyword [racemenu] | stay
+  S.L.U.R I Sswaye's Luxuriously Unlocked Racemenu for customraces | cat none | T3 keyword [racemenu] | stay
+  RaceMenu Selector of Skins - Unique Player Character | cat none | T3 keyword [racemenu] | stay
+  Expressive Facegen Morphs SE | cat none | T4 no rule, category, or keyword matched | stay
+  Racemenu - Improved Character Light | cat none | T3 keyword [racemenu] | stay
+  RaceMenu High Heels (Height Fixes) | cat none | T3 keyword [racemenu] | stay
+  RaceMenu VR | cat none | T3 keyword [racemenu] | stay
+  RaceMenu Anniversary Edition | cat none | T3 keyword [racemenu] | stay
+  A Matter of Time - Edge UI Patch | cat none | T4 no rule, category, or keyword matched | stay
+  A Matter of Time - A HUD clock widget | cat none | T4 no rule, category, or keyword matched | stay
+  Dragon's Eye Minimap | cat none | T4 no rule, category, or keyword matched | stay
+  Controller Bindings - Kvite | cat none | T4 no rule, category, or keyword matched | stay
+  L.v.x Magick's - Complete Bleak Falls Barrow Instantly | cat none | T4 no rule, category, or keyword matched | stay
+  Mfg Fix NG | cat none | T4 no rule, category, or keyword matched | stay
+  Mfg Fix | cat none | T4 no rule, category, or keyword matched | stay
+  More Informative Console | cat none | T4 no rule, category, or keyword matched | stay
+  Extended UI ESP Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Extended UI | cat none | T4 no rule, category, or keyword matched | stay
+  ConsolePlusPlus VR | cat none | T4 no rule, category, or keyword matched | stay
+  ConsolePlusPlus | cat none | T4 no rule, category, or keyword matched | stay
+  Autorun | cat none | T4 no rule, category, or keyword matched | stay
+  Unique Region Names SE | cat none | T4 no rule, category, or keyword matched | stay
+  Subtitles VR | cat none | T4 no rule, category, or keyword matched | stay
+  No Enemybar and no Names | cat none | T4 no rule, category, or keyword matched | stay
+  Fuz Ro D-oh for Skyrim VR | cat none | T4 no rule, category, or keyword matched | stay
+  Enemy Healthbar Red with Names | cat none | T4 no rule, category, or keyword matched | stay
+  Clear HUD VR | cat none | T4 no rule, category, or keyword matched | stay
+  Centered Messages Box VR | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Cheat Engine | cat none | T4 no rule, category, or keyword matched | stay
+  AddItemMenuSE AE Fixed | cat none | T4 no rule, category, or keyword matched | stay
+  AddItemMenuSE Fixed | cat none | T4 no rule, category, or keyword matched | stay
+  AddItemMenu AE | cat none | T4 no rule, category, or keyword matched | stay
+  AddItemMenu - NG | cat none | T4 no rule, category, or keyword matched | stay
+  AddItemMenu - Ultimate Mod Explorer | cat none | T4 no rule, category, or keyword matched | stay
+  Another AddItem Mod - 2026 | cat none | T4 no rule, category, or keyword matched | stay
+  dMenu | cat none | T4 no rule, category, or keyword matched | stay
+  Starlit Lakes Loading Screens | cat none | T4 no rule, category, or keyword matched | stay
+  Loading Menu Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Improved Loading Screen Colors | cat none | T4 no rule, category, or keyword matched | stay
+  MCM Menu Redone | cat none | T3 keyword [mcm] | stay
+  PrismaUI Teleport Menu | cat none | T4 no rule, category, or keyword matched | stay
+  Prisma Mod Configuration Manager - PMCM | cat none | T3 keyword [mcm] | stay
+  Remove Bethesda Logo Among Other Things | cat none | T4 no rule, category, or keyword matched | stay
+  SkyPrompt | cat none | T4 no rule, category, or keyword matched | stay
+  Prisma UI - Next-Gen Web UI Framework | cat none | T4 no rule, category, or keyword matched | stay
+  Infinity UI | cat none | T4 no rule, category, or keyword matched | stay
+  Stay At The System Page NG | cat none | T4 no rule, category, or keyword matched | stay
+  Favorites Menu Effects Description | cat none | T4 no rule, category, or keyword matched | stay
+  Fix Note icon for SkyUI (SKSE64 plugin) | cat none | T3 keyword [skyui] | stay
+  SkyUI - VR | cat none | T3 keyword [skyui] | stay
+  Untarnished UI | cat none | T4 no rule, category, or keyword matched | stay
+  Dear Diary Dark Mode - SkyUI Menus Replacer SE | cat none | T3 keyword [skyui] | stay
+  Crafting Categories for SkyUI VR | cat none | family: follows master [Crafting Categories for SkyUI] | stay
+  Crafting Categories for SkyUI | cat none | T3 keyword [skyui] | stay
+  SkyUI - Ghost Item Bug Fix | cat none | T3 keyword [skyui] | stay
+  NL_MCM - A Modular MCM Framework | cat none | T3 keyword [mcm] | stay
+  SkyUI | cat none | T3 keyword [skyui] | stay
+  STATUS | cat none | T4 no rule, category, or keyword matched | stay
+  MCM Helper VR | cat none | T3 keyword [mcm] | stay
+  MCM Helper | cat none | T3 keyword [mcm] | stay
+  SSIRT v4.1 | cat none | T4 no rule, category, or keyword matched | stay
+  UIExtensions VR | cat none | T4 no rule, category, or keyword matched | stay
+  UIExtensions | cat none | T4 no rule, category, or keyword matched | stay
+  Yes Im Sure NG | cat none | T4 no rule, category, or keyword matched | stay
+  UILIB_1_ShowTextInput_with_VR_support | cat none | T4 no rule, category, or keyword matched | stay
+  Tween Menu Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  SkyUI 3D Item Offset Fix (Centered Item Card - Script Fix - Improvement) | cat none | T3 keyword [skyui] | stay
+  Remove QuickSave Button from SkyUI System Menu | cat none | T3 keyword [skyui] | stay
+  Modex - A Mod Explorer Menu (AddItemMenu) | cat none | T4 no rule, category, or keyword matched | stay
+  Modex - A Mod Explorer Menu | cat none | T4 no rule, category, or keyword matched | stay
+  Gauntlet Cursors Collection | cat none | T4 no rule, category, or keyword matched | stay
+  FSMPM - The FSMP MCM | cat none | T3 keyword [mcm] | stay
+  Extended UI - Settings Loader | cat none | T4 no rule, category, or keyword matched | stay
+  Better Main Menu for VR | cat none | T4 no rule, category, or keyword matched | stay
+  Azurite Weathers - MCM and Settings Loader | cat none | T3 keyword [mcm] | stay
+  Unread Books Glow SSE with MCM | cat none | T3 keyword [mcm] | stay
+  Relationship Dialogue Overhaul - Update and MCM | cat none | T3 keyword [mcm] | stay
+  Console Commander - Add and Execute Console Commands - SKSE Menu Framework | cat none | T4 no rule, category, or keyword matched | stay
+  SmoothCam | cat none | T4 no rule, category, or keyword matched | stay
+  ConsoleUtil Extended | cat none | T3 keyword [consoleutil] | stay
+  ConsoleUtilSSE NG | cat none | T3 keyword [consoleutil] | stay
+  ConsoleUtilVR | cat none | T3 keyword [consoleutil] | stay
+  Skyrim VR Refocused | cat none | T3 keyword [skyrim vr refocused] | MOVE -> [Essentials]
+  Skyrim VR Tools | cat none | T3 keyword [skyrim vr tools] | MOVE -> [Essentials]
+  Instantly Skip Dialogue NG | cat none | T4 no rule, category, or keyword matched | stay
+  Stamina of Steeds | cat none | T4 no rule, category, or keyword matched | stay
+  YAR - Yuril's Additional Resources - Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  Regional Save Names VR | cat none | T4 no rule, category, or keyword matched | stay
+  Better Grabbing | cat none | T4 no rule, category, or keyword matched | stay
+  Grab And Throw | cat none | T4 no rule, category, or keyword matched | stay
+  Weapon Throw VR | cat none | T4 no rule, category, or keyword matched | stay
+  Simple Realistic Archery VR | cat none | T4 no rule, category, or keyword matched | stay
+  Pseudo Physical Weapon Collision and Parry AE SE VR | cat none | T4 no rule, category, or keyword matched | stay
+  Poached Bugs VR | cat none | T4 no rule, category, or keyword matched | stay
+  Neutral VR Animations for VRIK and PCEA2 | cat none | T3 keyword [vrik] | stay
+  Interactive Pullchains VR | cat none | T4 no rule, category, or keyword matched | stay
+  Increase Actor Limit for VR | cat none | T4 no rule, category, or keyword matched | stay
+  Im Walkin' Here VR | cat none | T4 no rule, category, or keyword matched | stay
+  Enhanced Reanimation VR | cat none | T4 no rule, category, or keyword matched | stay
+  Enhanced Invisibility VR | cat none | T4 no rule, category, or keyword matched | stay
+  Dual Wield Block VR | cat none | T4 no rule, category, or keyword matched | stay
+  Don't Stay in The Water - VR | cat none | T4 no rule, category, or keyword matched | stay
+  CBPC VR Action - Reaction | cat none | T4 no rule, category, or keyword matched | stay
+  Be Seated Skyrim VR Edition | cat none | T4 no rule, category, or keyword matched | stay
+  Animated Static Reload Fix - NG | cat none | T4 no rule, category, or keyword matched | stay
+  Favorite Misc Items VR | cat none | T4 no rule, category, or keyword matched | stay
+  Favorite Misc Items | cat none | T4 no rule, category, or keyword matched | stay
+  Swap Drop and Hold Add Spells | cat none | T4 no rule, category, or keyword matched | stay
+  Swap Drop and Hold | cat none | T4 no rule, category, or keyword matched | stay
+  VR Smooth Dialogue Mesh | cat none | T4 no rule, category, or keyword matched | stay
+  Instant Equip VR | cat none | T4 no rule, category, or keyword matched | stay
+  Gift by Hand VR | cat none | T4 no rule, category, or keyword matched | stay
+  VR Menu Mouse Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Sprint Jump VR | cat none | T4 no rule, category, or keyword matched | stay
+  Simple edge glow fixes - VR | cat none | T4 no rule, category, or keyword matched | stay
+  Essential Favorites VR | cat none | T4 no rule, category, or keyword matched | stay
+  AddItemMenu search VR keyboard patch | cat none | T4 no rule, category, or keyword matched | stay
+  VR Keyboard | cat none | T4 no rule, category, or keyword matched | stay
+  VR Equip | cat none | T4 no rule, category, or keyword matched | stay
+  Dialogue Movement Enabler VR | cat none | T4 no rule, category, or keyword matched | stay
+  Haptic Skyrim VR - Spellcasting and Enhanced Bow and Melee Haptics | cat none | T4 no rule, category, or keyword matched | stay
+  PLANCK - Physical Animation and Character Kinetics | cat none | T3 keyword [planck] | stay
+  HIGGS - Enhanced VR Interaction | cat none | T3 keyword [higgs] | stay
+  Arctal's VRIK Tweaks | cat none | T3 keyword [vrik] | stay
+  VRIK Player Avatar | cat none | T3 keyword [vrik] | stay
+  Skyrim VR ESL Support | cat none | T4 no rule, category, or keyword matched | stay
+  VRIK Rift-Index-WMR Controller Bindings | cat none | T3 keyword [vrik] | stay
+  no me molestes - xpmse and planck pelvis forcefield fix (DJT VR) | cat none | T3 keyword [planck] | stay
+  Dlizzio's Mesh Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Assorted Mesh Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Material Fix | cat none | T4 no rule, category, or keyword matched | stay
+  SMIM Fix | cat none | T4 no rule, category, or keyword matched | stay
+  OSHA-Compliant Sovengarde Mesh Fixes - Parallax | cat none | T4 no rule, category, or keyword matched | stay
+  OSHA-Compliant Sovengarde Mesh Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Rock Traps Trigger Fixes (FOMOD MAY NEED TO REPATCH) | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club Asset Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Faster Decompression | cat none | T4 no rule, category, or keyword matched | stay
+  DPI Scaling Fix | cat none | T4 no rule, category, or keyword matched | stay
+  LOD Unloading Bug Fix | cat none | T4 no rule, category, or keyword matched | stay
+  No Edge Glow - Magic and Transformations UPDATED ESL | cat none | T4 no rule, category, or keyword matched | stay
+  Universal (SKSE) Rim Lighting Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Serana's Hood Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Motionless Rocks Killing People Fix | cat none | T4 no rule, category, or keyword matched | stay
+  dunPOISoldiersRaidOnStart Script Tweak | cat none | T4 no rule, category, or keyword matched | stay
+  High Gate Ruins Puzzle Reset Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Scare my Enemy Bug Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Universal Cured Serana Eye Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Bound Dagger CTD Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Fixed Bound Sword and Dagger Collision | cat none | T4 no rule, category, or keyword matched | stay
+  Chillwind Depths CTD Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Barter Limit Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Disable Character Lighting | cat none | T4 no rule, category, or keyword matched | stay
+  Clean up the physics outfit - Collision Reset | cat none | T4 no rule, category, or keyword matched | stay
+  Bug Fixes SSE | cat none | T4 no rule, category, or keyword matched | stay
+  No Stagger Mod | cat none | T4 no rule, category, or keyword matched | stay
+  Stuck on Screen Load Door Prompt Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Argonian Loading Screen Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Vampire Loading Screen Eye Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Load Screen Shading Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Modern Clap Bug Fix | cat none | T4 no rule, category, or keyword matched | stay
+  World Encounter Hostility Fix -Performance Version | cat none | T4 no rule, category, or keyword matched | stay
+  Freed Prisoner Uses Items | cat none | T4 no rule, category, or keyword matched | stay
+  FUS RO DON'T - PushActorAway Crash Prevention Script Tweak | cat none | T4 no rule, category, or keyword matched | stay
+  SCROTE BSA Version | cat none | T4 no rule, category, or keyword matched | stay
+  Save Unbaker VR | cat none | T4 no rule, category, or keyword matched | stay
+  Save Unbaker | cat none | T4 no rule, category, or keyword matched | stay
+  Navigator - Navmesh Fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Optimized MagicPlayEffectShaderOnHitScript | cat none | T4 no rule, category, or keyword matched | stay
+  OnMagicEffectApply Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  CritterSpawn Congestion Fix | cat none | T4 no rule, category, or keyword matched | stay
+  WE05 Script Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Keywords Fixed | cat none | T4 no rule, category, or keyword matched | stay
+  Zero Bounty Hostility Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Rogue's Gallery | cat none | T4 no rule, category, or keyword matched | stay
+  Beard Mask Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Bard Instrumentals Mostly - Sing Rarely | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Fixes VR | cat none | T4 no rule, category, or keyword matched | stay
+  SMP-NPC crash fix | cat none | T4 no rule, category, or keyword matched | stay
+  NPC Stuck in Bleedout fix | cat none | T4 no rule, category, or keyword matched | stay
+  MfgFix VR | cat none | T4 no rule, category, or keyword matched | stay
+  Dual Casting Fix VR | cat none | T4 no rule, category, or keyword matched | stay
+  Console Selection Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Combat Music Fix NG Updated | cat none | T4 no rule, category, or keyword matched | stay
+  Combat Music Fix NG | cat none | T4 no rule, category, or keyword matched | stay
+  Bone Wolf Shutdown Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Skyrim Creation Club Content Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Skyrim Modder's Patch - USMP SE (Only for AE Import) | cat none | family: follows master [Unofficial Skyrim Modder's Patch - USMP SE] | stay
+  Unofficial Skyrim Modder's Patch - USMP SE | cat none | T3 keyword [modder's patch] | stay
+  Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b) | cat none | family: follows master [Unofficial Skyrim Special Edition Patch - USSEP] | stay
+  Unofficial Skyrim Special Edition Patch - USSEP | cat none | family: follows master [Unofficial Skyrim Special Edition Patch] | stay
+  Unofficial Skyrim Special Edition Patch (FOR IMPORTED AE CONTENT) | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Skyrim Special Edition Patch | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Skyrim Modder's Patch - For VR Users (4.2.5b USSEP) | cat none | T3 keyword [ussep] | stay
+  Skyrim Vr USSEP patch for USSEP 4.2.5b | cat none | T3 keyword [ussep] | stay
+  Favor Quests Seperated - USSEP Patch | cat none | T3 keyword [ussep] | stay
+  WENB Shades USSEP Patch | cat none | T3 keyword [ussep] | stay
+  USSEP Nemesis Patch | cat none | T3 keyword [ussep] | stay
+  Script Optimization and Fixes Compilation | cat none | T4 no rule, category, or keyword matched | stay
+  Ultimate Optimized Scripts Compilation | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim VR USSEP Dwarven Ballista missing texture fix | cat none | T3 keyword [ussep] | stay
+  Auto Skeleton Patch - Universal Behaviour Runtime | cat none | T4 no rule, category, or keyword matched | stay
+  Payload Interpreter | cat none | T4 no rule, category, or keyword matched | stay
+  Open Animation Replacer - RaySense | cat none | T4 no rule, category, or keyword matched | stay
+  Open Animation Replacer | cat none | T4 no rule, category, or keyword matched | stay
+  A-Pose Bug Fix - Universal Behavior Runtime | cat none | T4 no rule, category, or keyword matched | stay
+  Paired Animation Improvements | cat none | T4 no rule, category, or keyword matched | stay
+  Animation Queue Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Pandora Behaviour Engine Plus | cat none | T3 keyword [pandora] | stay
+  Fores New Idles in Skyrim SE - FNIS SE | cat none | T3 keyword [fnis] | stay
+  FNIS PCEA2 - Player Exclusive Animations (dynamic) SE | cat none | T3 keyword [fnis] | stay
+  Animation Motion Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Pandorable's NPCs - Males 3 | cat none | T3 keyword [pandora] | stay
+  Pandorable's NPCs - Males 2 | cat none | T3 keyword [pandora] | stay
+  Pandorable's NPCs - Males | cat none | T3 keyword [pandora] | stay
+  Pandorable's NPCs - Dragonborn | cat none | T3 keyword [pandora] | stay
+  Pandorable's NPCs - Dawnguard | cat none | T3 keyword [pandora] | stay
+  Pandorable's NPCs | cat none | T3 keyword [pandora] | stay
+  In Game Patch Creator | cat none | T4 no rule, category, or keyword matched | stay
+  In-Game Patcher - SKSE plugin | cat none | T4 no rule, category, or keyword matched | stay
+  SkyPatcher Keyword Framework | cat none | T3 keyword [skypatcher] | stay
+  SkyPatcher - VR | cat none | T3 keyword [skypatcher] | stay
+  SkyPatcher - AE | cat none | T3 keyword [skypatcher] | stay
+  SkyPatcher - Smaller Dogs | cat none | T3 keyword [skypatcher] | stay
+  Skypatcher - Faster Stamina Regen | cat none | T3 keyword [skypatcher] | stay
+  Skypatcher - Diverse NPC Heights | cat none | T3 keyword [skypatcher] | stay
+  Pelagius's Wildlife AI - Skypatcher | cat none | T3 keyword [skypatcher] | stay
+  Unlimited Bookshelves - SkyPatcher Edition | cat none | T3 keyword [skypatcher] | stay
+  Animals Report No Crime - SkyPatcher | cat none | T3 keyword [skypatcher] | stay
+  XxAwesome_PotionsxX SSE - SkyPatcher | cat none | T3 keyword [skypatcher] | stay
+  Soul Gem Universal Sorting - SkyPatcher | cat none | T3 keyword [skypatcher] | stay
+  Scarcity SE - Less Loot Mod - SkyPatcher | cat none | T3 keyword [skypatcher] | stay
+  Weapons Armor Clothing and Clutter Fixes - SkyPatcher | cat none | T3 keyword [skypatcher] | stay
+  AI Overhaul SSE SkyPatcher Patch | cat none | T3 keyword [skypatcher] | stay
+  AI Overhaul SPID Patch | cat none | T3 keyword [spid] | stay
+  Acoustic Space Improvement Fixes - SkyPatcher | cat none | T3 keyword [skypatcher] | stay
+  PapyrusUtil ESL Patch | cat none | T3 keyword [papyrus] | stay
+  JContainers NG | cat none | T3 keyword [jcontainers] | stay
+  AnimObject Swapper VR | cat none | T4 no rule, category, or keyword matched | stay
+  AnimObject Swapper | cat none | T4 no rule, category, or keyword matched | stay
+  JContainers SE-new | cat none | T3 keyword [jcontainers] | stay
+  JContainers-master | cat none | T3 keyword [jcontainers] | stay
+  SKSE - Real Time Script Profiler | cat none | T4 no rule, category, or keyword matched | stay
+  Native EditorID Fix | cat none | T4 no rule, category, or keyword matched | stay
+  MIF - Mu Impact Framework | cat none | T4 no rule, category, or keyword matched | stay
+  Description Framework | cat none | T4 no rule, category, or keyword matched | stay
+  Enchantment Art Extender | cat none | T4 no rule, category, or keyword matched | stay
+  Fuz Ro D-oh - Silent Voice | cat none | T4 no rule, category, or keyword matched | stay
+  Scaleform Translation Plus Plus VR | cat none | T3 keyword [scaleform] | stay
+  Scaleform Translation Plus Plus NG | cat none | T3 keyword [scaleform] | stay
+  Yes Im Sure | cat none | T4 no rule, category, or keyword matched | stay
+  PapyrusUtil VR - Scripting Utility Functions | cat none | T3 keyword [papyrus] | stay
+  PapyrusUtil SE - Modders Scripting Utility Functions | cat none | T3 keyword [papyrus] | stay
+  Whose Quest Is It Anyway VR | cat none | T4 no rule, category, or keyword matched | stay
+  Whose Quest Is It Anyway | cat none | T4 no rule, category, or keyword matched | stay
+  CBPC - Physics with Collisions | cat none | T4 no rule, category, or keyword matched | stay
+  Scrab's Papyrus Extender | cat none | T3 keyword [papyrus] | stay
+  Stagger Effect Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Media Keys Fix SKSE | cat none | T4 no rule, category, or keyword matched | stay
+  Andrealphus' Papyrus Functions | cat none | T3 keyword [papyrus] | stay
+  Object Categorization Framework | cat none | T4 no rule, category, or keyword matched | stay
+  MergeMapper | cat none | T4 no rule, category, or keyword matched | stay
+  Papyrus Tweaks NG | cat none | T3 keyword [papyrus] | stay
+  Simple Offence Suppression VR | cat none | T4 no rule, category, or keyword matched | stay
+  Simple Offence Suppression | cat none | T4 no rule, category, or keyword matched | stay
+  Papyrus Extender VR | cat none | T3 keyword [papyrus] | stay
+  powerofthree's Papyrus Extender | cat none | T3 keyword [papyrus] | stay
+  FISSES DLL for VR | cat none | T3 keyword [fisses] | stay
+  powerofthree's Tweaks VR | cat none | family: follows master [powerofthree's Tweaks] | stay
+  powerofthree's Tweaks | cat none | T3 keyword [powerofthree] | stay
+  Game Settings Override | cat none | T4 no rule, category, or keyword matched | stay
+  Don't send me there again (dosemetha) | cat none | T4 no rule, category, or keyword matched | stay
+  Crash Logger SSE AE VR - PDB support | cat none | T4 no rule, category, or keyword matched | stay
+  Trainwreck - A Crash Logger | cat none | T4 no rule, category, or keyword matched | stay
+  Better Combat Escape - NG | cat none | T4 no rule, category, or keyword matched | stay
+  Better Combat Escape - SSE | cat none | T4 no rule, category, or keyword matched | stay
+  Behavior Data Injector Universal Support | cat none | T4 no rule, category, or keyword matched | stay
+  Behavior Data Injector | cat none | T4 no rule, category, or keyword matched | stay
+  Dynamic String Distributor (DSD) | cat none | T4 no rule, category, or keyword matched | stay
+  Object Manipulation Overhaul | cat none | T4 no rule, category, or keyword matched | stay
+  Debug Menu - In-Game Navmesh Viewer and More | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Platform - A TypeScript SDK for Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  ImGui Icons | cat none | T4 no rule, category, or keyword matched | stay
+  SKSE Menu Framework | cat none | T4 no rule, category, or keyword matched | stay
+  Inventory Interface Information Injector | cat none | T4 no rule, category, or keyword matched | stay
+  FormList Manipulator - FLM | cat none | T4 no rule, category, or keyword matched | stay
+  Container Item Distributor | cat none | T4 no rule, category, or keyword matched | stay
+  Model Swapper | cat none | T4 no rule, category, or keyword matched | stay
+  Base Object Swapper VR | cat none | family: follows master [Base Object Swapper] | stay
+  Blended Roads less bumpiness - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Lightened Skyrim - Base Object Swapper edition | cat none | T3 keyword [base object swapper] | stay
+  Orcish Lanterns for Orc Strongholds by Jjerem - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Dynamic Things Alternative - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Road Signs Fast Travel - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Blacksmith Forge and Anvil Variants - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Sconces of Solitude - Unique Solitude Braziers - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Randomized Standing Stones - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Shores of Skyrim - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Diverse Downed Logs - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Diverse Tanning Racks - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Diverse Windmill Sails - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Snazzy Wall Mounted Trophies - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Diverse Archery Targets - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Cathedral - 3D Mountain Flowers - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Spell Perk Item Distributor (SPID) VR | cat none | family: follows master [Spell Perk Item Distributor] | stay
+  Spell Perk Item Distributor | cat none | T4 no rule, category, or keyword matched | stay
+  Core Impact Framework (CIF) | cat none | T4 no rule, category, or keyword matched | stay
+  FileAccess Interface for Skyrim SE Scripts - FISSES | cat none | T3 keyword [fisses] | stay
+  I'm Walkin' Here NG with Pets | cat none | T4 no rule, category, or keyword matched | stay
+  I'm walkin' here NG | cat none | T4 no rule, category, or keyword matched | stay
+  Experience | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Display Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Priority SE AE - CPU Performance FPS Optimizer (SET AFFINITY WITH PLUGIN) | cat none | T4 no rule, category, or keyword matched | stay
+  Achievements Mods Enabler | cat none | T4 no rule, category, or keyword matched | stay
+  Disk Cache Enabler | cat none | T4 no rule, category, or keyword matched | stay
+  Save and Load Accelerator for SKSE Cosaves - S.L.A.C.K | cat none | T4 no rule, category, or keyword matched | stay
+  Faster Cell Lookup | cat none | T4 no rule, category, or keyword matched | stay
+  Mum's the Word NG | cat none | T4 no rule, category, or keyword matched | stay
+  Faster File Copy | cat none | T4 no rule, category, or keyword matched | stay
+  NPC AI Process Position Fix - NG | cat none | T4 no rule, category, or keyword matched | stay
+  Keyword Item Distributor | cat none | T4 no rule, category, or keyword matched | stay
+  Recursion Monitor | cat none | T4 no rule, category, or keyword matched | stay
+  PAPER | cat none | T4 no rule, category, or keyword matched | stay
+  Actor Limit Fix | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Engine Fixes (skse64 plugin) part 1 | cat none | T4 no rule, category, or keyword matched | stay
+  VR Address Library for SKSEVR | cat none | T3 keyword [sksevr] | MOVE -> [Essentials]
+  Skyrim HD SE | cat none | T4 no rule, category, or keyword matched | stay
+  .1130 _ResourcePack fixes | cat none | T4 no rule, category, or keyword matched | stay
+  Engine Fixes VR part 1 | cat none | T3 keyword [engine fixes vr] | stay
+  SkyrimVR PDB | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Fixes For VR | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim Script Extender for VR (SKSEVR) | cat none | T3 keyword [sksevr] | stay
+  Essentials | cat none | T4 no rule, category, or keyword matched | stay
+  Clean Masters | cat none | T4 no rule, category, or keyword matched | stay
+  Skyrim AE - Resources | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club Scripts | cat none | T4 no rule, category, or keyword matched | stay
+  AE Patch | cat none | T4 no rule, category, or keyword matched | stay
+  AE Masters | cat #0 "<unknown id 0>" | T4 no rule, category, or keyword matched | stay
+  Creation Club-Zombies- Draugr DLC Base Mod | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Dwarven Plate | cat none | T4 no rule, category, or keyword matched | stay
+  Upscaled and Cleaned Creation Club + Anniversary | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Misc Patches | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Wild Horses | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Vigil Enforcer Armor Set | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Umbra | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Tundra Homestead | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - The Gray Cowl Returns! | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - The Contest | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - The Cause | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Sunder & Wraithguard | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Stendarr's Hammer | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Staves | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Staff of Sheogorath | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Staff of Hasedoki | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Spell Knight Armor | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Shadowrend | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Shadowfoot Sanctum | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Saturalia Holiday Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Ruin's Edge | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Redguard Elite Armaments | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Plague of the Dead | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Pets of Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Nordic Jewelry | cat none | T4 no rule, category, or keyword matched | stay
+  Nix-Hound Eyes Fix (Creation Club Nixhound Patch) | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Nix-Hound | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Netch Leather Armor | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Necromantic Grimoire | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Nchuanthumz - Dwarven Home | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Myrwatch | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Lord's Mail | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Horse Armor - Steel | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Horse Armor - Elven | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Hendraheim | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Headman's Cleaver | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Goldbrand | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Goblins | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Ghosts of the Tribunal | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Gallows Hall | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Forgotten Seasons | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Fearsome Fists | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Farming | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Expanded Crossbow Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Elite Crossbows | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Dwarven Plate | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Dwarven Armored Mudcrab | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Divine Crusader | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Dead Man's Dread | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Dawnfang & Duskfang | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Civil War Champions | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Chrysamere | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Camping | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Bow of Shadows | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Bone Wolf | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Bloodchill Manor | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Bittercup | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Arms of Chaos | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Arcane Archer Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Arcane Accessories | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Steel Soldier | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Stalhrim Fur | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Silver | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Orcish Scaled | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Orcish Plate | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Leather | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Iron | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Elven Hunter | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Ebony Plate | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Dwarven Mail | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Dragonscale | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Dragon Plate | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Daedric Plate | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Alternative Armors - Daedric Mail | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Adventurer's Backpack | cat none | T4 no rule, category, or keyword matched | stay
+  Survival Mode - Disable Permanently | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Survival Mode | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Saints & Seducers | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club (Rare Curios) - Poison Apple texture swap fix | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Rare Curios | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Club - Fishing | cat none | T4 no rule, category, or keyword matched | stay
+  CK64Fixes Release 3.2 | cat none | T4 no rule, category, or keyword matched | stay
+  Unofficial Creation Kit Patch | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Creation Kit Fonixdata Lip Sync Fix | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Kit Platform Extended for Skyrim | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Kit (VR) | cat #0 "<unknown id 0>" | T4 no rule, category, or keyword matched | stay
+  Creation Kit (AE) | cat none | T4 no rule, category, or keyword matched | stay
+  Creation Kit | cat none | T4 no rule, category, or keyword matched | stay
+  CK Platform Extended 0.6-b550 | cat none | T4 no rule, category, or keyword matched | stay
+  DLC: Dawnguard | cat none | T4 no rule, category, or keyword matched | stay
+  DLC: Dragonborn | cat none | T4 no rule, category, or keyword matched | stay
+  DLC: HearthFires | cat none | T4 no rule, category, or keyword matched | stay
+
+--- pass 2: reorder [Interior (Re)Designs] ---
+  Reclusive Respite - A High Hrothgar Bed Chair and Bench Replacer | parent <none> | depth 0 | file index 14 -> 13 (file-earlier = wins)
+  Bedroll Alternative - BOS Color Variance | parent <none> | depth 0 | file index 15 -> 14 (file-earlier = wins)
+  Reclusive Respite - BOS Color Variance Use Those Blankets patch | parent Use Those Blankets | depth 1 | file index 13 -> 15 (file-earlier = wins)
+
+--- pass 2: reorder [Dragons] ---
+  GoT Dragons 16K-8K - Cleaned and Upscaled Textures (Game of Thrones) | parent <none> | depth 0 | file index 7 -> 6 (file-earlier = wins)
+  HOTD - Meleys as Odahviing | parent <none> | depth 0 | file index 8 -> 7 (file-earlier = wins)
+  HotD Dragons - Arrax and Vermax | parent <none> | depth 0 | file index 9 -> 8 (file-earlier = wins)
+  HotD Dragons - Season 2 | parent <none> | depth 0 | file index 10 -> 9 (file-earlier = wins)
+  HotD Dragons - Caraxes | parent <none> | depth 0 | file index 11 -> 10 (file-earlier = wins)
+  HotD Dragons-Textures | parent <none> | depth 0 | file index 12 -> 11 (file-earlier = wins)
+  GoT Dragons Textures - Fixed Soul Absorb And Optimized | parent GoT Dragons-Textures | depth 1 | file index 6 -> 12 (file-earlier = wins)
+
+--- pass 2: reorder [Races] ---
+  Race Compatibility Dialogue SSE | parent <none> | depth 0 | file index 8 -> 7 (file-earlier = wins)
+  Race Compatibility SKSE - Patch Hub | parent Race Compatibility SKSE | depth 1 | file index 7 -> 8 (file-earlier = wins)
+
+--- pass 2: reorder [Extension Frameworks - Extended Functionality] ---
+  Smaller Goblets Cups and Jugs - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 100 -> 86 (file-earlier = wins)
+  Diverse Foods - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 101 -> 87 (file-earlier = wins)
+  Dovahnique's Diverse Vendor Carts - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 102 -> 88 (file-earlier = wins)
+  Hanging Moss to Climbing Roses - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 103 -> 89 (file-earlier = wins)
+  Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim | parent Base Object Swapper | depth 1 | file index 104 -> 90 (file-earlier = wins)
+  Base Object Swapper | parent <none> | depth 0 | file index 86 -> 91 (file-earlier = wins)
+  Spell Perk Item Distributor (SPID) VR | parent Spell Perk Item Distributor | depth 1 | file index 87 -> 92 (file-earlier = wins)
+  Spell Perk Item Distributor | parent <none> | depth 0 | file index 88 -> 93 (file-earlier = wins)
+  Core Impact Framework (CIF) | parent <none> | depth 0 | file index 89 -> 94 (file-earlier = wins)
+  FileAccess Interface for Skyrim SE Scripts - FISSES | parent <none> | depth 0 | file index 90 -> 95 (file-earlier = wins)
+  Diverse Dog Textures - SPID | parent <none> | depth 0 | file index 91 -> 96 (file-earlier = wins)
+  Arachnophobia - Spiders are Wolves - Chaurus are Bears - No Cobwebs or Eggs | parent <none> | depth 0 | file index 92 -> 97 (file-earlier = wins)
+  Fancy Mihail's Roosters SPID or Replacer | parent <none> | depth 0 | file index 93 -> 98 (file-earlier = wins)
+  Better Dressed Kids - Willybach Textures SPID | parent <none> | depth 0 | file index 94 -> 99 (file-earlier = wins)
+  SMP Vanilla Hair Remake wigs for RS Children (SPID) | parent <none> | depth 0 | file index 95 -> 100 (file-earlier = wins)
+  Frostbite Spider UV Fix | parent <none> | depth 0 | file index 96 -> 101 (file-earlier = wins)
+  Schlongs of Skyrim - PapyrusUtil SexLab Tweaks | parent <none> | depth 0 | file index 97 -> 102 (file-earlier = wins)
+  Spiders of Solstheim - Transparency Fix | parent <none> | depth 0 | file index 98 -> 103 (file-earlier = wins)
+  Optimised Scripts for Enhanced Blood Textures - SPID version | parent <none> | depth 0 | file index 99 -> 104 (file-earlier = wins)
+
+--- pass 2: reorder [Essentials] ---
+  The Timelost Dwemer SE - ESSENTIALS PATCHER | parent Essentials | depth 1 | file index 11 -> 4 (file-earlier = wins)
+  Essentials | parent <none> | depth 0 | file index 4 -> 5 (file-earlier = wins)
+  Clean Masters | parent <none> | depth 0 | file index 5 -> 6 (file-earlier = wins)
+  Skyrim AE - Resources | parent <none> | depth 0 | file index 6 -> 7 (file-earlier = wins)
+  Creation Club Scripts | parent <none> | depth 0 | file index 7 -> 8 (file-earlier = wins)
+  AE Patch | parent <none> | depth 0 | file index 8 -> 9 (file-earlier = wins)
+  AE Masters | parent <none> | depth 0 | file index 9 -> 10 (file-earlier = wins)
+  Security Overhaul SKSEVR - Lock Variations VR | parent <none> | depth 0 | file index 10 -> 11 (file-earlier = wins)
+
+--- pass 3: promote rules ---
+  [Extension Frameworks - Extended Functionality] PapyrusUtil VR - Scripting Utility Functions@33 vs PapyrusUtil SE - Modders Scripting Utility Functions@34 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] SkyPatcher - VR@3 vs SkyPatcher - AE@4 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] powerofthree's Tweaks VR@50 vs powerofthree's Tweaks@51 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] Base Object Swapper VR@70 vs Base Object Swapper@91 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] AnimObject Swapper VR@20 vs AnimObject Swapper@21 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] FISSES DLL for VR@49 vs FileAccess Interface for Skyrim SE Scripts - FISSES@95 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] Scaleform Translation Plus Plus VR@30 vs Scaleform Translation Plus Plus NG@31 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] Better Combat Escape - NG@56 vs Better Combat Escape - SSE@57 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] Spell Perk Item Distributor (SPID) VR@92 vs Spell Perk Item Distributor@93 (file-earlier wins): already correct
+  [Interface - Menus] MCM Helper VR@30 vs MCM Helper@31 (file-earlier wins): already correct
+  [Interface - Menus] UIExtensions VR@33 vs UIExtensions@34 (file-earlier wins): already correct
+  [Interface - Menus] SkyUI - VR@21 vs SkyUI@28 (file-earlier wins): already correct
+  [Character Creation] RaceMenu VR@7 vs RaceMenu Anniversary Edition@8 (file-earlier wins): already correct
+  [Extension Frameworks - Extended Functionality] Papyrus Extender VR@47 vs powerofthree's Papyrus Extender@48 (file-earlier wins): already correct
+  [ENB] ENB Helper VR@9 vs ENB Helper SE@10 (file-earlier wins): already correct
+  [Soul Trap Management Overhauls] YASTM - Yet Another Soul Trap Manager VR@4 vs YASTM - Yet Another Soul Trap Manager@5 (file-earlier wins): already correct
+
+--- pass 3b: sink rules ---
+  [Glaciers, Ice, Snow and Ash] Glacierslab SSE@25 of 26: SINK to section top (ui)
+  [Glaciers, Ice, Snow and Ash] Multilayer Glacier Replacer@25 of 26: SINK to section top (ui)

@@ -211,9 +211,6 @@
 +Default Female at Character Creation
 +Dramatic Main Menu
 +Decorator Helper
-+EEKs Whiterun Interiors SSE
--EEKs Whiterun Interiors - Lux and Embers XD Conflict Resolution
-+Realm of Lorkhan - Forgotten Shrines
 +Buy Lumber In Larger Stacks
 +Go On Ahead
 +Insects Begone REDUX
@@ -226,7 +223,6 @@
 -QuickLight - Real floating Candle replacer
 -Terrain Helper
 -Paraphernalia - Anti-Flicker
-+Soul Gem Universal Sorting - SkyPatcher
 +Fuz Ro D-oh - Silent Voice
 +Core Impact Framework (CIF)
 +Disk Cache Enabler
@@ -267,6 +263,7 @@
 -Unofficial Skyrim Modders Patch Emporium_separator
 -Kryptopyr’s Patch Hub Collection_separator
 +Fixed Texture Paths for Small Things in EEK's Whiterun Interiors
++EEKs Whiterun Interiors SSE
 -Special Load After Lighting Mods_separator
 -Cursed Crypts - MLO2 RELight Addon
 +Emberveil Lighting - A Cinematic ReLight Preset
@@ -275,6 +272,7 @@
 -CS Light
 +Lux Variants
 +Meridia's Luxon Beacon Replacer
+-EEKs Whiterun Interiors - Lux and Embers XD Conflict Resolution
 -Lux (Lighting)_separator
 +Eld-beri II - NPC Support (Spid Distribution file)
 +Quick Beri - Wearable particle light lanterns SPIDified (CS and ENB)
@@ -291,6 +289,7 @@
 -Realm of Lorkhan - Freeform Alternate Start
 -Alternate Perspective 4.0.3 - Alternate Start
 -Alternate Perspective - Alternate Start
++Realm of Lorkhan - Forgotten Shrines
 -Alternate Start_separator
 +Ryn's Standing Stones
 +Crowded Streets
@@ -676,6 +675,7 @@
 +No more glitchy textures. Witcher Horse Expansion compatibility patches (ENG)
 +Witcher Horse Expansion
 +Steeds of Ultima - VR Mounted combat
++Stamina of Steeds
 -Horses_separator
 +Majestic Dragons - Larger and immersive proportions
 +RedBag's Dragonsreach - GoT The Black Dread Skull Replacer Patch
@@ -812,6 +812,7 @@
 -Ya Filthy Animal_separator
 +Mu Joint Fix
 +XP32 First Person Skeleton CTD Bugfix for VR
++no me molestes - xpmse and planck pelvis forcefield fix (DJT VR)
 -Skele Stuff_separator
 +Children of the Hist - An Argonian NPC Overhaul
 +Better Argonian Horns
@@ -1334,8 +1335,8 @@
 +JS Bloodstone Chalice SE
 +Metallurgy - Ingots Ore and Veins HD
 +Rudy HQ - Miscellaneous SE
--Clutter & Miscellaneous_separator
 +HFs - Cast iron pots
+-Clutter & Miscellaneous_separator
 -Cooking, Food, and Beverages_separator
 +Improved Dwemer Glass
 +JS Dwemer Puzzle Cube SE
@@ -1606,6 +1607,7 @@
 +Immersive Sounds - Compendium
 +Audio Overhaul for Skyrim (4.1.2)
 -Patches for Water for ENB - Acoustic Space Improvement Fixes - Lighting Overhauls
++Acoustic Space Improvement Fixes - SkyPatcher
 +Acoustic Space Improvement Fixes
 +Auto Audio Switch
 -Heels - Sound Record Distributor (SRD) - Patch Hub
@@ -2016,27 +2018,24 @@
 +NPC AI Process Position Fix - NG
 +Recursion Monitor
 +Actor Limit Fix
-+Acoustic Space Improvement Fixes - SkyPatcher
 +Eye Adaptation Fix for SE and VR
-+Stamina of Steeds
-+no me molestes - xpmse and planck pelvis forcefield fix (DJT VR)
+-Unofficial Skyrim Special Edition Patch - USSEP
++Essential Bug Fixes_separator
+-Unofficial Skyrim Creation Club Content Patches
++Skyrim VR USSEP Dwarven Ballista missing texture fix
 -Unofficial Skyrim Modder's Patch - USMP SE (Only for AE Import)
 -Unofficial Skyrim Modder's Patch - USMP SE
 +Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b)
--Unofficial Skyrim Special Edition Patch - USSEP
 -Unofficial Skyrim Special Edition Patch (FOR IMPORTED AE CONTENT)
 -Unofficial Skyrim Special Edition Patch
 +Unofficial Skyrim Modder's Patch - For VR Users (4.2.5b USSEP)
 -USSEP Nemesis Patch
-+A-Pose Bug Fix - Universal Behavior Runtime
-+Animation Queue Fix
-+Animation Motion Fix
-+Essential Bug Fixes_separator
--Unofficial Skyrim Creation Club Content Patches
-+Skyrim VR USSEP Dwarven Ballista missing texture fix
 +Fixes & Resources - Unofficial Patches_separator
 +Payload Interpreter
 +Pandora Behaviour Engine Plus
++A-Pose Bug Fix - Universal Behavior Runtime
++Animation Queue Fix
++Animation Motion Fix
 +Extension Frameworks - Animation & Behavior Engine_separator
 +SkyPatcher - Smaller Dogs
 -Pelagius's Wildlife AI - Skypatcher
@@ -2083,6 +2082,7 @@
 +Base Object Swapper
 +Spell Perk Item Distributor (SPID) VR
 +Spell Perk Item Distributor
++Soul Gem Universal Sorting - SkyPatcher
 +Extension Frameworks - Extended Functionality_separator
 +Faster Cell Lookup
 +Mum's the Word NG

@@ -91,6 +91,7 @@ conflict index: 1564 related pair(s) loaded
   ACMOS Road Generator | cat none | T4 no rule, category, or keyword matched | stay
   Grass Density INI - Quality | cat none | T4 no rule, category, or keyword matched | stay
   Grass Density INI - Performance | cat none | T4 no rule, category, or keyword matched | stay
+  JKs Ragged Flagon Water Fix | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Likeness | cat none | T4 no rule, category, or keyword matched | stay
   Dynamic Body Distribution - DBD | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Glowmapped 3D Lava | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -176,26 +177,6 @@ conflict index: 1564 related pair(s) loaded
   Save Unbaker VR | cat #13 "Utilities" | family: follows master [Save Unbaker] | stay
   Save Unbaker | cat #13 "Utilities" | T2 category==separator [Utilities] | stay
   Open Animation Replacer | cat #13 "Utilities" | T2 category==separator [Utilities] | stay
-  SkyPatcher Keyword Framework | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  SkyPatcher - VR | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  SkyPatcher - AE | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  AnimObject Swapper VR | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  AnimObject Swapper | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Object Categorization Framework | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Game Settings Override | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Behavior Data Injector Universal Support | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Behavior Data Injector | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Skyrim Platform - A TypeScript SDK for Skyrim | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  FormList Manipulator - FLM | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Container Item Distributor | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Base Object Swapper VR | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Base Object Swapper | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Spell Perk Item Distributor (SPID) VR | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  Spell Perk Item Distributor | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Extended Functionality]
-  SSE Display Tweaks | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Engines Patches]
-  Skyrim Priority SE AE - CPU Performance FPS Optimizer (SET AFFINITY WITH PLUGIN) | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Engines Patches]
-  Faster File Copy | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Engines Patches]
-  Keyword Item Distributor | cat #13 "Utilities" | T1 exact name rule | MOVE -> [Extension Frameworks - Engines Patches]
   Upgraded Fish for Distinct Interiors | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Upgraded Silverware for Distinct Interiors | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Upgraded Food Barrels for Distinct Interiors | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -216,6 +197,27 @@ conflict index: 1564 related pair(s) loaded
   EmbersXD - Campfire Patch | cat none | T4 no rule, category, or keyword matched | stay
   Parallax Mesh Patch Collection | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   FYX 3D Stockades - Compatibility Tweaks | cat none | T4 no rule, category, or keyword matched | stay
+  Default Female at Character Creation | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Dramatic Main Menu | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Decorator Helper | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Buy Lumber In Larger Stacks | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Go On Ahead | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Insects Begone REDUX | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Books of Skyrim SE | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Thrones of Skyrim | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Thrones Expanded | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Understone Keep Swept | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Skeleton Key is a Key SE | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Apachii Divine Elegance Store | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  QuickLight - Real floating Candle replacer | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Terrain Helper | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Paraphernalia - Anti-Flicker | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Fuz Ro D-oh - Silent Voice | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Core Impact Framework (CIF) | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Disk Cache Enabler | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Crash Logger SSE AE VR - PDB support | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  SkyrimVR PDB | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
+  Survival Mode - Disable Permanently | cat #7 "Miscellaneous" | T4 no rule, category, or keyword matched | stay
   JKs Guild HQ Interiors Patch Collection | cat none | T4 no rule, category, or keyword matched | stay
   Distinct Interiors for Cities of the North | cat none | T4 no rule, category, or keyword matched | stay
   Unofficial Skyrim Modders Patch - USMP - Patch Emporium | cat none | T4 no rule, category, or keyword matched | stay
@@ -246,6 +248,7 @@ conflict index: 1564 related pair(s) loaded
   FileAccess Interface for Skyrim SE Scripts - FISSES | cat #32 "Modders Resources" | T2 category~separator fuzzy [Modders Resources] shared=modders | stay
   PAPER | cat #32 "Modders Resources" | T2 category~separator fuzzy [Modders Resources] shared=modders | stay
   Fixed Texture Paths for Small Things in EEK's Whiterun Interiors | cat #8 "Models and Textures" | T1 exact name rule | stay
+  EEKs Whiterun Interiors SSE | cat #7 "Miscellaneous" | T3 keyword [eeks] | stay
   Cursed Crypts - MLO2 RELight Addon | cat #26 "Environmental" | T1 exact name rule | stay
   Emberveil Lighting - A Cinematic ReLight Preset | cat none | T1 exact name rule | stay
   RELight - Official Light Addon | cat #22 "Visuals and Graphics" | T1 exact name rule | stay
@@ -253,6 +256,7 @@ conflict index: 1564 related pair(s) loaded
   CS Light | cat none | T4 no rule, category, or keyword matched | stay
   Lux Variants | cat none | T3 keyword [lux] | stay
   Meridia's Luxon Beacon Replacer | cat #8 "Models and Textures" | T3 keyword [lux] | stay
+  EEKs Whiterun Interiors - Lux and Embers XD Conflict Resolution | cat #7 "Miscellaneous" | T3 keyword [lux] | stay
   Eld-beri II - NPC Support (Spid Distribution file) | cat none | T1 exact name rule | stay
   Quick Beri - Wearable particle light lanterns SPIDified (CS and ENB) | cat #21 "Clothing and Accessories" | T1 exact name rule | stay
   Spider Webs and Particles for ENB | cat #8 "Models and Textures" | T1 exact name rule | stay
@@ -267,6 +271,7 @@ conflict index: 1564 related pair(s) loaded
   Realm of Lorkhan - Freeform Alternate Start | cat none | T3 keyword [realm of lorkhan] | stay
   Alternate Perspective 4.0.3 - Alternate Start | cat none | T3 keyword [alternate perspective] | stay
   Alternate Perspective - Alternate Start | cat none | T3 keyword [alternate perspective] | stay
+  Realm of Lorkhan - Forgotten Shrines | cat #7 "Miscellaneous" | T1 exact name rule | stay
   Ryn's Standing Stones | cat #30 "Immersion" | T2 category~separator fuzzy [Immersion] shared=immersion | stay
   Crowded Streets | cat #30 "Immersion" | T2 category~separator fuzzy [Immersion] shared=immersion | stay
   Jaxonz Positioner Converter Remastered | cat #30 "Immersion" | T2 category~separator fuzzy [Immersion] shared=immersion | stay
@@ -430,7 +435,6 @@ conflict index: 1564 related pair(s) loaded
   Miscellaneous Embers XD Patches | cat none | T4 no rule, category, or keyword matched | stay
   Bathtubs Basins and Beyond | cat none | T4 no rule, category, or keyword matched | stay
   Bathing in Skyrim - Renewed | cat none | T4 no rule, category, or keyword matched | stay
-  Acoustic Space Improvement Fixes - SkyPatcher | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
   JS Dragon Claws - Patches | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Soulgem Stand Redone | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Crystalline Soul Gems | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -633,6 +637,7 @@ conflict index: 1564 related pair(s) loaded
   No more glitchy textures. Witcher Horse Expansion compatibility patches (ENG) | cat #34 "Patches" | family: follows master [Witcher Horse Expansion] | stay
   Witcher Horse Expansion | cat #33 "Creatures and Mounts" | T4 no rule, category, or keyword matched | stay
   Steeds of Ultima - VR Mounted combat | cat #48 "VR" | T4 no rule, category, or keyword matched | stay
+  Stamina of Steeds | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Majestic Dragons - Larger and immersive proportions | cat #33 "Creatures and Mounts" | T4 no rule, category, or keyword matched | stay
   RedBag's Dragonsreach - GoT The Black Dread Skull Replacer Patch | cat #34 "Patches" | family: follows master [GoT The Black Dread Skull Replacer] | stay
   GoT The Black Dread Skull Replacer | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -761,6 +766,7 @@ conflict index: 1564 related pair(s) loaded
   SexLab Framework SE | cat none | T3 keyword [sexlab] | stay
   Mu Joint Fix | cat none | T4 no rule, category, or keyword matched | stay
   XP32 First Person Skeleton CTD Bugfix for VR | cat none | T4 no rule, category, or keyword matched | stay
+  no me molestes - xpmse and planck pelvis forcefield fix (DJT VR) | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Children of the Hist - An Argonian NPC Overhaul | cat none | T4 no rule, category, or keyword matched | stay
   Better Argonian Horns | cat none | T4 no rule, category, or keyword matched | stay
   Khajiit Fluffy Fur Body HIMBO and 3BA | cat none | T1 exact name rule | stay
@@ -933,6 +939,13 @@ conflict index: 1564 related pair(s) loaded
   Roosters- Mihail Monsters and Animals (SE-AE version) (''chicken'') | cat #33 "Creatures and Mounts" | T3 keyword [mihail] | stay
   Creatures Resized for VR - SE | cat #33 "Creatures and Mounts" | T4 no rule, category, or keyword matched | stay
   Chickens and Chicks - My optimized textures SE by Xtudo | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
+  Festival Flags Upscaled | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
+  A Festive Christmas - SSE Conversion | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
+  Holidays Cathedral Wreath | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
+  Unique Festival Ropes HQ Texture Pack | cat none | T4 no rule, category, or keyword matched | stay
+  Unique Festival Ropes | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
+  Holidays | cat none | T4 no rule, category, or keyword matched | stay
+  No More Hay Beds SSE | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Kanjs - Books AIO Animated (SkyPatched) | cat none | T4 no rule, category, or keyword matched | stay
   TB's Better Plaster - A 4K Retexture | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   SSE Thieves Guild Overhaul w General Stores | cat none | T4 no rule, category, or keyword matched | stay
@@ -1148,7 +1161,6 @@ conflict index: 1564 related pair(s) loaded
   Cathedral - Armory | cat #12 "Weapons and Armour" | T2 category~separator fuzzy [Weapons and Armour] shared=weapons+armour | stay
   SOS V2.0 - SE by Xtudo - Smaller Shields | cat #12 "Weapons and Armour" | T2 category~separator fuzzy [Weapons and Armour] shared=weapons+armour | stay
   Better Skyforge SE | cat #12 "Weapons and Armour" | T2 category~separator fuzzy [Weapons and Armour] shared=weapons+armour | stay
-  Default Female at Character Creation | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
   Angel And Fallen Race 3.0 (The Old Dragons) | cat #10 "Races, Classes, and Birthsigns" | T2 category~separator fuzzy [Races, Classes, and Birthsigns] shared=races | stay
   Aedra Race - Powers Once Lost | cat #10 "Races, Classes, and Birthsigns" | T2 category~separator fuzzy [Races, Classes, and Birthsigns] shared=races | stay
   Race Compatibility Dialogue SSE | cat #10 "Races, Classes, and Birthsigns" | T2 category~separator fuzzy [Races, Classes, and Birthsigns] shared=races | stay
@@ -1183,7 +1195,6 @@ conflict index: 1564 related pair(s) loaded
   Olenveld | cat #37 "Locations -  New" | T2 category~separator fuzzy [Locations -  New] shared=locations | stay
   Underwater Skyrim- Rivers and Lakes | cat #37 "Locations -  New" | T2 category~separator fuzzy [Locations -  New] shared=locations | stay
   Journey to Baan Malur and Morrowind | cat #37 "Locations -  New" | T2 category~separator fuzzy [Locations -  New] shared=locations | stay
-  JKs Ragged Flagon Water Fix | cat #42 "Bug Fixes" | T1 exact name rule | MOVE -> [Conflict Resolution]
   Green Water Cubemap Fix GSO | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Green Water Cubemap Fix | cat #42 "Bug Fixes" | T1 exact name rule | stay
   TB's Better Foam | cat none | T4 no rule, category, or keyword matched | stay
@@ -1194,16 +1205,8 @@ conflict index: 1564 related pair(s) loaded
   Skyrim Landscape and Water Fixes | cat none | T4 no rule, category, or keyword matched | stay
   A Clear Map Of Skyrim - Water for ENB Patch | cat #34 "Patches" | family: follows master [Water for ENB] | stay
   Water for ENB | cat none | T1 exact name rule | stay
-  Festival Flags Upscaled | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
-  A Festive Christmas - SSE Conversion | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
-  Holidays Cathedral Wreath | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
-  Unique Festival Ropes HQ Texture Pack | cat none | T4 no rule, category, or keyword matched | stay
-  Unique Festival Ropes | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Rally's Barsets | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   ladder 3d immersion vanilla style | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
-  Holidays | cat none | T4 no rule, category, or keyword matched | stay
-  No Grass In Objects | cat none | T1 exact name rule | MOVE -> [Grass]
-  No More Hay Beds SSE | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   ElSopa HD - Unique Hand Painted Road Signs SE | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   WiZkiD Signs | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   RUSTIC CLUTTER COLLECTION - Special Edition | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -1214,7 +1217,6 @@ conflict index: 1564 related pair(s) loaded
   Archery Target Retexture 2k and 4k added | cat none | T4 no rule, category, or keyword matched | stay
   Snazzy Wall Mounted Trophies - DTA Patch | cat #8 "Models and Textures" | T3 keyword [wall mounted] | stay
   Alternate Banners and Uniforms for Phenderix Magic World - Manantis | cat #8 "Models and Textures" | T3 keyword [banners] | stay
-  HFs - Cast iron pots | cat #8 "Models and Textures" | T3 keyword [cast iron] | stay
   Golden Claw - Dynamic Cubemapped | cat #8 "Models and Textures" | T1 exact name rule | stay
   Praedy's Azura's Star and Realm - SE | cat #8 "Models and Textures" | T1 exact name rule | stay
   Rally's Handcarts | cat #8 "Models and Textures" | T3 keyword [handcarts] | stay
@@ -1242,27 +1244,7 @@ conflict index: 1564 related pair(s) loaded
   JS Bloodstone Chalice SE | cat #8 "Models and Textures" | T3 keyword [bloodstone chalice] | stay
   Metallurgy - Ingots Ore and Veins HD | cat #8 "Models and Textures" | T3 keyword [metallurgy] | stay
   Rudy HQ - Miscellaneous SE | cat none | T1 exact name rule | stay
-  Dramatic Main Menu | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Decorator Helper | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  EEKs Whiterun Interiors SSE | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  EEKs Whiterun Interiors - Lux and Embers XD Conflict Resolution | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Realm of Lorkhan - Forgotten Shrines | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Buy Lumber In Larger Stacks | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Go On Ahead | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Insects Begone REDUX | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Books of Skyrim SE | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Thrones of Skyrim | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Thrones Expanded | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Understone Keep Swept | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Skeleton Key is a Key SE | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Apachii Divine Elegance Store | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  QuickLight - Real floating Candle replacer | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Terrain Helper | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Paraphernalia - Anti-Flicker | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Soul Gem Universal Sorting - SkyPatcher | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Fuz Ro D-oh - Silent Voice | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Core Impact Framework (CIF) | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  Disk Cache Enabler | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
+  HFs - Cast iron pots | cat #8 "Models and Textures" | T3 keyword [cast iron] | stay
   Improved Dwemer Glass | cat #8 "Models and Textures" | T3 keyword [dwemer] | stay
   JS Dwemer Puzzle Cube SE | cat #8 "Models and Textures" | T3 keyword [dwemer] | stay
   JS Dwemer Kitchenware SE | cat #8 "Models and Textures" | T3 keyword [dwemer] | stay
@@ -1360,6 +1342,7 @@ conflict index: 1564 related pair(s) loaded
   Fall Forest And Yellow Shrubs Redone | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Skyrim Flora Overhaul SE | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Cathedral - 3D Deathbell | cat none | T4 no rule, category, or keyword matched | stay
+  Cathedral - 3D Pine Grass | cat #26 "Environmental" | T1 exact name rule | stay
   Rally's Hanging Moss | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   TB's 8K Parallax Driftwood | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Cathedral - Mushrooms | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -1446,10 +1429,6 @@ conflict index: 1564 related pair(s) loaded
   Cathedral - 3D Nightshade | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
   GKB Waves Reborn | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
   Cathedral - Water Overhaul and Bug Fixes | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
-  QW's Grass Patch 2 - Origins of Forest - Cathedral - Folkvangr | cat #26 "Environmental" | T1 exact name rule | MOVE -> [Grass]
-  No Grassias - A Universal Grass Fix For Grass Mods | cat #26 "Environmental" | T1 exact name rule | MOVE -> [Grass]
-  Origins Of Forest - 3D Forest Grass | cat #26 "Environmental" | T1 exact name rule | MOVE -> [Grass]
-  Cathedral - 3D Pine Grass | cat #26 "Environmental" | T1 exact name rule | MOVE -> [Cathedral 3D Flowers Cluster]
   RUDL - Removing Unpleasant Details from Logs | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
   Sepolcri - A complete Burial Sites overhaul | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
   Fabled Forests - Arboreal Ascension Pines Mixed Patch | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
@@ -1484,6 +1463,10 @@ conflict index: 1564 related pair(s) loaded
   Mists of Tamriel - Blue Haze | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
   Mists of Tamriel | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
   Blended Roads less bumpiness - Base Object Swapper | cat #26 "Environmental" | T2 @category rule [Environmental] | stay
+  No Grass In Objects | cat none | T1 exact name rule | stay
+  QW's Grass Patch 2 - Origins of Forest - Cathedral - Folkvangr | cat #26 "Environmental" | T1 exact name rule | stay
+  No Grassias - A Universal Grass Fix For Grass Mods | cat #26 "Environmental" | T1 exact name rule | stay
+  Origins Of Forest - 3D Forest Grass | cat #26 "Environmental" | T1 exact name rule | stay
   ETHEREAL CLOUDS - Special Edition | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   Rally's Celestial Canvas | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   E.C.D. Every Cloud Different NAT Add On | cat none | T4 no rule, category, or keyword matched | stay
@@ -1515,6 +1498,7 @@ conflict index: 1564 related pair(s) loaded
   Immersive Sounds - Compendium | cat #49 "Audio" | T1 exact name rule | stay
   Audio Overhaul for Skyrim (4.1.2) | cat #49 "Audio" | T1 exact name rule | stay
   Patches for Water for ENB - Acoustic Space Improvement Fixes - Lighting Overhauls | cat none | T4 no rule, category, or keyword matched | stay
+  Acoustic Space Improvement Fixes - SkyPatcher | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Acoustic Space Improvement Fixes | cat #49 "Audio" | T1 exact name rule | stay
   Auto Audio Switch | cat #49 "Audio" | T1 exact name rule | stay
   Heels - Sound Record Distributor (SRD) - Patch Hub | cat none | T4 no rule, category, or keyword matched | stay
@@ -1750,9 +1734,6 @@ conflict index: 1564 related pair(s) loaded
   Modex - A Mod Explorer Menu (AddItemMenu) | cat none | T4 no rule, category, or keyword matched | stay
   Better Main Menu for VR | cat #48 "VR" | T4 no rule, category, or keyword matched | stay
   ConsoleUtilVR | cat #48 "VR" | T3 keyword [consoleutil] | stay
-  Eye Adaptation Fix for SE and VR | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  Stamina of Steeds | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  no me molestes - xpmse and planck pelvis forcefield fix (DJT VR) | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
   Regional Save Names VR | cat none | T4 no rule, category, or keyword matched | stay
   Grab And Throw | cat none | T4 no rule, category, or keyword matched | stay
   Weapon Throw VR | cat #48 "VR" | T4 no rule, category, or keyword matched | stay
@@ -1785,8 +1766,6 @@ conflict index: 1564 related pair(s) loaded
   SMIM Fix | cat none | T4 no rule, category, or keyword matched | stay
   OSHA-Compliant Sovengarde Mesh Fixes - Parallax | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
   OSHA-Compliant Sovengarde Mesh Fixes | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
-  Crash Logger SSE AE VR - PDB support | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
-  SkyrimVR PDB | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
   Rock Traps Trigger Fixes (FOMOD MAY NEED TO REPATCH) | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
   Creation Club Asset Patch | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
   DPI Scaling Fix | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
@@ -1913,21 +1892,22 @@ conflict index: 1564 related pair(s) loaded
   NPC AI Process Position Fix - NG | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
   Recursion Monitor | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
   Actor Limit Fix | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
-  Unofficial Skyrim Modder's Patch - USMP SE (Only for AE Import) | cat none | family: follows master [Unofficial Skyrim Modder's Patch - USMP SE] | MOVE -> [Essential Bug Fixes]
-  Unofficial Skyrim Modder's Patch - USMP SE | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b) | cat none | family: follows master [Unofficial Skyrim Special Edition Patch - USSEP] | MOVE -> [Essential Bug Fixes]
-  Unofficial Skyrim Special Edition Patch - USSEP | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  Unofficial Skyrim Special Edition Patch (FOR IMPORTED AE CONTENT) | cat none | family: follows master [Unofficial Skyrim Special Edition Patch] | MOVE -> [Essential Bug Fixes]
-  Unofficial Skyrim Special Edition Patch | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  Unofficial Skyrim Modder's Patch - For VR Users (4.2.5b USSEP) | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
+  Eye Adaptation Fix for SE and VR | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
+  Unofficial Skyrim Special Edition Patch - USSEP | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | stay
   Unofficial Skyrim Creation Club Content Patches | cat none | T4 no rule, category, or keyword matched | stay
   Skyrim VR USSEP Dwarven Ballista missing texture fix | cat #48 "VR" | T3 keyword [ussep] | stay
-  USSEP Nemesis Patch | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  A-Pose Bug Fix - Universal Behavior Runtime | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  Animation Queue Fix | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
-  Animation Motion Fix | cat #42 "Bug Fixes" | T2 @category rule [Bug Fixes] | MOVE -> [Essential Bug Fixes]
+  Unofficial Skyrim Modder's Patch - USMP SE (Only for AE Import) | cat none | T1 exact name rule | stay
+  Unofficial Skyrim Modder's Patch - USMP SE | cat #42 "Bug Fixes" | T1 exact name rule | stay
+  Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b) | cat none | T1 exact name rule | stay
+  Unofficial Skyrim Special Edition Patch (FOR IMPORTED AE CONTENT) | cat none | T1 exact name rule | stay
+  Unofficial Skyrim Special Edition Patch | cat #42 "Bug Fixes" | T1 exact name rule | stay
+  Unofficial Skyrim Modder's Patch - For VR Users (4.2.5b USSEP) | cat #42 "Bug Fixes" | T1 exact name rule | stay
+  USSEP Nemesis Patch | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Payload Interpreter | cat none | T4 no rule, category, or keyword matched | stay
   Pandora Behaviour Engine Plus | cat none | T3 keyword [pandora] | stay
+  A-Pose Bug Fix - Universal Behavior Runtime | cat #42 "Bug Fixes" | T1 exact name rule | stay
+  Animation Queue Fix | cat #42 "Bug Fixes" | T1 exact name rule | stay
+  Animation Motion Fix | cat #42 "Bug Fixes" | T1 exact name rule | stay
   SkyPatcher - Smaller Dogs | cat #33 "Creatures and Mounts" | T3 keyword [skypatcher] | stay
   Pelagius's Wildlife AI - Skypatcher | cat #33 "Creatures and Mounts" | T3 keyword [skypatcher] | stay
   PapyrusUtil ESL Patch | cat #48 "VR" | T3 keyword [papyrus] | stay
@@ -1942,24 +1922,45 @@ conflict index: 1564 related pair(s) loaded
   Debug Menu - In-Game Navmesh Viewer and More | cat none | T4 no rule, category, or keyword matched | stay
   SKSE Menu Framework | cat none | T4 no rule, category, or keyword matched | stay
   Model Swapper | cat #8 "Models and Textures" | T4 no rule, category, or keyword matched | stay
-  Orcish Lanterns for Orc Strongholds by Jjerem - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
-  Dynamic Things Alternative - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
-  Blacksmith Forge and Anvil Variants - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
-  Sconces of Solitude - Unique Solitude Braziers - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
-  Snazzy Wall Mounted Trophies - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
-  Diverse Archery Targets - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
   Diverse Dog Textures - SPID | cat #8 "Models and Textures" | T3 keyword [spid] | stay
   Arachnophobia - Spiders are Wolves - Chaurus are Bears - No Cobwebs or Eggs | cat none | T3 keyword [spid] | stay
   Fancy Mihail's Roosters SPID or Replacer | cat #8 "Models and Textures" | T3 keyword [spid] | stay
   Better Dressed Kids - Willybach Textures SPID | cat none | T3 keyword [spid] | stay
   Frostbite Spider UV Fix | cat #8 "Models and Textures" | T3 keyword [spid] | stay
   Schlongs of Skyrim - PapyrusUtil SexLab Tweaks | cat none | T3 keyword [papyrus] | stay
+  SkyPatcher Keyword Framework | cat #13 "Utilities" | T1 exact name rule | stay
+  SkyPatcher - VR | cat #13 "Utilities" | T1 exact name rule | stay
+  SkyPatcher - AE | cat #13 "Utilities" | T1 exact name rule | stay
+  AnimObject Swapper VR | cat #13 "Utilities" | T1 exact name rule | stay
+  AnimObject Swapper | cat #13 "Utilities" | T1 exact name rule | stay
+  Object Categorization Framework | cat #13 "Utilities" | T1 exact name rule | stay
+  Game Settings Override | cat #13 "Utilities" | T1 exact name rule | stay
+  Behavior Data Injector Universal Support | cat #13 "Utilities" | T1 exact name rule | stay
+  Behavior Data Injector | cat #13 "Utilities" | T1 exact name rule | stay
+  Skyrim Platform - A TypeScript SDK for Skyrim | cat #13 "Utilities" | T1 exact name rule | stay
+  FormList Manipulator - FLM | cat #13 "Utilities" | T1 exact name rule | stay
+  Container Item Distributor | cat #13 "Utilities" | T1 exact name rule | stay
+  Orcish Lanterns for Orc Strongholds by Jjerem - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
+  Dynamic Things Alternative - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Blacksmith Forge and Anvil Variants - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
+  Sconces of Solitude - Unique Solitude Braziers - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
+  Snazzy Wall Mounted Trophies - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
+  Diverse Archery Targets - Base Object Swapper | cat none | T3 keyword [base object swapper] | stay
   Smaller Goblets Cups and Jugs - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
   Dovahnique's Diverse Vendor Carts - Base Object Swapper | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
   Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim | cat #8 "Models and Textures" | T3 keyword [base object swapper] | stay
+  Base Object Swapper VR | cat #13 "Utilities" | T1 exact name rule | stay
+  Base Object Swapper | cat #13 "Utilities" | T1 exact name rule | stay
+  Spell Perk Item Distributor (SPID) VR | cat #13 "Utilities" | T1 exact name rule | stay
+  Spell Perk Item Distributor | cat #13 "Utilities" | T1 exact name rule | stay
+  Soul Gem Universal Sorting - SkyPatcher | cat #7 "Miscellaneous" | T3 keyword [skypatcher] | stay
   Faster Cell Lookup | cat none | T4 no rule, category, or keyword matched | stay
   Mum's the Word NG | cat #28 "Stealth" | T4 no rule, category, or keyword matched | stay
   SSE Engine Fixes (skse64 plugin) part 1 | cat none | T4 no rule, category, or keyword matched | stay
+  SSE Display Tweaks | cat #13 "Utilities" | T1 exact name rule | stay
+  Skyrim Priority SE AE - CPU Performance FPS Optimizer (SET AFFINITY WITH PLUGIN) | cat #13 "Utilities" | T1 exact name rule | stay
+  Faster File Copy | cat #13 "Utilities" | T1 exact name rule | stay
+  Keyword Item Distributor | cat #13 "Utilities" | T1 exact name rule | stay
   Skyrim HD SE | cat none | T4 no rule, category, or keyword matched | stay
   .1130 _ResourcePack fixes | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Engine Fixes VR part 1 | cat #48 "VR" | T3 keyword [engine fixes vr] | stay
@@ -2050,16 +2051,15 @@ conflict index: 1564 related pair(s) loaded
   Creation Club - Alternative Armors - Daedric Plate | cat none | T4 no rule, category, or keyword matched | stay
   Creation Club - Alternative Armors - Daedric Mail | cat none | T4 no rule, category, or keyword matched | stay
   Creation Club - Adventurer's Backpack | cat none | T4 no rule, category, or keyword matched | stay
-  Survival Mode - Disable Permanently | cat #7 "Miscellaneous" | T2 category~separator fuzzy [Miscellaneous] shared=miscellaneous | MOVE -> [Miscellaneous Compatibility Patches]
   Creation Club - Survival Mode | cat none | T4 no rule, category, or keyword matched | stay
   Creation Club - Saints & Seducers | cat none | T4 no rule, category, or keyword matched | stay
   Creation Club (Rare Curios) - Poison Apple texture swap fix | cat none | T4 no rule, category, or keyword matched | stay
   Creation Club - Rare Curios | cat none | T4 no rule, category, or keyword matched | stay
   Creation Club - Fishing | cat none | T4 no rule, category, or keyword matched | stay
   CK Platform Extended 0.6-b550 | cat none | T4 no rule, category, or keyword matched | stay
+  CK64Fixes Release 3.2 | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Unofficial Creation Kit Patch | cat none | T4 no rule, category, or keyword matched | stay
   SSE Creation Kit Fonixdata Lip Sync Fix | cat #32 "Modders Resources" | family: follows master [Creation Kit] | stay
-  CK64Fixes Release 3.2 | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Creation Kit Platform Extended for Skyrim | cat #42 "Bug Fixes" | T1 exact name rule | stay
   Creation Kit (VR) | cat none | T4 no rule, category, or keyword matched | stay
   Creation Kit (AE) | cat none | T4 no rule, category, or keyword matched | stay
@@ -2077,46 +2077,13 @@ conflict index: 1564 related pair(s) loaded
   HotD Dragons-Textures | parent <none> | depth 0 | file index 11 -> 10 (file-earlier = wins)
   GoT Dragons Textures - Fixed Soul Absorb And Optimized | parent GoT Dragons-Textures | depth 1 | file index 5 -> 11 (file-earlier = wins)
 
---- pass 2: reorder [Extension Frameworks - Extended Functionality] ---
-  Diverse Dog Textures - SPID | parent <none> | depth 0 | file index 20 -> 14 (file-earlier = wins)
-  Arachnophobia - Spiders are Wolves - Chaurus are Bears - No Cobwebs or Eggs | parent <none> | depth 0 | file index 21 -> 15 (file-earlier = wins)
-  Fancy Mihail's Roosters SPID or Replacer | parent <none> | depth 0 | file index 22 -> 16 (file-earlier = wins)
-  Better Dressed Kids - Willybach Textures SPID | parent <none> | depth 0 | file index 23 -> 17 (file-earlier = wins)
-  Frostbite Spider UV Fix | parent <none> | depth 0 | file index 24 -> 18 (file-earlier = wins)
-  Schlongs of Skyrim - PapyrusUtil SexLab Tweaks | parent <none> | depth 0 | file index 25 -> 19 (file-earlier = wins)
-  SkyPatcher Keyword Framework | parent <none> | depth 0 | file index 29 -> 20 (file-earlier = wins)
-  SkyPatcher - VR | parent <none> | depth 0 | file index 30 -> 21 (file-earlier = wins)
-  SkyPatcher - AE | parent <none> | depth 0 | file index 31 -> 22 (file-earlier = wins)
-  AnimObject Swapper VR | parent AnimObject Swapper | depth 1 | file index 32 -> 23 (file-earlier = wins)
-  AnimObject Swapper | parent <none> | depth 0 | file index 33 -> 24 (file-earlier = wins)
-  Object Categorization Framework | parent <none> | depth 0 | file index 34 -> 25 (file-earlier = wins)
-  Game Settings Override | parent <none> | depth 0 | file index 35 -> 26 (file-earlier = wins)
-  Behavior Data Injector Universal Support | parent Behavior Data Injector | depth 1 | file index 36 -> 27 (file-earlier = wins)
-  Behavior Data Injector | parent <none> | depth 0 | file index 37 -> 28 (file-earlier = wins)
-  Skyrim Platform - A TypeScript SDK for Skyrim | parent <none> | depth 0 | file index 38 -> 29 (file-earlier = wins)
-  FormList Manipulator - FLM | parent <none> | depth 0 | file index 39 -> 30 (file-earlier = wins)
-  Container Item Distributor | parent <none> | depth 0 | file index 40 -> 31 (file-earlier = wins)
-  Orcish Lanterns for Orc Strongholds by Jjerem - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 14 -> 32 (file-earlier = wins)
-  Dynamic Things Alternative - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 15 -> 33 (file-earlier = wins)
-  Blacksmith Forge and Anvil Variants - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 16 -> 34 (file-earlier = wins)
-  Sconces of Solitude - Unique Solitude Braziers - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 17 -> 35 (file-earlier = wins)
-  Snazzy Wall Mounted Trophies - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 18 -> 36 (file-earlier = wins)
-  Diverse Archery Targets - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 19 -> 37 (file-earlier = wins)
-  Smaller Goblets Cups and Jugs - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 26 -> 38 (file-earlier = wins)
-  Dovahnique's Diverse Vendor Carts - Base Object Swapper | parent Base Object Swapper | depth 1 | file index 27 -> 39 (file-earlier = wins)
-  Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim | parent Base Object Swapper | depth 1 | file index 28 -> 40 (file-earlier = wins)
-
---- pass 2: reorder [Creation Kit (Uncheck when playing game)] ---
-  CK64Fixes Release 3.2 | parent <none> | depth 0 | file index 3 -> 1 (file-earlier = wins)
-  Unofficial Creation Kit Patch | parent Creation Kit | depth 1 | file index 1 -> 2 (file-earlier = wins)
-  SSE Creation Kit Fonixdata Lip Sync Fix | parent Creation Kit | depth 1 | file index 2 -> 3 (file-earlier = wins)
-
 --- pass 2.5: conflict-proven auto-fix ---
   [Open Composite - (Optional)] Open Composite - Main (No VR Keyboard) vs Open Composite - Main: 5 shared files -> patch must win
   [Consistency Patches] RedBag's Morthal Patches- FOMOD vs RedBag's Morthal - FOMOD: 10 shared files -> patch must win
   [ENB] Rudy ENB NAT ADDONS and REQUiRED Files vs NAT.ENB III - Natural and Atmospheric Tamriel ENB 3.1.1C: 4 shared files -> patch must win
   [ENB] NAT.ENB - ESP WEATHER PLUGIN v3.1.1C - Fixed vs NAT.ENB III - Natural and Atmospheric Tamriel ENB 3.1.1C: 67 shared files -> patch must win
   [Miscellaneous Compatibility Patches] Parallax Mesh Patch Collection vs FYX 3D Stockades - Compatibility Tweaks: 26 shared files -> patch must win
+  [Special Load After Lighting Mods] Fixed Texture Paths for Small Things in EEK's Whiterun Interiors vs EEKs Whiterun Interiors SSE: 3 shared files -> patch must win
   [Alternate Start] Alternate Perspective - Voiced Addon vs Alternate Perspective 4.0.3 - Alternate Start: 57 shared files -> patch must win
   [Gameplay] YASTM - Yet Another Soul Trap Manager VR vs YASTM - Yet Another Soul Trap Manager: 13 shared files -> patch must win
   [Gameplay] COtR - HQ Characters creation addon for RM vs BnP - COTR Teeth Overhaul: 3 shared files -> patch must win
@@ -2143,10 +2110,8 @@ conflict index: 1564 related pair(s) loaded
 --- pass 4: conflict audit ---
   AUDIT FAIL [Alternate Start] Alternate Perspective - Realm of Lorkhan Patch (Updated for v4) still wins 3 shared files over its own patch Alternate Perspective - Realm of Lorkhan Patch
   AUDIT FAIL [Visual Control] Particle Patch for ENB still wins 23 shared files over its own patch Particle Patch
-  AUDIT FAIL [Essential Bug Fixes] Unofficial Skyrim Modder's Patch - USMP SE (Only for AE Import) still wins 14 shared files over its own patch Unofficial Skyrim Modder's Patch - USMP SE
-  AUDIT FAIL [Essential Bug Fixes] Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b) still wins 8 shared files over its own patch Unofficial Skyrim Special Edition Patch - USSEP
-  AUDIT FAIL [Essential Bug Fixes] Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b) still wins 8 shared files over its own patch Unofficial Skyrim Special Edition Patch
-  audit complete: 5 violation(s)
+  AUDIT FAIL [Fixes & Resources - Unofficial Patches] Unofficial Skyrim Modder's Patch - USMP SE (Only for AE Import) still wins 14 shared files over its own patch Unofficial Skyrim Modder's Patch - USMP SE
+  audit complete: 3 violation(s)
 
 --- pass 3: promote rules ---
   [Extension Frameworks - Extended Functionality] SkyPatcher - VR@21 vs SkyPatcher - AE@22 (file-earlier wins): already correct
@@ -2308,7 +2273,6 @@ conflict index: 1564 related pair(s) loaded
   racemenuhh.esp (RaceMenu High Heels (Height Fixes)) | masters: skyrim.esm | KYWD:1 MGEF:1 SPEL:1 QUST:1
   autorun.esp (Autorun) esl | masters: skyrim.esm | QUST:1 MESG:1
   mcmhelper.esp (MCM Helper VR) esl | masters: skyui_se.esp | 
-  ocf.esp (Object Categorization Framework) esm esl | masters: skyrim.esm, update.esm | KYWD:1 FLST:1
   cozy cots - bos color variance.esp (Cozy Cots - A Cot Replacer) esl | masters: skyrim.esm | FURN:1
   various dividers.esp (Divide and Conquer - A Noble Divider Replacer) esl | masters: skyrim.esm, update.esm | STAT:1
   bedroll alternative - bos color variance.esp (Bedroll Alternative - BOS Color Variance) esl | masters: skyrim.esm | STAT:1 FURN:1
@@ -2324,6 +2288,18 @@ conflict index: 1564 related pair(s) loaded
   lux - redbag's falkreath - addon.esp (Half Moon Mill Patches FOMOD) esl | masters: skyrim.esm, lux.esp, redbag's falkreath - addons.esp | CELL:1
   redbag's falkreath - addons - lux orbis patch.esp (Half Moon Mill Patches FOMOD) esl | masters: skyrim.esm, update.esm, lux - resources.esp, lux orbis.esp, redbag's falkreath - addons.esp | WRLD:1
   embersxd-campfire patch.esp (EmbersXD - Campfire Patch) esl | masters: skyrim.esm, campfire.esm, embers xd.esp | ACTI:1
+  0_katnerd_startplayerfemale_spells.esp (Default Female at Character Creation) esl | masters: skyrim.esm, update.esm | NPC_:1
+  decoratorhelper.esp (Decorator Helper) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | KYWD:1 MGEF:1 SPEL:1 BOOK:1 MSTT:1 CELL:1 QUST:1 EFSH:1 FLST:1 MESG:1 SNDR:1 SOPM:1
+  buylumberinlargerstacks.esp (Buy Lumber In Larger Stacks) | masters: skyrim.esm, update.esm, hearthfires.esm | GLOB:1 DIAL:1 QUST:1
+  goonahead.esp (Go On Ahead) | masters: skyrim.esm, update.esm | GLOB:1 FACT:1 DIAL:1 QUST:1 PACK:1 MESG:1 DLBR:1 DLVW:1
+  insects begone - saints and seducers.esp (Insects Begone REDUX) esl | masters: skyrim.esm, update.esm, dragonborn.esm, ccbgssse025-advdsgs.esm | NPC_:1
+  booksofskyrim.esp (Books of Skyrim SE) | masters: skyrim.esm, update.esm | FACT:1 CONT:1 STAT:1 MSTT:1 NPC_:1 KEYM:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 PACK:1 FLST:1 ECZN:1 LCTN:1 RELA:1 OTFT:1
+  thronesexpandedbos.esp (Thrones Expanded) esl | masters: skyrim.esm | STAT:1 FURN:1
+  understonekeepswept.esp (Understone Keep Swept) esl | masters: skyrim.esm, dragonborn.esm | CELL:1
+  bbd_skeletonkey.esp (Skeleton Key is a Key SE) | masters: skyrim.esm, update.esm | MGEF:1 SPEL:1 CONT:1 KEYM:1 CELL:1 QUST:1 PERK:1 AVIF:1 MESG:1
+  apachii_divineelegancestore.esm (Apachii Divine Elegance Store) esm | masters: skyrim.esm, update.esm | TXST:1 FACT:1 HDPT:1 MGEF:1 ENCH:1 ARMO:1 CONT:1 DOOR:1 LIGH:1 MISC:1 STAT:1 MSTT:1 FURN:1 WEAP:1 AMMO:1 NPC_:1 COBJ:1 PROJ:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 PACK:1 ARMA:1 LCTN:1 OTFT:1
+  apachii_divineelegancestore_dawnguard_patch.esp (Apachii Divine Elegance Store) esl | masters: skyrim.esm, update.esm, dawnguard.esm, apachii_divineelegancestore.esm | RACE:1 NAVI:1 WRLD:1
+  apachii_divineelegancestore_patch.esp (Apachii Divine Elegance Store) esl | masters: skyrim.esm, update.esm, apachii_divineelegancestore.esm | RACE:1 NAVI:1 WRLD:1
   jks fort dawnguard - aspens ablaze patch.esp (JKs Guild HQ Interiors Patch Collection) esl | masters: skyrim.esm, dawnguard.esm, jk's fort dawnguard.esp | WRLD:1
   jks fort dawnguard - exterior roofs disabler.esp (JKs Guild HQ Interiors Patch Collection) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, jk's fort dawnguard.esp | WRLD:1
   jks fort dawnguard - lawf patch.esp (JKs Guild HQ Interiors Patch Collection) esl | masters: skyrim.esm, dawnguard.esm, jk's fort dawnguard.esp | WRLD:1
@@ -2348,9 +2324,11 @@ conflict index: 1564 related pair(s) loaded
   strotimushroomhouse.esp (Stroti's Mushroom House Resource) | masters: skyrim.esm, update.esm | ACTI:1 BOOK:1 DOOR:1 STAT:1 FURN:1 CELL:1 WRLD:1
   manny_status.esp (STATUS) esl | masters: skyrim.esm, skyui_se.esp | QUST:1
   fiss.esp (FileAccess Interface for Skyrim SE Scripts - FISSES) | masters: skyrim.esm, update.esm | QUST:1
+  eeks whiterun interiors.esp (EEKs Whiterun Interiors SSE) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, unofficial skyrim special edition patch.esp | TXST:1 ACTI:1 BOOK:1 CONT:1 DOOR:1 LIGH:1 MISC:1 STAT:1 MSTT:1 TREE:1 FLOR:1 FURN:1 NPC_:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 PACK:1 IMGS:1 FLST:1 LGTM:1 RELA:1
   lux - dragonsreach alternate lighting.esp (Lux Variants) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, lux - resources.esp, lux.esp | CELL:1
   lux - jk's dragonsreach alternate lighting.esp (Lux Variants) esl | masters: skyrim.esm, jk's dragonsreach.esp, lux.esp, lux - jk's dragonsreach patch.esp | CELL:1
   quickberi.esp (Quick Beri - Wearable particle light lanterns SPIDified (CS and ENB)) | masters: skyrim.esm, update.esm, hearthfires.esm | KYWD:1 GLOB:1 SOUN:1 MGEF:1 SPEL:1 ARMO:1 LIGH:1 RFCT:1 CELL:1 QUST:1 FLST:1 ARMA:1 ARTO:1 SNDR:1
+  realm of lorkhan - forgotten shrines.esp (Realm of Lorkhan - Forgotten Shrines) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, realm of lorkhan - custom alternate start - choose your own adventure.esp | BOOK:1 INGR:1 WEAP:1 NPC_:1 SLGM:1 CELL:1
   ryn's standing stones.esp (Ryn's Standing Stones) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | BOOK:1 NPC_:1 NAVI:1 WRLD:1 LCTN:1
   crowded streets.esp (Crowded Streets) esl | masters: skyrim.esm | GLOB:1 NPC_:1 LVLN:1 LVLI:1 QUST:1 PACK:1 SMBN:1 SMQN:1 OTFT:1
   jaxonzenhgrab.esp (Jaxonz Positioner Converter Remastered) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | TXST:1 GLOB:1 MGEF:1 SPEL:1 ACTI:1 LIGH:1 MISC:1 STAT:1 PROJ:1 CELL:1 QUST:1 EFSH:1 EXPL:1 FLST:1 MESG:1
@@ -2599,6 +2577,7 @@ conflict index: 1564 related pair(s) loaded
   witcher horses - unicorn - gold - wings down.esp (Witcher Horse Expansion) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, witcher horses 2.0.esp | ARMO:1 ARMA:1
   witcher horses 2.0.esp (Witcher Horse Expansion) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | KYWD:1 TXST:1 GLOB:1 MGEF:1 SPEL:1 ACTI:1 ARMO:1 BOOK:1 CONT:1 STAT:1 NPC_:1 LVLN:1 LVLI:1 RFCT:1 CELL:1 WRLD:1 QUST:1 PACK:1 LVSP:1 FLST:1 ARMA:1 MESG:1 RELA:1 ARTO:1
   steedsofultimavr.esp (Steeds of Ultima - VR Mounted combat) | masters: skyrim.esm, update.esm, dragonborn.esm | RACE:1 SOUN:1 MGEF:1 SPEL:1 STAT:1 WEAP:1 COBJ:1 PROJ:1 WRLD:1 IDLE:1 MOVT:1
+  stamina of steeds.esp (Stamina of Steeds) esl | masters: skyrim.esm | QUST:1
   redbag's dragonreach got black dread skull patch.esp (RedBag's Dragonsreach - GoT The Black Dread Skull Replacer Patch) esl | masters: skyrim.esm, redbag's dragonsreach.esp | STAT:1 CELL:1
   gotdragonsstandalone.esp (HotD and GoT Dragons Standalone) esl | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | FACT:1 RACE:1 ARMO:1 NPC_:1 WRLD:1 ARMA:1
   incubatedegg.esp (Incubated Eggs SE (esl)) esl | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | FACT:1 RACE:1 MGEF:1 SCRL:1 ACTI:1 ARMO:1 CONT:1 INGR:1 NPC_:1 ALCH:1 COBJ:1 PROJ:1 LVLI:1 IDLE:1 EXPL:1 ARMA:1 ARTO:1
@@ -2728,6 +2707,7 @@ conflict index: 1564 related pair(s) loaded
   mihailchickensandchicks.esp (Chickens and Chicks- Mihail Monsters and Animals (SE-AE version)) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | TXST:1 RACE:1 ARMO:1 NPC_:1 WRLD:1 PACK:1 ARMA:1 SNDR:1
   mihailrooster.esp (Roosters- Mihail Monsters and Animals (SE-AE version) (''chicken'')) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | RACE:1 ARMO:1 NPC_:1 WRLD:1 ARMA:1 SNDR:1
   creatures_resized.esp (Creatures Resized for VR - SE) | masters: skyrim.esm, dawnguard.esm | NPC_:1
+  unique festival ropes.esp (Unique Festival Ropes) esl | masters: - | TXST:1 STAT:1
   kanjs - aio books patch.esl (Kanjs - Books AIO Animated (SkyPatched)) esl | masters: skyrim.esm | STAT:1
   sse_tghqo.esp (SSE Thieves Guild Overhaul w General Stores) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, generalstores.esm | TXST:1 FACT:1 ACTI:1 ARMO:1 BOOK:1 CONT:1 DOOR:1 LIGH:1 MISC:1 STAT:1 MSTT:1 FURN:1 WEAP:1 NPC_:1 KEYM:1 NAVI:1 CELL:1 WRLD:1 QUST:1 FLST:1 ARMA:1 ECZN:1 LCTN:1 LGTM:1 RELA:1 OTFT:1
   gdos - glorious solitude door - rotation fix.esp (Glorious Doors of Skyrim (GDOS)) esl | masters: skyrim.esm | WRLD:1
@@ -2887,7 +2867,6 @@ conflict index: 1564 related pair(s) loaded
   undriel_gems_in_skyrim_se.esp (Gems in All Mines - SE) esl | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | ACTI:1 CELL:1 WRLD:1
   skysan_glassaw.esp (Light Refracting Glass Armors and Weapons (reinstall fomod for other options)) | masters: skyrim.esm, update.esm | ARMO:1 COBJ:1 ARMA:1
   better skyforge.esp (Better Skyforge SE) | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | COBJ:1
-  0_katnerd_startplayerfemale_spells.esp (Default Female at Character Creation) esl | masters: skyrim.esm, update.esm | NPC_:1
   aedrarace.esp (Aedra Race - Powers Once Lost) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, apachiihair.esm, racecompatibility.esm, high poly head.esm, unofficial skyrim special edition patch.esp, p1flyingring.esp, animated wings ultimate.esp | TXST:1 GLOB:1 HDPT:1 RACE:1 MGEF:1 SPEL:1 ACTI:1 ARMO:1 BOOK:1 NPC_:1 LVLI:1 CELL:1 WRLD:1 DIAL:1 QUST:1 PACK:1 FLST:1 ARMA:1 DLBR:1 DLVW:1 RELA:1
   race compatibility dialogue sse - rdo.esp (Race Compatibility Dialogue SSE) esl | masters: skyrim.esm, dragonborn.esm, racecompatibility.esm, relationship dialogue overhaul.esp | DIAL:1
   race compatibility dialogue sse.esp (Race Compatibility Dialogue SSE) esl | masters: skyrim.esm, dawnguard.esm, dragonborn.esm, racecompatibility.esm | DIAL:1
@@ -2945,7 +2924,6 @@ conflict index: 1564 related pair(s) loaded
   water for enb - patch - transparent horse trough water.esp (Water for ENB) esl | masters: skyrim.esm, update.esm | WATR:1
   water for enb - waterfalls add-on.esp (Water for ENB) | masters: skyrim.esm, update.esm | STAT:1 CELL:1 WRLD:1
   water for enb.esm (Water for ENB) esm | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | TXST:1 ACTI:1 STAT:1 MSTT:1 CELL:1 WRLD:1 WATR:1
-  unique festival ropes.esp (Unique Festival Ropes) esl | masters: - | TXST:1 STAT:1
   wizkid signs - birnasoddments addon.esp (WiZkiD Signs) esl | masters: skyrim.esm | STAT:1 MSTT:1 WRLD:1
   ironthrone.esp (Iron Throne) | masters: skyrim.esm | FURN:1 CELL:1 PACK:1 LCTN:1
   praedysazurasrealm.esp (Praedy's Azura's Star and Realm - SE) esl | masters: skyrim.esm, dawnguard.esm | TXST:1 GLOB:1 MGEF:1 SPEL:1 ACTI:1 DOOR:1 STAT:1 MSTT:1 NAVI:1 CELL:1 WRLD:1 QUST:1 LCTN:1
@@ -2957,19 +2935,6 @@ conflict index: 1564 related pair(s) loaded
   js dragon claws ae - helgen reborn.esp (JS Dragon Claws AE Anniversary Edition) esl | masters: skyrim.esm, helgen reborn.esp | ACTI:1 MISC:1
   rallysanimmarket.esp (Rally's Market Stalls) esl | masters: skyrim.esm, update.esm | TREE:1
   oreingotsfadingsignal.esp (Metallurgy - Ingots Ore and Veins HD) esl | masters: skyrim.esm | GLOB:1
-  decoratorhelper.esp (Decorator Helper) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | KYWD:1 MGEF:1 SPEL:1 BOOK:1 MSTT:1 CELL:1 QUST:1 EFSH:1 FLST:1 MESG:1 SNDR:1 SOPM:1
-  eeks whiterun interiors.esp (EEKs Whiterun Interiors SSE) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, unofficial skyrim special edition patch.esp | TXST:1 ACTI:1 BOOK:1 CONT:1 DOOR:1 LIGH:1 MISC:1 STAT:1 MSTT:1 TREE:1 FLOR:1 FURN:1 NPC_:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 PACK:1 IMGS:1 FLST:1 LGTM:1 RELA:1
-  realm of lorkhan - forgotten shrines.esp (Realm of Lorkhan - Forgotten Shrines) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, realm of lorkhan - custom alternate start - choose your own adventure.esp | BOOK:1 INGR:1 WEAP:1 NPC_:1 SLGM:1 CELL:1
-  buylumberinlargerstacks.esp (Buy Lumber In Larger Stacks) | masters: skyrim.esm, update.esm, hearthfires.esm | GLOB:1 DIAL:1 QUST:1
-  goonahead.esp (Go On Ahead) | masters: skyrim.esm, update.esm | GLOB:1 FACT:1 DIAL:1 QUST:1 PACK:1 MESG:1 DLBR:1 DLVW:1
-  insects begone - saints and seducers.esp (Insects Begone REDUX) esl | masters: skyrim.esm, update.esm, dragonborn.esm, ccbgssse025-advdsgs.esm | NPC_:1
-  booksofskyrim.esp (Books of Skyrim SE) | masters: skyrim.esm, update.esm | FACT:1 CONT:1 STAT:1 MSTT:1 NPC_:1 KEYM:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 PACK:1 FLST:1 ECZN:1 LCTN:1 RELA:1 OTFT:1
-  thronesexpandedbos.esp (Thrones Expanded) esl | masters: skyrim.esm | STAT:1 FURN:1
-  understonekeepswept.esp (Understone Keep Swept) esl | masters: skyrim.esm, dragonborn.esm | CELL:1
-  bbd_skeletonkey.esp (Skeleton Key is a Key SE) | masters: skyrim.esm, update.esm | MGEF:1 SPEL:1 CONT:1 KEYM:1 CELL:1 QUST:1 PERK:1 AVIF:1 MESG:1
-  apachii_divineelegancestore.esm (Apachii Divine Elegance Store) esm | masters: skyrim.esm, update.esm | TXST:1 FACT:1 HDPT:1 MGEF:1 ENCH:1 ARMO:1 CONT:1 DOOR:1 LIGH:1 MISC:1 STAT:1 MSTT:1 FURN:1 WEAP:1 AMMO:1 NPC_:1 COBJ:1 PROJ:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 PACK:1 ARMA:1 LCTN:1 OTFT:1
-  apachii_divineelegancestore_dawnguard_patch.esp (Apachii Divine Elegance Store) esl | masters: skyrim.esm, update.esm, dawnguard.esm, apachii_divineelegancestore.esm | RACE:1 NAVI:1 WRLD:1
-  apachii_divineelegancestore_patch.esp (Apachii Divine Elegance Store) esl | masters: skyrim.esm, update.esm, apachii_divineelegancestore.esm | RACE:1 NAVI:1 WRLD:1
   deep slumber - bos occupied locations only.esp (Deep Slumber - A Dwemer Bed Replacer) esl | masters: skyrim.esm | FURN:1
   deep slumber - new and timeworn distributed.esp (Deep Slumber - A Dwemer Bed Replacer) esl | masters: skyrim.esm | FURN:1
   skyrim remastered - ice caves fix.esp (Skyrim Remastered - Caves) esl | masters: skyrim.esm | STAT:1
@@ -3014,6 +2979,7 @@ conflict index: 1564 related pair(s) loaded
   happylittletrees.esp (Happy Little Trees) | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm, hearthfires.esm | TXST:1 STAT:1 TREE:1 FURN:1 WRLD:1
   treescale.esm (Happy Little Trees) esm esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | WRLD:1
   aspens ablaze.esp (Aspens Ablaze) | masters: skyrim.esm, update.esm, dawnguard.esm | TREE:1 REGN:1 WRLD:1
+  cathedral - 3d pine grass.esp (Cathedral - 3D Pine Grass) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | LTEX:1 GRAS:1
   praedysblackreachgemdeposits.esp (Praedy's Blackreach deposits glowing rocks and falmer cave ceiling glow) esl | masters: skyrim.esm | ACTI:1
   hpp - my fixes by xtudo - chopping blocks.esp (High Poly Project - My fixes SE-AE by Xtudo) esl | masters: skyrim.esm, update.esm, dragonborn.esm | STAT:1 FURN:1
   winterhold restored - hpp patch by xtudo.esp (High Poly Project - My fixes SE-AE by Xtudo) esl | masters: skyrim.esm, winterhold restored.esp | CONT:1 FURN:1
@@ -3067,10 +3033,6 @@ conflict index: 1564 related pair(s) loaded
   natural waterfalls.esp (Natural Waterfalls) esm | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm | STAT:1 WRLD:1 LCTN:1
   gkbwavesreborn.esp (GKB Waves Reborn) esm | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | STAT:1 MSTT:1 WRLD:1
   cathedral - water.esp (Cathedral - Water Overhaul and Bug Fixes) | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | WATR:1
-  qw's grass patch 2.esp (QW's Grass Patch 2 - Origins of Forest - Cathedral - Folkvangr) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, cathedral - 3d pine grass.esp, origins of forest - 3d forest grass.esp, folkvangr - grass and landscape overhaul.esp | LTEX:1 GRAS:1 WRLD:1
-  nograssias.esp (No Grassias - A Universal Grass Fix For Grass Mods) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | LTEX:1
-  origins of forest - 3d forest grass.esp (Origins Of Forest - 3D Forest Grass) | masters: skyrim.esm, update.esm | LTEX:1 GRAS:1
-  cathedral - 3d pine grass.esp (Cathedral - 3D Pine Grass) | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | LTEX:1 GRAS:1
   sepolcri.esp (Sepolcri - A complete Burial Sites overhaul) | masters: skyrim.esm, update.esm, hearthfires.esm | ACTI:1 STAT:1 MSTT:1 TREE:1 NAVI:1 WRLD:1
   fabledforests-ylikarborealpines-patch.esp (Fabled Forests - Arboreal Ascension Pines Mixed Patch) esl | masters: skyrim.esm, fabled forests.esp, ylikpines.esp | TREE:1
   fabled forests - natural waterfalls patch.esp (Fabled Forests Patch Compendium) esl | masters: skyrim.esm, update.esm | WRLD:1
@@ -3093,6 +3055,9 @@ conflict index: 1564 related pair(s) loaded
   stormlightning.esp (Storm Lightning for SSE and VR (Minty Lightning 2019)) esl | masters: skyrim.esm | GLOB:1 MGEF:1 SPEL:1 ACTI:1 LIGH:1 PROJ:1 WRLD:1 QUST:1 EXPL:1 IMAD:1 FLST:1 SNDR:1 SNCT:1 SOPM:1
   mists of tamriel nat patch.esp (Mists of Tamriel NAT III patch) esl | masters: skyrim.esm, update.esm, mists of tamriel.esp, nat-enb.esp | WTHR:1
   mists of tamriel.esp (Mists of Tamriel) | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | GLOB:1 STAT:1 MSTT:1 WTHR:1 NAVI:1 CELL:1 WRLD:1 QUST:1
+  qw's grass patch 2.esp (QW's Grass Patch 2 - Origins of Forest - Cathedral - Folkvangr) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, cathedral - 3d pine grass.esp, origins of forest - 3d forest grass.esp, folkvangr - grass and landscape overhaul.esp | LTEX:1 GRAS:1 WRLD:1
+  nograssias.esp (No Grassias - A Universal Grass Fix For Grass Mods) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | LTEX:1
+  origins of forest - 3d forest grass.esp (Origins Of Forest - 3D Forest Grass) | masters: skyrim.esm, update.esm | LTEX:1 GRAS:1
   ecd.esp (E.C.D. Every Cloud Different NAT Add On) esl | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm, nat-enb.esp | WTHR:1 RFCT:1 ARTO:1
   skygazermoonssize.esp (Skygazer Moons SSE - Masser and Secunda HD Textures - WITH GLOW) esl | masters: skyrim.esm | GMST:1
   shootingstars - remove leaflet.esp (Shooting Stars SE - Remove Leaflet) esl | masters: skyrim.esm, shootingstars.esp | QUST:1
@@ -3201,8 +3166,6 @@ conflict index: 1564 related pair(s) loaded
   skyui_se.esp (SkyUI) esl | masters: skyrim.esm | QUST:1
   mcmhelper.esp (MCM Helper) esl | masters: skyui_se.esp | 
   vr ugly altar replacer.esp (Better Main Menu for VR) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm, skyrimvr.esm | WRLD:1
-  eyeadaptationfix.esp (Eye Adaptation Fix for SE and VR) esl | masters: - | QUST:1 IMAD:1
-  stamina of steeds.esp (Stamina of Steeds) esl | masters: skyrim.esm | QUST:1
   swap drop and hold.esp (Swap Drop and Hold Add Spells) | masters: skyrim.esm, update.esm | MGEF:1 SPEL:1 CELL:1 QUST:1
   swap drop and hold.esp (Swap Drop and Hold) esl | masters: skyrim.esm, update.esm | MGEF:1 SPEL:1 CELL:1
   giftbyhandvr.esp (Gift by Hand VR) | masters: skyrim.esm, update.esm | SOUN:1 MGEF:1 SPEL:1 QUST:1 EXPL:1 MESG:1 SNDR:1
@@ -3268,19 +3231,21 @@ conflict index: 1564 related pair(s) loaded
   mfgfix.esp (Mfg Fix) esl | masters: skyrim.esm | QUST:1
   dlizzio's mesh fixes.esp (Dlizzio's Mesh Fixes) esl | masters: skyrim.esm, update.esm, dragonborn.esm | TXST:1 STAT:1 WRLD:1
   scriptfixescompilation.esp (Script Optimization and Fixes Compilation) esm esl | masters: skyrim.esm, hearthfires.esm | MESG:1
+  eyeadaptationfix.esp (Eye Adaptation Fix for SE and VR) esl | masters: - | QUST:1 IMAD:1
   unofficial skyrim special edition patch.esp (Unofficial Skyrim Special Edition Patch - USSEP (4.2.5b)) esm | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | GMST:1 KYWD:1 TXST:1 GLOB:1 CLAS:1 FACT:1 RACE:1 SOUN:1 MGEF:1 ENCH:1 SPEL:1 SCRL:1 ACTI:1 ARMO:1 BOOK:1 CONT:1 DOOR:1 INGR:1 LIGH:1 MISC:1 STAT:1 GRAS:1 TREE:1 FLOR:1 FURN:1 WEAP:1 AMMO:1 NPC_:1 LVLN:1 KEYM:1 ALCH:1 COBJ:1 PROJ:1 HAZD:1 SLGM:1 LVLI:1 WTHR:1 RFCT:1 REGN:1 NAVI:1 CELL:1 WRLD:1 DIAL:1 QUST:1 IDLE:1 PACK:1 LSCR:1 LVSP:1 EFSH:1 EXPL:1 IMAD:1 FLST:1 PERK:1 BPTD:1 AVIF:1 IPCT:1 IPDS:1 ARMA:1 ECZN:1 LCTN:1 MESG:1 FSTP:1 FSTS:1 SMQN:1 DLBR:1 MUST:1 SHOU:1 RELA:1 SCEN:1 OTFT:1 SNDR:1 CLFM:1
   unofficial skyrim modders patch.esp (Unofficial Skyrim Modder's Patch - For VR Users (4.2.5b USSEP)) esm | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | GMST:1 KYWD:1 TXST:1 GLOB:1 FACT:1 RACE:1 MGEF:1 ENCH:1 SPEL:1 ACTI:1 ARMO:1 CONT:1 MISC:1 STAT:1 WEAP:1 AMMO:1 NPC_:1 LVLN:1 COBJ:1 LVLI:1 NAVI:1 CELL:1 WRLD:1 DIAL:1 QUST:1 IDLE:1 PACK:1 EFSH:1 EXPL:1 FLST:1 PERK:1 IPCT:1 ARMA:1 LCTN:1 MUSC:1 SMQN:1 DLBR:1 DLVW:1 OTFT:1 SNDR:1 CLFM:1
   fnis.esp (Pandora Behaviour Engine Plus) | masters: - | 
-  orcish lanterns for largashbur bos.esp (Orcish Lanterns for Orc Strongholds by Jjerem - Base Object Swapper) esl | masters: skyrim.esm | MSTT:1
-  dynamic things alternative.esp (Dynamic Things Alternative - Base Object Swapper) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm | ACTI:1 CONT:1 INGR:1 MISC:1 FLOR:1 WEAP:1 ALCH:1 LVLI:1 CELL:1 QUST:1 FLST:1
-  solitude braziers.esp (Sconces of Solitude - Unique Solitude Braziers - Base Object Swapper) esl | masters: skyrim.esm | STAT:1
-  snazzy wallmount trophies - bos.esp (Snazzy Wall Mounted Trophies - Base Object Swapper) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | STAT:1
-  diverse archery targets bos.esp (Diverse Archery Targets - Base Object Swapper) esl | masters: skyrim.esm | STAT:1
   dogspid.esp (Diverse Dog Textures - SPID) esl | masters: skyrim.esm | TXST:1 RACE:1 MGEF:1 SPEL:1 ARMO:1 FLST:1 ARMA:1
   arachnophobia - spiders are wolves.esp (Arachnophobia - Spiders are Wolves - Chaurus are Bears - No Cobwebs or Eggs) | masters: skyrim.esm, update.esm, dawnguard.esm, dragonborn.esm | ACTI:1 BOOK:1 INGR:1 LIGH:1 STAT:1 MSTT:1 FLOR:1 NPC_:1 CELL:1 WRLD:1 QUST:1 LSCR:1
   mihailrooster_fancy.esp (Fancy Mihail's Roosters SPID or Replacer) esl | masters: skyrim.esm, mihailrooster.esp | TXST:1 MGEF:1 SPEL:1 ARMO:1 FLST:1 ARMA:1
   betterdressedkids.esp (Better Dressed Kids - Willybach Textures SPID) esl | masters: skyrim.esm | TXST:1 ARMO:1 LVLI:1 ARMA:1 OTFT:1
   schlongs of skyrim.esp (Schlongs of Skyrim - PapyrusUtil SexLab Tweaks) | masters: skyrim.esm, schlongs of skyrim - core.esm | TXST:1 GLOB:1 FACT:1 MGEF:1 SPEL:1 ARMO:1 ALCH:1 LVLI:1 DIAL:1 QUST:1 FLST:1 PERK:1 ARMA:1 MESG:1 DLBR:1
+  ocf.esp (Object Categorization Framework) esm esl | masters: skyrim.esm, update.esm | KYWD:1 FLST:1
+  orcish lanterns for largashbur bos.esp (Orcish Lanterns for Orc Strongholds by Jjerem - Base Object Swapper) esl | masters: skyrim.esm | MSTT:1
+  dynamic things alternative.esp (Dynamic Things Alternative - Base Object Swapper) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm | ACTI:1 CONT:1 INGR:1 MISC:1 FLOR:1 WEAP:1 ALCH:1 LVLI:1 CELL:1 QUST:1 FLST:1
+  solitude braziers.esp (Sconces of Solitude - Unique Solitude Braziers - Base Object Swapper) esl | masters: skyrim.esm | STAT:1
+  snazzy wallmount trophies - bos.esp (Snazzy Wall Mounted Trophies - Base Object Swapper) esl | masters: skyrim.esm, update.esm, dawnguard.esm, hearthfires.esm, dragonborn.esm | STAT:1
+  diverse archery targets bos.esp (Diverse Archery Targets - Base Object Swapper) esl | masters: skyrim.esm | STAT:1
   dovahnique's diverse vendor carts - bos.esp (Dovahnique's Diverse Vendor Carts - Base Object Swapper) esl | masters: skyrim.esm | STAT:1
   flower mod.esp (Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim) esl | masters: skyrim.esm, update.esm, dawnguard.esm | TREE:1
   dawnguard.esm (Clean Masters) esm | masters: skyrim.esm, update.esm | GMST:1 KYWD:1 LCRT:1 AACT:1 TXST:1 GLOB:1 CLAS:1 FACT:1 HDPT:1 RACE:1 SOUN:1 ASPC:1 MGEF:1 LTEX:1 ENCH:1 SPEL:1 SCRL:1 ACTI:1 TACT:1 ARMO:1 BOOK:1 CONT:1 DOOR:1 INGR:1 LIGH:1 MISC:1 STAT:1 MSTT:1 GRAS:1 TREE:1 FLOR:1 FURN:1 WEAP:1 AMMO:1 NPC_:1 LVLN:1 KEYM:1 ALCH:1 IDLM:1 COBJ:1 PROJ:1 HAZD:1 LVLI:1 WTHR:1 CLMT:1 RFCT:1 REGN:1 NAVI:1 CELL:1 WRLD:1 DIAL:1 QUST:1 IDLE:1 PACK:1 CSTY:1 LSCR:1 LVSP:1 ANIO:1 WATR:1 EFSH:1 EXPL:1 DEBR:1 IMGS:1 IMAD:1 FLST:1 PERK:1 BPTD:1 ADDN:1 AVIF:1 VTYP:1 IPCT:1 IPDS:1 ARMA:1 ECZN:1 LCTN:1 MESG:1 DOBJ:1 LGTM:1 MUSC:1 FSTP:1 FSTS:1 SMBN:1 SMQN:1 DLBR:1 MUST:1 DLVW:1 WOOP:1 SHOU:1 RELA:1 SCEN:1 OTFT:1 ARTO:1 MATO:1 VOLI:1 MOVT:1 SNDR:1 SOPM:1 CLFM:1 REVB:1
